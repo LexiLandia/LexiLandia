@@ -77,6 +77,30 @@ assets/audio/ru/tam_odin_avtobus.mp3
 
 The app uses real audio files first. If a file is missing, the learner can continue and the page shows `Аудио скоро будет`.
 
+Correct and retry feedback also use audio files:
+
+```text
+assets/audio/ru/feedback_horosho.mp3
+assets/audio/ru/feedback_eshche_raz.mp3
+```
+
+Generate lesson audio with the production helper:
+
+```bash
+python -m pip install edge-tts
+python tools/generate_audio.py
+```
+
+Useful options:
+
+```bash
+python tools/generate_audio.py --list
+python tools/generate_audio.py --force
+python tools/generate_audio.py --voice ru-RU-DmitryNeural
+```
+
+The generator reads `data/lessons.json`, finds every `audio` path, and creates missing `.mp3` files. It is a content-production script only; the website still has no build step and no runtime dependencies.
+
 `js/audio.js` contains:
 
 ```js

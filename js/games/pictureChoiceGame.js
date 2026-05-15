@@ -38,7 +38,8 @@
           button.classList.add("is-correct");
           feedback.className = "feedback good";
           feedback.textContent = "Хорошо!";
-          window.setTimeout(options.onCorrect, 560);
+          helpers.playFeedback("success");
+          window.setTimeout(options.onCorrect, 900);
           return;
         }
 
@@ -46,7 +47,10 @@
         correctButton.classList.add("show-correct");
         feedback.className = "feedback try";
         feedback.textContent = "Ещё раз";
-        helpers.playPrompt(task);
+        helpers.playFeedback("retry");
+        window.setTimeout(function () {
+          helpers.playPrompt(task);
+        }, 760);
       });
     });
   }
@@ -86,7 +90,8 @@
           button.classList.add("is-correct");
           feedback.className = "feedback good";
           feedback.textContent = "Хорошо!";
-          window.setTimeout(options.onCorrect, 560);
+          helpers.playFeedback("success");
+          window.setTimeout(options.onCorrect, 900);
           return;
         }
 
@@ -94,7 +99,10 @@
         correctButton.classList.add("show-correct");
         feedback.className = "feedback try";
         feedback.textContent = "Ещё раз";
-        helpers.playPrompt(task);
+        helpers.playFeedback("retry");
+        window.setTimeout(function () {
+          helpers.playPrompt(task);
+        }, 760);
       });
     });
   }
@@ -136,7 +144,8 @@
           button.classList.add("is-correct");
           feedback.className = "feedback good";
           feedback.textContent = "Хорошо!";
-          window.setTimeout(options.onCorrect, 560);
+          helpers.playFeedback("success");
+          window.setTimeout(options.onCorrect, 900);
           return;
         }
 
@@ -144,7 +153,10 @@
         correctButton.classList.add("show-correct");
         feedback.className = "feedback try";
         feedback.textContent = "Ещё раз";
-        helpers.playPrompt(task);
+        helpers.playFeedback("retry");
+        window.setTimeout(function () {
+          helpers.playPrompt(task);
+        }, 760);
       });
     });
   }

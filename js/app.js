@@ -278,6 +278,7 @@
       clearSceneAnswers: clearSceneAnswers,
       entryButton: entryButton,
       escape: escapeHtml,
+      playFeedback: playFeedback,
       playPrompt: playPrompt,
       scene: renderScene,
       soundPanel: soundPanel
@@ -312,6 +313,15 @@
   function playEntry(entry) {
     setWarning("");
     window.LexiLandAudio.playAudio(entry.audio, entry.text, setWarning);
+  }
+
+  function playFeedback(kind) {
+    var feedback = lesson.feedbackAudio && lesson.feedbackAudio[kind];
+    if (!feedback) {
+      return;
+    }
+    setWarning("");
+    window.LexiLandAudio.playAudio(feedback.audio, feedback.text, setWarning);
   }
 
   function setWarning(message) {
@@ -569,6 +579,16 @@
         {
           id: "lesson-1",
           title: "Урок 1. Здесь, там, это",
+          feedbackAudio: {
+            success: {
+              text: "Хорошо!",
+              audio: "assets/audio/ru/feedback_horosho.mp3"
+            },
+            retry: {
+              text: "Ещё раз",
+              audio: "assets/audio/ru/feedback_eshche_raz.mp3"
+            }
+          },
           dictionary: dictionary,
           scenes: scenes,
           stages: [

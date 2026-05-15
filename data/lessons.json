@@ -3,6 +3,16 @@
     {
       "id": "lesson-1",
       "title": "Урок 1. Здесь, там, это",
+      "feedbackAudio": {
+        "success": {
+          "text": "Хорошо!",
+          "audio": "assets/audio/ru/feedback_horosho.mp3"
+        },
+        "retry": {
+          "text": "Ещё раз",
+          "audio": "assets/audio/ru/feedback_eshche_raz.mp3"
+        }
+      },
       "dictionary": [
         {
           "id": "da",

@@ -72,14 +72,18 @@
         feedback.className = "feedback good";
         feedback.textContent = "Хорошо!";
         root.querySelector(".mini-board").classList.add("success-pop");
-        window.setTimeout(options.onCorrect, 650);
+        helpers.playFeedback("success");
+        window.setTimeout(options.onCorrect, 950);
         return;
       }
 
       feedback.className = "feedback try";
       feedback.textContent = "Ещё раз";
       root.querySelector(".mini-board").classList.add("show-target");
-      helpers.playPrompt(task);
+      helpers.playFeedback("retry");
+      window.setTimeout(function () {
+        helpers.playPrompt(task);
+      }, 760);
     }
 
     draw();

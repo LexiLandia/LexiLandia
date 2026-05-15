@@ -21,5 +21,14 @@ The app already points to clear filenames in `data/lessons.json`, including:
 - `tam_odin_avtobus.mp3`
 - `eto_siniy_avtobus.mp3`
 - `eto_krasnoe_yabloko.mp3`
+- `feedback_horosho.mp3`
+- `feedback_eshche_raz.mp3`
 
 Missing files do not block the lesson. The app shows `Аудио скоро будет` and keeps the task playable.
+
+From the project root, generate missing files with:
+
+```bash
+python -m pip install edge-tts
+python tools/generate_audio.py
+```
