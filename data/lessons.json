@@ -1,0 +1,1615 @@
+{
+  "lessons": [
+    {
+      "id": "lesson-1",
+      "title": "Урок 1. Здесь, там, это",
+      "dictionary": [
+        {
+          "id": "da",
+          "text": "да",
+          "emoji": "✅",
+          "type": "word",
+          "audio": "assets/audio/ru/da.mp3"
+        },
+        {
+          "id": "net",
+          "text": "нет",
+          "emoji": "❌",
+          "type": "word",
+          "audio": "assets/audio/ru/net.mp3"
+        },
+        {
+          "id": "zdes",
+          "text": "здесь",
+          "emoji": "📍",
+          "type": "word",
+          "audio": "assets/audio/ru/zdes.mp3"
+        },
+        {
+          "id": "tam",
+          "text": "там",
+          "emoji": "👉",
+          "type": "word",
+          "audio": "assets/audio/ru/tam.mp3"
+        },
+        {
+          "id": "eto",
+          "text": "это",
+          "emoji": "👀",
+          "type": "word",
+          "audio": "assets/audio/ru/eto.mp3"
+        },
+        {
+          "id": "odin",
+          "text": "один",
+          "emoji": "1️⃣",
+          "type": "word",
+          "audio": "assets/audio/ru/odin.mp3"
+        },
+        {
+          "id": "dva",
+          "text": "два",
+          "emoji": "2️⃣",
+          "type": "word",
+          "audio": "assets/audio/ru/dva.mp3"
+        },
+        {
+          "id": "yabloko",
+          "text": "яблоко",
+          "emoji": "🍎",
+          "type": "word",
+          "audio": "assets/audio/ru/yabloko.mp3"
+        },
+        {
+          "id": "voda",
+          "text": "вода",
+          "emoji": "💧",
+          "type": "word",
+          "audio": "assets/audio/ru/voda.mp3"
+        },
+        {
+          "id": "avtobus",
+          "text": "автобус",
+          "emoji": "🚌",
+          "type": "word",
+          "audio": "assets/audio/ru/avtobus.mp3"
+        },
+        {
+          "id": "dom",
+          "text": "дом",
+          "emoji": "🏠",
+          "type": "word",
+          "audio": "assets/audio/ru/dom.mp3"
+        },
+        {
+          "id": "siniy",
+          "text": "синий",
+          "emoji": "🔵",
+          "type": "word",
+          "audio": "assets/audio/ru/siniy.mp3"
+        },
+        {
+          "id": "krasniy",
+          "text": "красный",
+          "emoji": "🔴",
+          "type": "word",
+          "audio": "assets/audio/ru/krasniy.mp3"
+        },
+        {
+          "id": "zdes_yabloko",
+          "text": "здесь яблоко",
+          "emoji": "📍🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_yabloko.mp3"
+        },
+        {
+          "id": "tam_yabloko",
+          "text": "там яблоко",
+          "emoji": "👉🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_yabloko.mp3"
+        },
+        {
+          "id": "zdes_voda",
+          "text": "здесь вода",
+          "emoji": "📍💧",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_voda.mp3"
+        },
+        {
+          "id": "tam_voda",
+          "text": "там вода",
+          "emoji": "👉💧",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_voda.mp3"
+        },
+        {
+          "id": "zdes_dom",
+          "text": "здесь дом",
+          "emoji": "📍🏠",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_dom.mp3"
+        },
+        {
+          "id": "tam_dom",
+          "text": "там дом",
+          "emoji": "👉🏠",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_dom.mp3"
+        },
+        {
+          "id": "zdes_avtobus",
+          "text": "здесь автобус",
+          "emoji": "📍🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_avtobus.mp3"
+        },
+        {
+          "id": "tam_avtobus",
+          "text": "там автобус",
+          "emoji": "👉🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_avtobus.mp3"
+        },
+        {
+          "id": "eto_yabloko",
+          "text": "это яблоко",
+          "emoji": "👀🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_yabloko.mp3"
+        },
+        {
+          "id": "eto_voda",
+          "text": "это вода",
+          "emoji": "👀💧",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_voda.mp3"
+        },
+        {
+          "id": "eto_avtobus",
+          "text": "это автобус",
+          "emoji": "👀🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_avtobus.mp3"
+        },
+        {
+          "id": "eto_dom",
+          "text": "это дом",
+          "emoji": "👀🏠",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_dom.mp3"
+        },
+        {
+          "id": "zdes_odin_yabloko",
+          "text": "здесь 1 яблоко",
+          "emoji": "📍1️⃣🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_odin_yabloko.mp3"
+        },
+        {
+          "id": "zdes_dva_yabloka",
+          "text": "здесь 2 яблока",
+          "emoji": "📍2️⃣🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/zdes_dva_yabloka.mp3"
+        },
+        {
+          "id": "tam_odin_avtobus",
+          "text": "там 1 автобус",
+          "emoji": "👉1️⃣🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_odin_avtobus.mp3"
+        },
+        {
+          "id": "tam_dva_avtobusa",
+          "text": "там 2 автобуса",
+          "emoji": "👉2️⃣🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/tam_dva_avtobusa.mp3"
+        },
+        {
+          "id": "eto_siniy_avtobus",
+          "text": "это синий автобус",
+          "emoji": "👀🔵🚌",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_siniy_avtobus.mp3"
+        },
+        {
+          "id": "eto_krasnoe_yabloko",
+          "text": "это красное яблоко",
+          "emoji": "👀🔴🍎",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3"
+        },
+        {
+          "id": "eto_siniy_dom",
+          "text": "это синий дом",
+          "emoji": "👀🔵🏠",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_siniy_dom.mp3"
+        },
+        {
+          "id": "eto_krasniy_dom",
+          "text": "это красный дом",
+          "emoji": "👀🔴🏠",
+          "type": "chunk",
+          "audio": "assets/audio/ru/eto_krasniy_dom.mp3"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "apple",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "water",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "💧",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "bus",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "house",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "blue-bus",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔵",
+              "count": 1
+            },
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "red-bus",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔴",
+              "count": 1
+            },
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "red-apple",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔴",
+              "count": 1
+            },
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "blue-apple",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔵",
+              "count": 1
+            },
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "blue-house",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔵",
+              "count": 1
+            },
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "red-house",
+          "mode": "focus",
+          "items": [
+            {
+              "emoji": "🔴",
+              "count": 1
+            },
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-one-apple",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ],
+          "far": []
+        },
+        {
+          "id": "near-two-apples",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🍎",
+              "count": 2
+            }
+          ],
+          "far": []
+        },
+        {
+          "id": "far-one-apple",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "far-two-apples",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "🍎",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "near-water",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "💧",
+              "count": 1
+            }
+          ],
+          "far": []
+        },
+        {
+          "id": "far-water",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "💧",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-house",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ],
+          "far": []
+        },
+        {
+          "id": "far-house",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-one-bus",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ],
+          "far": []
+        },
+        {
+          "id": "far-one-bus",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "far-two-buses",
+          "mode": "zones",
+          "near": [],
+          "far": [
+            {
+              "emoji": "🚌",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "near-apple-far-water",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ],
+          "far": [
+            {
+              "emoji": "💧",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-house-far-bus",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ],
+          "far": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-two-apples-far-house",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🍎",
+              "count": 2
+            }
+          ],
+          "far": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-water-far-bus",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "💧",
+              "count": 1
+            }
+          ],
+          "far": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-bus-far-house",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ],
+          "far": [
+            {
+              "emoji": "🏠",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "near-bus-far-apple",
+          "mode": "zones",
+          "near": [
+            {
+              "emoji": "🚌",
+              "count": 1
+            }
+          ],
+          "far": [
+            {
+              "emoji": "🍎",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "stages": [
+        {
+          "type": "intro",
+          "title": "Слушай и смотри",
+          "items": [
+            "da",
+            "net",
+            "zdes",
+            "tam",
+            "eto",
+            "odin",
+            "dva",
+            "yabloko",
+            "voda",
+            "avtobus",
+            "dom",
+            "siniy",
+            "krasniy"
+          ]
+        },
+        {
+          "type": "tap",
+          "title": "Слушай и выбирай",
+          "tasks": [
+            {
+              "id": "tap-1",
+              "text": "да",
+              "audio": "assets/audio/ru/da.mp3",
+              "options": [
+                "da",
+                "net",
+                "eto"
+              ],
+              "correct": "da"
+            },
+            {
+              "id": "tap-2",
+              "text": "нет",
+              "audio": "assets/audio/ru/net.mp3",
+              "options": [
+                "net",
+                "da",
+                "tam"
+              ],
+              "correct": "net"
+            },
+            {
+              "id": "tap-3",
+              "text": "здесь",
+              "audio": "assets/audio/ru/zdes.mp3",
+              "options": [
+                "zdes",
+                "tam",
+                "eto"
+              ],
+              "correct": "zdes"
+            },
+            {
+              "id": "tap-4",
+              "text": "там",
+              "audio": "assets/audio/ru/tam.mp3",
+              "options": [
+                "tam",
+                "zdes",
+                "eto"
+              ],
+              "correct": "tam"
+            },
+            {
+              "id": "tap-5",
+              "text": "это",
+              "audio": "assets/audio/ru/eto.mp3",
+              "options": [
+                "eto",
+                "zdes",
+                "tam"
+              ],
+              "correct": "eto"
+            },
+            {
+              "id": "tap-6",
+              "text": "один",
+              "audio": "assets/audio/ru/odin.mp3",
+              "options": [
+                "odin",
+                "dva",
+                "net"
+              ],
+              "correct": "odin"
+            },
+            {
+              "id": "tap-7",
+              "text": "два",
+              "audio": "assets/audio/ru/dva.mp3",
+              "options": [
+                "dva",
+                "odin",
+                "da"
+              ],
+              "correct": "dva"
+            },
+            {
+              "id": "tap-8",
+              "text": "яблоко",
+              "audio": "assets/audio/ru/yabloko.mp3",
+              "options": [
+                "yabloko",
+                "voda",
+                "avtobus"
+              ],
+              "correct": "yabloko"
+            },
+            {
+              "id": "tap-9",
+              "text": "вода",
+              "audio": "assets/audio/ru/voda.mp3",
+              "options": [
+                "voda",
+                "yabloko",
+                "dom"
+              ],
+              "correct": "voda"
+            },
+            {
+              "id": "tap-10",
+              "text": "автобус",
+              "audio": "assets/audio/ru/avtobus.mp3",
+              "options": [
+                "avtobus",
+                "dom",
+                "voda"
+              ],
+              "correct": "avtobus"
+            },
+            {
+              "id": "tap-11",
+              "text": "дом",
+              "audio": "assets/audio/ru/dom.mp3",
+              "options": [
+                "dom",
+                "avtobus",
+                "yabloko"
+              ],
+              "correct": "dom"
+            },
+            {
+              "id": "tap-12",
+              "text": "синий",
+              "audio": "assets/audio/ru/siniy.mp3",
+              "options": [
+                "siniy",
+                "krasniy",
+                "yabloko"
+              ],
+              "correct": "siniy"
+            },
+            {
+              "id": "tap-13",
+              "text": "красный",
+              "audio": "assets/audio/ru/krasniy.mp3",
+              "options": [
+                "krasniy",
+                "siniy",
+                "dom"
+              ],
+              "correct": "krasniy"
+            },
+            {
+              "id": "tap-14",
+              "text": "здесь яблоко",
+              "audio": "assets/audio/ru/zdes_yabloko.mp3",
+              "options": [
+                "zdes_yabloko",
+                "tam_yabloko",
+                "eto_yabloko"
+              ],
+              "correct": "zdes_yabloko"
+            },
+            {
+              "id": "tap-15",
+              "text": "там яблоко",
+              "audio": "assets/audio/ru/tam_yabloko.mp3",
+              "options": [
+                "tam_yabloko",
+                "zdes_yabloko",
+                "eto_yabloko"
+              ],
+              "correct": "tam_yabloko"
+            },
+            {
+              "id": "tap-16",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "options": [
+                "zdes_voda",
+                "tam_voda",
+                "eto_voda"
+              ],
+              "correct": "zdes_voda"
+            },
+            {
+              "id": "tap-17",
+              "text": "там вода",
+              "audio": "assets/audio/ru/tam_voda.mp3",
+              "options": [
+                "tam_voda",
+                "zdes_voda",
+                "eto_voda"
+              ],
+              "correct": "tam_voda"
+            },
+            {
+              "id": "tap-18",
+              "text": "здесь дом",
+              "audio": "assets/audio/ru/zdes_dom.mp3",
+              "options": [
+                "zdes_dom",
+                "tam_dom",
+                "eto_dom"
+              ],
+              "correct": "zdes_dom"
+            },
+            {
+              "id": "tap-19",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "options": [
+                "tam_avtobus",
+                "zdes_avtobus",
+                "eto_avtobus"
+              ],
+              "correct": "tam_avtobus"
+            },
+            {
+              "id": "tap-20",
+              "text": "это яблоко",
+              "audio": "assets/audio/ru/eto_yabloko.mp3",
+              "options": [
+                "eto_yabloko",
+                "zdes_yabloko",
+                "tam_yabloko"
+              ],
+              "correct": "eto_yabloko"
+            },
+            {
+              "id": "tap-21",
+              "text": "это вода",
+              "audio": "assets/audio/ru/eto_voda.mp3",
+              "options": [
+                "eto_voda",
+                "zdes_voda",
+                "tam_voda"
+              ],
+              "correct": "eto_voda"
+            },
+            {
+              "id": "tap-22",
+              "text": "это автобус",
+              "audio": "assets/audio/ru/eto_avtobus.mp3",
+              "options": [
+                "eto_avtobus",
+                "tam_avtobus",
+                "eto_dom"
+              ],
+              "correct": "eto_avtobus"
+            },
+            {
+              "id": "tap-23",
+              "text": "это дом",
+              "audio": "assets/audio/ru/eto_dom.mp3",
+              "options": [
+                "eto_dom",
+                "zdes_dom",
+                "eto_avtobus"
+              ],
+              "correct": "eto_dom"
+            },
+            {
+              "id": "tap-24",
+              "text": "здесь 1 яблоко",
+              "audio": "assets/audio/ru/zdes_odin_yabloko.mp3",
+              "options": [
+                "zdes_odin_yabloko",
+                "zdes_dva_yabloka",
+                "tam_yabloko"
+              ],
+              "correct": "zdes_odin_yabloko"
+            },
+            {
+              "id": "tap-25",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "options": [
+                "zdes_dva_yabloka",
+                "zdes_odin_yabloko",
+                "tam_yabloko"
+              ],
+              "correct": "zdes_dva_yabloka"
+            },
+            {
+              "id": "tap-26",
+              "text": "там 1 автобус",
+              "audio": "assets/audio/ru/tam_odin_avtobus.mp3",
+              "options": [
+                "tam_odin_avtobus",
+                "tam_dva_avtobusa",
+                "zdes_avtobus"
+              ],
+              "correct": "tam_odin_avtobus"
+            },
+            {
+              "id": "tap-27",
+              "text": "там 2 автобуса",
+              "audio": "assets/audio/ru/tam_dva_avtobusa.mp3",
+              "options": [
+                "tam_dva_avtobusa",
+                "tam_odin_avtobus",
+                "eto_avtobus"
+              ],
+              "correct": "tam_dva_avtobusa"
+            },
+            {
+              "id": "tap-28",
+              "text": "это синий автобус",
+              "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+              "options": [
+                "eto_siniy_avtobus",
+                "eto_krasnoe_yabloko",
+                "eto_avtobus"
+              ],
+              "correct": "eto_siniy_avtobus"
+            },
+            {
+              "id": "tap-29",
+              "text": "это красное яблоко",
+              "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+              "options": [
+                "eto_krasnoe_yabloko",
+                "eto_siniy_avtobus",
+                "eto_yabloko"
+              ],
+              "correct": "eto_krasnoe_yabloko"
+            },
+            {
+              "id": "tap-30",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "options": [
+                "zdes_dva_yabloka",
+                "tam_dva_avtobusa",
+                "zdes_voda"
+              ],
+              "correct": "zdes_dva_yabloka"
+            }
+          ]
+        },
+        {
+          "type": "picture-choice",
+          "title": "Картинка и слово",
+          "tasks": [
+            {
+              "id": "pic-1",
+              "text": "здесь 1 яблоко",
+              "audio": "assets/audio/ru/zdes_odin_yabloko.mp3",
+              "correctScene": "near-one-apple",
+              "options": [
+                "near-one-apple",
+                "near-two-apples",
+                "far-one-apple"
+              ]
+            },
+            {
+              "id": "pic-2",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "correctScene": "near-two-apples",
+              "options": [
+                "near-one-apple",
+                "near-two-apples",
+                "far-two-apples"
+              ]
+            },
+            {
+              "id": "pic-3",
+              "text": "там 1 автобус",
+              "audio": "assets/audio/ru/tam_odin_avtobus.mp3",
+              "correctScene": "far-one-bus",
+              "options": [
+                "far-one-bus",
+                "near-one-bus",
+                "far-two-buses"
+              ]
+            },
+            {
+              "id": "pic-4",
+              "text": "там 2 автобуса",
+              "audio": "assets/audio/ru/tam_dva_avtobusa.mp3",
+              "correctScene": "far-two-buses",
+              "options": [
+                "far-two-buses",
+                "far-one-bus",
+                "near-one-bus"
+              ]
+            },
+            {
+              "id": "pic-5",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "correctScene": "near-water",
+              "options": [
+                "near-water",
+                "far-water",
+                "near-house"
+              ]
+            },
+            {
+              "id": "pic-6",
+              "text": "там вода",
+              "audio": "assets/audio/ru/tam_voda.mp3",
+              "correctScene": "far-water",
+              "options": [
+                "far-water",
+                "near-water",
+                "far-house"
+              ]
+            },
+            {
+              "id": "pic-7",
+              "text": "здесь дом",
+              "audio": "assets/audio/ru/zdes_dom.mp3",
+              "correctScene": "near-house",
+              "options": [
+                "near-house",
+                "far-house",
+                "near-one-bus"
+              ]
+            },
+            {
+              "id": "pic-8",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "correctScene": "far-one-bus",
+              "options": [
+                "far-one-bus",
+                "near-one-bus",
+                "far-house"
+              ]
+            },
+            {
+              "id": "pic-9",
+              "text": "это дом",
+              "audio": "assets/audio/ru/eto_dom.mp3",
+              "correctScene": "house",
+              "options": [
+                "house",
+                "bus",
+                "apple"
+              ]
+            },
+            {
+              "id": "pic-10",
+              "text": "это автобус",
+              "audio": "assets/audio/ru/eto_avtobus.mp3",
+              "correctScene": "bus",
+              "options": [
+                "bus",
+                "house",
+                "water"
+              ]
+            },
+            {
+              "id": "pic-11",
+              "text": "это яблоко",
+              "audio": "assets/audio/ru/eto_yabloko.mp3",
+              "correctScene": "apple",
+              "options": [
+                "apple",
+                "water",
+                "bus"
+              ]
+            },
+            {
+              "id": "pic-12",
+              "text": "это вода",
+              "audio": "assets/audio/ru/eto_voda.mp3",
+              "correctScene": "water",
+              "options": [
+                "water",
+                "apple",
+                "house"
+              ]
+            },
+            {
+              "id": "pic-13",
+              "text": "это синий автобус",
+              "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+              "correctScene": "blue-bus",
+              "options": [
+                "blue-bus",
+                "red-bus",
+                "bus"
+              ]
+            },
+            {
+              "id": "pic-14",
+              "text": "это красное яблоко",
+              "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+              "correctScene": "red-apple",
+              "options": [
+                "red-apple",
+                "blue-apple",
+                "apple"
+              ]
+            },
+            {
+              "id": "pic-15",
+              "text": "здесь яблоко",
+              "audio": "assets/audio/ru/zdes_yabloko.mp3",
+              "correctScene": "near-one-apple",
+              "options": [
+                "near-one-apple",
+                "far-one-apple",
+                "near-water"
+              ]
+            },
+            {
+              "id": "pic-16",
+              "text": "там яблоко",
+              "audio": "assets/audio/ru/tam_yabloko.mp3",
+              "correctScene": "far-one-apple",
+              "options": [
+                "far-one-apple",
+                "near-one-apple",
+                "far-water"
+              ]
+            },
+            {
+              "id": "pic-17",
+              "text": "здесь автобус",
+              "audio": "assets/audio/ru/zdes_avtobus.mp3",
+              "correctScene": "near-one-bus",
+              "options": [
+                "near-one-bus",
+                "far-one-bus",
+                "near-house"
+              ]
+            },
+            {
+              "id": "pic-18",
+              "text": "там дом",
+              "audio": "assets/audio/ru/tam_dom.mp3",
+              "correctScene": "far-house",
+              "options": [
+                "far-house",
+                "near-house",
+                "far-one-bus"
+              ]
+            },
+            {
+              "id": "pic-19",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "correctScene": "near-two-apples",
+              "options": [
+                "near-two-apples",
+                "near-one-apple",
+                "far-two-apples"
+              ]
+            },
+            {
+              "id": "pic-20",
+              "text": "там 1 автобус",
+              "audio": "assets/audio/ru/tam_odin_avtobus.mp3",
+              "correctScene": "far-one-bus",
+              "options": [
+                "far-one-bus",
+                "far-two-buses",
+                "near-one-bus"
+              ]
+            },
+            {
+              "id": "pic-21",
+              "text": "это синий дом",
+              "audio": "assets/audio/ru/eto_siniy_dom.mp3",
+              "correctScene": "blue-house",
+              "options": [
+                "blue-house",
+                "red-house",
+                "house"
+              ]
+            },
+            {
+              "id": "pic-22",
+              "text": "это красный дом",
+              "audio": "assets/audio/ru/eto_krasniy_dom.mp3",
+              "correctScene": "red-house",
+              "options": [
+                "red-house",
+                "blue-house",
+                "house"
+              ]
+            },
+            {
+              "id": "pic-23",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "correctScene": "near-water-far-bus",
+              "options": [
+                "near-water-far-bus",
+                "near-bus-far-house",
+                "near-apple-far-water"
+              ]
+            },
+            {
+              "id": "pic-24",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "correctScene": "near-house-far-bus",
+              "options": [
+                "near-house-far-bus",
+                "near-water-far-bus",
+                "near-bus-far-house"
+              ]
+            },
+            {
+              "id": "pic-25",
+              "text": "это красное яблоко",
+              "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+              "correctScene": "red-apple",
+              "options": [
+                "red-apple",
+                "blue-bus",
+                "red-house"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "yes-no",
+          "title": "Да или нет",
+          "tasks": [
+            {
+              "id": "yn-1",
+              "text": "это яблоко",
+              "audio": "assets/audio/ru/eto_yabloko.mp3",
+              "scene": "apple",
+              "correct": "da"
+            },
+            {
+              "id": "yn-2",
+              "text": "это яблоко",
+              "audio": "assets/audio/ru/eto_yabloko.mp3",
+              "scene": "bus",
+              "correct": "net"
+            },
+            {
+              "id": "yn-3",
+              "text": "это синий автобус",
+              "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+              "scene": "blue-bus",
+              "correct": "da"
+            },
+            {
+              "id": "yn-4",
+              "text": "это синий автобус",
+              "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+              "scene": "red-apple",
+              "correct": "net"
+            },
+            {
+              "id": "yn-5",
+              "text": "это красное яблоко",
+              "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+              "scene": "red-apple",
+              "correct": "da"
+            },
+            {
+              "id": "yn-6",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "scene": "near-two-apples",
+              "correct": "da"
+            },
+            {
+              "id": "yn-7",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "scene": "far-house",
+              "correct": "net"
+            },
+            {
+              "id": "yn-8",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "scene": "far-one-bus",
+              "correct": "da"
+            },
+            {
+              "id": "yn-9",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "scene": "near-water",
+              "correct": "da"
+            },
+            {
+              "id": "yn-10",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "scene": "far-water",
+              "correct": "net"
+            },
+            {
+              "id": "yn-11",
+              "text": "это дом",
+              "audio": "assets/audio/ru/eto_dom.mp3",
+              "scene": "house",
+              "correct": "da"
+            },
+            {
+              "id": "yn-12",
+              "text": "это автобус",
+              "audio": "assets/audio/ru/eto_avtobus.mp3",
+              "scene": "water",
+              "correct": "net"
+            },
+            {
+              "id": "yn-13",
+              "text": "это красный дом",
+              "audio": "assets/audio/ru/eto_krasniy_dom.mp3",
+              "scene": "red-house",
+              "correct": "da"
+            },
+            {
+              "id": "yn-14",
+              "text": "это синий дом",
+              "audio": "assets/audio/ru/eto_siniy_dom.mp3",
+              "scene": "blue-house",
+              "correct": "da"
+            },
+            {
+              "id": "yn-15",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "scene": "near-one-apple",
+              "correct": "net"
+            }
+          ]
+        },
+        {
+          "type": "location",
+          "title": "Где?",
+          "tasks": [
+            {
+              "id": "loc-1",
+              "text": "здесь яблоко",
+              "audio": "assets/audio/ru/zdes_yabloko.mp3",
+              "scene": "near-apple-far-water",
+              "correctZone": "near"
+            },
+            {
+              "id": "loc-2",
+              "text": "там вода",
+              "audio": "assets/audio/ru/tam_voda.mp3",
+              "scene": "near-apple-far-water",
+              "correctZone": "far"
+            },
+            {
+              "id": "loc-3",
+              "text": "здесь дом",
+              "audio": "assets/audio/ru/zdes_dom.mp3",
+              "scene": "near-house-far-bus",
+              "correctZone": "near"
+            },
+            {
+              "id": "loc-4",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "scene": "near-house-far-bus",
+              "correctZone": "far"
+            },
+            {
+              "id": "loc-5",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "scene": "near-two-apples-far-house",
+              "correctZone": "near"
+            },
+            {
+              "id": "loc-6",
+              "text": "там 1 автобус",
+              "audio": "assets/audio/ru/tam_odin_avtobus.mp3",
+              "scene": "near-water-far-bus",
+              "correctZone": "far"
+            },
+            {
+              "id": "loc-7",
+              "text": "здесь вода",
+              "audio": "assets/audio/ru/zdes_voda.mp3",
+              "scene": "near-water-far-bus",
+              "correctZone": "near"
+            },
+            {
+              "id": "loc-8",
+              "text": "там дом",
+              "audio": "assets/audio/ru/tam_dom.mp3",
+              "scene": "near-bus-far-house",
+              "correctZone": "far"
+            },
+            {
+              "id": "loc-9",
+              "text": "здесь автобус",
+              "audio": "assets/audio/ru/zdes_avtobus.mp3",
+              "scene": "near-bus-far-apple",
+              "correctZone": "near"
+            },
+            {
+              "id": "loc-10",
+              "text": "там яблоко",
+              "audio": "assets/audio/ru/tam_yabloko.mp3",
+              "scene": "near-bus-far-apple",
+              "correctZone": "far"
+            }
+          ]
+        },
+        {
+          "type": "mini-command-game",
+          "title": "Мини-игра",
+          "tasks": [
+            {
+              "id": "mini-1",
+              "text": "здесь яблоко",
+              "audio": "assets/audio/ru/zdes_yabloko.mp3",
+              "objects": [
+                {
+                  "id": "near-apple",
+                  "emoji": "🍎",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-bus",
+                  "emoji": "🚌",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-house",
+                  "emoji": "🏠",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "near-apple",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-2",
+              "text": "там автобус",
+              "audio": "assets/audio/ru/tam_avtobus.mp3",
+              "objects": [
+                {
+                  "id": "near-water",
+                  "emoji": "💧",
+                  "zone": "near"
+                },
+                {
+                  "id": "near-apple",
+                  "emoji": "🍎",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-bus",
+                  "emoji": "🚌",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "far-bus",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-3",
+              "text": "это вода",
+              "audio": "assets/audio/ru/eto_voda.mp3",
+              "objects": [
+                {
+                  "id": "near-apple",
+                  "emoji": "🍎",
+                  "zone": "near"
+                },
+                {
+                  "id": "near-water",
+                  "emoji": "💧",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-house",
+                  "emoji": "🏠",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "near-water",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-4",
+              "text": "это дом",
+              "audio": "assets/audio/ru/eto_dom.mp3",
+              "objects": [
+                {
+                  "id": "near-water",
+                  "emoji": "💧",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-house",
+                  "emoji": "🏠",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-bus",
+                  "emoji": "🚌",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "far-house",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-5",
+              "text": "это синий автобус",
+              "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+              "objects": [
+                {
+                  "id": "near-blue-bus",
+                  "emoji": "🔵🚌",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-red-apple",
+                  "emoji": "🔴🍎",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-house",
+                  "emoji": "🏠",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "near-blue-bus",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-6",
+              "text": "это красное яблоко",
+              "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+              "objects": [
+                {
+                  "id": "near-blue-bus",
+                  "emoji": "🔵🚌",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-red-apple",
+                  "emoji": "🔴🍎",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-water",
+                  "emoji": "💧",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "far-red-apple",
+              "correctAction": "yes",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-7",
+              "text": "это яблоко",
+              "audio": "assets/audio/ru/eto_yabloko.mp3",
+              "objects": [
+                {
+                  "id": "near-bus",
+                  "emoji": "🚌",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-apple",
+                  "emoji": "🍎",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-house",
+                  "emoji": "🏠",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "far-apple",
+              "correctAction": "no",
+              "startIndex": 0
+            },
+            {
+              "id": "mini-8",
+              "text": "здесь 2 яблока",
+              "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+              "objects": [
+                {
+                  "id": "near-two-apples",
+                  "emoji": "🍎🍎",
+                  "zone": "near"
+                },
+                {
+                  "id": "far-bus",
+                  "emoji": "🚌",
+                  "zone": "far"
+                },
+                {
+                  "id": "far-water",
+                  "emoji": "💧",
+                  "zone": "far"
+                }
+              ],
+              "correctTarget": "near-two-apples",
+              "correctAction": "yes",
+              "startIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
