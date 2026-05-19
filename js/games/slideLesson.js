@@ -8,10 +8,14 @@
     var answered = {};
     var questions = task.questions || [];
     var currentQuestionIndex = 0;
+    var hasQuestions = Boolean(questions.length);
     var hasAudio = Boolean(task.audio && (!Array.isArray(task.audio) || task.audio.length));
 
     root.innerHTML =
-      '<section class="stage-card slide-card">' +
+      '<section class="stage-card slide-card ' + (hasQuestions ? "task-card" : "info-card") + '">' +
+        '<div class="mode-badge ' + (hasQuestions ? "task-badge" : "info-badge") + '">' +
+          (hasQuestions ? "&#10067; &#1042;&#1099;&#1073;&#1077;&#1088;&#1080;" : "&#8505;&#65039; &#1057;&#1084;&#1086;&#1090;&#1088;&#1080;") +
+        '</div>' +
         renderSlideContent(task, helpers) +
         '<div id="slide-feedback" class="feedback" aria-live="polite"></div>' +
         '<div id="slide-questions" class="slide-questions"></div>' +
@@ -108,7 +112,7 @@
   }
 
   function renderQuestion(question, questionIndex, questionCount, helpers) {
-      return '<div class="slide-question" data-question="' + questionIndex + '">' +
+      return '<div class="slide-question active-question" data-question="' + questionIndex + '">' +
         (questionCount > 1 ? '<div class="question-step">' + (questionIndex + 1) + " / " + questionCount + '</div>' : "") +
         '<p class="question-text">' + helpers.escape(question.text) + '</p>' +
         '<div class="slide-answer-grid">' +

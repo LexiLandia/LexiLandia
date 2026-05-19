@@ -188,9 +188,10 @@
 
     appRoot.innerHTML =
       renderLessonHeader(stage.title) +
-      '<main class="lesson-screen">' +
+      '<main class="lesson-screen info-screen">' +
         concept +
-        '<section class="stage-card intro-card">' +
+        '<section class="stage-card intro-card info-card">' +
+          '<div class="mode-badge info-badge">&#8505;&#65039; &#1057;&#1084;&#1086;&#1090;&#1088;&#1080;</div>' +
           '<div class="intro-emoji" aria-hidden="true">' + escapeHtml(entry.emoji) + '</div>' +
           '<h2 class="big-russian">' + escapeHtml(entry.text) + '</h2>' +
           '<div id="audio-warning" class="audio-warning" aria-live="polite"></div>' +
@@ -212,9 +213,10 @@
     var task = stage.tasks[position.taskIndex];
 
     if (stage.type === "slides") {
+      var slideHasQuestions = Boolean(task.questions && task.questions.length);
       appRoot.innerHTML =
         renderLessonHeader(stage.title) +
-        '<main class="lesson-screen">' +
+        '<main class="lesson-screen ' + (slideHasQuestions ? "task-screen" : "info-screen") + '">' +
           '<div id="game-root" class="slide-stage-root"></div>' +
         '</main>';
 
@@ -229,8 +231,9 @@
 
     appRoot.innerHTML =
       renderLessonHeader(stage.title) +
-      '<main class="lesson-screen">' +
-        '<section class="stage-card">' +
+      '<main class="lesson-screen task-screen">' +
+        '<section class="stage-card task-card">' +
+          '<div class="mode-badge task-badge">&#10067; &#1042;&#1099;&#1073;&#1077;&#1088;&#1080;</div>' +
           '<div id="game-root"></div>' +
         '</section>' +
       '</main>';
