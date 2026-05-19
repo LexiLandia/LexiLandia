@@ -1,16 +1,23 @@
 :root {
-  --bg: #eef6ff;
-  --panel: #ffffff;
-  --ink: #15314c;
-  --muted: #63758a;
-  --blue: #1f7ae0;
-  --blue-dark: #145aa8;
-  --orange: #ff982f;
-  --orange-soft: #fff1df;
-  --green: #18a86f;
-  --red: #df3e45;
-  --line: #d6e5f5;
-  --shadow: 0 14px 36px rgba(31, 122, 224, 0.13);
+  --bg: #07111f;
+  --panel: #111d2d;
+  --panel-soft: #17283d;
+  --panel-deep: #0c1726;
+  --ink: #f4f8ff;
+  --muted: #9fb4cc;
+  --blue: #2f8dff;
+  --blue-dark: #acd5ff;
+  --orange: #ffb15c;
+  --orange-soft: #2d2116;
+  --green: #35d69b;
+  --green-soft: #102d25;
+  --red: #ff7488;
+  --red-soft: #341821;
+  --line: #29435f;
+  --soft-blue: #163456;
+  --ground: #102b27;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+  color-scheme: dark;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -26,7 +33,7 @@ body {
 body {
   margin: 0;
   color: var(--ink);
-  background: linear-gradient(180deg, #eef6ff 0%, #ffffff 48%, #fff8ef 100%);
+  background: radial-gradient(circle at top, #102b48 0%, var(--bg) 34%, #050b14 100%);
 }
 
 button {
@@ -123,7 +130,7 @@ button {
   width: 100%;
   padding: 15px 18px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
 }
 
 .home-button:active,
@@ -195,10 +202,11 @@ button {
   background: var(--panel);
   cursor: pointer;
   display: grid;
-  grid-template-columns: 52px 1fr auto;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
   text-align: left;
+  overflow: hidden;
 }
 
 .unit-card:disabled {
@@ -212,8 +220,10 @@ button {
   border-radius: 8px;
   display: grid;
   place-items: center;
-  background: #f3f8ff;
+  background: var(--panel-soft);
   font-size: 1.9rem;
+  line-height: 1;
+  overflow: hidden;
 }
 
 .unit-copy {
@@ -224,6 +234,8 @@ button {
 
 .unit-copy strong {
   font-size: 1.15rem;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .unit-copy small,
@@ -236,8 +248,9 @@ button {
   padding: 7px 9px;
   border-radius: 999px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
   white-space: nowrap;
+  justify-self: end;
 }
 
 .lesson-card h3,
@@ -248,6 +261,8 @@ button {
 
 .lesson-card h3 {
   font-size: clamp(1.35rem, 7vw, 2rem);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
 }
 
 .pill-row {
@@ -261,14 +276,14 @@ button {
   padding: 5px 10px;
   border-radius: 999px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
   font-size: 0.88rem;
   font-weight: 900;
 }
 
 .pill.done {
-  color: #08704c;
-  background: #e3f8ef;
+  color: var(--green);
+  background: var(--green-soft);
 }
 
 .roadmap {
@@ -285,7 +300,7 @@ button {
 }
 
 .locked {
-  color: #9a6418;
+  color: var(--orange);
   background: var(--orange-soft);
 }
 
@@ -306,7 +321,7 @@ button {
   height: 10px;
   overflow: hidden;
   border-radius: 999px;
-  background: #d9eafd;
+  background: var(--panel-soft);
 }
 
 .progress-fill {
@@ -375,7 +390,7 @@ button {
   min-height: 150px;
   border: 2px solid var(--line);
   border-radius: 8px;
-  background: #ffffff;
+  background: var(--panel-deep);
   overflow: hidden;
 }
 
@@ -392,7 +407,7 @@ button {
 
 .focus-visual {
   font-size: clamp(4.5rem, 24vw, 8rem);
-  background: linear-gradient(180deg, #ffffff 0 64%, #edf8f0 64% 100%);
+  background: linear-gradient(180deg, var(--panel-deep) 0 64%, var(--ground) 64% 100%);
 }
 
 .slide-scene,
@@ -409,7 +424,7 @@ button {
   align-content: center;
   justify-items: center;
   gap: 10px;
-  background: linear-gradient(180deg, #ffffff 0 64%, #edf8f0 64% 100%);
+  background: linear-gradient(180deg, var(--panel-deep) 0 64%, var(--ground) 64% 100%);
 }
 
 .slide-zone + .slide-zone,
@@ -444,7 +459,7 @@ button {
 .stickman span {
   position: absolute;
   left: 50%;
-  background: #111111;
+  background: var(--ink);
   transform: translateX(-50%);
 }
 
@@ -452,9 +467,9 @@ button {
   top: 4px;
   width: 28px;
   height: 28px;
-  border: 4px solid #111111;
+  border: 4px solid var(--ink);
   border-radius: 999px;
-  background: #ffffff;
+  background: var(--panel);
 }
 
 .stickman span:nth-child(2) {
@@ -494,7 +509,7 @@ button {
   padding: 10px;
   border-radius: 8px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
   font-size: clamp(1.6rem, 8vw, 2.6rem);
   font-weight: 900;
   text-align: center;
@@ -539,7 +554,7 @@ button {
   padding: 4px 10px;
   border-radius: 999px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
   font-size: 0.86rem;
   font-weight: 900;
 }
@@ -598,7 +613,7 @@ button {
   padding: 0;
   display: block;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--panel-deep);
 }
 
 .concept-image {
@@ -651,7 +666,7 @@ button {
 .sound-panel {
   padding: 12px;
   border-radius: 8px;
-  background: #e8f2ff;
+  background: var(--soft-blue);
   display: grid;
   grid-template-columns: 1fr;
   align-items: start;
@@ -683,7 +698,7 @@ button {
 
 .audio-warning {
   min-height: 22px;
-  color: #9a6418;
+  color: var(--orange);
   font-size: 0.84rem;
   font-weight: 800;
 }
@@ -720,7 +735,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: #f3f8ff;
+  background: var(--panel-soft);
   font-size: 1.75rem;
   line-height: 1;
   overflow: visible;
@@ -748,26 +763,26 @@ button {
   padding: 10px 12px;
   border-radius: 8px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(17, 29, 45, 0.78);
   font-weight: 900;
   text-align: center;
 }
 
 .feedback.good {
-  color: #08704c;
-  background: #e3f8ef;
+  color: var(--green);
+  background: var(--green-soft);
 }
 
 .feedback.try {
-  color: #a33b3f;
-  background: #fff0f0;
+  color: var(--red);
+  background: var(--red-soft);
 }
 
 .answer-card.is-correct,
 .scene-card.is-correct,
 .zone-choice.is-correct {
   border-color: var(--green);
-  background: #e9fff5;
+  background: var(--green-soft);
   animation: pop 340ms ease both;
 }
 
@@ -775,7 +790,7 @@ button {
 .scene-card.is-wrong,
 .zone-choice.is-wrong {
   border-color: var(--red);
-  background: #fff0f0;
+  background: var(--red-soft);
 }
 
 .answer-card.show-correct,
@@ -797,11 +812,11 @@ button {
 
 .scene {
   min-height: 230px;
-  border: 2px solid #d8e8f8;
+  border: 2px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
   display: grid;
-  background: #ffffff;
+  background: var(--panel-deep);
 }
 
 .scene.compact {
@@ -821,7 +836,7 @@ button {
   align-content: center;
   justify-items: center;
   gap: 10px;
-  background: linear-gradient(180deg, #ffffff 0 62%, #edf8f0 62% 100%);
+  background: linear-gradient(180deg, var(--panel-deep) 0 62%, var(--ground) 62% 100%);
 }
 
 .scene-zone + .scene-zone {
@@ -853,7 +868,7 @@ button {
   min-height: 230px;
   display: grid;
   place-items: center;
-  background: linear-gradient(180deg, #ffffff 0 64%, #edf8f0 64% 100%);
+  background: linear-gradient(180deg, var(--panel-deep) 0 64%, var(--ground) 64% 100%);
   font-size: clamp(4rem, 24vw, 7rem);
   line-height: 1;
 }
@@ -886,7 +901,7 @@ button {
   min-height: 270px;
   border: 2px solid var(--line);
   border-radius: 8px;
-  background: #ffffff;
+  background: var(--panel-deep);
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
@@ -899,7 +914,7 @@ button {
   grid-template-columns: 1fr;
   align-content: center;
   gap: 10px;
-  background: linear-gradient(180deg, #ffffff 0 63%, #edf8f0 63% 100%);
+  background: linear-gradient(180deg, var(--panel-deep) 0 63%, var(--ground) 63% 100%);
 }
 
 .mini-zone + .mini-zone {
@@ -916,7 +931,7 @@ button {
   min-height: 74px;
   border: 2px solid transparent;
   border-radius: 8px;
-  background: rgba(232, 242, 255, 0.62);
+  background: rgba(47, 141, 255, 0.14);
   display: grid;
   grid-template-columns: 34px 1fr;
   align-items: center;
@@ -926,7 +941,7 @@ button {
 
 .mini-object.selected {
   border-color: var(--orange);
-  background: #fff6ea;
+  background: var(--orange-soft);
 }
 
 .show-target .mini-object.correct-target {
@@ -953,15 +968,15 @@ button {
   padding: 8px;
   border: 2px solid var(--line);
   border-radius: 8px;
-  background: #dff0ff;
+  background: #0a1624;
 }
 
 .map-tile {
   aspect-ratio: 1;
   min-height: 54px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(172, 213, 255, 0.18);
   border-radius: 8px;
-  background: #f7fbff;
+  background: #102033;
   position: relative;
   display: grid;
   place-items: center;
@@ -969,45 +984,45 @@ button {
 }
 
 .map-tile.apple {
-  background: #f1ffe9;
+  background: #13301f;
 }
 
 .map-tile.water {
-  background: #e8f7ff;
+  background: #0f2c42;
 }
 
 .map-tile.bus {
-  background: #fff7e8;
+  background: #352513;
 }
 
 .map-tile.house,
 .map-tile.home-tile {
-  background: #fff0e9;
+  background: #341f1a;
 }
 
 .map-tile.shop,
 .map-tile.cafe {
-  background: #fff7e8;
+  background: #352513;
 }
 
 .map-tile.park {
-  background: #efffe8;
+  background: #15331f;
 }
 
 .map-tile.metro {
-  background: #edf2ff;
+  background: #17213e;
 }
 
 .map-tile.school {
-  background: #fffbe8;
+  background: #302b15;
 }
 
 .map-tile.street {
-  background: #eeeeee;
+  background: #252c36;
 }
 
 .map-tile.exit {
-  background: #f6f2ff;
+  background: #241d36;
 }
 
 .show-target .map-tile.target-tile {
@@ -1047,13 +1062,13 @@ button {
 }
 
 .control-button.ok {
-  color: #08704c;
-  background: #e9fff5;
+  color: var(--green);
+  background: var(--green-soft);
 }
 
 .control-button.no {
-  color: #a33b3f;
-  background: #fff0f0;
+  color: var(--red);
+  background: var(--red-soft);
 }
 
 .finish-card {
@@ -1077,7 +1092,7 @@ button {
   padding: 8px 10px;
   border-radius: 8px;
   color: var(--blue-dark);
-  background: #e8f2ff;
+  background: var(--soft-blue);
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1133,6 +1148,34 @@ button {
 
   .answer-card.compact-text .answer-text {
     font-size: 1.08rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .lesson-card {
+    padding: 14px;
+  }
+
+  .unit-card {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .unit-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.65rem;
+  }
+
+  .unit-action {
+    grid-column: 2;
+    justify-self: start;
+    max-width: 100%;
+    white-space: normal;
   }
 }
 
