@@ -29,8 +29,8 @@ Lesson 2: `Урок 2: Где? Здесь или там?`
 
 The lesson includes:
 
-- 20 focused slide tasks.
-- Location words and simple places.
+- 23 focused slide tasks.
+- Location words, simple places, and a small city map game.
 - Clickable micro-reading words.
 - Yes/no and здесь/там checks.
 - Audio references for every new word, phrase, and reading.

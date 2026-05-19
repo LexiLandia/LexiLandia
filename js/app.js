@@ -452,15 +452,8 @@
   }
 
   function renderHereThereConcept() {
-    return '<section class="concept-card" aria-label="здесь там">' +
-      '<div class="concept-side here">' +
-        '<strong>Здесь</strong>' +
-        '<span class="concept-pin">📍</span>' +
-      '</div>' +
-      '<div class="concept-side there">' +
-        '<strong>Там</strong>' +
-        '<span class="concept-arrow">→</span>' +
-      '</div>' +
+    return '<section class="concept-card concept-image-card" aria-label="здесь там">' +
+      '<img class="concept-image" src="assets/img/zdes-tam-concept.svg" alt="Здесь. Там.">' +
     '</section>';
   }
 

@@ -220,7 +220,7 @@
     }
 
     if (visual.type === "person-question") {
-      return '<div class="slide-visual person-sketch" aria-hidden="true">' + stickman() + '<span class="sketch-mark">❓📍</span></div>';
+      return '<div class="slide-visual person-sketch" aria-hidden="true">' + stickman() + '<span class="sketch-mark">📍🗺️❓</span></div>';
     }
 
     if (visual.type === "self-here") {

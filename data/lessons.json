@@ -2403,7 +2403,7 @@
             {
                 "id": "gde",
                 "text": "где",
-                "emoji": "❓📍",
+                "emoji": "📍🗺️❓",
                 "type": "word",
                 "audio": "assets/audio/ru/gde.mp3"
             },
@@ -2431,7 +2431,7 @@
             {
                 "id": "park",
                 "text": "парк",
-                "emoji": "🌳",
+                "emoji": "🌳🌳🌳",
                 "type": "word",
                 "audio": "assets/audio/ru/park.mp3"
             },
@@ -2445,9 +2445,23 @@
             {
                 "id": "kafe",
                 "text": "кафе",
-                "emoji": "☕",
+                "emoji": "🏢☕",
                 "type": "word",
                 "audio": "assets/audio/ru/kafe.mp3"
+            },
+            {
+                "id": "shkola",
+                "text": "школа",
+                "emoji": "🏫",
+                "type": "word",
+                "audio": "assets/audio/ru/shkola.mp3"
+            },
+            {
+                "id": "ulitsa",
+                "text": "улица",
+                "emoji": "🛣️",
+                "type": "word",
+                "audio": "assets/audio/ru/ulitsa.mp3"
             },
             {
                 "id": "zdes",
@@ -2543,14 +2557,14 @@
             {
                 "id": "gde_ya",
                 "text": "Где я?",
-                "emoji": "❓🙂👈",
+                "emoji": "📍🗺️❓🙂👈",
                 "type": "chunk",
                 "audio": "assets/audio/ru/gde_ya.mp3"
             },
             {
                 "id": "gde_ty",
                 "text": "Где ты?",
-                "emoji": "❓🙂👉",
+                "emoji": "📍🗺️❓🙂👉",
                 "type": "chunk",
                 "audio": "assets/audio/ru/gde_ty.mp3"
             },
@@ -2592,7 +2606,7 @@
             {
                 "id": "eto_park",
                 "text": "Это парк.",
-                "emoji": "👉🌳",
+                "emoji": "👉🌳🌳🌳",
                 "type": "chunk",
                 "audio": "assets/audio/ru/eto_park.mp3"
             },
@@ -2606,9 +2620,23 @@
             {
                 "id": "eto_kafe",
                 "text": "Это кафе.",
-                "emoji": "👉☕",
+                "emoji": "👉🏢☕",
                 "type": "chunk",
                 "audio": "assets/audio/ru/eto_kafe.mp3"
+            },
+            {
+                "id": "eto_shkola",
+                "text": "Это школа.",
+                "emoji": "👉🏫",
+                "type": "chunk",
+                "audio": "assets/audio/ru/eto_shkola.mp3"
+            },
+            {
+                "id": "eto_ulitsa",
+                "text": "Это улица.",
+                "emoji": "👉🛣️",
+                "type": "chunk",
+                "audio": "assets/audio/ru/eto_ulitsa.mp3"
             },
             {
                 "id": "zdes_magazin",
@@ -2627,14 +2655,14 @@
             {
                 "id": "zdes_park",
                 "text": "Здесь парк.",
-                "emoji": "📍🌳",
+                "emoji": "📍🌳🌳🌳",
                 "type": "chunk",
                 "audio": "assets/audio/ru/zdes_park.mp3"
             },
             {
                 "id": "tam_park",
                 "text": "Там парк.",
-                "emoji": "👈🌳",
+                "emoji": "👈🌳🌳🌳",
                 "type": "chunk",
                 "audio": "assets/audio/ru/tam_park.mp3"
             },
@@ -2655,16 +2683,86 @@
             {
                 "id": "zdes_kafe",
                 "text": "Здесь кафе.",
-                "emoji": "📍☕",
+                "emoji": "📍🏢☕",
                 "type": "chunk",
                 "audio": "assets/audio/ru/zdes_kafe.mp3"
             },
             {
                 "id": "tam_kafe",
                 "text": "Там кафе.",
-                "emoji": "👈☕",
+                "emoji": "👈🏢☕",
                 "type": "chunk",
                 "audio": "assets/audio/ru/tam_kafe.mp3"
+            },
+            {
+                "id": "zdes_shkola",
+                "text": "Здесь школа.",
+                "emoji": "📍🏫",
+                "type": "chunk",
+                "audio": "assets/audio/ru/zdes_shkola.mp3"
+            },
+            {
+                "id": "tam_ulitsa",
+                "text": "Там улица.",
+                "emoji": "👈🛣️",
+                "type": "chunk",
+                "audio": "assets/audio/ru/tam_ulitsa.mp3"
+            },
+            {
+                "id": "gde_magazin",
+                "text": "Где магазин?",
+                "emoji": "📍🗺️❓🏪",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_magazin.mp3"
+            },
+            {
+                "id": "gde_park",
+                "text": "Где парк?",
+                "emoji": "📍🗺️❓🌳🌳🌳",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_park.mp3"
+            },
+            {
+                "id": "gde_kafe",
+                "text": "Где кафе?",
+                "emoji": "📍🗺️❓🏢☕",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_kafe.mp3"
+            },
+            {
+                "id": "gde_metro",
+                "text": "Где метро?",
+                "emoji": "📍🗺️❓🚇",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_metro.mp3"
+            },
+            {
+                "id": "gde_shkola",
+                "text": "Где школа?",
+                "emoji": "📍🗺️❓🏫",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_shkola.mp3"
+            },
+            {
+                "id": "gde_ulitsa",
+                "text": "Где улица?",
+                "emoji": "📍🗺️❓🛣️",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_ulitsa.mp3"
+            },
+            {
+                "id": "gde_avtobus",
+                "text": "Где автобус?",
+                "emoji": "📍🗺️❓🚌",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_avtobus.mp3"
+            },
+            {
+                "id": "gde_dom",
+                "text": "Где дом?",
+                "emoji": "📍🗺️❓🏠",
+                "type": "question",
+                "audio": "assets/audio/ru/gde_dom.mp3"
             },
             {
                 "id": "tam_avtobus",
@@ -2697,14 +2795,14 @@
             {
                 "id": "text_2_full",
                 "text": "Я здесь. Ты там. Здесь кафе. Там магазин. Здесь вода. Там яблоко.",
-                "emoji": "🙂📍☕🏪💧🍎",
+                "emoji": "🙂📍🏢☕🏪💧🍎",
                 "type": "text",
                 "audio": "assets/audio/ru/text_2_full.mp3"
             },
             {
                 "id": "text_2_extra",
                 "text": "Это парк. Я здесь. Это метро. Ты там. Здесь один автобус. Там два дома.",
-                "emoji": "🌳📍🚇👈1️⃣🚌2️⃣🏠",
+                "emoji": "🌳🌳🌳📍🚇👈1️⃣🚌2️⃣🏠",
                 "type": "text",
                 "audio": "assets/audio/ru/text_2_extra.mp3"
             },
@@ -2721,7 +2819,7 @@
             {
                 "id": "unit-lesson-2-slides",
                 "title": "Урок 2",
-                "icon": "❓📍",
+                "icon": "📍🗺️❓",
                 "stages": [
                     {
                         "type": "slides",
@@ -2732,11 +2830,11 @@
                                 "title": "Урок 2",
                                 "text": [
                                     "Где?",
-                                    "📍❓"
+                                    "📍🗺️❓"
                                 ],
                                 "visual": {
                                     "type": "emoji",
-                                    "emoji": "📍❓"
+                                    "emoji": "📍🗺️❓"
                                 },
                                 "audio": [
                                     {
@@ -2772,7 +2870,7 @@
                             {
                                 "id": "l2-slide-3",
                                 "text": [
-                                    "где? ❓📍",
+                                    "где? 📍🗺️❓",
                                     "Где?"
                                 ],
                                 "visual": {
@@ -2912,12 +3010,14 @@
                             {
                                 "id": "l2-slide-9",
                                 "text": [
-                                    "парк 🌳",
+                                    "парк 🌳🌳🌳",
                                     "Это парк."
                                 ],
                                 "visual": {
                                     "type": "focus",
                                     "items": [
+                                        "🌳",
+                                        "🌳",
                                         "🌳"
                                     ]
                                 },
@@ -2958,12 +3058,13 @@
                             {
                                 "id": "l2-slide-11",
                                 "text": [
-                                    "кафе ☕",
+                                    "кафе 🏢☕",
                                     "Это кафе."
                                 ],
                                 "visual": {
                                     "type": "focus",
                                     "items": [
+                                        "🏢",
                                         "☕"
                                     ]
                                 },
@@ -3025,6 +3126,8 @@
                                     "type": "scene",
                                     "near": [],
                                     "far": [
+                                        "🌳",
+                                        "🌳",
                                         "🌳"
                                     ]
                                 },
@@ -3159,7 +3262,7 @@
                                     "здесь": "📍",
                                     "ты": "🙂👉",
                                     "там": "👈",
-                                    "кафе": "☕",
+                                    "кафе": "🏢☕",
                                     "магазин": "🏪",
                                     "вода": "💧",
                                     "яблоко": "🍎"
@@ -3184,7 +3287,7 @@
                                 "visual": {
                                     "type": "scene",
                                     "near": [
-                                        "☕",
+                                        "🏢☕",
                                         "💧"
                                     ],
                                     "far": [
@@ -3234,7 +3337,7 @@
                                             {
                                                 "id": "kafe",
                                                 "text": "кафе",
-                                                "emoji": "☕"
+                                                "emoji": "🏢☕"
                                             },
                                             {
                                                 "id": "magazin",
@@ -3256,7 +3359,7 @@
                                             {
                                                 "id": "kafe",
                                                 "text": "кафе",
-                                                "emoji": "☕"
+                                                "emoji": "🏢☕"
                                             }
                                         ],
                                         "correct": "magazin"
@@ -3295,7 +3398,7 @@
                                 "reading": true,
                                 "wordMeanings": {
                                     "это": "👉",
-                                    "парк": "🌳",
+                                    "парк": "🌳🌳🌳",
                                     "я": "🙂👈",
                                     "здесь": "📍",
                                     "метро": "🚇",
@@ -3316,6 +3419,114 @@
                             {
                                 "id": "l2-slide-19",
                                 "text": [
+                                    "школа 🏫",
+                                    "Это школа."
+                                ],
+                                "visual": {
+                                    "type": "focus",
+                                    "items": [
+                                        "🏫"
+                                    ]
+                                },
+                                "audio": [
+                                    {
+                                        "text": "школа",
+                                        "audio": "assets/audio/ru/shkola.mp3"
+                                    },
+                                    {
+                                        "text": "Это школа.",
+                                        "audio": "assets/audio/ru/eto_shkola.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-slide-20",
+                                "text": [
+                                    "улица 🛣️",
+                                    "Это улица."
+                                ],
+                                "visual": {
+                                    "type": "focus",
+                                    "items": [
+                                        "🛣️"
+                                    ]
+                                },
+                                "audio": [
+                                    {
+                                        "text": "улица",
+                                        "audio": "assets/audio/ru/ulitsa.mp3"
+                                    },
+                                    {
+                                        "text": "Это улица.",
+                                        "audio": "assets/audio/ru/eto_ulitsa.mp3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-slide-21",
+                                "text": [
+                                    "Здесь школа.",
+                                    "Там улица."
+                                ],
+                                "visual": {
+                                    "type": "scene",
+                                    "near": [
+                                        "🏫"
+                                    ],
+                                    "far": [
+                                        "🛣️"
+                                    ]
+                                },
+                                "audio": [
+                                    {
+                                        "text": "Здесь школа.",
+                                        "audio": "assets/audio/ru/zdes_shkola.mp3"
+                                    },
+                                    {
+                                        "text": "Там улица.",
+                                        "audio": "assets/audio/ru/tam_ulitsa.mp3"
+                                    }
+                                ],
+                                "questions": [
+                                    {
+                                        "id": "l2-q21-1",
+                                        "text": "Где школа?",
+                                        "options": [
+                                            {
+                                                "id": "zdes",
+                                                "text": "здесь",
+                                                "emoji": "📍"
+                                            },
+                                            {
+                                                "id": "tam",
+                                                "text": "там",
+                                                "emoji": "👈"
+                                            }
+                                        ],
+                                        "correct": "zdes"
+                                    },
+                                    {
+                                        "id": "l2-q21-2",
+                                        "text": "Где улица?",
+                                        "options": [
+                                            {
+                                                "id": "zdes",
+                                                "text": "здесь",
+                                                "emoji": "📍"
+                                            },
+                                            {
+                                                "id": "tam",
+                                                "text": "там",
+                                                "emoji": "👈"
+                                            }
+                                        ],
+                                        "correct": "tam"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-slide-22",
+                                "text": [
                                     "Где?"
                                 ],
                                 "visual": {
@@ -3325,6 +3536,8 @@
                                         "🚇"
                                     ],
                                     "far": [
+                                        "🌳",
+                                        "🌳",
                                         "🌳",
                                         "🚌"
                                     ]
@@ -3401,7 +3614,7 @@
                                 ]
                             },
                             {
-                                "id": "l2-slide-20",
+                                "id": "l2-slide-23",
                                 "text": [
                                     "Отлично! ✅",
                                     "Я здесь.",
@@ -3410,7 +3623,7 @@
                                 ],
                                 "visual": {
                                     "type": "emoji",
-                                    "emoji": "✅📍❓"
+                                    "emoji": "✅📍🗺️❓"
                                 },
                                 "audio": [
                                     {
@@ -3428,6 +3641,387 @@
                                     {
                                         "text": "где",
                                         "audio": "assets/audio/ru/gde.mp3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "unit-lesson-2-city-game",
+                "title": "Карта",
+                "icon": "🗺️",
+                "stages": [
+                    {
+                        "type": "map-command-game",
+                        "title": "Город",
+                        "tasks": [
+                            {
+                                "id": "l2-city-1",
+                                "text": "Где магазин?",
+                                "emoji": "📍🗺️❓🏪",
+                                "audio": "assets/audio/ru/gde_magazin.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 0,
+                                    "y": 4
+                                },
+                                "target": {
+                                    "x": 4,
+                                    "y": 0
+                                },
+                                "objects": [
+                                    {
+                                        "id": "magazin",
+                                        "emoji": "🏪",
+                                        "x": 4,
+                                        "y": 0,
+                                        "kind": "shop"
+                                    },
+                                    {
+                                        "id": "park",
+                                        "emoji": "🌳🌳🌳",
+                                        "x": 0,
+                                        "y": 0,
+                                        "kind": "park"
+                                    },
+                                    {
+                                        "id": "kafe",
+                                        "emoji": "🏢☕",
+                                        "x": 2,
+                                        "y": 2,
+                                        "kind": "cafe"
+                                    },
+                                    {
+                                        "id": "metro",
+                                        "emoji": "🚇",
+                                        "x": 4,
+                                        "y": 4,
+                                        "kind": "metro"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-2",
+                                "text": "Где парк?",
+                                "emoji": "📍🗺️❓🌳🌳🌳",
+                                "audio": "assets/audio/ru/gde_park.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 4,
+                                    "y": 4
+                                },
+                                "target": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "objects": [
+                                    {
+                                        "id": "park",
+                                        "emoji": "🌳🌳🌳",
+                                        "x": 0,
+                                        "y": 0,
+                                        "kind": "park"
+                                    },
+                                    {
+                                        "id": "magazin",
+                                        "emoji": "🏪",
+                                        "x": 4,
+                                        "y": 0,
+                                        "kind": "shop"
+                                    },
+                                    {
+                                        "id": "dom",
+                                        "emoji": "🏠",
+                                        "x": 1,
+                                        "y": 4,
+                                        "kind": "house"
+                                    },
+                                    {
+                                        "id": "avtobus",
+                                        "emoji": "🚌",
+                                        "x": 3,
+                                        "y": 3,
+                                        "kind": "bus"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-3",
+                                "text": "Где кафе?",
+                                "emoji": "📍🗺️❓🏢☕",
+                                "audio": "assets/audio/ru/gde_kafe.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "target": {
+                                    "x": 2,
+                                    "y": 2
+                                },
+                                "objects": [
+                                    {
+                                        "id": "kafe",
+                                        "emoji": "🏢☕",
+                                        "x": 2,
+                                        "y": 2,
+                                        "kind": "cafe"
+                                    },
+                                    {
+                                        "id": "metro",
+                                        "emoji": "🚇",
+                                        "x": 4,
+                                        "y": 1,
+                                        "kind": "metro"
+                                    },
+                                    {
+                                        "id": "voda",
+                                        "emoji": "💧",
+                                        "x": 0,
+                                        "y": 4,
+                                        "kind": "water"
+                                    },
+                                    {
+                                        "id": "yabloko",
+                                        "emoji": "🍎",
+                                        "x": 3,
+                                        "y": 4,
+                                        "kind": "apple"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-4",
+                                "text": "Где метро?",
+                                "emoji": "📍🗺️❓🚇",
+                                "audio": "assets/audio/ru/gde_metro.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 1,
+                                    "y": 4
+                                },
+                                "target": {
+                                    "x": 4,
+                                    "y": 1
+                                },
+                                "objects": [
+                                    {
+                                        "id": "metro",
+                                        "emoji": "🚇",
+                                        "x": 4,
+                                        "y": 1,
+                                        "kind": "metro"
+                                    },
+                                    {
+                                        "id": "kafe",
+                                        "emoji": "🏢☕",
+                                        "x": 2,
+                                        "y": 2,
+                                        "kind": "cafe"
+                                    },
+                                    {
+                                        "id": "park",
+                                        "emoji": "🌳🌳🌳",
+                                        "x": 0,
+                                        "y": 0,
+                                        "kind": "park"
+                                    },
+                                    {
+                                        "id": "school",
+                                        "emoji": "🏫",
+                                        "x": 1,
+                                        "y": 1,
+                                        "kind": "school"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-5",
+                                "text": "Где школа?",
+                                "emoji": "📍🗺️❓🏫",
+                                "audio": "assets/audio/ru/gde_shkola.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 4,
+                                    "y": 0
+                                },
+                                "target": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "objects": [
+                                    {
+                                        "id": "school",
+                                        "emoji": "🏫",
+                                        "x": 1,
+                                        "y": 1,
+                                        "kind": "school"
+                                    },
+                                    {
+                                        "id": "street",
+                                        "emoji": "🛣️",
+                                        "x": 2,
+                                        "y": 4,
+                                        "kind": "street"
+                                    },
+                                    {
+                                        "id": "bus",
+                                        "emoji": "🚌",
+                                        "x": 4,
+                                        "y": 3,
+                                        "kind": "bus"
+                                    },
+                                    {
+                                        "id": "home",
+                                        "emoji": "🏠",
+                                        "x": 0,
+                                        "y": 4,
+                                        "kind": "house"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-6",
+                                "text": "Где улица?",
+                                "emoji": "📍🗺️❓🛣️",
+                                "audio": "assets/audio/ru/gde_ulitsa.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "target": {
+                                    "x": 2,
+                                    "y": 4
+                                },
+                                "objects": [
+                                    {
+                                        "id": "street",
+                                        "emoji": "🛣️",
+                                        "x": 2,
+                                        "y": 4,
+                                        "kind": "street"
+                                    },
+                                    {
+                                        "id": "magazin",
+                                        "emoji": "🏪",
+                                        "x": 4,
+                                        "y": 0,
+                                        "kind": "shop"
+                                    },
+                                    {
+                                        "id": "park",
+                                        "emoji": "🌳🌳🌳",
+                                        "x": 0,
+                                        "y": 2,
+                                        "kind": "park"
+                                    },
+                                    {
+                                        "id": "metro",
+                                        "emoji": "🚇",
+                                        "x": 4,
+                                        "y": 4,
+                                        "kind": "metro"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-7",
+                                "text": "Где автобус?",
+                                "emoji": "📍🗺️❓🚌",
+                                "audio": "assets/audio/ru/gde_avtobus.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 2,
+                                    "y": 0
+                                },
+                                "target": {
+                                    "x": 4,
+                                    "y": 3
+                                },
+                                "objects": [
+                                    {
+                                        "id": "bus",
+                                        "emoji": "🚌",
+                                        "x": 4,
+                                        "y": 3,
+                                        "kind": "bus"
+                                    },
+                                    {
+                                        "id": "kafe",
+                                        "emoji": "🏢☕",
+                                        "x": 1,
+                                        "y": 1,
+                                        "kind": "cafe"
+                                    },
+                                    {
+                                        "id": "school",
+                                        "emoji": "🏫",
+                                        "x": 0,
+                                        "y": 4,
+                                        "kind": "school"
+                                    },
+                                    {
+                                        "id": "yabloko",
+                                        "emoji": "🍎",
+                                        "x": 3,
+                                        "y": 1,
+                                        "kind": "apple"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "l2-city-8",
+                                "text": "Где дом?",
+                                "emoji": "📍🗺️❓🏠",
+                                "audio": "assets/audio/ru/gde_dom.mp3",
+                                "width": 5,
+                                "height": 5,
+                                "start": {
+                                    "x": 4,
+                                    "y": 4
+                                },
+                                "target": {
+                                    "x": 0,
+                                    "y": 4
+                                },
+                                "objects": [
+                                    {
+                                        "id": "home",
+                                        "emoji": "🏠",
+                                        "x": 0,
+                                        "y": 4,
+                                        "kind": "house"
+                                    },
+                                    {
+                                        "id": "metro",
+                                        "emoji": "🚇",
+                                        "x": 4,
+                                        "y": 0,
+                                        "kind": "metro"
+                                    },
+                                    {
+                                        "id": "magazin",
+                                        "emoji": "🏪",
+                                        "x": 1,
+                                        "y": 0,
+                                        "kind": "shop"
+                                    },
+                                    {
+                                        "id": "park",
+                                        "emoji": "🌳🌳🌳",
+                                        "x": 2,
+                                        "y": 2,
+                                        "kind": "park"
                                     }
                                 ]
                             }

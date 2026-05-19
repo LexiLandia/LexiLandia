@@ -594,6 +594,18 @@ button {
   gap: 10px;
 }
 
+.concept-image-card {
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.concept-image {
+  width: 100%;
+  display: block;
+}
+
 .concept-side {
   min-width: 0;
   display: grid;
@@ -973,6 +985,27 @@ button {
   background: #fff0e9;
 }
 
+.map-tile.shop,
+.map-tile.cafe {
+  background: #fff7e8;
+}
+
+.map-tile.park {
+  background: #efffe8;
+}
+
+.map-tile.metro {
+  background: #edf2ff;
+}
+
+.map-tile.school {
+  background: #fffbe8;
+}
+
+.map-tile.street {
+  background: #eeeeee;
+}
+
 .map-tile.exit {
   background: #f6f2ff;
 }
@@ -983,8 +1016,11 @@ button {
 }
 
 .map-object {
+  max-width: 100%;
+  text-align: center;
   font-size: 1.62rem;
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .map-player {
