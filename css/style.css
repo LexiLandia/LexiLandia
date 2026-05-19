@@ -1078,8 +1078,20 @@ button {
   border-radius: 8px;
   color: var(--blue-dark);
   background: #e8f2ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 1.1rem;
   font-weight: 900;
+}
+
+.word-list-emoji {
+  max-width: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
 }
 
 @keyframes pop {

@@ -304,7 +304,10 @@
             lesson.dictionary.filter(function (entry) {
               return entry.type === "word";
             }).map(function (entry) {
-              return '<li>' + escapeHtml(entry.text) + '</li>';
+              return '<li>' +
+                '<span class="word-list-emoji" aria-hidden="true">' + escapeHtml(entry.emoji) + '</span>' +
+                '<span>' + escapeHtml(entry.text) + '</span>' +
+              '</li>';
             }).join("") +
           '</ul>' +
           '<button class="primary-button" type="button" data-action="home">🏠 Домой</button>' +
