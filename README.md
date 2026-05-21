@@ -151,6 +151,55 @@ Add another object to the `lessons` array in `data/lessons.json`.
 
 Keep new lessons small and review-heavy. Introduce only a few new words or chunks at a time, then reuse them in many tasks.
 
+## LexiForge Static Lesson Factory
+
+LexiForge is the creator tool for making many lessons without hand-writing huge runtime JSON files.
+
+It keeps the public website static, but lets you author compact source files:
+
+```text
+content/dictionary/ru.json
+content/lessons/*.lesson.json
+content/maps/*.map.json
+content/agents/*.md
+```
+
+Then it writes static output:
+
+```text
+js/lexiforgeGenerated.js
+data/lexiforge_manifest.json
+```
+
+Useful commands:
+
+```bash
+python tools/lexiforge.py build
+python tools/lexiforge.py validate
+python tools/lexiforge.py audio-plan --missing-only
+python tools/lexiforge.py audio-generate
+python tools/lexiforge.py map-preview
+python tools/lexiforge.py agents lesson-recipe-writer
+python tools/lexiforge.py smoke
+python tools/lexiforge.py new-lesson lesson-5-transport "Урок 5. Транспорт"
+```
+
+Start here:
+
+```text
+docs/lexiforge.md
+docs/tutorials/01-add-a-lesson.md
+docs/tutorials/06-use-codex-agents.md
+```
+
+Existing lessons remain available:
+
+- `data/lessons.json`: Lesson 1 and Lesson 2.
+- `js/level0Data.js`: Урок 0.
+- `js/lesson3Data.js`: Lesson 3.
+- `js/lexiforgeGenerated.js`: future generated lessons.
+- `content/registry/current-lessons.json`: shipped lesson registry.
+
 ## Progress
 
 Progress is stored in `localStorage` under:

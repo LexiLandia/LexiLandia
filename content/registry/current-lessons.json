@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "lesson-0-reading",
+      "title": "Урок 0. Учимся читать",
+      "source": "js/level0Data.js",
+      "managedBy": "legacy-js",
+      "notes": "Generated JS lesson kept as-is. LexiForge validates it through runtime loading."
+    },
+    {
+      "id": "lesson-1",
+      "title": "Урок 1. Здесь, там, это",
+      "source": "data/lessons.json",
+      "managedBy": "legacy-json",
+      "notes": "Do not rewrite unless explicitly migrating."
+    },
+    {
+      "id": "lesson-2-gde-zdes-tam",
+      "title": "Урок 2: Где? Здесь или там?",
+      "source": "data/lessons.json / js/lesson2Data.js",
+      "managedBy": "legacy-json-and-js",
+      "notes": "Runtime deduplicates by lesson id."
+    },
+    {
+      "id": "lesson-3-mama-dom-tam",
+      "title": "Урок 3: мама, дом, там",
+      "source": "js/lesson3Data.js",
+      "managedBy": "legacy-js",
+      "notes": "Reading lesson kept as-is. Future reading lessons should use LexiForge sources."
+    }
+  ]
+}

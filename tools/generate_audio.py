@@ -29,9 +29,11 @@ ROOT = Path(__file__).resolve().parents[1]
 LESSONS_PATH = ROOT / "data" / "lessons.json"
 LEVEL0_PATH = ROOT / "js" / "level0Data.js"
 LESSON3_PATH = ROOT / "js" / "lesson3Data.js"
+GENERATED_LESSONS_PATH = ROOT / "js" / "lexiforgeGenerated.js"
 JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
     (LESSON3_PATH, "LexiLandLesson3", "after"),
+    (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"
 DEFAULT_RATE = "-4%"
@@ -50,12 +52,13 @@ def load_audio_lines() -> list[AudioLine]:
     data = json.loads(LESSONS_PATH.read_text(encoding="utf-8"))
     lessons = list(data["lessons"])
     for path, global_name, position in JS_LESSON_MODULES:
-        js_lesson = load_js_lesson(path, global_name)
-        if js_lesson and not any(lesson.get("id") == js_lesson.get("id") for lesson in lessons):
-            if position == "before":
-                lessons.insert(0, js_lesson)
-            else:
-                lessons.append(js_lesson)
+        js_lessons = normalize_js_lessons(load_js_lesson(path, global_name))
+        for js_lesson in js_lessons:
+            if js_lesson and not any(lesson.get("id") == js_lesson.get("id") for lesson in lessons):
+                if position == "before":
+                    lessons.insert(0, js_lesson)
+                else:
+                    lessons.append(js_lesson)
 
     lines: dict[str, AudioLine] = {}
 
@@ -91,7 +94,7 @@ def load_audio_lines() -> list[AudioLine]:
     return sorted(lines.values(), key=lambda line: str(line.path))
 
 
-def load_js_lesson(path: Path, global_name: str) -> dict | None:
+def load_js_lesson(path: Path, global_name: str) -> object:
     if not path.exists():
         return None
 
@@ -113,7 +116,17 @@ def load_js_lesson(path: Path, global_name: str) -> dict | None:
         raise SystemExit(f"Could not load {path.relative_to(ROOT)} with Node.js") from exc
 
     loaded = json.loads(result.stdout or "null")
-    return loaded if isinstance(loaded, dict) else None
+    return loaded
+
+
+def normalize_js_lessons(value: object) -> list[dict]:
+    if isinstance(value, dict):
+        return [value]
+
+    if isinstance(value, list):
+        return [item for item in value if isinstance(item, dict)]
+
+    return []
 
 
 def normalize_feedback_group(group: object) -> list[dict]:

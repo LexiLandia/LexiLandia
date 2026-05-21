@@ -1,0 +1,3474 @@
+{
+  "project": "LexiLand Russian",
+  "generatedLessonCount": 0,
+  "runtimeLessons": [
+    {
+      "id": "lesson-0-reading",
+      "order": 0,
+      "title": "Урок 0. Учимся читать",
+      "unitCount": 8
+    },
+    {
+      "id": "lesson-1",
+      "order": null,
+      "title": "Урок 1. Здесь, там, это",
+      "unitCount": 0
+    },
+    {
+      "id": "lesson-2-gde-zdes-tam",
+      "order": 2,
+      "title": "Урок 2: Где? Здесь или там?",
+      "unitCount": 2
+    },
+    {
+      "id": "lesson-3-mama-dom-tam",
+      "order": 3,
+      "title": "Урок 3: мама, дом, там",
+      "unitCount": 1
+    }
+  ],
+  "audioCount": 344,
+  "missingAudioCount": 0,
+  "audio": [
+    {
+      "audio": "assets/audio/ru/a.mp3",
+      "text": "А",
+      "speechText": "А",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/am.mp3",
+      "text": "ам",
+      "speechText": "ам",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/anna.mp3",
+      "text": "Анна",
+      "speechText": "Анна",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/avtobus.mp3",
+      "text": "автобус",
+      "speechText": "автобус",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/b.mp3",
+      "text": "Б",
+      "speechText": "Б",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ba.mp3",
+      "text": "ба",
+      "speechText": "ба",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/bo.mp3",
+      "text": "бо",
+      "speechText": "бо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/brat.mp3",
+      "text": "брат",
+      "speechText": "брат",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/bu.mp3",
+      "text": "бу",
+      "speechText": "бу",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ch.mp3",
+      "text": "Ч",
+      "speechText": "Ч",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chay.mp3",
+      "text": "чай",
+      "speechText": "чай",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chitaet.mp3",
+      "text": "читает",
+      "speechText": "читает",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chto.mp3",
+      "text": "что",
+      "speechText": "что",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chu.mp3",
+      "text": "чу",
+      "speechText": "чу",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/d.mp3",
+      "text": "Д",
+      "speechText": "Д",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/da.mp3",
+      "text": "да",
+      "speechText": "да",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/da_do_du_la_lo_lu.mp3",
+      "text": "да до ду ла ло лу",
+      "speechText": "да. до. ду. ла. ло. лу.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/den.mp3",
+      "text": "день",
+      "speechText": "день",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/do.mp3",
+      "text": "до",
+      "speechText": "до",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dom.mp3",
+      "text": "дом",
+      "speechText": "дом",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/doma.mp3",
+      "text": "дома",
+      "speechText": "дома",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dome.mp3",
+      "text": "доме",
+      "speechText": "доме",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/drug.mp3",
+      "text": "друг",
+      "speechText": "друг",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/du.mp3",
+      "text": "ду",
+      "speechText": "ду",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dub.mp3",
+      "text": "дуб",
+      "speechText": "дуб",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dva.mp3",
+      "text": "два",
+      "speechText": "два",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/e.mp3",
+      "text": "Э",
+      "speechText": "Э",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/est.mp3",
+      "text": "ест",
+      "speechText": "ест",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/est_yes.mp3",
+      "text": "есть",
+      "speechText": "есть",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto.mp3",
+      "text": "это",
+      "speechText": "это",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_avtobus.mp3",
+      "text": "это автобус",
+      "speechText": "это автобус",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_dom.mp3",
+      "text": "это дом",
+      "speechText": "это дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_kafe.mp3",
+      "text": "Это кафе.",
+      "speechText": "Это кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_krasniy_dom.mp3",
+      "text": "это красный дом",
+      "speechText": "это красный дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_krasnoe_yabloko.mp3",
+      "text": "это красное яблоко",
+      "speechText": "это красное яблоко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_magazin.mp3",
+      "text": "Это магазин.",
+      "speechText": "Это магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_metro.mp3",
+      "text": "Это метро.",
+      "speechText": "Это метро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_park.mp3",
+      "text": "Это парк.",
+      "speechText": "Это парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_shkola.mp3",
+      "text": "Это школа.",
+      "speechText": "Это школа.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_siniy_avtobus.mp3",
+      "text": "это синий автобус",
+      "speechText": "это синий автобус",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_siniy_dom.mp3",
+      "text": "это синий дом",
+      "speechText": "это синий дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_ulitsa.mp3",
+      "text": "Это улица.",
+      "speechText": "Это улица.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_voda.mp3",
+      "text": "это вода",
+      "speechText": "это вода",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_yabloko.mp3",
+      "text": "это яблоко",
+      "speechText": "это яблоко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/f.mp3",
+      "text": "Ф",
+      "speechText": "Ф",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_da_eto_verniy_otvet_1.mp3",
+      "text": "Да, это верный ответ!",
+      "speechText": "Да, это верный ответ!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_da_eto_verniy_otvet_2.mp3",
+      "text": "Да, это верный ответ!",
+      "speechText": "Да, это верный ответ!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_da_eto_verniy_otvet_3.mp3",
+      "text": "Да, это верный ответ!",
+      "speechText": "Да, это верный ответ!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_davay_1.mp3",
+      "text": "Давай!",
+      "speechText": "Давай!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_davay_2.mp3",
+      "text": "Давай!",
+      "speechText": "Давай!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_davay_3.mp3",
+      "text": "Давай!",
+      "speechText": "Давай!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_eshche_raz_1.mp3",
+      "text": "Ещё раз",
+      "speechText": "Ещё раз",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_eshche_raz_2.mp3",
+      "text": "Ещё раз",
+      "speechText": "Ещё раз",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_eshche_raz_3.mp3",
+      "text": "Ещё раз",
+      "speechText": "Ещё раз",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_horosho_1.mp3",
+      "text": "Хорошо!",
+      "speechText": "Хорошо!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_horosho_2.mp3",
+      "text": "Хорошо!",
+      "speechText": "Хорошо!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_horosho_3.mp3",
+      "text": "Хорошо!",
+      "speechText": "Хорошо!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_idealno_1.mp3",
+      "text": "Идеально!",
+      "speechText": "Идеально!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_idealno_2.mp3",
+      "text": "Идеально!",
+      "speechText": "Идеально!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_idealno_3.mp3",
+      "text": "Идеально!",
+      "speechText": "Идеально!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_klass_1.mp3",
+      "text": "Класс!",
+      "speechText": "Класс!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_klass_2.mp3",
+      "text": "Класс!",
+      "speechText": "Класс!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_klass_3.mp3",
+      "text": "Класс!",
+      "speechText": "Класс!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_molodets_1.mp3",
+      "text": "Молодец!",
+      "speechText": "Молодец!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_molodets_2.mp3",
+      "text": "Молодец!",
+      "speechText": "Молодец!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_molodets_3.mp3",
+      "text": "Молодец!",
+      "speechText": "Молодец!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_otlichno_1.mp3",
+      "text": "Отлично!",
+      "speechText": "Отлично!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_otlichno_2.mp3",
+      "text": "Отлично!",
+      "speechText": "Отлично!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_otlichno_3.mp3",
+      "text": "Отлично!",
+      "speechText": "Отлично!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_poprobuy_eshche_1.mp3",
+      "text": "Попробуй ещё",
+      "speechText": "Попробуй ещё",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_poprobuy_eshche_2.mp3",
+      "text": "Попробуй ещё",
+      "speechText": "Попробуй ещё",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_poprobuy_eshche_3.mp3",
+      "text": "Попробуй ещё",
+      "speechText": "Попробуй ещё",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_pravilno_1.mp3",
+      "text": "Правильно!",
+      "speechText": "Правильно!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_pravilno_2.mp3",
+      "text": "Правильно!",
+      "speechText": "Правильно!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_pravilno_3.mp3",
+      "text": "Правильно!",
+      "speechText": "Правильно!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_super_1.mp3",
+      "text": "Супер!",
+      "speechText": "Супер!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_super_2.mp3",
+      "text": "Супер!",
+      "speechText": "Супер!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_super_3.mp3",
+      "text": "Супер!",
+      "speechText": "Супер!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_verno_1.mp3",
+      "text": "Верно!",
+      "speechText": "Верно!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_verno_2.mp3",
+      "text": "Верно!",
+      "speechText": "Верно!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_verno_3.mp3",
+      "text": "Верно!",
+      "speechText": "Верно!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_vsyo_pravilno_1.mp3",
+      "text": "Всё правильно!",
+      "speechText": "Всё правильно!",
+      "rate": "-6%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_vsyo_pravilno_2.mp3",
+      "text": "Всё правильно!",
+      "speechText": "Всё правильно!",
+      "rate": "+0%",
+      "pitch": "+3Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/feedback_vsyo_pravilno_3.mp3",
+      "text": "Всё правильно!",
+      "speechText": "Всё правильно!",
+      "rate": "+5%",
+      "pitch": "+6Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/fo.mp3",
+      "text": "фо",
+      "speechText": "фо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/fo_moy_pod.mp3",
+      "text": "фо мой под",
+      "speechText": "фо. мой. под.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/foto.mp3",
+      "text": "фото",
+      "speechText": "фото",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/g.mp3",
+      "text": "Г",
+      "speechText": "Г",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde.mp3",
+      "text": "где",
+      "speechText": "где",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_avtobus.mp3",
+      "text": "Где автобус?",
+      "speechText": "Где автобус?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_dom.mp3",
+      "text": "Где дом?",
+      "speechText": "Где дом?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_kafe.mp3",
+      "text": "Где кафе?",
+      "speechText": "Где кафе?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_magazin.mp3",
+      "text": "Где магазин?",
+      "speechText": "Где магазин?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_metro.mp3",
+      "text": "Где метро?",
+      "speechText": "Где метро?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_park.mp3",
+      "text": "Где парк?",
+      "speechText": "Где парк?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_shkola.mp3",
+      "text": "Где школа?",
+      "speechText": "Где школа?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_ty.mp3",
+      "text": "Где ты?",
+      "speechText": "Где ты?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_ulitsa.mp3",
+      "text": "Где улица?",
+      "speechText": "Где улица?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_ya.mp3",
+      "text": "Где я?",
+      "speechText": "Где я?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/god.mp3",
+      "text": "год",
+      "speechText": "год",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/h.mp3",
+      "text": "Х",
+      "speechText": "Х",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/hard.mp3",
+      "text": "Ъ",
+      "speechText": "Ъ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/hleb.mp3",
+      "text": "хлеб",
+      "speechText": "хлеб",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ho.mp3",
+      "text": "хо",
+      "speechText": "хо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/i.mp3",
+      "text": "И",
+      "speechText": "И",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_k_avtobusu.mp3",
+      "text": "иди к автобусу",
+      "speechText": "иди к автобусу",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_k_krasnomu_domu.mp3",
+      "text": "иди к красному дому",
+      "speechText": "иди к красному дому",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_k_sinemu_avtobusu.mp3",
+      "text": "иди к синему автобусу",
+      "speechText": "иди к синему автобусу",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_k_vode.mp3",
+      "text": "иди к воде",
+      "speechText": "иди к воде",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_dom.mp3",
+      "text": "иди в дом",
+      "speechText": "иди в дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idyot.mp3",
+      "text": "идёт",
+      "speechText": "идёт",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/k.mp3",
+      "text": "К",
+      "speechText": "К",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ka.mp3",
+      "text": "ка",
+      "speechText": "ка",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ka_ko_ku_sa_so_su.mp3",
+      "text": "ка ко ку са со су",
+      "speechText": "ка. ко. ку. са. со. су.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kafe.mp3",
+      "text": "кафе",
+      "speechText": "кафе",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/klass.mp3",
+      "text": "класс",
+      "speechText": "класс",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kniga.mp3",
+      "text": "книга",
+      "speechText": "книга",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ko.mp3",
+      "text": "ко",
+      "speechText": "ко",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kom.mp3",
+      "text": "ком",
+      "speechText": "ком",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kon.mp3",
+      "text": "конь",
+      "speechText": "конь",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot.mp3",
+      "text": "кот",
+      "speechText": "кот",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/krasniy.mp3",
+      "text": "красный",
+      "speechText": "красный",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto.mp3",
+      "text": "кто",
+      "speechText": "кто",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ku.mp3",
+      "text": "ку",
+      "speechText": "ку",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l.mp3",
+      "text": "Л",
+      "speechText": "Л",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u1_goal.mp3",
+      "text": "Буквы 1",
+      "speechText": "Буквы 1",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u1_words_1.mp3",
+      "text": "мама там тут кот",
+      "speechText": "мама. там. тут. кот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u1_words_2.mp3",
+      "text": "ком сок нос рот",
+      "speechText": "ком. сок. нос. рот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u2_goal.mp3",
+      "text": "Буквы 2",
+      "speechText": "Буквы 2",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u2_words_1.mp3",
+      "text": "папа дом дуб год",
+      "speechText": "папа. дом. дуб. год.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u2_words_2.mp3",
+      "text": "лук зал зуб вода",
+      "speechText": "лук. зал. зуб. вода.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u3_goal.mp3",
+      "text": "Слоги",
+      "speechText": "Слоги",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u3_words_1.mp3",
+      "text": "мама папа лампа вода",
+      "speechText": "мама. папа. лампа. вода.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u3_words_2.mp3",
+      "text": "дом кот",
+      "speechText": "дом. кот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u4_goal.mp3",
+      "text": "Мягко",
+      "speechText": "Мягко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u4_words_1.mp3",
+      "text": "мяч пять день конь",
+      "speechText": "мяч. пять. день. конь.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u4_words_2.mp3",
+      "text": "семья тётя Люба Лёня",
+      "speechText": "семья. тётя. Люба. Лёня.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u5_goal.mp3",
+      "text": "Трудные буквы",
+      "speechText": "Трудные буквы",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u5_words_1.mp3",
+      "text": "жук шар чай щи",
+      "speechText": "жук. шар. чай. щи.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u5_words_2.mp3",
+      "text": "цирк хлеб фото мой",
+      "speechText": "цирк. хлеб. фото. мой.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_goal.mp3",
+      "text": "Слова",
+      "speechText": "Слова",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_1.mp3",
+      "text": "мама папа брат сестра друг он она",
+      "speechText": "мама. папа. брат. сестра. друг. он. она.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_2.mp3",
+      "text": "дом парк класс школа кафе",
+      "speechText": "дом. парк. класс. школа. кафе.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_3.mp3",
+      "text": "стол стул книга телефон вода сок хлеб",
+      "speechText": "стол. стул. книга. телефон. вода. сок. хлеб.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_4.mp3",
+      "text": "идёт ест пьёт читает спит",
+      "speechText": "идёт. ест. пьёт. читает. спит.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_action-0.mp3",
+      "text": "идёт",
+      "speechText": "идёт",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_action-1.mp3",
+      "text": "ест",
+      "speechText": "ест",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_action-2.mp3",
+      "text": "пьёт",
+      "speechText": "пьёт",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_action-3.mp3",
+      "text": "читает",
+      "speechText": "читает",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u6_words_action-4.mp3",
+      "text": "спит",
+      "speechText": "спит",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_reading_1.mp3",
+      "text": "Это мама. Мама дома. Тут кот.",
+      "speechText": "Это. мама. Мама. дома. Тут. кот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_reading_2.mp3",
+      "text": "Это парк. Там папа. Папа пьёт сок.",
+      "speechText": "Это. парк. Там. папа. Папа. пьёт. сок.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_reading_3.mp3",
+      "text": "Это школа. Тут Анна. Анна читает.",
+      "speechText": "Это. школа. Тут. Анна. Анна. читает.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_reading_4.mp3",
+      "text": "У меня есть дом. В доме кот. Кот спит.",
+      "speechText": "У. меня. есть. дом. В. доме. кот. Кот. спит.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_words_review-1.mp3",
+      "text": "мама папа кот дом",
+      "speechText": "мама. папа. кот. дом.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7_words_review-2.mp3",
+      "text": "парк школа сок читает",
+      "speechText": "парк. школа. сок. читает.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u8_reading_1.mp3",
+      "text": "Это мама. Тут дом. Кот спит.",
+      "speechText": "Это. мама. Тут. дом. Кот. спит.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_dom_doma.mp3",
+      "text": "дом дома",
+      "speechText": "дом. дома.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_dom_first.mp3",
+      "text": "дом",
+      "speechText": "дом",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_final_words.mp3",
+      "text": "мама дом дома там он она",
+      "speechText": "мама. дом. дома. там. он. она.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_intro_words.mp3",
+      "text": "мама дом там он она",
+      "speechText": "мама. дом. там. он. она.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_ma_warmup.mp3",
+      "text": "ма ма ма",
+      "speechText": "ма. ма. ма.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_mama_dom.mp3",
+      "text": "мама дом",
+      "speechText": "мама. дом.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_mama_first.mp3",
+      "text": "ма ма мама",
+      "speechText": "ма. ма. мама.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_mama_repeat.mp3",
+      "text": "мама мама мама",
+      "speechText": "мама. мама. мама.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_mama_tam.mp3",
+      "text": "мама там",
+      "speechText": "мама. там.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_mo_warmup.mp3",
+      "text": "мо мо мо",
+      "speechText": "мо. мо. мо.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_on.mp3",
+      "text": "он",
+      "speechText": "он",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_on_doma.mp3",
+      "text": "он дома",
+      "speechText": "он. дома.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_on_ona.mp3",
+      "text": "он она",
+      "speechText": "он. она.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_ona.mp3",
+      "text": "она",
+      "speechText": "она",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_ona_tam.mp3",
+      "text": "она там",
+      "speechText": "она. там.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_story_1.mp3",
+      "text": "мама дома. она там",
+      "speechText": "мама. дома. она. там.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_syllables.mp3",
+      "text": "ма мо ам ом",
+      "speechText": "ма. мо. ам. ом.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l3_tam_first.mp3",
+      "text": "там",
+      "speechText": "там",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/la.mp3",
+      "text": "ла",
+      "speechText": "ла",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/la_lo_lu_le_li_ly.mp3",
+      "text": "ла ло лу лэ ли лы",
+      "speechText": "ла. ло. лу. лэ. ли. лы.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/la_lya.mp3",
+      "text": "ла ля",
+      "speechText": "ла. ля.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lampa.mp3",
+      "text": "лампа",
+      "speechText": "лампа",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/le.mp3",
+      "text": "лэ",
+      "speechText": "лэ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/li.mp3",
+      "text": "ли",
+      "speechText": "ли",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lo.mp3",
+      "text": "ло",
+      "speechText": "ло",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lu.mp3",
+      "text": "лу",
+      "speechText": "лу",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/luk.mp3",
+      "text": "лук",
+      "speechText": "лук",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ly.mp3",
+      "text": "лы",
+      "speechText": "лы",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lya.mp3",
+      "text": "ля",
+      "speechText": "ля",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lyonya.mp3",
+      "text": "Лёня",
+      "speechText": "Лёня",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lyuba.mp3",
+      "text": "Люба",
+      "speechText": "Люба",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/m.mp3",
+      "text": "М",
+      "speechText": "М",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ma.mp3",
+      "text": "ма",
+      "speechText": "ма",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ma_mo_mu_me_mi_my.mp3",
+      "text": "ма мо му мэ ми мы",
+      "speechText": "ма. мо. му. мэ. ми. мы.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ma_mo_mu_ta_to_tu.mp3",
+      "text": "ма мо му та то ту",
+      "speechText": "ма. мо. му. та. то. ту.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ma_mya.mp3",
+      "text": "ма мя",
+      "speechText": "ма. мя.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/magazin.mp3",
+      "text": "магазин",
+      "speechText": "магазин",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama.mp3",
+      "text": "мама",
+      "speechText": "мама",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/me.mp3",
+      "text": "мэ",
+      "speechText": "мэ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/me_me.mp3",
+      "text": "мэ ме",
+      "speechText": "мэ. ме.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/menya.mp3",
+      "text": "меня",
+      "speechText": "меня",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/metro.mp3",
+      "text": "метро",
+      "speechText": "метро",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mi.mp3",
+      "text": "ми",
+      "speechText": "ми",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mini_teksty.mp3",
+      "text": "Мини-тексты",
+      "speechText": "Мини-тексты",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mo.mp3",
+      "text": "мо",
+      "speechText": "мо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mo_myo.mp3",
+      "text": "мо мё",
+      "speechText": "мо. мё.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moy.mp3",
+      "text": "мой",
+      "speechText": "мой",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mu.mp3",
+      "text": "му",
+      "speechText": "му",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mu_myu.mp3",
+      "text": "му мю",
+      "speechText": "му. мю.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/my.mp3",
+      "text": "мы",
+      "speechText": "мы",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mya.mp3",
+      "text": "мя",
+      "speechText": "мя",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/myach.mp3",
+      "text": "мяч",
+      "speechText": "мяч",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/myo.mp3",
+      "text": "мё",
+      "speechText": "мё",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/myu.mp3",
+      "text": "мю",
+      "speechText": "мю",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/n.mp3",
+      "text": "Н",
+      "speechText": "Н",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na.mp3",
+      "text": "на",
+      "speechText": "на",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_no_nu_ne_ni_ny.mp3",
+      "text": "на но ну нэ ни ны",
+      "speechText": "на. но. ну. нэ. ни. ны.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_no_nu_ra_ro_ru.mp3",
+      "text": "на но ну ра ро ру",
+      "speechText": "на. но. ну. ра. ро. ру.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_nya.mp3",
+      "text": "на ня",
+      "speechText": "на. ня.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naydi_krasnye_yabloki.mp3",
+      "text": "найди красные яблоки",
+      "speechText": "найди красные яблоки",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naydi_zelyonoe_yabloko.mp3",
+      "text": "найди зелёное яблоко",
+      "speechText": "найди зелёное яблоко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ne.mp3",
+      "text": "нэ",
+      "speechText": "нэ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/net.mp3",
+      "text": "нет",
+      "speechText": "нет",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ni.mp3",
+      "text": "ни",
+      "speechText": "ни",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/no.mp3",
+      "text": "но",
+      "speechText": "но",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nos.mp3",
+      "text": "нос",
+      "speechText": "нос",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nu.mp3",
+      "text": "ну",
+      "speechText": "ну",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ny.mp3",
+      "text": "ны",
+      "speechText": "ны",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nya.mp3",
+      "text": "ня",
+      "speechText": "ня",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/o.mp3",
+      "text": "О",
+      "speechText": "О",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/odin.mp3",
+      "text": "один",
+      "speechText": "один",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/om.mp3",
+      "text": "ом",
+      "speechText": "ом",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/on.mp3",
+      "text": "он",
+      "speechText": "он",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ona.mp3",
+      "text": "она",
+      "speechText": "она",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/otlichno.mp3",
+      "text": "Отлично!",
+      "speechText": "Отлично!",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/p.mp3",
+      "text": "П",
+      "speechText": "П",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pa.mp3",
+      "text": "па",
+      "speechText": "па",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pa_po_pu_ba_bo_bu.mp3",
+      "text": "па по пу ба бо бу",
+      "speechText": "па. по. пу. ба. бо. бу.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pa_po_pu_pe_pi_py.mp3",
+      "text": "па по пу пэ пи пы",
+      "speechText": "па. по. пу. пэ. пи. пы.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/papa.mp3",
+      "text": "папа",
+      "speechText": "папа",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/park.mp3",
+      "text": "парк",
+      "speechText": "парк",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pe.mp3",
+      "text": "пэ",
+      "speechText": "пэ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pi.mp3",
+      "text": "пи",
+      "speechText": "пи",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/po.mp3",
+      "text": "по",
+      "speechText": "по",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pod.mp3",
+      "text": "под",
+      "speechText": "под",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/proverka.mp3",
+      "text": "Проверка",
+      "speechText": "Проверка",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pu.mp3",
+      "text": "пу",
+      "speechText": "пу",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/py.mp3",
+      "text": "пы",
+      "speechText": "пы",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pyat.mp3",
+      "text": "пять",
+      "speechText": "пять",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pyot.mp3",
+      "text": "пьёт",
+      "speechText": "пьёт",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/r.mp3",
+      "text": "Р",
+      "speechText": "Р",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ra.mp3",
+      "text": "ра",
+      "speechText": "ра",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ro.mp3",
+      "text": "ро",
+      "speechText": "ро",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/rot.mp3",
+      "text": "рот",
+      "speechText": "рот",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ru.mp3",
+      "text": "ру",
+      "speechText": "ру",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/s.mp3",
+      "text": "С",
+      "speechText": "С",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sa.mp3",
+      "text": "са",
+      "speechText": "са",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/semya.mp3",
+      "text": "семья",
+      "speechText": "семья",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sestra.mp3",
+      "text": "сестра",
+      "speechText": "сестра",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sh.mp3",
+      "text": "Ш",
+      "speechText": "Ш",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shar.mp3",
+      "text": "шар",
+      "speechText": "шар",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shch.mp3",
+      "text": "Щ",
+      "speechText": "Щ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shchi.mp3",
+      "text": "щи",
+      "speechText": "щи",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shkola.mp3",
+      "text": "школа",
+      "speechText": "школа",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sho.mp3",
+      "text": "шо",
+      "speechText": "шо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/siniy.mp3",
+      "text": "синий",
+      "speechText": "синий",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/so.mp3",
+      "text": "со",
+      "speechText": "со",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/soft.mp3",
+      "text": "Ь",
+      "speechText": "Ь",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sok.mp3",
+      "text": "сок",
+      "speechText": "сок",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/spit.mp3",
+      "text": "спит",
+      "speechText": "спит",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stol.mp3",
+      "text": "стол",
+      "speechText": "стол",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stul.mp3",
+      "text": "стул",
+      "speechText": "стул",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/su.mp3",
+      "text": "су",
+      "speechText": "су",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/t.mp3",
+      "text": "Т",
+      "speechText": "Т",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ta.mp3",
+      "text": "та",
+      "speechText": "та",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ta_to_tu_te_ti_ty.mp3",
+      "text": "та то ту тэ ти ты",
+      "speechText": "та. то. ту. тэ. ти. ты.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ta_tya.mp3",
+      "text": "та тя",
+      "speechText": "та. тя.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam.mp3",
+      "text": "там",
+      "speechText": "там",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_avtobus.mp3",
+      "text": "Там автобус.",
+      "speechText": "Там автобус.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_dom.mp3",
+      "text": "там дом",
+      "speechText": "там дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_dva_avtobusa.mp3",
+      "text": "там два автобуса",
+      "speechText": "там два автобуса",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_kafe.mp3",
+      "text": "Там кафе.",
+      "speechText": "Там кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_magazin.mp3",
+      "text": "Там магазин.",
+      "speechText": "Там магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_metro.mp3",
+      "text": "Там метро.",
+      "speechText": "Там метро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_odin_avtobus.mp3",
+      "text": "там один автобус",
+      "speechText": "там один автобус",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_park.mp3",
+      "text": "Там парк.",
+      "speechText": "Там парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_ulitsa.mp3",
+      "text": "Там улица.",
+      "speechText": "Там улица.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_voda.mp3",
+      "text": "там вода",
+      "speechText": "там вода",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tam_yabloko.mp3",
+      "text": "Там яблоко.",
+      "speechText": "Там яблоко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/te.mp3",
+      "text": "тэ",
+      "speechText": "тэ",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/telefon.mp3",
+      "text": "телефон",
+      "speechText": "телефон",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/text_2_extra.mp3",
+      "text": "Это парк. Я здесь. Это метро. Ты там. Здесь один автобус. Там два дома.",
+      "speechText": "Это парк. Я здесь. Это метро. Ты там. Здесь один автобус. Там два дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/text_2_full.mp3",
+      "text": "Я здесь. Ты там. Здесь кафе. Там магазин. Здесь вода. Там яблоко.",
+      "speechText": "Я здесь. Ты там. Здесь кафе. Там магазин. Здесь вода. Там яблоко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ti.mp3",
+      "text": "ти",
+      "speechText": "ти",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/to.mp3",
+      "text": "то",
+      "speechText": "то",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ts.mp3",
+      "text": "Ц",
+      "speechText": "Ц",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tsa.mp3",
+      "text": "ца",
+      "speechText": "ца",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tsirk.mp3",
+      "text": "цирк",
+      "speechText": "цирк",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tu.mp3",
+      "text": "ту",
+      "speechText": "ту",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tut.mp3",
+      "text": "тут",
+      "speechText": "тут",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty.mp3",
+      "text": "ты",
+      "speechText": "ты",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty_tam.mp3",
+      "text": "Ты там.",
+      "speechText": "Ты там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty_zdes.mp3",
+      "text": "Ты здесь.",
+      "speechText": "Ты здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tya.mp3",
+      "text": "тя",
+      "speechText": "тя",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tyotya.mp3",
+      "text": "тётя",
+      "speechText": "тётя",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u.mp3",
+      "text": "У",
+      "speechText": "У",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ulitsa.mp3",
+      "text": "улица",
+      "speechText": "улица",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/urok_2.mp3",
+      "text": "Урок 2",
+      "speechText": "Урок 2",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v.mp3",
+      "text": "В",
+      "speechText": "В",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/va.mp3",
+      "text": "ва",
+      "speechText": "ва",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/va_vo_vu_za_zo_zu.mp3",
+      "text": "ва во ву за зо зу",
+      "speechText": "ва. во. ву. за. зо. зу.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vo.mp3",
+      "text": "во",
+      "speechText": "во",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/voda.mp3",
+      "text": "вода",
+      "speechText": "вода",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vu.mp3",
+      "text": "ву",
+      "speechText": "ву",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vyyidi_iz_doma.mp3",
+      "text": "выйди из дома",
+      "speechText": "выйди из дома",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/y.mp3",
+      "text": "Й",
+      "speechText": "Й",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya.mp3",
+      "text": "я",
+      "speechText": "я",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_tam.mp3",
+      "text": "Я там.",
+      "speechText": "Я там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_zdes.mp3",
+      "text": "Я здесь.",
+      "speechText": "Я здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yabloko.mp3",
+      "text": "яблоко",
+      "speechText": "яблоко",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ye.mp3",
+      "text": "Е",
+      "speechText": "Е",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yo.mp3",
+      "text": "Ё",
+      "speechText": "Ё",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yu.mp3",
+      "text": "Ю",
+      "speechText": "Ю",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/z.mp3",
+      "text": "З",
+      "speechText": "З",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/za.mp3",
+      "text": "за",
+      "speechText": "за",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zal.mp3",
+      "text": "зал",
+      "speechText": "зал",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes.mp3",
+      "text": "здесь",
+      "speechText": "здесь",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_avtobus.mp3",
+      "text": "здесь автобус",
+      "speechText": "здесь автобус",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_dom.mp3",
+      "text": "здесь дом",
+      "speechText": "здесь дом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_dva_yabloka.mp3",
+      "text": "здесь два яблока",
+      "speechText": "здесь два яблока",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_kafe.mp3",
+      "text": "Здесь кафе.",
+      "speechText": "Здесь кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_magazin.mp3",
+      "text": "Здесь магазин.",
+      "speechText": "Здесь магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_metro.mp3",
+      "text": "Здесь метро.",
+      "speechText": "Здесь метро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_odno_yabloko.mp3",
+      "text": "здесь одно яблоко",
+      "speechText": "здесь одно яблоко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_park.mp3",
+      "text": "Здесь парк.",
+      "speechText": "Здесь парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_shkola.mp3",
+      "text": "Здесь школа.",
+      "speechText": "Здесь школа.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_voda.mp3",
+      "text": "Здесь вода.",
+      "speechText": "Здесь вода.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_voda_tam_yabloko.mp3",
+      "text": "Здесь вода. Там яблоко.",
+      "speechText": "Здесь вода. Там яблоко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zdes_yabloko.mp3",
+      "text": "здесь яблоко",
+      "speechText": "здесь яблоко",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zeleniy.mp3",
+      "text": "зелёный",
+      "speechText": "зелёный",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zh.mp3",
+      "text": "Ж",
+      "speechText": "Ж",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zha.mp3",
+      "text": "жа",
+      "speechText": "жа",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zha_sho_chu_shchi_tsa_ho.mp3",
+      "text": "жа шо чу щи ца хо",
+      "speechText": "жа. шо. чу. щи. ца. хо.",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zhuk.mp3",
+      "text": "жук",
+      "speechText": "жук",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zo.mp3",
+      "text": "зо",
+      "speechText": "зо",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zu.mp3",
+      "text": "зу",
+      "speechText": "зу",
+      "rate": "-50%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zub.mp3",
+      "text": "зуб",
+      "speechText": "зуб",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    }
+  ]
+}

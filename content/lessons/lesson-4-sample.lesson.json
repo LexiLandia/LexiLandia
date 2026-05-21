@@ -1,0 +1,33 @@
+{
+  "status": "draft",
+  "id": "lesson-4-magazin",
+  "order": 4,
+  "title": "Урок 4. Магазин",
+  "level": "Уровень 1",
+  "newWords": ["hleb", "sok", "voda", "magazin"],
+  "reviewWords": ["da", "net", "eto", "zdes", "tam", "odin", "dva"],
+  "units": [
+    {
+      "id": "unit-lesson-4-words",
+      "title": "Слова",
+      "icon": "🏪",
+      "recipe": {
+        "type": "vocabulary",
+        "intro": true,
+        "tapCount": 8,
+        "pictureChoiceCount": 6,
+        "yesNoCount": 6
+      }
+    },
+    {
+      "id": "unit-lesson-4-map",
+      "title": "Карта",
+      "icon": "🗺️",
+      "recipe": {
+        "type": "map",
+        "mapId": "shop-street-1"
+      }
+    }
+  ],
+  "notes": "This is a disabled sample source. Change status to ready when you want it to appear in the app."
+}

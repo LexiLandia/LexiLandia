@@ -1,0 +1,27 @@
+{
+  "project": "LexiLand Russian",
+  "language": "ru",
+  "audioRoot": "assets/audio/ru/",
+  "generatedLessonsFile": "js/lexiforgeGenerated.js",
+  "manifestFile": "data/lexiforge_manifest.json",
+  "dictionaryFile": "content/dictionary/ru.json",
+  "lessonSourceGlob": "content/lessons/*.lesson.json",
+  "mapSourceGlob": "content/maps/*.map.json",
+  "agentsDir": "content/agents",
+  "defaultSpeech": {
+    "voice": "ru-RU-SvetlanaNeural",
+    "rate": "-4%",
+    "letterRate": "-50%",
+    "syllableRate": "-50%",
+    "wordRate": "-40%",
+    "phraseRate": "-22%",
+    "pitch": "+0Hz"
+  },
+  "rules": {
+    "learnerFacingRussianOnly": true,
+    "requireEmoji": true,
+    "requireAudio": true,
+    "shuffleAnswers": true,
+    "maxNewWordsRecommended": 7
+  }
+}

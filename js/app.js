@@ -50,6 +50,14 @@
       lessons = lessons.concat([window.LexiLandLesson3]);
     }
 
+    if (Array.isArray(window.LexiForgeGeneratedLessons)) {
+      window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
+        if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {
+          lessons.push(generatedLesson);
+        }
+      });
+    }
+
     loadedData.lessons = lessons;
     return loadedData;
   }

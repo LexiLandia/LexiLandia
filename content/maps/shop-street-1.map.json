@@ -1,0 +1,19 @@
+{
+  "id": "shop-street-1",
+  "title": "Магазин и улица",
+  "width": 5,
+  "height": 5,
+  "start": { "x": 0, "y": 4 },
+  "objects": [
+    { "id": "shop", "emoji": "🏪", "x": 4, "y": 1, "kind": "place" },
+    { "id": "water", "emoji": "💧", "x": 1, "y": 2, "kind": "object" },
+    { "id": "bread", "emoji": "🍞", "x": 3, "y": 3, "kind": "object" },
+    { "id": "juice", "emoji": "🧃", "x": 0, "y": 1, "kind": "object" }
+  ],
+  "commands": [
+    { "id": "go-shop", "text": "иди в магазин", "emoji": "🏪", "audio": "assets/audio/ru/idi_v_magazin.mp3", "targetObject": "shop" },
+    { "id": "find-water", "text": "найди воду", "emoji": "💧", "audio": "assets/audio/ru/naydi_vodu.mp3", "targetObject": "water" },
+    { "id": "find-bread", "text": "найди хлеб", "emoji": "🍞", "audio": "assets/audio/ru/naydi_hleb.mp3", "targetObject": "bread" },
+    { "id": "find-juice", "text": "найди сок", "emoji": "🧃", "audio": "assets/audio/ru/naydi_sok.mp3", "targetObject": "juice" }
+  ]
+}
