@@ -3,6 +3,8 @@
 
   var audioRoot = "assets/audio/ru/";
   var imageRoot = "assets/img/lesson3/";
+  var READING_RATE = "-22%";
+  var PHONICS_RATE = "-50%";
 
   function audio(file) {
     return audioRoot + file;
@@ -12,12 +14,16 @@
     return imageRoot + file;
   }
 
-  function line(text, file) {
+  function line(text, file, rate) {
     return {
       text: text,
       audio: audio(file),
-      rate: "-22%"
+      rate: rate || READING_RATE
     };
+  }
+
+  function phonicsLine(text, file) {
+    return line(text, file, PHONICS_RATE);
   }
 
   function entry(id, word, translation, emoji, type, file, imageFile) {
@@ -139,28 +145,28 @@
       "Медленно",
       ["ма ма ма", "м + а = ма"],
       focus([byWord["ма"], byWord["мама"]]),
-      [line("ма ма ма", "l3_ma_warmup.mp3")]
+      [phonicsLine("ма ма ма", "l3_ma_warmup.mp3")]
     ),
     slide(
       "l3-slide-3",
       "Ещё звук",
       ["мо мо мо", "м + о = мо"],
       focus([byWord["мо"]]),
-      [line("мо мо мо", "l3_mo_warmup.mp3")]
+      [phonicsLine("мо мо мо", "l3_mo_warmup.mp3")]
     ),
     slide(
       "l3-slide-4",
       "Слоги",
       ["ма", "мо", "ам", "ом"],
       imageCards([byWord["ма"], byWord["мо"], byWord["ам"], byWord["ом"]]),
-      [line("ма мо ам ом", "l3_syllables.mp3")]
+      [phonicsLine("ма мо ам ом", "l3_syllables.mp3")]
     ),
     slide(
       "l3-slide-5",
       "Первое слово",
       ["мама", "ма + ма = мама"],
       focus([byWord["мама"]]),
-      [line("ма ма мама", "l3_mama_first.mp3")]
+      [phonicsLine("ма ма мама", "l3_mama_first.mp3")]
     ),
     slide(
       "l3-slide-6",

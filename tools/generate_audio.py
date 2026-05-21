@@ -137,6 +137,10 @@ def add_line(
     pitch: str | None = None,
 ) -> None:
     target = ROOT / audio_path
+    existing = lines.get(str(target))
+    if existing and existing.rate and not rate:
+        return
+
     lines[str(target)] = AudioLine(text=text, path=target, rate=rate, pitch=pitch)
 
 

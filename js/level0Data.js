@@ -2,6 +2,8 @@
   "use strict";
 
   var audioRoot = "assets/audio/ru/";
+  var READING_RATE = "-22%";
+  var PHONICS_RATE = "-50%";
   var dictionaryMap = {};
   var dictionary = [];
 
@@ -26,12 +28,16 @@
     return dictionaryMap[id];
   }
 
-  function line(text, file) {
+  function line(text, file, rate) {
     return {
       text: text,
       audio: audio(file),
-      rate: "-22%"
+      rate: rate || READING_RATE
     };
+  }
+
+  function phonicsLine(text, file) {
+    return line(text, file, PHONICS_RATE);
   }
 
   function option(id, text, emoji) {
@@ -145,7 +151,7 @@
       "Буква",
       ["Смотри", "Читай"],
       { type: "letter-card", upper: letter[1], lower: letter[2], emoji: letter[3] },
-      [line(letter[1], letter[0] + ".mp3")]
+      [phonicsLine(letter[1], letter[0] + ".mp3")]
     );
   }
 
@@ -156,7 +162,7 @@
       "Слоги",
       ["Читай", "Повтори"],
       { type: "syllable-grid", items: items },
-      [line(items.join(" "), items.map(slug).join("_") + ".mp3")]
+      [phonicsLine(items.join(" "), items.map(slug).join("_") + ".mp3")]
     );
   }
 
@@ -490,7 +496,7 @@
         "Выбери",
         ["Выбери"],
         { type: "letter-card", upper: group.letters[0][1], lower: group.letters[0][2], emoji: group.letters[0][3] },
-        [line(group.letters[0][1], group.letters[0][0] + ".mp3")],
+        [phonicsLine(group.letters[0][1], group.letters[0][0] + ".mp3")],
         [
           question("l0-u" + unitNumber + "-q-letter", "Где " + group.letters[0][1] + "?", group.letters.slice(0, 3).map(function (letter) {
             return asOption(letterEntry(letter));
@@ -506,7 +512,7 @@
         "Выбери",
         ["Выбери"],
         { type: "syllable-grid", items: ["ма", "мо", "му"] },
-        [line("ма", "ma.mp3")],
+        [phonicsLine("ма", "ma.mp3")],
         [
           question("l0-u" + unitNumber + "-q-syllable", "Выбери ма", ["ма", "мо", "му"].map(function (text) {
             return asOption(syllableEntry(text));
@@ -635,14 +641,14 @@
           title: "Проверка",
           tasks: [
             slide(unitId + "-goal", "Проверка", ["Читай", "Выбери", "Слушай"], { type: "emoji", emoji: "✅" }, [line("Проверка", "proverka.mp3")]),
-            slide(unitId + "-letter", "Буква", ["Выбери"], { type: "letter-card", upper: "А", lower: "а", emoji: "🅰️" }, [line("А", "a.mp3")], [
+            slide(unitId + "-letter", "Буква", ["Выбери"], { type: "letter-card", upper: "А", lower: "а", emoji: "🅰️" }, [phonicsLine("А", "a.mp3")], [
               question("l0-final-q-letter", "Где А?", [
                 asOption(letterA),
                 asOption(letterEntry(["o", "О", "о", "⭕"])),
                 asOption(letterEntry(["m", "М", "м", "👄"]))
               ], letterA.id)
             ]),
-            slide(unitId + "-syllable", "Слог", ["Выбери"], { type: "syllable-grid", items: ["ма", "мо", "му"] }, [line("ма", "ma.mp3")], [
+            slide(unitId + "-syllable", "Слог", ["Выбери"], { type: "syllable-grid", items: ["ма", "мо", "му"] }, [phonicsLine("ма", "ma.mp3")], [
               question("l0-final-q-syllable", "Выбери ма", [
                 asOption(syllableMa),
                 asOption(syllableEntry("мо")),
@@ -662,7 +668,7 @@
                 option("mama", "мама", "👩")
               ], "kot")
             ]),
-            slide(unitId + "-same-letter", "Выбери", ["Выбери"], { type: "letter-card", upper: "М", lower: "м", emoji: "👄" }, [line("М", "m.mp3")], [
+            slide(unitId + "-same-letter", "Выбери", ["Выбери"], { type: "letter-card", upper: "М", lower: "м", emoji: "👄" }, [phonicsLine("М", "m.mp3")], [
               question("l0-final-q-m", "Где М?", [
                 asOption(letterEntry(["m", "М", "м", "👄"])),
                 asOption(letterEntry(["t", "Т", "т", "🔨"])),
@@ -676,7 +682,7 @@
                 asOption(wordEntry(["voda", "вода", "💧"]))
               ], wordDom.id)
             ]),
-            slide(unitId + "-same-syllable-2", "Слог", ["Выбери"], { type: "syllable-grid", items: ["ла", "ло", "лу"] }, [line("ло", "lo.mp3")], [
+            slide(unitId + "-same-syllable-2", "Слог", ["Выбери"], { type: "syllable-grid", items: ["ла", "ло", "лу"] }, [phonicsLine("ло", "lo.mp3")], [
               question("l0-final-q-lo", "Выбери ло", [
                 asOption(syllableEntry("ла")),
                 asOption(syllableEntry("ло")),
