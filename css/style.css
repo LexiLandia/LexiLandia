@@ -1423,6 +1423,19 @@ button {
   }
 }
 
+@keyframes audioPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 143, 43, 0.32);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 143, 43, 0);
+    transform: scale(1.04);
+  }
+}
+
 @keyframes attentionPulse {
   0%,
   100% {
@@ -1637,6 +1650,36 @@ button {
   line-height: 1;
 }
 
+.reading-audio-prompt {
+  min-height: 118px;
+  padding: 12px;
+  border: 3px solid var(--orange);
+  border-radius: 0;
+  background: #090909;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.reading-audio-prompt strong {
+  color: var(--orange);
+  font-size: clamp(1.45rem, 7vw, 2.2rem);
+  font-weight: 1000;
+}
+
+.reading-audio-pulse {
+  width: clamp(72px, 22vw, 112px);
+  height: clamp(72px, 22vw, 112px);
+  border: 3px solid var(--orange);
+  display: grid;
+  place-items: center;
+  font-size: clamp(2.7rem, 13vw, 4.7rem);
+  animation: audioPulse 1.8s ease-in-out infinite;
+}
+
 .reading-choice-grid,
 .reading-tile-grid {
   display: grid;
@@ -1777,6 +1820,10 @@ button {
   }
 
   .reading-target-card {
+    min-height: 92px;
+  }
+
+  .reading-audio-prompt {
     min-height: 92px;
   }
 

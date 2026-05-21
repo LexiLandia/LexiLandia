@@ -11,11 +11,11 @@
     id: "lesson-3-reading-game",
     lessonOrder: 3,
     gameSlug: "lesson-3-reading-game",
-    title: "Игра 3: Читай и найди",
+    title: "Игра 3: Слушай и найди",
     stages: [
       {
         type: "choose_text",
-        title: "Слушай / смотри",
+        title: "Слушай",
         instruction: "Найди:",
         tasks: [
           { id: "l3g-1-1", target: "ма", emoji: "👄", audio: audio("ma.mp3"), options: ["ма", "мо", "ам", "ом"], correct: "ма" },
@@ -39,8 +39,8 @@
       },
       {
         type: "word_to_image",
-        title: "Слово → картинка",
-        instruction: "Найди картинку:",
+        title: "Слушай → картинка",
+        instruction: "Слушай:",
         tasks: [
           { id: "l3g-3-1", target: "мама", emoji: "👩‍👧", audio: audio("mama.mp3"), options: ["👩‍👧", "🏠", "👉", "👦"], correct: "👩‍👧" },
           { id: "l3g-3-2", target: "дом", emoji: "🏠", audio: audio("dom.mp3"), options: ["🏠", "👧", "👩‍👧", "👉"], correct: "🏠" },
@@ -51,8 +51,8 @@
       },
       {
         type: "image_to_word",
-        title: "Картинка → слово",
-        instruction: "Что это?",
+        title: "Слушай → слово",
+        instruction: "Слушай:",
         tasks: [
           { id: "l3g-4-1", target: "👩‍👧", audio: audio("mama.mp3"), options: ["мама", "дом", "там", "он"], correct: "мама" },
           { id: "l3g-4-2", target: "🏠", audio: audio("dom.mp3"), options: ["дом", "мама", "она", "там"], correct: "дом" },
@@ -63,8 +63,8 @@
       },
       {
         type: "mini_reading",
-        title: "Мини-чтение",
-        instruction: "Читай:",
+        title: "Слушай и выбери",
+        instruction: "Слушай:",
         tasks: [
           { id: "l3g-5-1", text: "Мама дома.", audio: audio("mama_doma.mp3"), question: "Где мама?", options: ["дома", "там"], correct: "дома" },
           { id: "l3g-5-2", text: "Он там.", audio: audio("on_tam.mp3"), question: "Где он?", options: ["там", "дома"], correct: "там" },
@@ -89,7 +89,7 @@
         stages: [
           {
             type: "reading-find-game",
-            title: "Игра 3: Читай и найди",
+            title: "Игра 3: Слушай и найди",
             tasks: [root.LexiLandLesson3ReadingGame]
           }
         ]

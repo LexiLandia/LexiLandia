@@ -86,11 +86,11 @@
 
     function renderTask(stage, task, helpers) {
       if (stage.type === "choose_text") {
-        return renderTarget(task.target, task.emoji, helpers) + renderOptions(task.options, "text", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers);
       }
 
       if (stage.type === "build_word") {
-        return renderTarget(task.target, task.emoji, helpers) +
+        return renderAudioPrompt(helpers) +
           '<div class="reading-build-row" aria-live="polite">' + (selectedTiles.length ? selectedTiles.map(helpers.escape).join(" + ") : "…") + '</div>' +
           '<div class="reading-tile-grid">' +
             task.tiles.map(function (tile, index) {
@@ -101,20 +101,23 @@
       }
 
       if (stage.type === "word_to_image") {
-        return renderTarget(task.target, task.emoji, helpers) + renderOptions(task.options, "emoji", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "emoji", helpers);
       }
 
       if (stage.type === "image_to_word") {
-        return renderTarget(task.target, "", helpers, true) + renderOptions(task.options, "text", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers);
       }
 
-      return '<div class="reading-mini-text">' +
-          String(task.text || "").split("\n").map(function (line) {
-            return '<p>' + helpers.escape(line) + '</p>';
-          }).join("") +
-        '</div>' +
+      return renderAudioPrompt(helpers) +
         '<p class="reading-question">' + helpers.escape(task.question || "") + '</p>' +
         renderOptions(task.options, "text", helpers);
+    }
+
+    function renderAudioPrompt(helpers) {
+      return '<button class="reading-audio-prompt" type="button" data-reading-action="listen" aria-label="Слушать">' +
+        '<span class="reading-audio-pulse" aria-hidden="true">🔊</span>' +
+        '<strong>Слушай</strong>' +
+      '</button>';
     }
 
     function renderTarget(text, emoji, helpers, emojiOnly) {
@@ -167,12 +170,11 @@
     }
 
     function bindCommon(task) {
-      var listenButton = root.querySelector('[data-reading-action="listen"]');
-      if (listenButton) {
+      Array.prototype.forEach.call(root.querySelectorAll('[data-reading-action="listen"]'), function (listenButton) {
         listenButton.addEventListener("click", function () {
           playTask(task);
         });
-      }
+      });
 
       var clearButton = root.querySelector('[data-reading-action="clear"]');
       if (clearButton) {
