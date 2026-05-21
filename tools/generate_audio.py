@@ -146,7 +146,13 @@ def collect_audio(lines: dict[str, AudioLine], value: object, fallback_text: str
         audio_value = value.get("audio")
 
         if isinstance(audio_value, str) and text:
-            add_line(lines, text, audio_value)
+            add_line(
+                lines,
+                text,
+                audio_value,
+                rate=value.get("rate"),
+                pitch=value.get("pitch"),
+            )
 
         if isinstance(audio_value, list):
             for item in audio_value:

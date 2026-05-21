@@ -190,12 +190,14 @@
     position.unitIndex = unitIndex || 0;
     position.stageIndex = stageIndex || 0;
     position.taskIndex = taskIndex || 0;
+    clampPosition();
     savePosition();
     renderStage();
   }
 
   function renderStage() {
     var unit = getCurrentUnit();
+    clampPosition();
     var stage = unit.stages[position.stageIndex];
 
     if (!stage) {
@@ -209,6 +211,24 @@
     }
 
     renderGameStage(stage);
+  }
+
+  function clampPosition() {
+    var unit = getCurrentUnit();
+    var stages = unit.stages || [];
+    var stage = stages[position.stageIndex];
+    var count = 0;
+
+    if (!stage) {
+      position.stageIndex = Math.max(0, stages.length);
+      position.taskIndex = 0;
+      return;
+    }
+
+    count = stage.type === "intro" ? stage.items.length : stage.tasks.length;
+    if (position.taskIndex >= count) {
+      position.taskIndex = Math.max(0, count - 1);
+    }
   }
 
   function renderIntro(stage) {

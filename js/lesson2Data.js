@@ -310,6 +310,7 @@
                 id: "l2-slide-17",
                 text: ["Я здесь.", "Ты там.", "Здесь кафе.", "Там магазин.", "Здесь вода.", "Там яблоко."],
                 visual: scene(["🏢☕", "💧"], ["🏪", "🍎"]),
+                audio: [line("Я здесь. Ты там. Здесь кафе. Там магазин. Здесь вода. Там яблоко.", "text_2_full.mp3")],
                 questions: [
                   question("l2-q17-1", "Где я?", hereThere, "zdes"),
                   question("l2-q17-2", "Где ты?", hereThere, "tam"),
@@ -357,6 +358,7 @@
                 id: "l2-slide-22",
                 text: ["Где?"],
                 visual: scene(["🏪", "🚇"], ["🌳", "🌳", "🌳", "🚌"]),
+                audio: [line("Где?", "gde.mp3")],
                 questions: [
                   question("l2-q19-1", "Где магазин?", hereThere, "zdes"),
                   question("l2-q19-2", "Где парк?", hereThere, "tam"),

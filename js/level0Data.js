@@ -29,7 +29,8 @@
   function line(text, file) {
     return {
       text: text,
-      audio: audio(file)
+      audio: audio(file),
+      rate: "-22%"
     };
   }
 
@@ -144,7 +145,7 @@
       "Буква",
       ["Смотри", "Читай"],
       { type: "letter-card", upper: letter[1], lower: letter[2], emoji: letter[3] },
-      [line(item.text, letter[0] + ".mp3")]
+      [line(letter[1], letter[0] + ".mp3")]
     );
   }
 
@@ -172,17 +173,6 @@
         })
       },
       [line(entries.map(function (item) { return item.text; }).join(" "), unitId + "_words_" + index + ".mp3")]
-    );
-  }
-
-  function copySlide(unitId, index, text, file) {
-    textEntry(unitId + "_copy_" + index, text, "✍️");
-    return slide(
-      unitId + "-copy-" + index,
-      "Напиши",
-      ["Напиши"],
-      { type: "copy-line", text: text },
-      [line(text, file || unitId + "_copy_" + index + ".mp3")]
     );
   }
 
@@ -500,7 +490,7 @@
         "Выбери",
         ["Выбери"],
         { type: "letter-card", upper: group.letters[0][1], lower: group.letters[0][2], emoji: group.letters[0][3] },
-        [line(correctLetter.text, group.letters[0][0] + ".mp3")],
+        [line(group.letters[0][1], group.letters[0][0] + ".mp3")],
         [
           question("l0-u" + unitNumber + "-q-letter", "Где " + group.letters[0][1] + "?", group.letters.slice(0, 3).map(function (letter) {
             return asOption(letterEntry(letter));
@@ -572,7 +562,6 @@
       });
     }
 
-    tasks.push(copySlide(unitId, 1, group.copy));
     tasks.push(makeQuickQuestion(unitId, group, unitNumber));
     tasks.push(successSlide(unitId));
 
@@ -610,7 +599,6 @@
 
     MINI_TEXTS.forEach(function (item, index) {
       tasks.push(readingSlide(unitId, index + 1, "Читай", item.lines, item.meanings, [item.question]));
-      tasks.push(copySlide(unitId, index + 1, item.copy, item.id + "_copy.mp3"));
     });
 
     tasks.push(successSlide(unitId));
@@ -646,8 +634,8 @@
           type: "slides",
           title: "Проверка",
           tasks: [
-            slide(unitId + "-goal", "Проверка", ["Читай", "Выбери", "Напиши"], { type: "emoji", emoji: "✅" }, [line("Проверка", "proverka.mp3")]),
-            slide(unitId + "-letter", "Буква", ["Выбери"], { type: "letter-card", upper: "А", lower: "а", emoji: "🅰️" }, [line("А а", "a.mp3")], [
+            slide(unitId + "-goal", "Проверка", ["Читай", "Выбери", "Слушай"], { type: "emoji", emoji: "✅" }, [line("Проверка", "proverka.mp3")]),
+            slide(unitId + "-letter", "Буква", ["Выбери"], { type: "letter-card", upper: "А", lower: "а", emoji: "🅰️" }, [line("А", "a.mp3")], [
               question("l0-final-q-letter", "Где А?", [
                 asOption(letterA),
                 asOption(letterEntry(["o", "О", "о", "⭕"])),
@@ -674,8 +662,7 @@
                 option("mama", "мама", "👩")
               ], "kot")
             ]),
-            copySlide(unitId, 1, "Кот спит."),
-            slide(unitId + "-same-letter", "Выбери", ["Выбери"], { type: "letter-card", upper: "М", lower: "м", emoji: "👄" }, [line("М м", "m.mp3")], [
+            slide(unitId + "-same-letter", "Выбери", ["Выбери"], { type: "letter-card", upper: "М", lower: "м", emoji: "👄" }, [line("М", "m.mp3")], [
               question("l0-final-q-m", "Где М?", [
                 asOption(letterEntry(["m", "М", "м", "👄"])),
                 asOption(letterEntry(["t", "Т", "т", "🔨"])),
@@ -703,7 +690,6 @@
                 asOption(wordEntry(["hleb", "хлеб", "🍞"]))
               ], "l0-word-voda")
             ]),
-            copySlide(unitId, 2, "Мама дома."),
             successSlide(unitId)
           ]
         }

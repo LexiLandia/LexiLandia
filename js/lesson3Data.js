@@ -15,7 +15,8 @@
   function line(text, file) {
     return {
       text: text,
-      audio: audio(file)
+      audio: audio(file),
+      rate: "-22%"
     };
   }
 
