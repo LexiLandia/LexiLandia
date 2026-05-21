@@ -58,13 +58,16 @@ def load_lesson_sources(config: dict[str, Any], include_drafts: bool = False) ->
 
 
 def load_js_global(path: Path, global_name: str) -> Any:
-    if not path.exists():
+    return load_js_global_from_modules([path], global_name)
+
+
+def load_js_global_from_modules(paths: list[Path], global_name: str) -> Any:
+    existing_paths = [path for path in paths if path.exists()]
+    if not existing_paths:
         return None
 
-    script = (
-        f"require('./{path.relative_to(ROOT).as_posix()}');"
-        f"process.stdout.write(JSON.stringify(globalThis.{global_name} || null));"
-    )
+    requires = "".join(f"require('./{path.relative_to(ROOT).as_posix()}');" for path in existing_paths)
+    script = requires + f"process.stdout.write(JSON.stringify(globalThis.{global_name} || null));"
     result = subprocess.run(
         ["node", "-e", script],
         cwd=ROOT,
@@ -84,7 +87,13 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
     if isinstance(level0, dict) and not any(item.get("id") == level0.get("id") for item in lessons):
         lessons.insert(0, level0)
 
-    lesson3 = load_js_global(ROOT / "js" / "lesson3Data.js", "LexiLandLesson3")
+    lesson3 = load_js_global_from_modules(
+        [
+            ROOT / "js" / "lesson3Data.js",
+            ROOT / "js" / "lesson3GameData.js",
+        ],
+        "LexiLandLesson3",
+    )
     if isinstance(lesson3, dict) and not any(item.get("id") == lesson3.get("id") for item in lessons):
         lessons.append(lesson3)
 
@@ -96,4 +105,3 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
                     lessons.append(lesson)
 
     return lessons
-

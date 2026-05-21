@@ -1,6 +1,5 @@
 {
   "project": "LexiLand Russian",
-  "generatedLessonCount": 0,
   "runtimeLessons": [
     {
       "id": "lesson-0-reading",
@@ -24,10 +23,10 @@
       "id": "lesson-3-mama-dom-tam",
       "order": 3,
       "title": "Урок 3: мама, дом, там",
-      "unitCount": 1
+      "unitCount": 2
     }
   ],
-  "audioCount": 344,
+  "audioCount": 347,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -1752,9 +1751,9 @@
     },
     {
       "audio": "assets/audio/ru/l3_story_1.mp3",
-      "text": "мама дома. она там",
-      "speechText": "мама. дома. она. там.",
-      "rate": "-40%",
+      "text": "Мама там.\nДом там.",
+      "speechText": "Мама там.\nДом там.",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-3-mama-dom-tam",
@@ -1975,6 +1974,16 @@
       "text": "мама",
       "speechText": "мама",
       "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_doma.mp3",
+      "text": "Мама дома.",
+      "speechText": "Мама дома.",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-3-mama-dom-tam",
@@ -2331,10 +2340,30 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/on_tam.mp3",
+      "text": "Он там.",
+      "speechText": "Он там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ona.mp3",
       "text": "она",
       "speechText": "она",
       "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ona_tam.mp3",
+      "text": "Она там.",
+      "speechText": "Она там.",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-3-mama-dom-tam",
@@ -2792,12 +2821,12 @@
     },
     {
       "audio": "assets/audio/ru/tam_dom.mp3",
-      "text": "там дом",
-      "speechText": "там дом",
+      "text": "Там дом.",
+      "speechText": "Там дом.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-1",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {

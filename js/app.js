@@ -287,6 +287,22 @@
       return;
     }
 
+    if (stage.type === "reading-find-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen reading-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderReadingFindGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
     appRoot.innerHTML =
       renderLessonHeader(stage.title) +
       '<main class="lesson-screen task-screen">' +

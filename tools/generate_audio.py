@@ -29,10 +29,12 @@ ROOT = Path(__file__).resolve().parents[1]
 LESSONS_PATH = ROOT / "data" / "lessons.json"
 LEVEL0_PATH = ROOT / "js" / "level0Data.js"
 LESSON3_PATH = ROOT / "js" / "lesson3Data.js"
+LESSON3_GAME_PATH = ROOT / "js" / "lesson3GameData.js"
 GENERATED_LESSONS_PATH = ROOT / "js" / "lexiforgeGenerated.js"
 JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
     (LESSON3_PATH, "LexiLandLesson3", "after"),
+    (LESSON3_GAME_PATH, "LexiLandLesson3ReadingGame", "after"),
     (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"

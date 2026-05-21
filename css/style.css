@@ -1535,3 +1535,252 @@ button {
     width: auto;
   }
 }
+
+.reading-game-screen {
+  gap: 10px;
+}
+
+.reading-find-card {
+  min-height: min(68dvh, 620px);
+  padding: 14px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 177, 92, 0.12), transparent 42%),
+    var(--panel-deep);
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.reading-game-top {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.reading-game-kid {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  display: grid;
+  place-items: center;
+  background: #0a0a0a;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.reading-game-label,
+.reading-game-title,
+.reading-game-instruction,
+.reading-game-big,
+.reading-question {
+  margin: 0;
+}
+
+.reading-game-label {
+  color: var(--orange);
+  font-size: 0.82rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+.reading-game-title {
+  color: var(--ink);
+  font-size: clamp(1.45rem, 7vw, 2rem);
+  line-height: 1.05;
+}
+
+.reading-game-progress {
+  height: 11px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  overflow: hidden;
+  background: #050505;
+}
+
+.reading-game-progress span {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+  transition: width 220ms ease;
+}
+
+.reading-game-instruction {
+  color: var(--orange);
+  font-size: 1.1rem;
+  font-weight: 1000;
+}
+
+.reading-target-card {
+  min-height: 118px;
+  padding: 12px;
+  border: 3px solid var(--orange);
+  border-radius: 0;
+  background: #090909;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.reading-target-card strong {
+  font-size: clamp(3rem, 16vw, 5.7rem);
+  line-height: 0.95;
+}
+
+.reading-target-emoji {
+  font-size: clamp(2.6rem, 14vw, 5rem);
+  line-height: 1;
+}
+
+.reading-choice-grid,
+.reading-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.reading-choice {
+  min-height: 70px;
+  padding: 10px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  color: #ffffff;
+  background: #0a0a0a;
+  cursor: pointer;
+  font-size: clamp(1.55rem, 8vw, 2.4rem);
+  font-weight: 1000;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.reading-choice:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.reading-choice.emoji-choice {
+  font-size: clamp(2.6rem, 14vw, 4.5rem);
+}
+
+.reading-choice.is-correct,
+.reading-choice.is-wrong {
+  animation: pop 240ms ease both;
+}
+
+.reading-choice.is-correct {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.reading-choice.is-wrong {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.reading-build-row {
+  min-height: 58px;
+  padding: 10px;
+  border: 2px dashed var(--orange);
+  background: rgba(255, 177, 92, 0.08);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  font-size: clamp(1.5rem, 8vw, 2.4rem);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.reading-check-button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.reading-mini-text {
+  padding: 13px;
+  border: 3px solid var(--orange);
+  background: #090909;
+  color: #ffffff;
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+
+.reading-mini-text p {
+  margin: 0;
+  font-size: clamp(2rem, 10vw, 3.3rem);
+  font-weight: 1000;
+  line-height: 1.02;
+}
+
+.reading-question {
+  color: var(--orange);
+  font-size: clamp(1.45rem, 7vw, 2.1rem);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.reading-game-nav {
+  grid-template-columns: 1fr 1fr;
+}
+
+.reading-find-final {
+  min-height: min(62dvh, 560px);
+  place-items: center;
+  text-align: center;
+}
+
+.reading-game-final-mark {
+  font-size: clamp(3rem, 16vw, 5rem);
+}
+
+.reading-game-big {
+  color: var(--orange);
+  font-size: clamp(1.8rem, 9vw, 2.8rem);
+  font-weight: 1000;
+}
+
+.reading-final-words {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reading-final-words span,
+.reading-score-row span {
+  padding: 9px 12px;
+  border: 2px solid var(--orange);
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 1.18rem;
+  font-weight: 1000;
+}
+
+.reading-score-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-height: 720px) {
+  .reading-find-card {
+    min-height: auto;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .reading-target-card {
+    min-height: 92px;
+  }
+
+  .reading-choice {
+    min-height: 58px;
+  }
+}
