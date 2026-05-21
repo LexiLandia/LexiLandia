@@ -46,6 +46,10 @@
       lessons = [window.LexiLandLevel0].concat(lessons);
     }
 
+    if (window.LexiLandLesson3 && !lessons.some(function (item) { return item.id === window.LexiLandLesson3.id; })) {
+      lessons = lessons.concat([window.LexiLandLesson3]);
+    }
+
     loadedData.lessons = lessons;
     return loadedData;
   }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="mouth">
+  <rect width="160" height="160" rx="18" fill="#fff7ec"/>
+  <path d="M34 82c18-26 74-26 92 0-12 27-80 27-92 0z" fill="#ff7488" stroke="#141414" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M45 82h70" stroke="#141414" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="52" cy="43" r="7" fill="#2f8dff"/>
+  <circle cx="80" cy="35" r="7" fill="#2f8dff"/>
+  <circle cx="108" cy="43" r="7" fill="#2f8dff"/>
+</svg>

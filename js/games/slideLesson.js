@@ -29,6 +29,7 @@
 
     bindReveal(root, task, helpers);
     bindReading(root);
+    bindOptionalImages(root);
     bindCopy(root, task, helpers);
     drawQuestion();
 
@@ -97,10 +98,35 @@
     return line.split(/(\s+)/).map(function (part) {
       var key = part.replace(/[.,!?;:]/g, "").toLowerCase();
       if (meanings[key]) {
-        return '<button class="read-word" type="button" data-meaning="' + helpers.escape(meanings[key]) + '">' + helpers.escape(part) + '</button>';
+        var meaning = normalizeMeaning(meanings[key], key);
+        return '<button class="read-word" type="button"' +
+          ' data-word="' + helpers.escape(meaning.word || key) + '"' +
+          ' data-emoji="' + helpers.escape(meaning.emoji || "") + '"' +
+          ' data-translation="' + helpers.escape(meaning.translation || "") + '"' +
+          ' data-image="' + helpers.escape(meaning.image || "") + '">' +
+          helpers.escape(part) +
+        '</button>';
       }
       return helpers.escape(part);
     }).join("");
+  }
+
+  function normalizeMeaning(value, fallbackWord) {
+    if (typeof value === "string") {
+      return {
+        word: fallbackWord,
+        emoji: value,
+        translation: "",
+        image: ""
+      };
+    }
+
+    return {
+      word: value.word || value.text || fallbackWord,
+      emoji: value.emoji || "",
+      translation: value.translation || value.meaning || "",
+      image: value.image || ""
+    };
   }
 
   function renderReveal(task, helpers) {
@@ -149,11 +175,60 @@
     Array.prototype.forEach.call(root.querySelectorAll(".read-word"), function (button) {
       button.addEventListener("click", function () {
         var feedback = root.querySelector("#word-feedback");
-        feedback.textContent = button.getAttribute("data-meaning") || "";
+        var word = button.getAttribute("data-word") || button.textContent || "";
+        var emoji = button.getAttribute("data-emoji") || "";
+        var translation = button.getAttribute("data-translation") || "";
+        var image = button.getAttribute("data-image") || "";
+
+        feedback.textContent = "";
+
+        var card = document.createElement("div");
+        card.className = "word-popover";
+
+        var title = document.createElement("strong");
+        title.className = "word-popover-word";
+        title.textContent = word;
+        card.appendChild(title);
+
+        if (emoji) {
+          var emojiNode = document.createElement("span");
+          emojiNode.className = "word-popover-emoji";
+          emojiNode.setAttribute("aria-hidden", "true");
+          emojiNode.textContent = emoji;
+          card.appendChild(emojiNode);
+        }
+
+        if (translation) {
+          var translationNode = document.createElement("span");
+          translationNode.className = "word-popover-meaning";
+          translationNode.textContent = translation;
+          card.appendChild(translationNode);
+        }
+
+        if (image) {
+          var imageNode = document.createElement("img");
+          imageNode.className = "word-popover-image";
+          imageNode.src = image;
+          imageNode.alt = word;
+          imageNode.addEventListener("error", function () {
+            imageNode.remove();
+          });
+          card.appendChild(imageNode);
+        }
+
+        feedback.appendChild(card);
         Array.prototype.forEach.call(root.querySelectorAll(".read-word"), function (item) {
           item.classList.remove("is-open");
         });
         button.classList.add("is-open");
+      });
+    });
+  }
+
+  function bindOptionalImages(root) {
+    Array.prototype.forEach.call(root.querySelectorAll("[data-optional-image]"), function (image) {
+      image.addEventListener("error", function () {
+        image.hidden = true;
       });
     });
   }
@@ -222,6 +297,11 @@
           answered[question.id] = true;
           button.classList.add("is-correct");
           feedback.className = "feedback good";
+          if (question.mode === "reading-check") {
+            feedback.textContent = question.correctFeedback || "Yes";
+            window.setTimeout(onDone, 520);
+            return;
+          }
           var success = helpers.playFeedback("success");
           feedback.textContent = success.text;
           helpers.afterFeedback(success, onDone);
@@ -233,6 +313,10 @@
           correctButton.classList.add("show-correct");
         }
         feedback.className = "feedback try";
+        if (question.mode === "reading-check") {
+          feedback.textContent = question.wrongFeedback || "Look again 👀";
+          return;
+        }
         feedback.textContent = helpers.playFeedback("retry").text;
       });
     });
@@ -277,6 +361,22 @@
             return '<span class="word-card">' + helpers.escape(item) + '</span>';
           }
           return '<span class="word-card"><span>' + helpers.escape(item.emoji || "") + '</span><strong>' + helpers.escape(item.text || "") + '</strong></span>';
+        }).join("") +
+      '</div>';
+    }
+
+    if (visual.type === "image-cards") {
+      if (!visual.items || !visual.items.length) {
+        return "";
+      }
+
+      return '<div class="slide-visual image-card-grid" aria-hidden="true">' +
+        visual.items.map(function (item) {
+          return '<span class="image-word-card">' +
+            (item.image ? '<img class="image-card-img" src="' + helpers.escape(item.image) + '" alt="" data-optional-image>' : "") +
+            '<span class="image-card-emoji">' + helpers.escape(item.emoji || "") + '</span>' +
+            '<strong class="image-card-label">' + helpers.escape(item.text || "") + '</strong>' +
+          '</span>';
         }).join("") +
       '</div>';
     }

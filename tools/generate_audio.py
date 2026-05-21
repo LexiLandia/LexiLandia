@@ -28,6 +28,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LESSONS_PATH = ROOT / "data" / "lessons.json"
 LEVEL0_PATH = ROOT / "js" / "level0Data.js"
+LESSON3_PATH = ROOT / "js" / "lesson3Data.js"
+JS_LESSON_MODULES = [
+    (LEVEL0_PATH, "LexiLandLevel0", "before"),
+    (LESSON3_PATH, "LexiLandLesson3", "after"),
+]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"
 DEFAULT_RATE = "-4%"
 DEFAULT_PITCH = "+0Hz"
@@ -44,9 +49,13 @@ class AudioLine:
 def load_audio_lines() -> list[AudioLine]:
     data = json.loads(LESSONS_PATH.read_text(encoding="utf-8"))
     lessons = list(data["lessons"])
-    level0 = load_js_lesson(LEVEL0_PATH, "LexiLandLevel0")
-    if level0 and not any(lesson.get("id") == level0.get("id") for lesson in lessons):
-        lessons.insert(0, level0)
+    for path, global_name, position in JS_LESSON_MODULES:
+        js_lesson = load_js_lesson(path, global_name)
+        if js_lesson and not any(lesson.get("id") == js_lesson.get("id") for lesson in lessons):
+            if position == "before":
+                lessons.insert(0, js_lesson)
+            else:
+                lessons.append(js_lesson)
 
     lines: dict[str, AudioLine] = {}
 
