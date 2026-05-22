@@ -103,9 +103,9 @@
           '<p class="hero-word">здесь</p>' +
           '<p class="emoji-line">📍 🍎 💧 🚌 🏠</p>' +
         '</section>' +
-        '<div class="lesson-list">' +
+        '<div class="course-list">' +
           lessons.map(function (item, lessonIndex) {
-            return lessonCard(item, lessonIndex);
+            return courseCard(item, lessonIndex);
           }).join("") +
         '</div>' +
         '<section class="roadmap">' +
@@ -117,6 +117,56 @@
         '</section>' +
       '</main>';
 
+    Array.prototype.forEach.call(appRoot.querySelectorAll("[data-course]"), function (button) {
+      button.addEventListener("click", function () {
+        renderUnitMenu(Number(button.getAttribute("data-course")));
+      });
+    });
+    bindCourseImages();
+  }
+
+  function renderUnitMenu(lessonIndex) {
+    var lessons = data.lessons || [];
+    var item = lessons[lessonIndex] || lessons[0];
+    var units = getUnits(item);
+    var complete = isLessonComplete(item);
+    var unlocked = isLessonUnlocked(lessonIndex);
+    var labelNumber = getLessonOrder(item, lessonIndex);
+    var label = item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber;
+
+    setCurrentLesson(lessonIndex);
+
+    appRoot.innerHTML =
+      '<main class="screen">' +
+        '<header class="topbar">' +
+          '<div class="brand">' +
+            '<button class="home-button" type="button" data-action="home" aria-label="Домой">🏠</button>' +
+            '<div>' +
+              '<h1>' + escapeHtml(label) + (complete ? " ✅" : "") + '</h1>' +
+              '<small>' + escapeHtml(item.title) + '</small>' +
+            '</div>' +
+          '</div>' +
+        '</header>' +
+        '<section class="lesson-card unit-menu-card">' +
+          '<div class="pill-row">' +
+            '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(complete ? "✅ Готово" : "Открыто") + '</span>' +
+          '</div>' +
+          renderCourseVisual(item) +
+          '<h3>' + escapeHtml(item.title) + '</h3>' +
+          '<div class="unit-list">' +
+            units.map(function (unit, unitIndex) {
+              return unitCard(unit, unitIndex, item, lessonIndex, unlocked);
+            }).join("") +
+          '</div>' +
+        '</section>' +
+      '</main>';
+
+    appRoot.querySelector('[data-action="home"]').addEventListener("click", renderHome);
+    bindUnitButtons();
+    bindCourseImages();
+  }
+
+  function bindUnitButtons() {
     Array.prototype.forEach.call(appRoot.querySelectorAll("[data-unit]"), function (button) {
       button.addEventListener("click", function () {
         var lessonIndex = Number(button.getAttribute("data-lesson"));
@@ -129,24 +179,66 @@
     });
   }
 
-  function lessonCard(item, lessonIndex) {
+  function courseCard(item, lessonIndex) {
     var units = getUnits(item);
     var complete = isLessonComplete(item);
     var unlocked = isLessonUnlocked(lessonIndex);
     var labelNumber = getLessonOrder(item, lessonIndex);
     var label = (item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber) + (complete ? " \u2705" : "");
+    var readyCount = units.filter(function (unit) {
+      return !unit.comingSoon;
+    }).length;
 
-    return '<section class="lesson-card">' +
-      '<div class="pill-row">' +
+    return '<button class="course-card" type="button" data-course="' + lessonIndex + '"' + (unlocked ? "" : " disabled") + '>' +
+      renderCourseVisual(item) +
+      '<div class="course-copy">' +
         '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(unlocked ? label : label + " 🔒") + '</span>' +
+        '<h3>' + escapeHtml(item.title) + '</h3>' +
+        '<small>' + escapeHtml(readyCount + " " + formatItemCount(readyCount)) + '</small>' +
       '</div>' +
-      '<h3>' + escapeHtml(item.title) + '</h3>' +
-      '<div class="unit-list">' +
-        units.map(function (unit, unitIndex) {
-          return unitCard(unit, unitIndex, item, lessonIndex, unlocked);
-        }).join("") +
-      '</div>' +
-    '</section>';
+    '</button>';
+  }
+
+  function renderCourseVisual(item) {
+    var image = item.coverImage || item.image || item.cardImage || "";
+    var emoji = item.coverEmoji || item.emoji || firstUnitIcon(item) || "⭐";
+
+    if (image) {
+      return '<span class="course-visual course-image-visual" aria-hidden="true">' +
+        '<img src="' + escapeHtml(image) + '" alt="" data-optional-image>' +
+      '</span>';
+    }
+
+    return '<span class="course-visual" aria-hidden="true">' + escapeHtml(emoji) + '</span>';
+  }
+
+  function firstUnitIcon(item) {
+    var units = getUnits(item);
+    return units[0] && units[0].icon;
+  }
+
+  function formatItemCount(count) {
+    var lastTwo = count % 100;
+    var last = count % 10;
+
+    if (lastTwo >= 11 && lastTwo <= 14) {
+      return "разделов";
+    }
+    if (last === 1) {
+      return "раздел";
+    }
+    if (last >= 2 && last <= 4) {
+      return "раздела";
+    }
+    return "разделов";
+  }
+
+  function bindCourseImages() {
+    Array.prototype.forEach.call(appRoot.querySelectorAll(".course-image-visual img"), function (image) {
+      image.addEventListener("error", function () {
+        image.closest(".course-image-visual").hidden = true;
+      });
+    });
   }
 
   function getLessonOrder(item, fallbackIndex) {

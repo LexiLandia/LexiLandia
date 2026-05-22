@@ -2,9 +2,13 @@
 
 Use this file before adding or moving content.
 
-## Home Blocks
+## Home Page
 
-The app calls top-level menu cards `lessons` in code, but visually they can be:
+The first screen should show only big top-level unit/course cards. Do not expand all lessons on the first screen.
+
+When the learner taps a top-level card, open a unit page with that card's lesson/game/text/video buttons.
+
+The app calls top-level cards `lessons` in code, but visually they can be:
 - `Урок 0`
 - `Урок 1`
 - `Урок 2`
@@ -14,9 +18,17 @@ The app calls top-level menu cards `lessons` in code, but visually they can be:
 
 Do not put a new major unit inside the previous lesson block.
 
+Top-level card image fields are optional. The UI supports:
+- `coverImage`
+- `image`
+- `cardImage`
+- `coverEmoji`
+
+If no image is set, the card uses an emoji fallback.
+
 ## Unit Layout
 
-Inside each top-level home block, use `units[]` for separate playable buttons:
+Inside each top-level card page, use `units[]` for separate playable buttons:
 - one button per lesson
 - one button per game
 - one button per text section

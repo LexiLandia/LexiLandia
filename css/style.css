@@ -139,6 +139,7 @@ button {
 .audio-button:active,
 .answer-card:active,
 .scene-card:active,
+.course-card:active,
 .zone-choice:active,
 .control-button:active,
 .mini-object:active {
@@ -185,6 +186,77 @@ button {
 .lesson-list {
   display: grid;
   gap: 14px;
+}
+
+.course-list {
+  display: grid;
+  gap: 14px;
+}
+
+.course-card {
+  width: 100%;
+  min-height: 156px;
+  padding: 14px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--panel);
+  box-shadow: 0 10px 30px rgba(23, 50, 77, 0.08);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: minmax(98px, 34%) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 14px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.course-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+.course-visual {
+  min-height: 128px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: var(--blue-dark);
+  background: var(--panel-soft);
+  font-size: clamp(3.4rem, 16vw, 5.4rem);
+  line-height: 1;
+  overflow: hidden;
+}
+
+.course-image-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.course-copy {
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.course-copy h3 {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: clamp(1.35rem, 6vw, 2rem);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.course-copy small {
+  color: var(--muted);
+  font-weight: 1000;
+}
+
+.unit-menu-card .course-visual {
+  min-height: 150px;
 }
 
 .unit-list {
@@ -1513,6 +1585,17 @@ button {
 
   .lesson-card {
     padding: 14px;
+  }
+
+  .course-card {
+    min-height: 136px;
+    padding: 12px;
+    grid-template-columns: minmax(84px, 32%) minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .course-visual {
+    min-height: 112px;
   }
 
   .unit-card {
