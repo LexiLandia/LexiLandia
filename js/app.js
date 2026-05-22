@@ -86,7 +86,7 @@
   }
 
   function renderHome() {
-    var lessons = data.lessons || [];
+    var courses = getCourseGroups();
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -104,8 +104,8 @@
           '<p class="emoji-line">📍 🍎 💧 🚌 🏠</p>' +
         '</section>' +
         '<div class="course-list">' +
-          lessons.map(function (item, lessonIndex) {
-            return courseCard(item, lessonIndex);
+          courses.map(function (group, courseIndex) {
+            return courseCard(group, courseIndex);
           }).join("") +
         '</div>' +
         '<section class="roadmap">' +
@@ -119,7 +119,71 @@
 
     Array.prototype.forEach.call(appRoot.querySelectorAll("[data-course]"), function (button) {
       button.addEventListener("click", function () {
-        renderUnitMenu(Number(button.getAttribute("data-course")));
+        renderCoursePage(Number(button.getAttribute("data-course")));
+      });
+    });
+    bindCourseImages();
+  }
+
+  function renderCoursePage(courseIndex) {
+    var group = getCourseGroups()[courseIndex];
+
+    if (!group) {
+      renderHome();
+      return;
+    }
+
+    if (!group.lessonIndexes) {
+      renderUnitMenu(group.lessonIndex);
+      return;
+    }
+
+    renderLessonGroupMenu(group);
+  }
+
+  function renderLessonGroupMenu(group) {
+    var lessons = data.lessons || [];
+    var childLessons = group.lessonIndexes.map(function (lessonIndex) {
+      return {
+        item: lessons[lessonIndex],
+        lessonIndex: lessonIndex
+      };
+    }).filter(function (child) {
+      return Boolean(child.item);
+    });
+    var complete = childLessons.length > 0 && childLessons.every(function (child) {
+      return isLessonComplete(child.item);
+    });
+
+    appRoot.innerHTML =
+      '<main class="screen">' +
+        '<header class="topbar">' +
+          '<div class="brand">' +
+            '<button class="home-button" type="button" data-action="home" aria-label="Домой">🏠</button>' +
+            '<div>' +
+              '<h1>' + escapeHtml(group.menuLabel) + (complete ? " ✅" : "") + '</h1>' +
+              '<small>' + escapeHtml(group.title) + '</small>' +
+            '</div>' +
+          '</div>' +
+        '</header>' +
+        '<section class="lesson-card unit-menu-card">' +
+          '<div class="pill-row">' +
+            '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(complete ? "✅ Готово" : "Открыто") + '</span>' +
+          '</div>' +
+          renderCourseVisual(group) +
+          '<h3>' + escapeHtml(group.title) + '</h3>' +
+          '<div class="unit-list">' +
+            childLessons.map(function (child) {
+              return lessonMenuCard(child.item, child.lessonIndex);
+            }).join("") +
+          '</div>' +
+        '</section>' +
+      '</main>';
+
+    appRoot.querySelector('[data-action="home"]').addEventListener("click", renderHome);
+    Array.prototype.forEach.call(appRoot.querySelectorAll("[data-lesson-menu]"), function (button) {
+      button.addEventListener("click", function () {
+        renderUnitMenu(Number(button.getAttribute("data-lesson-menu")));
       });
     });
     bindCourseImages();
@@ -179,29 +243,72 @@
     });
   }
 
-  function courseCard(item, lessonIndex) {
-    var units = getUnits(item);
-    var complete = isLessonComplete(item);
-    var unlocked = isLessonUnlocked(lessonIndex);
-    var labelNumber = getLessonOrder(item, lessonIndex);
-    var label = (item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber) + (complete ? " \u2705" : "");
-    var readyCount = units.filter(function (unit) {
-      return !unit.comingSoon;
-    }).length;
+  function getCourseGroups() {
+    var lessons = data.lessons || [];
+    var unitOneIndexes = [];
+    var groups = [];
 
-    return '<button class="course-card" type="button" data-course="' + lessonIndex + '"' + (unlocked ? "" : " disabled") + '>' +
-      renderCourseVisual(item) +
+    lessons.forEach(function (item, lessonIndex) {
+      if (isUnitOneLesson(item, lessonIndex)) {
+        unitOneIndexes.push(lessonIndex);
+      }
+    });
+
+    if (unitOneIndexes.length) {
+      groups.push({
+        id: "unit-1-level-0-3",
+        menuLabel: "Юнит 1",
+        title: "Юнит 1: Первые шаги",
+        coverEmoji: "📖",
+        lessonIndexes: unitOneIndexes
+      });
+    }
+
+    lessons.forEach(function (item, lessonIndex) {
+      if (unitOneIndexes.indexOf(lessonIndex) !== -1) {
+        return;
+      }
+
+      groups.push({
+        id: item.id,
+        menuLabel: item.menuLabel || "\u0423\u0440\u043e\u043a " + getLessonOrder(item, lessonIndex),
+        title: item.title,
+        coverImage: item.coverImage,
+        image: item.image,
+        cardImage: item.cardImage,
+        coverEmoji: item.coverEmoji || item.emoji,
+        lessonIndex: lessonIndex
+      });
+    });
+
+    return groups;
+  }
+
+  function isUnitOneLesson(item, lessonIndex) {
+    var order = getLessonOrder(item, lessonIndex);
+    return order >= 0 && order <= 3 && !item.menuLabel;
+  }
+
+  function courseCard(group, courseIndex) {
+    var complete = isCourseComplete(group);
+    var unlocked = true;
+    var label = group.menuLabel + (complete ? " \u2705" : "");
+    var readyCount = getCourseReadyCount(group);
+    var countLabel = group.lessonIndexes ? formatLessonCount(readyCount) : formatItemCount(readyCount);
+
+    return '<button class="course-card" type="button" data-course="' + courseIndex + '"' + (unlocked ? "" : " disabled") + '>' +
+      renderCourseVisual(group) +
       '<div class="course-copy">' +
         '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(unlocked ? label : label + " 🔒") + '</span>' +
-        '<h3>' + escapeHtml(item.title) + '</h3>' +
-        '<small>' + escapeHtml(readyCount + " " + formatItemCount(readyCount)) + '</small>' +
+        '<h3>' + escapeHtml(group.title) + '</h3>' +
+        '<small>' + escapeHtml(readyCount + " " + countLabel) + '</small>' +
       '</div>' +
     '</button>';
   }
 
   function renderCourseVisual(item) {
     var image = item.coverImage || item.image || item.cardImage || "";
-    var emoji = item.coverEmoji || item.emoji || firstUnitIcon(item) || "⭐";
+    var emoji = item.coverEmoji || item.emoji || (item.lessonIndexes ? "" : firstUnitIcon(item)) || "⭐";
 
     if (image) {
       return '<span class="course-visual course-image-visual" aria-hidden="true">' +
@@ -215,6 +322,50 @@
   function firstUnitIcon(item) {
     var units = getUnits(item);
     return units[0] && units[0].icon;
+  }
+
+  function lessonMenuCard(item, lessonIndex) {
+    var complete = isLessonComplete(item);
+    var labelNumber = getLessonOrder(item, lessonIndex);
+    var label = item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber;
+    var readyCount = getReadyUnitCount(item);
+
+    return '<button class="unit-card lesson-menu-card" type="button" data-lesson-menu="' + lessonIndex + '">' +
+      '<span class="unit-icon">' + escapeHtml(item.coverEmoji || item.emoji || firstUnitIcon(item) || "⭐") + '</span>' +
+      '<span class="unit-copy">' +
+        '<strong>' + escapeHtml(label) + '</strong>' +
+        '<small>' + escapeHtml((complete ? "✅ Готово" : "Открыто") + " · " + readyCount + " " + formatItemCount(readyCount)) + '</small>' +
+      '</span>' +
+      '<span class="unit-action">' + escapeHtml("Открыть") + '</span>' +
+    '</button>';
+  }
+
+  function isCourseComplete(group) {
+    var lessons = data.lessons || [];
+
+    if (group.lessonIndexes) {
+      return group.lessonIndexes.length > 0 && group.lessonIndexes.every(function (lessonIndex) {
+        return isLessonComplete(lessons[lessonIndex]);
+      });
+    }
+
+    return isLessonComplete(lessons[group.lessonIndex]);
+  }
+
+  function getCourseReadyCount(group) {
+    var lessons = data.lessons || [];
+
+    if (group.lessonIndexes) {
+      return group.lessonIndexes.length;
+    }
+
+    return getReadyUnitCount(lessons[group.lessonIndex]);
+  }
+
+  function getReadyUnitCount(item) {
+    return getUnits(item).filter(function (unit) {
+      return !unit.comingSoon;
+    }).length;
   }
 
   function formatItemCount(count) {
@@ -231,6 +382,22 @@
       return "раздела";
     }
     return "разделов";
+  }
+
+  function formatLessonCount(count) {
+    var lastTwo = count % 100;
+    var last = count % 10;
+
+    if (lastTwo >= 11 && lastTwo <= 14) {
+      return "уроков";
+    }
+    if (last === 1) {
+      return "урок";
+    }
+    if (last >= 2 && last <= 4) {
+      return "урока";
+    }
+    return "уроков";
   }
 
   function bindCourseImages() {

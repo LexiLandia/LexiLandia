@@ -6,15 +6,20 @@ Use this file before adding or moving content.
 
 The first screen should show only big top-level unit/course cards. Do not expand all lessons on the first screen.
 
-When the learner taps a top-level card, open a unit page with that card's lesson/game/text/video buttons.
+When the learner taps a top-level card, open the page for that major unit.
 
-The app calls top-level cards `lessons` in code, but visually they can be:
+Current home cards should be major unit shells:
+- `Юнит 1`
+- `Юнит 2`
+- future `Юнит 3`, `Юнит 4`, etc.
+
+`Юнит 1` is a virtual shell in `js/app.js`. It wraps the existing top-level lessons:
 - `Урок 0`
 - `Урок 1`
 - `Урок 2`
 - `Урок 3`
-- `Юнит 2`
-- future `Юнит 3`, `Юнит 4`, etc.
+
+Do not move those lesson data objects into one giant lesson. Keep them separate and only group them for the menu.
 
 Do not put a new major unit inside the previous lesson block.
 
@@ -28,7 +33,17 @@ If no image is set, the card uses an emoji fallback.
 
 ## Unit Layout
 
-Inside each top-level card page, use `units[]` for separate playable buttons:
+Inside a major unit page, show separate lesson/game/text/video buttons.
+
+For `Юнит 1`, the first page opens lesson cards:
+- `Урок 0. Учимся читать`
+- `Урок 1. Здесь, там, это`
+- `Урок 2: Где? Здесь или там?`
+- `Урок 3: мама, дом, там`
+
+After tapping one of those lessons, open its own `units[]` page.
+
+For `Юнит 2` and future generated major units, the top-level object can directly use `units[]` for separate playable buttons:
 - one button per lesson
 - one button per game
 - one button per text section
