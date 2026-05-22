@@ -5,7 +5,7 @@
     var root = options.root;
     var task = options.task;
     var helpers = options.helpers;
-    var answers = helpers.shuffle(task.options);
+    var answers = helpers.shuffleAvoidFirst(task.options, task.correctScene);
     var canAnswer = true;
 
     root.innerHTML =
@@ -60,6 +60,7 @@
     var root = options.root;
     var task = options.task;
     var helpers = options.helpers;
+    var answers = helpers.shuffleAvoidFirst(["da", "net"], task.correct);
     var canAnswer = true;
 
     root.innerHTML =
@@ -67,8 +68,9 @@
       helpers.soundPanel(task) +
       '<div id="yesno-feedback" class="feedback" aria-live="polite"></div>' +
       '<div class="yes-no-grid">' +
-        helpers.entryButton("da") +
-        helpers.entryButton("net") +
+        answers.map(function (entryId) {
+          return helpers.entryButton(entryId);
+        }).join("") +
       '</div>';
 
     helpers.bindSound(root, task);
@@ -112,6 +114,7 @@
     var root = options.root;
     var task = options.task;
     var helpers = options.helpers;
+    var zones = helpers.shuffleAvoidFirst(["near", "far"], task.correctZone);
     var canAnswer = true;
 
     root.innerHTML =
@@ -119,8 +122,9 @@
       helpers.soundPanel(task) +
       '<div id="location-feedback" class="feedback" aria-live="polite"></div>' +
       '<div class="zone-choice-grid">' +
-        '<button class="zone-choice" type="button" data-zone="near">📍</button>' +
-        '<button class="zone-choice" type="button" data-zone="far">👉</button>' +
+        zones.map(function (zone) {
+          return '<button class="zone-choice" type="button" data-zone="' + zone + '">' + (zone === "near" ? "📍" : "👉") + '</button>';
+        }).join("") +
       '</div>';
 
     helpers.bindSound(root, task);

@@ -31,3 +31,9 @@ Quality requirements:
 - Test that localStorage completion works.
 - Test that lesson can continue even if audio files are missing.
 - Keep code readable.
+
+Project memory:
+- Read `docs/lexiland-structure.md` before adding or moving units.
+- Read `docs/lexiland-content-patterns.md` before drafting lesson data.
+- Read `docs/lexiland-renderer-rules.md` before changing games or slide renderers.
+- Read `docs/lexiland-agent-briefs.md` before splitting work into small Codex/AI tasks.

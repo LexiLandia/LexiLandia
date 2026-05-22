@@ -5,7 +5,7 @@
     var root = options.root;
     var task = options.task;
     var helpers = options.helpers;
-    var answers = helpers.shuffle(task.options);
+    var answers = helpers.shuffleAvoidFirst(task.options, task.correct);
     var canAnswer = true;
 
     root.innerHTML =

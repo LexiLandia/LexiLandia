@@ -86,31 +86,32 @@
 
     function renderTask(stage, task, helpers) {
       if (stage.type === "choose_text") {
-        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers, task.correct);
       }
 
       if (stage.type === "build_word") {
+        var tiles = shuffleValues(task.tiles || [], "");
         return renderAudioPrompt(helpers) +
           '<div class="reading-build-row" aria-live="polite">' + (selectedTiles.length ? selectedTiles.map(helpers.escape).join(" + ") : "…") + '</div>' +
           '<div class="reading-tile-grid">' +
-            task.tiles.map(function (tile, index) {
-              return '<button class="reading-choice reading-tile" type="button" data-tile-index="' + index + '"' + (selectedTileIndexes.indexOf(index) !== -1 ? " disabled" : "") + '>' + helpers.escape(tile) + '</button>';
+            tiles.map(function (tile, index) {
+              return '<button class="reading-choice reading-tile" type="button" data-tile-index="' + index + '" data-tile-value="' + helpers.escape(tile) + '"' + (selectedTileIndexes.indexOf(index) !== -1 ? " disabled" : "") + '>' + helpers.escape(tile) + '</button>';
             }).join("") +
           '</div>' +
           '<button class="primary-button reading-check-button" type="button" data-reading-action="check">✅ проверить</button>';
       }
 
       if (stage.type === "word_to_image") {
-        return renderAudioPrompt(helpers) + renderOptions(task.options, "emoji", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "emoji", helpers, task.correct);
       }
 
       if (stage.type === "image_to_word") {
-        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers);
+        return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers, task.correct);
       }
 
       return renderAudioPrompt(helpers) +
         '<p class="reading-question">' + helpers.escape(task.question || "") + '</p>' +
-        renderOptions(task.options, "text", helpers);
+        renderOptions(task.options, "text", helpers, task.correct);
     }
 
     function renderAudioPrompt(helpers) {
@@ -127,9 +128,11 @@
       '</div>';
     }
 
-    function renderOptions(options, kind, helpers) {
+    function renderOptions(options, kind, helpers, correct) {
+      var shuffled = shuffleValues(options || [], correct);
+
       return '<div class="reading-choice-grid">' +
-        options.map(function (item) {
+        shuffled.map(function (item) {
           return '<button class="reading-choice ' + (kind === "emoji" ? "emoji-choice" : "") + '" type="button" data-choice="' + helpers.escape(item) + '">' +
             helpers.escape(item) +
           '</button>';
@@ -145,7 +148,7 @@
               return;
             }
             var tileIndex = Number(button.getAttribute("data-tile-index"));
-            selectedTiles.push(task.tiles[tileIndex]);
+            selectedTiles.push(button.getAttribute("data-tile-value"));
             selectedTileIndexes.push(tileIndex);
             button.disabled = true;
             root.querySelector(".reading-build-row").textContent = selectedTiles.join(" + ");
@@ -322,6 +325,26 @@
       }
     }
     return true;
+  }
+
+  function shuffleValues(items, correct) {
+    var shuffled = (items || []).slice();
+
+    for (var index = shuffled.length - 1; index > 0; index -= 1) {
+      var target = Math.floor(Math.random() * (index + 1));
+      var item = shuffled[index];
+      shuffled[index] = shuffled[target];
+      shuffled[target] = item;
+    }
+
+    if (correct && shuffled.length > 1 && String(shuffled[0]) === String(correct)) {
+      var swapIndex = 1 + Math.floor(Math.random() * (shuffled.length - 1));
+      var first = shuffled[0];
+      shuffled[0] = shuffled[swapIndex];
+      shuffled[swapIndex] = first;
+    }
+
+    return shuffled;
   }
 
   window.LexiLandGames = window.LexiLandGames || {};

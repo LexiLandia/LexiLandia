@@ -51,7 +51,7 @@
       return '<div class="unit2-game-task">' +
         renderVisual(task, helpers) +
         (task.question ? '<p class="unit2-game-question">' + helpers.escape(task.question) + '</p>' : "") +
-        renderOptions(task.options || [], helpers) +
+        renderOptions(task.options || [], helpers, task.correct) +
       '</div>';
     }
 
@@ -71,9 +71,11 @@
       return "";
     }
 
-    function renderOptions(items, helpers) {
+    function renderOptions(items, helpers, correct) {
+      var shuffled = shuffleOptions(items || [], correct);
+
       return '<div class="unit2-game-options">' +
-        items.map(function (item) {
+        shuffled.map(function (item) {
           return '<button class="unit2-game-option" type="button" data-unit2-choice="' + helpers.escape(item.id) + '">' +
             (item.emoji ? '<span class="unit2-option-emoji" aria-hidden="true">' + helpers.escape(item.emoji) + '</span>' : "") +
             (item.text ? '<span class="unit2-option-text">' + helpers.escape(item.text) + '</span>' : "") +
@@ -251,6 +253,26 @@
       count += game.stages[index].tasks.length;
     }
     return count + taskIndex;
+  }
+
+  function shuffleOptions(items, correct) {
+    var shuffled = (items || []).slice();
+
+    for (var index = shuffled.length - 1; index > 0; index -= 1) {
+      var target = Math.floor(Math.random() * (index + 1));
+      var item = shuffled[index];
+      shuffled[index] = shuffled[target];
+      shuffled[target] = item;
+    }
+
+    if (shuffled.length > 1 && String(shuffled[0].id) === String(correct)) {
+      var swapIndex = 1 + Math.floor(Math.random() * (shuffled.length - 1));
+      var first = shuffled[0];
+      shuffled[0] = shuffled[swapIndex];
+      shuffled[swapIndex] = first;
+    }
+
+    return shuffled;
   }
 
   window.LexiLandGames = window.LexiLandGames || {};

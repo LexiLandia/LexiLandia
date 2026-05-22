@@ -141,11 +141,13 @@
   }
 
   function renderQuestion(question, questionIndex, questionCount, helpers) {
+    var options = shuffleByCorrect(question.options || [], question.correct, "id");
+
     return '<div class="slide-question active-question" data-question="' + questionIndex + '">' +
       (questionCount > 1 ? '<div class="question-step">' + (questionIndex + 1) + " / " + questionCount + '</div>' : "") +
       '<p class="question-text">' + helpers.escape(question.text) + '</p>' +
       '<div class="slide-answer-grid">' +
-        question.options.map(function (answer) {
+        options.map(function (answer) {
           return '<button class="answer-card slide-answer" type="button" data-question-index="' + questionIndex + '" data-choice="' + helpers.escape(answer.id) + '">' +
             '<span class="answer-emoji" aria-hidden="true">' + helpers.escape(answer.emoji) + '</span>' +
             '<span class="answer-text">' + helpers.escape(answer.text) + '</span>' +
@@ -450,6 +452,26 @@
       .replace(/\s+/g, " ")
       .replace(/[.!?]+$/g, "")
       .toLowerCase();
+  }
+
+  function shuffleByCorrect(items, correct, key) {
+    var shuffled = (items || []).slice();
+
+    for (var index = shuffled.length - 1; index > 0; index -= 1) {
+      var target = Math.floor(Math.random() * (index + 1));
+      var item = shuffled[index];
+      shuffled[index] = shuffled[target];
+      shuffled[target] = item;
+    }
+
+    if (shuffled.length > 1 && String(shuffled[0][key]) === String(correct)) {
+      var swapIndex = 1 + Math.floor(Math.random() * (shuffled.length - 1));
+      var first = shuffled[0];
+      shuffled[0] = shuffled[swapIndex];
+      shuffled[swapIndex] = first;
+    }
+
+    return shuffled;
   }
 
   window.LexiLandGames = window.LexiLandGames || {};

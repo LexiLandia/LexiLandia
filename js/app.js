@@ -560,6 +560,7 @@
       mapWidth: mapWidth,
       scene: renderScene,
       shuffle: shuffle,
+      shuffleAvoidFirst: shuffleAvoidFirst,
       soundPanel: soundPanel
     };
   }
@@ -700,6 +701,19 @@
       var temp = copy[i];
       copy[i] = copy[j];
       copy[j] = temp;
+    }
+
+    return copy;
+  }
+
+  function shuffleAvoidFirst(items, correct) {
+    var copy = shuffle(items || []);
+
+    if (copy.length > 1 && String(copy[0]) === String(correct)) {
+      var swapIndex = 1 + Math.floor(Math.random() * (copy.length - 1));
+      var first = copy[0];
+      copy[0] = copy[swapIndex];
+      copy[swapIndex] = first;
     }
 
     return copy;
