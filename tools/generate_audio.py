@@ -36,7 +36,7 @@ JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
     (LESSON3_PATH, "LexiLandLesson3", "after"),
     (LESSON3_GAME_PATH, "LexiLandLesson3ReadingGame", "after"),
-    (UNIT2_PATH, "LexiLandUnit2AudioLesson", "after"),
+    (UNIT2_PATH, "LexiLandUnit2Lesson", "after"),
     (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"

@@ -50,6 +50,10 @@
       lessons = lessons.concat([window.LexiLandLesson3]);
     }
 
+    if (window.LexiLandUnit2Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit2Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit2Lesson]);
+    }
+
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
       window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
         if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {
@@ -130,7 +134,7 @@
     var complete = isLessonComplete(item);
     var unlocked = isLessonUnlocked(lessonIndex);
     var labelNumber = getLessonOrder(item, lessonIndex);
-    var label = "\u0423\u0440\u043e\u043a " + labelNumber + (complete ? " \u2705" : "");
+    var label = (item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber) + (complete ? " \u2705" : "");
 
     return '<section class="lesson-card">' +
       '<div class="pill-row">' +

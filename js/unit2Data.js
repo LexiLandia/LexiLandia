@@ -332,26 +332,50 @@
     ]
   };
 
-  var unit2 = {
-    id: "unit-2-kto-chto-malenkiy-mir",
-    title: "Юнит 2: Кто? Что? Маленький мир",
-    icon: "❓",
+  var lesson4Unit = {
+    id: "lesson-4-kto",
+    title: "Урок 4: Кто?",
+    icon: "❓👤",
     stages: [
       {
         type: "slides",
         title: "Урок 4: Кто?",
         tasks: lesson4Slides
-      },
+      }
+    ]
+  };
+
+  var lesson5Unit = {
+    id: "lesson-5-chto",
+    title: "Урок 5: Что?",
+    icon: "❓📦",
+    stages: [
       {
         type: "slides",
         title: "Урок 5: Что?",
         tasks: lesson5Slides
-      },
+      }
+    ]
+  };
+
+  var lesson6Unit = {
+    id: "lesson-6-kto-i-chto-zdes",
+    title: "Урок 6: Кто и что здесь?",
+    icon: "➕",
+    stages: [
       {
         type: "slides",
         title: "Урок 6: Кто и что здесь?",
         tasks: lesson6Slides
-      },
+      }
+    ]
+  };
+
+  var gameUnit = {
+    id: "unit-2-game-kto-chto-gde",
+    title: "Игра: Кто? Что? Где?",
+    icon: "🕹️",
+    stages: [
       {
         type: "unit-2-kto-chto-game",
         title: "Игра: Кто? Что? Где?",
@@ -360,31 +384,16 @@
     ]
   };
 
-  root.LexiLandUnit2 = unit2;
-  root.LexiLandUnit2AudioLesson = {
-    id: "unit-2-kto-chto-malenkiy-mir-audio",
-    title: "Юнит 2",
+  root.LexiLandUnit2Lesson = {
+    id: "level-0-unit-2-kto-chto-malenkiy-mir",
+    order: 4,
+    menuLabel: "Юнит 2",
+    title: "Юнит 2: Кто? Что? Маленький мир",
+    level: "Уровень 0",
     dictionary: dictionary,
-    units: [unit2]
+    scenes: [],
+    units: [lesson4Unit, lesson5Unit, lesson6Unit, gameUnit]
   };
-
-  if (root.LexiLandLesson3) {
-    root.LexiLandLesson3.dictionary = root.LexiLandLesson3.dictionary || [];
-    dictionary.forEach(function (item) {
-      var exists = root.LexiLandLesson3.dictionary.some(function (entryItem) {
-        return entryItem.id === item.id;
-      });
-      if (!exists) {
-        root.LexiLandLesson3.dictionary.push(item);
-      }
-    });
-
-    root.LexiLandLesson3.units = root.LexiLandLesson3.units || [];
-    var hasUnit = root.LexiLandLesson3.units.some(function (item) {
-      return item.id === unit2.id;
-    });
-    if (!hasUnit) {
-      root.LexiLandLesson3.units.push(unit2);
-    }
-  }
+  root.LexiLandUnit2 = root.LexiLandUnit2Lesson;
+  root.LexiLandUnit2AudioLesson = root.LexiLandUnit2Lesson;
 }(typeof window !== "undefined" ? window : globalThis));
