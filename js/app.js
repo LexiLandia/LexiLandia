@@ -303,6 +303,22 @@
       return;
     }
 
+    if (stage.type === "unit-2-kto-chto-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen unit2-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderUnit2KtoChhtoGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
     appRoot.innerHTML =
       renderLessonHeader(stage.title) +
       '<main class="lesson-screen task-screen">' +

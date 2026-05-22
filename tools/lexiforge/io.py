@@ -91,6 +91,7 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
         [
             ROOT / "js" / "lesson3Data.js",
             ROOT / "js" / "lesson3GameData.js",
+            ROOT / "js" / "unit2Data.js",
         ],
         "LexiLandLesson3",
     )

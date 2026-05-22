@@ -1831,3 +1831,213 @@ button {
     min-height: 58px;
   }
 }
+
+.unit2-game-screen {
+  gap: 10px;
+}
+
+.unit2-game-card {
+  min-height: min(68dvh, 620px);
+  padding: 14px;
+  border: 3px solid var(--orange);
+  border-radius: 0;
+  background: #111111;
+  color: #ffffff;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.unit2-game-top {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.unit2-game-mark {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 3px solid var(--orange);
+  background: #050505;
+  font-size: 1.8rem;
+}
+
+.unit2-game-label,
+.unit2-game-title,
+.unit2-game-instruction,
+.unit2-game-question,
+.unit2-game-big {
+  margin: 0;
+}
+
+.unit2-game-label {
+  color: var(--orange);
+  font-size: 0.82rem;
+  font-weight: 1000;
+}
+
+.unit2-game-title {
+  color: #ffffff;
+  font-size: clamp(1.35rem, 6vw, 2rem);
+  line-height: 1.05;
+}
+
+.unit2-game-progress {
+  height: 11px;
+  border: 2px solid var(--orange);
+  background: #050505;
+}
+
+.unit2-game-progress span {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+  transition: width 180ms ease;
+}
+
+.unit2-game-instruction {
+  color: var(--orange);
+  font-size: 1.15rem;
+  font-weight: 1000;
+}
+
+.unit2-game-task {
+  display: grid;
+  gap: 10px;
+}
+
+.unit2-game-visual,
+.unit2-game-text {
+  min-height: 112px;
+  padding: 12px;
+  border: 3px solid var(--orange);
+  background: #050505;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.unit2-game-visual {
+  font-size: clamp(4rem, 22vw, 7rem);
+  line-height: 1;
+}
+
+.unit2-game-text p {
+  margin: 0;
+  font-size: clamp(1.75rem, 8vw, 3rem);
+  font-weight: 1000;
+  line-height: 1.1;
+}
+
+.unit2-game-question {
+  color: var(--orange);
+  font-size: clamp(1.3rem, 6vw, 2rem);
+  font-weight: 1000;
+}
+
+.unit2-game-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.unit2-game-option {
+  min-height: 70px;
+  padding: 10px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  color: #ffffff;
+  background: #0a0a0a;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  font-size: clamp(1.15rem, 6vw, 2rem);
+  font-weight: 1000;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.unit2-option-emoji {
+  font-size: clamp(1.7rem, 8vw, 3rem);
+  line-height: 1;
+}
+
+.unit2-game-option.is-correct,
+.unit2-game-option.is-wrong {
+  animation: pop 240ms ease both;
+}
+
+.unit2-game-option.is-correct {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.unit2-game-option.is-wrong {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.unit2-game-nav {
+  grid-template-columns: 1fr;
+}
+
+.unit2-game-final {
+  min-height: min(62dvh, 560px);
+  place-items: center;
+  text-align: center;
+}
+
+.unit2-game-final-mark {
+  font-size: clamp(3rem, 16vw, 5rem);
+}
+
+.unit2-game-big {
+  color: var(--orange);
+  font-size: clamp(1.8rem, 9vw, 2.8rem);
+  font-weight: 1000;
+}
+
+.unit2-final-words {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.unit2-final-words span,
+.unit2-score-row span {
+  padding: 9px 12px;
+  border: 2px solid var(--orange);
+  background: #050505;
+  color: #ffffff;
+  font-weight: 1000;
+}
+
+.unit2-score-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-height: 720px) {
+  .unit2-game-card {
+    min-height: auto;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .unit2-game-visual,
+  .unit2-game-text {
+    min-height: 88px;
+  }
+
+  .unit2-game-option {
+    min-height: 58px;
+  }
+}

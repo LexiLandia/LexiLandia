@@ -1,5 +1,6 @@
 {
   "project": "LexiLand Russian",
+  "generatedLessonCount": 0,
   "runtimeLessons": [
     {
       "id": "lesson-0-reading",
@@ -23,10 +24,10 @@
       "id": "lesson-3-mama-dom-tam",
       "order": 3,
       "title": "Урок 3: мама, дом, там",
-      "unitCount": 2
+      "unitCount": 3
     }
   ],
-  "audioCount": 347,
+  "audioCount": 396,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -151,12 +152,22 @@
     },
     {
       "audio": "assets/audio/ru/chto.mp3",
-      "text": "что",
-      "speechText": "что",
+      "text": "Что?",
+      "speechText": "Что?",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chto_eto.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -210,6 +221,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/devochka.mp3",
+      "text": "девочка",
+      "speechText": "девочка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/do.mp3",
       "text": "до",
       "speechText": "до",
@@ -224,6 +245,16 @@
       "text": "дом",
       "speechText": "дом",
       "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dom_i_park.mp3",
+      "text": "дом и парк",
+      "speechText": "дом и парк",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-3-mama-dom-tam",
@@ -340,6 +371,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/eto_devochka.mp3",
+      "text": "Это девочка.",
+      "speechText": "Это девочка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/eto_dom.mp3",
       "text": "это дом",
       "speechText": "это дом",
@@ -357,6 +398,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_kniga.mp3",
+      "text": "Это книга.",
+      "speechText": "Это книга.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_kot.mp3",
+      "text": "Это кот.",
+      "speechText": "Это кот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -390,6 +451,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/eto_malchik.mp3",
+      "text": "Это мальчик.",
+      "speechText": "Это мальчик.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_mama.mp3",
+      "text": "Это мама.",
+      "speechText": "Это мама.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/eto_metro.mp3",
       "text": "Это метро.",
       "speechText": "Это метро.",
@@ -397,6 +478,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_myach.mp3",
+      "text": "Это мяч.",
+      "speechText": "Это мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_papa.mp3",
+      "text": "Это папа.",
+      "speechText": "Это папа.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -437,6 +538,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_sobaka.mp3",
+      "text": "Это собака.",
+      "speechText": "Это собака.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -911,12 +1022,12 @@
     },
     {
       "audio": "assets/audio/ru/gde.mp3",
-      "text": "где",
-      "speechText": "где",
+      "text": "Где?",
+      "speechText": "Где?",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -1071,12 +1182,12 @@
     },
     {
       "audio": "assets/audio/ru/i.mp3",
-      "text": "И",
-      "speechText": "И",
-      "rate": "-50%",
+      "text": "и",
+      "speechText": "и",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -1196,7 +1307,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kniga_tam.mp3",
+      "text": "Книга там.",
+      "speechText": "Книга там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -1236,7 +1357,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_i_sobaka.mp3",
+      "text": "кот и собака",
+      "speechText": "кот и собака",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_zdes.mp3",
+      "text": "Кот здесь.",
+      "speechText": "Кот здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -1251,12 +1392,32 @@
     },
     {
       "audio": "assets/audio/ru/kto.mp3",
-      "text": "кто",
-      "speechText": "кто",
+      "text": "Кто?",
+      "speechText": "Кто?",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto_eto.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto_i_chto.mp3",
+      "text": "Кто и что?",
+      "speechText": "Кто и что?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -1830,6 +1991,46 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/lesson_4_text.mp3",
+      "text": "Мама здесь. Папа там. Он здесь. Она там. Мальчик здесь. Девочка там.",
+      "speechText": "Мама здесь. Папа там. Он здесь. Она там. Мальчик здесь. Девочка там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lesson_5_text.mp3",
+      "text": "Кот здесь. Собака там. Мяч здесь. Книга там. Здесь кот и мяч. Там собака и книга.",
+      "speechText": "Кот здесь. Собака там. Мяч здесь. Книга там. Здесь кот и мяч. Там собака и книга.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lesson_6_text_1.mp3",
+      "text": "Мама здесь. Папа там. Кот здесь. Собака там. Здесь мама и кот. Там папа и собака.",
+      "speechText": "Мама здесь. Папа там. Кот здесь. Собака там. Здесь мама и кот. Там папа и собака.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lesson_6_text_2.mp3",
+      "text": "Мальчик здесь. Девочка там. Мяч здесь. Книга там. Здесь мальчик и мяч. Там девочка и книга.",
+      "speechText": "Мальчик здесь. Девочка там. Мяч здесь. Книга там. Здесь мальчик и мяч. Там девочка и книга.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/li.mp3",
       "text": "ли",
       "speechText": "ли",
@@ -1970,6 +2171,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/malchik.mp3",
+      "text": "мальчик",
+      "speechText": "мальчик",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/mama.mp3",
       "text": "мама",
       "speechText": "мама",
@@ -1983,6 +2194,16 @@
       "audio": "assets/audio/ru/mama_doma.mp3",
       "text": "Мама дома.",
       "speechText": "Мама дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_i_papa.mp3",
+      "text": "мама и папа",
+      "speechText": "мама и папа",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2126,7 +2347,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/myach_i_kniga.mp3",
+      "text": "мяч и книга",
+      "speechText": "мяч и книга",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/myach_zdes.mp3",
+      "text": "Мяч здесь.",
+      "speechText": "Мяч здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -2350,6 +2591,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/on_zdes.mp3",
+      "text": "Он здесь.",
+      "speechText": "Он здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ona.mp3",
       "text": "она",
       "speechText": "она",
@@ -2376,7 +2627,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -2426,7 +2677,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -2697,6 +2948,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sobaka.mp3",
+      "text": "собака",
+      "speechText": "собака",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sobaka_tam.mp3",
+      "text": "Собака там.",
+      "speechText": "Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
@@ -3090,6 +3361,196 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u2_game_devochka_kniga_tam.mp3",
+      "text": "Девочка там.\nКнига там.",
+      "speechText": "Девочка там.\nКнига там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_game_malchik_myach_zdes.mp3",
+      "text": "Мальчик здесь.\nМяч здесь.",
+      "speechText": "Мальчик здесь.\nМяч здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_game_mama_kot_zdes.mp3",
+      "text": "Мама здесь.\nКот здесь.",
+      "speechText": "Мама здесь.\nКот здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_game_papa_sobaka_tam.mp3",
+      "text": "Папа там.\nСобака там.",
+      "speechText": "Папа там.\nСобака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_malchik_zdes_devochka_tam.mp3",
+      "text": "Мальчик здесь. Девочка там.",
+      "speechText": "Мальчик здесь. Девочка там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_mama_zdes.mp3",
+      "text": "Это мама. Мама здесь.",
+      "speechText": "Это мама. Мама здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_on_zdes_ona_tam.mp3",
+      "text": "Он здесь. Она там.",
+      "speechText": "Он здесь. Она там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_papa_tam.mp3",
+      "text": "Это папа. Папа там.",
+      "speechText": "Это папа. Папа там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l5_kot_sobaka.mp3",
+      "text": "Это кот. Кот здесь. Это собака. Собака там.",
+      "speechText": "Это кот. Кот здесь. Это собака. Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l5_myach_kniga.mp3",
+      "text": "Это мяч. Мяч там. Это книга. Книга здесь.",
+      "speechText": "Это мяч. Мяч там. Это книга. Книга здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_dom_tam_park_zdes.mp3",
+      "text": "Дом там. Парк здесь.",
+      "speechText": "Дом там. Парк здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_final_text.mp3",
+      "text": "Здесь мама и кот. Там папа и собака. Здесь мальчик и мяч. Там девочка и книга.",
+      "speechText": "Здесь мама и кот. Там папа и собака. Здесь мальчик и мяч. Там девочка и книга.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_kot_i_sobaka_tam.mp3",
+      "text": "Кот и собака там.",
+      "speechText": "Кот и собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_kot_sobaka_tam.mp3",
+      "text": "Кот там. Собака там.",
+      "speechText": "Кот там. Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_mama_i_papa_zdes.mp3",
+      "text": "Мама и папа здесь.",
+      "speechText": "Мама и папа здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_mama_papa_zdes.mp3",
+      "text": "Мама здесь. Папа здесь.",
+      "speechText": "Мама здесь. Папа здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_myach_zdes_kniga_tam.mp3",
+      "text": "Мяч здесь. Книга там.",
+      "speechText": "Мяч здесь. Книга там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_picture_1.mp3",
+      "text": "Мама здесь. Кот здесь. Папа там. Собака там.",
+      "speechText": "Мама здесь. Кот здесь. Папа там. Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l6_picture_2.mp3",
+      "text": "Мальчик здесь. Мяч здесь. Девочка там. Книга там.",
+      "speechText": "Мальчик здесь. Мяч здесь. Девочка там. Книга там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ulitsa.mp3",
       "text": "улица",
       "speechText": "улица",
@@ -3107,6 +3568,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/urok_4.mp3",
+      "text": "Урок 4",
+      "speechText": "Урок 4",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/urok_5.mp3",
+      "text": "Урок 5",
+      "speechText": "Урок 5",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/urok_6.mp3",
+      "text": "Урок 6",
+      "speechText": "Урок 6",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-3-mama-dom-tam",
       "exists": true
     },
     {
