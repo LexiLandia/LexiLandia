@@ -11,6 +11,7 @@ from .emit import emit_generated_lessons, emit_manifest
 from .io import load_config, load_dictionary, load_lesson_sources, load_map_sources, load_runtime_lessons, write_json
 from .maps import render_map_preview
 from .paths import ROOT
+from .summarize import OllamaSummaryError, command_summarize_lessons
 from .validate import Finding, validate_lessons, validate_sources
 
 
@@ -40,6 +41,12 @@ def main(argv: list[str] | None = None) -> int:
 
     agents_parser = sub.add_parser("agents", help="List or print available content agents.")
     agents_parser.add_argument("name", nargs="?", help="Optional agent name without .md")
+    summarize_parser = sub.add_parser("summarize-lessons", help="Summarize current lessons with local Ollama.")
+    summarize_parser.add_argument("--model", help="Ollama model name. Defaults to first installed model.")
+    summarize_parser.add_argument("--base-url", default=None, help="Ollama base URL. Defaults to http://localhost:11434.")
+    summarize_parser.add_argument("--output", default="docs/lesson-catalog-ai.md", help="Markdown output path.")
+    summarize_parser.add_argument("--dry-run", action="store_true", help="Print compact lesson context without calling Ollama.")
+    summarize_parser.add_argument("--timeout", type=int, default=300, help="Ollama request timeout in seconds.")
     sub.add_parser("status", help="Show runtime lesson and generated source status.")
     sub.add_parser("smoke", help="Run build, validate, and JavaScript/Python syntax checks.")
 
@@ -61,6 +68,12 @@ def main(argv: list[str] | None = None) -> int:
         return command_map_preview(args.map_id)
     if args.command == "agents":
         return command_agents(args.name)
+    if args.command == "summarize-lessons":
+        try:
+            return command_summarize_lessons(args.model, args.base_url, args.output, args.dry_run, args.timeout)
+        except OllamaSummaryError as exc:
+            print(f"ERROR\t{exc}")
+            return 1
     if args.command == "status":
         return command_status()
     if args.command == "smoke":

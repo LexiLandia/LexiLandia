@@ -66,3 +66,19 @@ Commands:
 ```bash
 python -B tools/lexiforge.py smoke
 ```
+
+## Lesson Summarizer
+
+Job:
+- Read the current runtime lessons.
+- Use local Ollama to write a short author-facing lesson catalog.
+- Keep the summary in Russian and do not invent content.
+
+Command:
+
+```bash
+python -B tools/lexiforge.py summarize-lessons --model llama3.2:3b
+```
+
+Output:
+- `docs/lesson-catalog-ai.md`

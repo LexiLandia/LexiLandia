@@ -35,6 +35,7 @@ python tools/lexiforge.py audio-generate
 python tools/lexiforge.py map-preview
 python tools/lexiforge.py agents
 python tools/lexiforge.py agents lesson-recipe-writer
+python tools/lexiforge.py summarize-lessons --model llama3.2:3b
 python tools/lexiforge.py status
 python tools/lexiforge.py smoke
 python tools/lexiforge.py new-lesson lesson-5-transport "Урок 5. Транспорт"
@@ -160,4 +161,28 @@ The recommended token-saving workflow is documented in:
 
 ```text
 docs/tutorials/06-use-codex-agents.md
+```
+
+## Ollama Lesson Summaries
+
+LexiForge can use a local Ollama model to regenerate a short author-facing catalog of all current lessons and games:
+
+```bash
+ollama serve
+ollama pull llama3.2:3b
+python tools/lexiforge.py summarize-lessons --model llama3.2:3b
+```
+
+The output is:
+
+```text
+docs/lesson-catalog-ai.md
+```
+
+This command does not touch learner lesson data. It only reads the current runtime lessons and writes a Markdown memory file.
+
+To inspect the compact context before sending it to Ollama:
+
+```bash
+python tools/lexiforge.py summarize-lessons --dry-run
 ```

@@ -67,7 +67,10 @@ python tools/lexiforge.py validate --include-drafts
 10. `validator-runner`
     Run build, validate, audio-plan, smoke.
 
-11. `publisher`
+11. `lesson-summarizer`
+    Refresh the short lesson catalog with local Ollama.
+
+12. `publisher`
     Commit and push.
 
 ## Big Lesson Workflow
@@ -83,10 +86,29 @@ Do not edit files yet.
 
 Then run each task separately.
 
+## Refresh The Lesson Catalog With Ollama
+
+After adding lessons or games, run:
+
+```bash
+python tools/lexiforge.py summarize-lessons --model llama3.2:3b
+```
+
+This reads the current runtime lesson data and writes:
+
+```text
+docs/lesson-catalog-ai.md
+```
+
+If you want to see the compact context before sending it to Ollama:
+
+```bash
+python tools/lexiforge.py summarize-lessons --dry-run
+```
+
 ## Why This Saves Tokens
 
 - Each agent reads fewer files.
 - Each output is a small source artifact.
 - LexiForge validation catches mechanical mistakes.
 - You avoid long conversations where Codex keeps the entire project in context.
-
