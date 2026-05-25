@@ -1365,6 +1365,22 @@ button {
   background: #0f2c42;
 }
 
+.map-tile.person {
+  background: #2d2446;
+}
+
+.map-tile.animal {
+  background: #173329;
+}
+
+.map-tile.object {
+  background: #302819;
+}
+
+.map-tile.food {
+  background: #33221a;
+}
+
 .map-tile.bus {
   background: #352513;
 }

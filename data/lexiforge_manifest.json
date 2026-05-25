@@ -30,10 +30,10 @@
       "id": "level-0-unit-2-kto-chto-malenkiy-mir",
       "order": 4,
       "title": "Юнит 2: Кто? Что? Маленький мир",
-      "unitCount": 4
+      "unitCount": 5
     }
   ],
-  "audioCount": 409,
+  "audioCount": 421,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -1107,6 +1107,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/gde_hleb.mp3",
+      "text": "Где хлеб?",
+      "speechText": "Где хлеб?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/gde_kafe.mp3",
       "text": "Где кафе?",
       "speechText": "Где кафе?",
@@ -1114,6 +1124,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_kniga.mp3",
+      "text": "Где книга?",
+      "speechText": "Где книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_kot.mp3",
+      "text": "Где кот?",
+      "speechText": "Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -1127,6 +1157,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/gde_mama.mp3",
+      "text": "Где мама?",
+      "speechText": "Где мама?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/gde_metro.mp3",
       "text": "Где метро?",
       "speechText": "Где метро?",
@@ -1134,6 +1174,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_myach.mp3",
+      "text": "Где мяч?",
+      "speechText": "Где мяч?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_papa.mp3",
+      "text": "Где папа?",
+      "speechText": "Где папа?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -1157,6 +1217,46 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/gde_sobaka.mp3",
+      "text": "Где собака?",
+      "speechText": "Где собака?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_stol.mp3",
+      "text": "Где стол?",
+      "speechText": "Где стол?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_stul.mp3",
+      "text": "Где стул?",
+      "speechText": "Где стул?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_telefon.mp3",
+      "text": "Где телефон?",
+      "speechText": "Где телефон?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/gde_ty.mp3",
       "text": "Где ты?",
       "speechText": "Где ты?",
@@ -1177,6 +1277,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/gde_voda.mp3",
+      "text": "Где вода?",
+      "speechText": "Где вода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/gde_ya.mp3",
       "text": "Где я?",
       "speechText": "Где я?",
@@ -1184,6 +1294,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/gde_yabloko.mp3",
+      "text": "Где яблоко?",
+      "speechText": "Где яблоко?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {

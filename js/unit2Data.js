@@ -88,6 +88,30 @@
     };
   }
 
+  function mapObj(id, emojiText, x, y, kind) {
+    return {
+      id: id,
+      emoji: emojiText,
+      x: x,
+      y: y,
+      kind: kind || ""
+    };
+  }
+
+  function mapTask(id, text, emojiText, file, start, target, objects) {
+    return {
+      id: id,
+      text: text,
+      emoji: emojiText,
+      audio: audio(file),
+      width: 5,
+      height: 5,
+      start: start,
+      target: target,
+      objects: objects
+    };
+  }
+
   function wordList(items) {
     return {
       type: "word-list",
@@ -496,6 +520,92 @@
     ]
   };
 
+  var mapGame2Unit = {
+    id: "unit-2-map-game-2-idi-i-naydi",
+    title: "Игра 2: Иди и найди",
+    icon: "🗺️",
+    stages: [
+      {
+        type: "map-command-game",
+        title: "Игра 2: Иди и найди",
+        tasks: [
+          mapTask("u2-map-1", "Где мама?", "❓👩‍👧", "gde_mama.mp3", { x: 0, y: 4 }, { x: 3, y: 1 }, [
+            mapObj("mama", "👩‍👧", 3, 1, "person"),
+            mapObj("papa", "👨", 1, 0, "person"),
+            mapObj("myach", "⚽", 4, 3, "object"),
+            mapObj("dom", "🏠", 0, 0, "house")
+          ]),
+          mapTask("u2-map-2", "Где папа?", "❓👨", "gde_papa.mp3", { x: 4, y: 4 }, { x: 1, y: 2 }, [
+            mapObj("papa", "👨", 1, 2, "person"),
+            mapObj("mama", "👩‍👧", 4, 0, "person"),
+            mapObj("kniga", "📖", 2, 4, "object"),
+            mapObj("park", "🌳🌳🌳", 0, 0, "park")
+          ]),
+          mapTask("u2-map-3", "Где кот?", "❓🐱", "gde_kot.mp3", { x: 2, y: 4 }, { x: 0, y: 1 }, [
+            mapObj("kot", "🐱", 0, 1, "animal"),
+            mapObj("sobaka", "🐶", 4, 1, "animal"),
+            mapObj("stol", "🟫", 2, 2, "object"),
+            mapObj("kafe", "🏢☕", 3, 4, "cafe")
+          ]),
+          mapTask("u2-map-4", "Где собака?", "❓🐶", "gde_sobaka.mp3", { x: 0, y: 0 }, { x: 4, y: 3 }, [
+            mapObj("sobaka", "🐶", 4, 3, "animal"),
+            mapObj("kot", "🐱", 1, 1, "animal"),
+            mapObj("telefon", "📱", 3, 0, "object"),
+            mapObj("dom", "🏠", 0, 4, "house")
+          ]),
+          mapTask("u2-map-5", "Где мяч?", "❓⚽", "gde_myach.mp3", { x: 2, y: 0 }, { x: 4, y: 4 }, [
+            mapObj("myach", "⚽", 4, 4, "object"),
+            mapObj("kniga", "📖", 0, 3, "object"),
+            mapObj("malchik", "👦", 3, 1, "person"),
+            mapObj("metro", "🚇", 1, 4, "metro")
+          ]),
+          mapTask("u2-map-6", "Где книга?", "❓📖", "gde_kniga.mp3", { x: 4, y: 0 }, { x: 1, y: 3 }, [
+            mapObj("kniga", "📖", 1, 3, "object"),
+            mapObj("myach", "⚽", 3, 3, "object"),
+            mapObj("devochka", "👧", 0, 1, "person"),
+            mapObj("shkola", "🏫", 4, 4, "school")
+          ]),
+          mapTask("u2-map-7", "Где стол?", "❓🟫", "gde_stol.mp3", { x: 0, y: 2 }, { x: 3, y: 0 }, [
+            mapObj("stol", "🟫", 3, 0, "object"),
+            mapObj("stul", "🪑", 1, 4, "object"),
+            mapObj("kot", "🐱", 4, 2, "animal"),
+            mapObj("kafe", "🏢☕", 2, 2, "cafe")
+          ]),
+          mapTask("u2-map-8", "Где стул?", "❓🪑", "gde_stul.mp3", { x: 4, y: 2 }, { x: 0, y: 4 }, [
+            mapObj("stul", "🪑", 0, 4, "object"),
+            mapObj("stol", "🟫", 2, 1, "object"),
+            mapObj("sobaka", "🐶", 3, 3, "animal"),
+            mapObj("magazin", "🏪", 0, 0, "shop")
+          ]),
+          mapTask("u2-map-9", "Где телефон?", "❓📱", "gde_telefon.mp3", { x: 1, y: 4 }, { x: 4, y: 1 }, [
+            mapObj("telefon", "📱", 4, 1, "object"),
+            mapObj("hleb", "🍞", 2, 0, "food"),
+            mapObj("papa", "👨", 0, 3, "person"),
+            mapObj("park", "🌳🌳🌳", 3, 4, "park")
+          ]),
+          mapTask("u2-map-10", "Где вода?", "❓💧", "gde_voda.mp3", { x: 3, y: 4 }, { x: 0, y: 2 }, [
+            mapObj("voda", "💧", 0, 2, "water"),
+            mapObj("yabloko", "🍎", 4, 0, "food"),
+            mapObj("mama", "👩‍👧", 2, 3, "person"),
+            mapObj("avtobus", "🚌", 1, 4, "bus")
+          ]),
+          mapTask("u2-map-11", "Где яблоко?", "❓🍎", "gde_yabloko.mp3", { x: 0, y: 0 }, { x: 3, y: 3 }, [
+            mapObj("yabloko", "🍎", 3, 3, "food"),
+            mapObj("voda", "💧", 1, 2, "water"),
+            mapObj("devochka", "👧", 4, 1, "person"),
+            mapObj("dom", "🏠", 0, 4, "house")
+          ]),
+          mapTask("u2-map-12", "Где хлеб?", "❓🍞", "gde_hleb.mp3", { x: 4, y: 4 }, { x: 1, y: 1 }, [
+            mapObj("hleb", "🍞", 1, 1, "food"),
+            mapObj("telefon", "📱", 3, 2, "object"),
+            mapObj("sobaka", "🐶", 0, 3, "animal"),
+            mapObj("magazin", "🏪", 4, 0, "shop")
+          ])
+        ]
+      }
+    ]
+  };
+
   root.LexiLandUnit2Lesson = {
     id: "level-0-unit-2-kto-chto-malenkiy-mir",
     order: 4,
@@ -504,7 +614,7 @@
     level: "Уровень 0",
     dictionary: dictionary,
     scenes: [],
-    units: [lesson4Unit, lesson5Unit, lesson6Unit, gameUnit]
+    units: [lesson4Unit, lesson5Unit, lesson6Unit, gameUnit, mapGame2Unit]
   };
   root.LexiLandUnit2 = root.LexiLandUnit2Lesson;
   root.LexiLandUnit2AudioLesson = root.LexiLandUnit2Lesson;
