@@ -33,7 +33,7 @@
       "unitCount": 4
     }
   ],
-  "audioCount": 396,
+  "audioCount": 409,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -397,6 +397,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/eto_hleb.mp3",
+      "text": "Это хлеб.",
+      "speechText": "Это хлеб.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/eto_kafe.mp3",
       "text": "Это кафе.",
       "speechText": "Это кафе.",
@@ -557,6 +567,46 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/eto_sok.mp3",
+      "text": "Это сок.",
+      "speechText": "Это сок.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_stol.mp3",
+      "text": "Это стол.",
+      "speechText": "Это стол.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_stul.mp3",
+      "text": "Это стул.",
+      "speechText": "Это стул.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_telefon.mp3",
+      "text": "Это телефон.",
+      "speechText": "Это телефон.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/eto_ulitsa.mp3",
       "text": "Это улица.",
       "speechText": "Это улица.",
@@ -568,22 +618,22 @@
     },
     {
       "audio": "assets/audio/ru/eto_voda.mp3",
-      "text": "это вода",
-      "speechText": "это вода",
+      "text": "Это вода.",
+      "speechText": "Это вода.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-1",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
       "audio": "assets/audio/ru/eto_yabloko.mp3",
-      "text": "это яблоко",
-      "speechText": "это яблоко",
+      "text": "Это яблоко.",
+      "speechText": "Это яблоко.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-1",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -1173,7 +1223,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/hleb_tam.mp3",
+      "text": "Хлеб там.",
+      "speechText": "Хлеб там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -1997,9 +2057,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/lesson_4_text.mp3",
-      "text": "Мама здесь. Папа там. Он здесь. Она там. Мальчик здесь. Девочка там.",
-      "speechText": "Мама здесь. Папа там. Он здесь. Она там. Мальчик здесь. Девочка там.",
+      "audio": "assets/audio/ru/lesson_4_text_animals.mp3",
+      "text": "Мама здесь. Папа там. Кот здесь. Собака там. Мальчик здесь. Девочка там.",
+      "speechText": "Мама здесь. Папа там. Кот здесь. Собака там. Мальчик здесь. Девочка там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2007,9 +2067,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/lesson_5_text.mp3",
-      "text": "Кот здесь. Собака там. Мяч здесь. Книга там. Здесь кот и мяч. Там собака и книга.",
-      "speechText": "Кот здесь. Собака там. Мяч здесь. Книга там. Здесь кот и мяч. Там собака и книга.",
+      "audio": "assets/audio/ru/lesson_5_text_objects.mp3",
+      "text": "Мяч здесь. Книга там. Стол здесь. Стул там. Телефон здесь. Хлеб там.",
+      "speechText": "Мяч здесь. Книга там. Стол здесь. Стул там. Телефон здесь. Хлеб там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2017,9 +2077,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/lesson_6_text_1.mp3",
-      "text": "Мама здесь. Папа там. Кот здесь. Собака там. Здесь мама и кот. Там папа и собака.",
-      "speechText": "Мама здесь. Папа там. Кот здесь. Собака там. Здесь мама и кот. Там папа и собака.",
+      "audio": "assets/audio/ru/lesson_6_text_1_who_what.mp3",
+      "text": "Мама здесь. Кот здесь. Мяч здесь. Папа там. Собака там. Книга там.",
+      "speechText": "Мама здесь. Кот здесь. Мяч здесь. Папа там. Собака там. Книга там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2027,9 +2087,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/lesson_6_text_2.mp3",
-      "text": "Мальчик здесь. Девочка там. Мяч здесь. Книга там. Здесь мальчик и мяч. Там девочка и книга.",
-      "speechText": "Мальчик здесь. Девочка там. Мяч здесь. Книга там. Здесь мальчик и мяч. Там девочка и книга.",
+      "audio": "assets/audio/ru/lesson_6_text_2_objects.mp3",
+      "text": "Мальчик здесь. Телефон здесь. Стол здесь. Девочка там. Стул там. Хлеб там.",
+      "speechText": "Мальчик здесь. Телефон здесь. Стол здесь. Девочка там. Стул там. Хлеб там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2181,6 +2241,16 @@
       "text": "мальчик",
       "speechText": "мальчик",
       "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/malchik_i_devochka.mp3",
+      "text": "мальчик и девочка",
+      "speechText": "мальчик и девочка",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
@@ -2993,7 +3063,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -3013,7 +3083,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stol_i_stul.mp3",
+      "text": "стол и стул",
+      "speechText": "стол и стул",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stol_zdes.mp3",
+      "text": "Стол здесь.",
+      "speechText": "Стол здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -3023,7 +3113,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stul_tam.mp3",
+      "text": "Стул там.",
+      "speechText": "Стул там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -3213,7 +3313,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/telefon_i_voda.mp3",
+      "text": "телефон и вода",
+      "speechText": "телефон и вода",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/telefon_zdes.mp3",
+      "text": "Телефон здесь.",
+      "speechText": "Телефон здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -3377,6 +3497,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u2_game_kot_sobaka_telefon.mp3",
+      "text": "Кот здесь.\nСобака здесь.\nТелефон там.",
+      "speechText": "Кот здесь.\nСобака здесь.\nТелефон там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u2_game_malchik_myach_zdes.mp3",
       "text": "Мальчик здесь.\nМяч здесь.",
       "speechText": "Мальчик здесь.\nМяч здесь.",
@@ -3407,9 +3537,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l4_malchik_zdes_devochka_tam.mp3",
-      "text": "Мальчик здесь. Девочка там.",
-      "speechText": "Мальчик здесь. Девочка там.",
+      "audio": "assets/audio/ru/u2_game_stol_stul_hleb.mp3",
+      "text": "Стол здесь.\nСтул там.\nХлеб там.",
+      "speechText": "Стол здесь.\nСтул там.\nХлеб там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3417,9 +3547,29 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l4_mama_zdes.mp3",
-      "text": "Это мама. Мама здесь.",
-      "speechText": "Это мама. Мама здесь.",
+      "audio": "assets/audio/ru/u2_l4_kot_zdes_sobaka_tam.mp3",
+      "text": "Кот здесь. Собака там.",
+      "speechText": "Кот здесь. Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_malchik_devochka_kot.mp3",
+      "text": "Мальчик здесь. Девочка там. Кот там.",
+      "speechText": "Мальчик здесь. Девочка там. Кот там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_l4_mama_zdes_papa_tam.mp3",
+      "text": "Это мама. Мама здесь. Это папа. Папа там.",
+      "speechText": "Это мама. Мама здесь. Это папа. Папа там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3437,9 +3587,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l4_papa_tam.mp3",
-      "text": "Это папа. Папа там.",
-      "speechText": "Это папа. Папа там.",
+      "audio": "assets/audio/ru/u2_l5_myach_zdes_kniga_tam.mp3",
+      "text": "Это мяч. Мяч здесь. Это книга. Книга там.",
+      "speechText": "Это мяч. Мяч здесь. Это книга. Книга там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3447,9 +3597,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l5_kot_sobaka.mp3",
-      "text": "Это кот. Кот здесь. Это собака. Собака там.",
-      "speechText": "Это кот. Кот здесь. Это собака. Собака там.",
+      "audio": "assets/audio/ru/u2_l5_stol_stul_telefon.mp3",
+      "text": "Стол здесь. Стул там. Телефон здесь.",
+      "speechText": "Стол здесь. Стул там. Телефон здесь.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3457,9 +3607,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l5_myach_kniga.mp3",
-      "text": "Это мяч. Мяч там. Это книга. Книга здесь.",
-      "speechText": "Это мяч. Мяч там. Это книга. Книга здесь.",
+      "audio": "assets/audio/ru/u2_l5_voda_yabloko_hleb_kniga.mp3",
+      "text": "Здесь вода и яблоко. Там хлеб и книга.",
+      "speechText": "Здесь вода и яблоко. Там хлеб и книга.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3467,9 +3617,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l6_dom_tam_park_zdes.mp3",
-      "text": "Дом там. Парк здесь.",
-      "speechText": "Дом там. Парк здесь.",
+      "audio": "assets/audio/ru/u2_l6_final_text_who_what.mp3",
+      "text": "Здесь мама и кот. Там папа и собака. Здесь телефон и вода. Там яблоко и хлеб.",
+      "speechText": "Здесь мама и кот. Там папа и собака. Здесь телефон и вода. Там яблоко и хлеб.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3477,9 +3627,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l6_final_text.mp3",
-      "text": "Здесь мама и кот. Там папа и собака. Здесь мальчик и мяч. Там девочка и книга.",
-      "speechText": "Здесь мама и кот. Там папа и собака. Здесь мальчик и мяч. Там девочка и книга.",
+      "audio": "assets/audio/ru/u2_l6_kto_zdes_chto_tam.mp3",
+      "text": "Кот здесь. Собака здесь. Мяч там. Книга там.",
+      "speechText": "Кот здесь. Собака здесь. Мяч там. Книга там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3487,9 +3637,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l6_kot_i_sobaka_tam.mp3",
-      "text": "Кот и собака там.",
-      "speechText": "Кот и собака там.",
+      "audio": "assets/audio/ru/u2_l6_picture_1_who_what.mp3",
+      "text": "Мама здесь. Кот здесь. Мяч здесь. Папа там. Собака там. Книга там.",
+      "speechText": "Мама здесь. Кот здесь. Мяч здесь. Папа там. Собака там. Книга там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3497,59 +3647,9 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u2_l6_kot_sobaka_tam.mp3",
-      "text": "Кот там. Собака там.",
-      "speechText": "Кот там. Собака там.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u2_l6_mama_i_papa_zdes.mp3",
-      "text": "Мама и папа здесь.",
-      "speechText": "Мама и папа здесь.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u2_l6_mama_papa_zdes.mp3",
-      "text": "Мама здесь. Папа здесь.",
-      "speechText": "Мама здесь. Папа здесь.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u2_l6_myach_zdes_kniga_tam.mp3",
-      "text": "Мяч здесь. Книга там.",
-      "speechText": "Мяч здесь. Книга там.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u2_l6_picture_1.mp3",
-      "text": "Мама здесь. Кот здесь. Папа там. Собака там.",
-      "speechText": "Мама здесь. Кот здесь. Папа там. Собака там.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u2_l6_picture_2.mp3",
-      "text": "Мальчик здесь. Мяч здесь. Девочка там. Книга там.",
-      "speechText": "Мальчик здесь. Мяч здесь. Девочка там. Книга там.",
+      "audio": "assets/audio/ru/u2_l6_picture_2_objects.mp3",
+      "text": "Мальчик здесь. Стол здесь. Девочка там. Стул там.",
+      "speechText": "Мальчик здесь. Стол здесь. Девочка там. Стул там.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3653,7 +3753,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/voda_tam.mp3",
+      "text": "Вода там.",
+      "speechText": "Вода там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {
@@ -3723,7 +3833,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yabloko_i_hleb.mp3",
+      "text": "яблоко и хлеб",
+      "speechText": "яблоко и хлеб",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yabloko_zdes.mp3",
+      "text": "Яблоко здесь.",
+      "speechText": "Яблоко здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
       "exists": true
     },
     {

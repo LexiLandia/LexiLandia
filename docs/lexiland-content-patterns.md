@@ -9,6 +9,7 @@ Use this file to avoid rethinking the same lesson structure.
 - No grammar explanations.
 - Meaning comes from audio, emoji, simple images, situation, and repetition.
 - Use short Russian text and one idea per slide.
+- For authoring `кто?` / `что?`: people and animals go under `кто?`; inanimate objects go under `что?`. Keep this rule out of learner-facing explanations.
 
 ## Lesson Pattern
 
