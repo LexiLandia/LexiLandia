@@ -36,6 +36,10 @@ body {
   background: radial-gradient(circle at top, #102b48 0%, var(--bg) 34%, #050b14 100%);
 }
 
+body.lesson-active {
+  overflow: hidden;
+}
+
 button {
   font: inherit;
 }
@@ -55,6 +59,57 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.app-shell.play-shell {
+  height: 100dvh;
+  min-height: 100dvh;
+  padding: clamp(8px, 1.8dvh, 12px);
+  overflow: hidden;
+}
+
+.play-shell .topbar,
+.play-shell .progress-wrap,
+.play-shell .button-row {
+  flex: 0 0 auto;
+}
+
+.play-shell .lesson-screen {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  gap: clamp(7px, 1.2dvh, 12px);
+  overflow: hidden;
+}
+
+.play-shell .brand-mark,
+.play-shell .home-button {
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+}
+
+.play-shell .brand h1,
+.play-shell .brand h2 {
+  font-size: clamp(1.12rem, 3.2dvh, 1.55rem);
+}
+
+.play-shell .brand small {
+  margin-top: 1px;
+  font-size: 0.74rem;
+  line-height: 1.05;
+}
+
+.play-shell .progress-wrap {
+  gap: 5px;
+}
+
+.play-shell .progress-label {
+  font-size: 0.72rem;
+}
+
+.play-shell .progress-track {
+  height: 7px;
 }
 
 .topbar {
@@ -1516,6 +1571,411 @@ button {
   justify-content: center;
   line-height: 1;
   overflow: hidden;
+}
+
+.play-shell #game-root,
+.play-shell .slide-stage-root {
+  min-height: 0;
+}
+
+.play-shell #game-root {
+  height: 100%;
+  display: grid;
+  gap: clamp(6px, 1dvh, 10px);
+}
+
+.play-shell .lesson-screen > .task-card {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.play-shell .slide-stage-root,
+.play-shell .reading-game-screen #game-root,
+.play-shell .unit2-game-screen #game-root {
+  height: 100%;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.play-shell .stage-card,
+.play-shell .reading-find-card,
+.play-shell .unit2-game-card {
+  min-height: 0;
+  max-height: 100%;
+  padding: clamp(9px, 1.7dvh, 13px);
+  gap: clamp(7px, 1.1dvh, 11px);
+  overflow: hidden;
+}
+
+.play-shell .mode-badge {
+  min-height: 28px;
+  padding: 4px 9px;
+  font-size: 0.82rem;
+}
+
+.play-shell .primary-button,
+.play-shell .secondary-button,
+.play-shell .audio-button {
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.play-shell .button-row,
+.play-shell .slide-nav,
+.play-shell .reading-game-nav,
+.play-shell .unit2-game-nav {
+  gap: 8px;
+}
+
+.play-shell .sound-panel {
+  padding: 8px;
+  gap: 6px;
+}
+
+.play-shell .prompt-text {
+  font-size: clamp(1rem, 3.4dvh, 1.3rem);
+}
+
+.play-shell .prompt-visual {
+  font-size: clamp(1.8rem, 6dvh, 3rem);
+}
+
+.play-shell .audio-warning,
+.play-shell .word-feedback {
+  min-height: 0;
+}
+
+.play-shell .feedback {
+  min-height: 34px;
+  padding: 7px 10px;
+}
+
+.play-shell .slide-card {
+  align-content: stretch;
+}
+
+.play-shell .slide-content {
+  gap: clamp(5px, 0.9dvh, 9px);
+  overflow: hidden;
+}
+
+.play-shell .slide-title {
+  font-size: clamp(1.25rem, 4.6dvh, 2.35rem);
+}
+
+.play-shell .slide-lines,
+.play-shell .reading-text {
+  gap: 4px;
+  font-size: clamp(1.1rem, 4dvh, 2.2rem);
+}
+
+.play-shell .slide-visual {
+  min-height: 0;
+}
+
+.play-shell .emoji-visual,
+.play-shell .focus-visual {
+  font-size: clamp(3.1rem, 13dvh, 6rem);
+}
+
+.play-shell .letter-card-visual,
+.play-shell .syllable-grid,
+.play-shell .word-card-grid,
+.play-shell .reading-copy-box {
+  min-height: clamp(120px, 28dvh, 200px);
+}
+
+.play-shell .letter-card-visual {
+  padding: 10px;
+}
+
+.play-shell .big-letter-pair {
+  font-size: clamp(3.6rem, 12dvh, 6rem);
+}
+
+.play-shell .letter-card-emoji {
+  min-width: 66px;
+  min-height: 66px;
+  font-size: clamp(2.4rem, 8dvh, 4rem);
+}
+
+.play-shell .syllable-chip {
+  min-height: clamp(42px, 7dvh, 56px);
+  font-size: clamp(1.3rem, 5dvh, 2.2rem);
+}
+
+.play-shell .word-card {
+  min-height: clamp(46px, 7.5dvh, 60px);
+  font-size: clamp(1rem, 3.6dvh, 1.45rem);
+}
+
+.play-shell .image-card-grid,
+.play-shell .slide-scene,
+.play-shell .concept-sketch,
+.play-shell .person-sketch {
+  min-height: clamp(105px, 24dvh, 170px);
+}
+
+.play-shell .slide-zone,
+.play-shell .sketch-side {
+  padding: 8px;
+  gap: 6px;
+}
+
+.play-shell .slide-zone-items {
+  min-height: 0;
+  gap: 5px;
+  font-size: clamp(2rem, 8dvh, 3.8rem);
+}
+
+.play-shell .active-question {
+  padding: 7px;
+  gap: 6px;
+}
+
+.play-shell .question-text {
+  font-size: clamp(1rem, 3.6dvh, 1.6rem);
+}
+
+.play-shell .slide-answer,
+.play-shell .answer-card {
+  min-height: clamp(58px, 10dvh, 92px);
+}
+
+.play-shell .answer-card {
+  padding: 9px;
+  grid-template-columns: 58px 1fr;
+  gap: 10px;
+}
+
+.play-shell .answer-emoji,
+.play-shell .slide-answer .answer-emoji {
+  width: 58px;
+  min-height: 58px;
+  font-size: 1.45rem;
+}
+
+.play-shell .answer-text,
+.play-shell .slide-answer .answer-text {
+  font-size: clamp(0.95rem, 3.1dvh, 1.25rem);
+}
+
+.play-shell .intro-card,
+.play-shell .finish-card {
+  min-height: 0;
+}
+
+.play-shell .concept-card {
+  min-height: clamp(90px, 18dvh, 150px);
+  padding: 10px;
+}
+
+.play-shell .concept-side {
+  gap: 6px;
+}
+
+.play-shell .concept-side strong {
+  font-size: clamp(1.25rem, 4.2dvh, 2.25rem);
+}
+
+.play-shell .concept-pin,
+.play-shell .concept-arrow,
+.play-shell .intro-emoji {
+  font-size: clamp(3rem, 12dvh, 6rem);
+}
+
+.play-shell .big-russian {
+  font-size: clamp(2.2rem, 10dvh, 4.5rem);
+}
+
+.play-shell .scene-card {
+  min-height: clamp(108px, 24dvh, 170px);
+  padding: 8px;
+}
+
+.play-shell .scene,
+.play-shell .focus-scene {
+  min-height: clamp(130px, 30dvh, 220px);
+}
+
+.play-shell .scene.compact {
+  min-height: clamp(84px, 20dvh, 130px);
+}
+
+.play-shell .scene-items {
+  min-height: 0;
+  font-size: clamp(2rem, 8dvh, 3.6rem);
+}
+
+.play-shell .yes-no-grid,
+.play-shell .zone-choice-grid,
+.play-shell .answer-grid,
+.play-shell .picture-grid {
+  gap: 8px;
+}
+
+.play-shell .zone-choice {
+  min-height: clamp(58px, 10dvh, 88px);
+  font-size: clamp(2rem, 7dvh, 3rem);
+}
+
+.play-shell .mini-board {
+  min-height: 0;
+  height: clamp(170px, 34dvh, 245px);
+}
+
+.play-shell .mini-zone {
+  padding: 34px 6px 8px;
+  gap: 6px;
+}
+
+.play-shell .mini-object {
+  min-height: clamp(48px, 8dvh, 68px);
+}
+
+.play-shell .mini-emoji {
+  font-size: clamp(1.8rem, 6dvh, 2.3rem);
+}
+
+.play-shell .map-board {
+  width: min(100%, max(180px, calc(100dvh - 430px)));
+  justify-self: center;
+  gap: 4px;
+  padding: 6px;
+}
+
+.play-shell .map-tile {
+  min-height: 0;
+  border-width: 1px;
+}
+
+.play-shell .map-object {
+  font-size: clamp(1.15rem, 4.6dvh, 1.62rem);
+}
+
+.play-shell .map-player {
+  font-size: clamp(1rem, 3.6dvh, 1.35rem);
+}
+
+.play-shell .map-controls {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.play-shell .map-controls span {
+  display: none;
+}
+
+.play-shell .control-button {
+  min-height: clamp(40px, 6.4dvh, 52px);
+  font-size: clamp(1.35rem, 5dvh, 2rem);
+}
+
+.play-shell .map-check-button {
+  font-size: clamp(0.78rem, 2dvh, 0.95rem);
+}
+
+.play-shell .reading-find-card,
+.play-shell .unit2-game-card {
+  height: 100%;
+}
+
+.play-shell .reading-game-top,
+.play-shell .unit2-game-top {
+  gap: 8px;
+}
+
+.play-shell .reading-game-kid,
+.play-shell .unit2-game-mark {
+  width: 42px;
+  height: 42px;
+  font-size: 1.55rem;
+}
+
+.play-shell .reading-game-title,
+.play-shell .unit2-game-title {
+  font-size: clamp(1.1rem, 3.7dvh, 1.65rem);
+}
+
+.play-shell .reading-game-instruction,
+.play-shell .unit2-game-instruction {
+  font-size: clamp(0.95rem, 2.8dvh, 1.1rem);
+}
+
+.play-shell .reading-game-progress,
+.play-shell .unit2-game-progress {
+  height: 8px;
+}
+
+.play-shell .reading-target-card,
+.play-shell .reading-audio-prompt,
+.play-shell .unit2-game-visual,
+.play-shell .unit2-game-text {
+  min-height: clamp(76px, 18dvh, 112px);
+}
+
+.play-shell .reading-target-card strong {
+  font-size: clamp(2.2rem, 10dvh, 4.6rem);
+}
+
+.play-shell .reading-audio-pulse {
+  width: clamp(58px, 13dvh, 96px);
+  height: clamp(58px, 13dvh, 96px);
+}
+
+.play-shell .reading-choice,
+.play-shell .unit2-game-option {
+  min-height: clamp(48px, 8dvh, 64px);
+  padding: 8px;
+}
+
+.play-shell .unit2-game-visual {
+  font-size: clamp(3rem, 12dvh, 6rem);
+}
+
+.play-shell .unit2-game-text p,
+.play-shell .reading-mini-text p {
+  font-size: clamp(1.35rem, 5dvh, 2.3rem);
+}
+
+.play-shell .unit2-game-question,
+.play-shell .reading-question {
+  font-size: clamp(1.05rem, 3.5dvh, 1.55rem);
+}
+
+.play-shell .word-list {
+  max-height: min(28dvh, 180px);
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.play-shell .word-list li {
+  padding: 6px 8px;
+  font-size: 0.92rem;
+}
+
+@media (max-height: 640px) {
+  .play-shell .brand small {
+    display: none;
+  }
+
+  .play-shell .mode-badge {
+    min-height: 24px;
+    padding: 3px 8px;
+    font-size: 0.76rem;
+  }
+
+  .play-shell .feedback {
+    min-height: 30px;
+    padding: 6px 8px;
+  }
+
+  .play-shell .slide-title {
+    font-size: clamp(1.12rem, 4.4dvh, 1.8rem);
+  }
+
+  .play-shell .slide-lines,
+  .play-shell .reading-text {
+    font-size: clamp(1rem, 3.8dvh, 1.75rem);
+  }
 }
 
 @keyframes pop {

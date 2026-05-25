@@ -89,8 +89,15 @@
     createMaps();
   }
 
+  function setPlayMode(active) {
+    appRoot.classList.toggle("play-shell", Boolean(active));
+    document.body.classList.toggle("lesson-active", Boolean(active));
+  }
+
   function renderHome() {
     var courses = getCourseGroups();
+
+    setPlayMode(false);
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -159,6 +166,8 @@
       return isLessonComplete(child.item);
     });
 
+    setPlayMode(false);
+
     appRoot.innerHTML =
       '<main class="screen">' +
         '<header class="topbar">' +
@@ -203,6 +212,7 @@
     var label = item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber;
 
     setCurrentLesson(lessonIndex);
+    setPlayMode(false);
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -476,6 +486,8 @@
     clampPosition();
     var stage = unit.stages[position.stageIndex];
 
+    setPlayMode(true);
+
     if (!stage) {
       renderFinish();
       return;
@@ -654,6 +666,8 @@
     markUnitComplete();
     var unit = getCurrentUnit();
     var passCount = getUnitPassCount(unit.id);
+
+    setPlayMode(true);
 
     appRoot.innerHTML =
       renderLessonHeader("✅ Готово") +
