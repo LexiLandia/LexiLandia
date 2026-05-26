@@ -43,9 +43,15 @@
       "order": 6,
       "title": "Юнит 4: Я хочу. Дай. У меня есть.",
       "unitCount": 6
+    },
+    {
+      "id": "level-0-unit-5-movement-map",
+      "order": 7,
+      "title": "Юнит 5: Иди. Вверх, вниз, налево, направо",
+      "unitCount": 6
     }
   ],
-  "audioCount": 513,
+  "audioCount": 577,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -235,7 +241,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -359,6 +365,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/devochka_idyot_v_kafe.mp3",
+      "text": "Девочка идёт в кафе.",
+      "speechText": "Девочка идёт в кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/devochka_pyot_vodu.mp3",
       "text": "Девочка пьёт воду.",
       "speechText": "Девочка пьёт воду.",
@@ -425,7 +441,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-3-actions",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -436,6 +452,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dom_magazin_park_kafe.mp3",
+      "text": "дом. магазин. парк. кафе.",
+      "speechText": "дом. магазин. парк. кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -456,6 +482,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/domoy.mp3",
+      "text": "домой",
+      "speechText": "домой",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -495,7 +531,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -1569,6 +1605,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/idi.mp3",
+      "text": "иди",
+      "speechText": "иди",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_dva_shaga_vverh.mp3",
+      "text": "Иди два шага вверх.",
+      "speechText": "Иди два шага вверх.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/idi_k_avtobusu.mp3",
       "text": "иди к автобусу",
       "speechText": "иди к автобусу",
@@ -1609,13 +1665,163 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/idi_v_dom.mp3",
-      "text": "иди в дом",
-      "speechText": "иди в дом",
+      "audio": "assets/audio/ru/idi_nalevo.mp3",
+      "text": "Иди налево.",
+      "speechText": "Иди налево.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-1",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_nalevo_dva.mp3",
+      "text": "Иди налево 2.",
+      "speechText": "Иди налево 2.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_napravo.mp3",
+      "text": "Иди направо.",
+      "speechText": "Иди направо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_napravo_tri.mp3",
+      "text": "Иди направо 3.",
+      "speechText": "Иди направо 3.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_pryamo.mp3",
+      "text": "Иди прямо.",
+      "speechText": "Иди прямо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_syuda.mp3",
+      "text": "Иди сюда.",
+      "speechText": "Иди сюда.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_tri_shaga_napravo.mp3",
+      "text": "Иди три шага направо.",
+      "speechText": "Иди три шага направо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_tuda.mp3",
+      "text": "Иди туда.",
+      "speechText": "Иди туда.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_dom.mp3",
+      "text": "Иди в дом.",
+      "speechText": "Иди в дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_kafe.mp3",
+      "text": "Иди в кафе.",
+      "speechText": "Иди в кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_magazin.mp3",
+      "text": "Иди в магазин.",
+      "speechText": "Иди в магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_park.mp3",
+      "text": "Иди в парк.",
+      "speechText": "Иди в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_vniz.mp3",
+      "text": "Иди вниз.",
+      "speechText": "Иди вниз.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_vniz_odin.mp3",
+      "text": "Иди вниз 1.",
+      "speechText": "Иди вниз 1.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_vverh.mp3",
+      "text": "Иди вверх.",
+      "speechText": "Иди вверх.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_vverh_dva.mp3",
+      "text": "Иди вверх 2.",
+      "speechText": "Иди вверх 2.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -1675,7 +1881,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -1786,6 +1992,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_idyot_tuda.mp3",
+      "text": "Кот идёт туда.",
+      "speechText": "Кот идёт туда.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -1926,6 +2142,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kuda.mp3",
+      "text": "Куда?",
+      "speechText": "Куда?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kuda_kot_idyot.mp3",
+      "text": "Куда кот идёт?",
+      "speechText": "Куда кот идёт?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kuda_ya_idu.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -2509,6 +2755,36 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/lesson_13_text.mp3",
+      "text": "Иди в дом. Иди в магазин. Иди в парк. Стой.",
+      "speechText": "Иди в дом. Иди в магазин. Иди в парк. Стой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lesson_14_text.mp3",
+      "text": "Иди вверх. Иди направо. Иди вниз. Стой.",
+      "speechText": "Иди вверх. Иди направо. Иди вниз. Стой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lesson_15_text.mp3",
+      "text": "Я иду в парк. Мама идёт в магазин. Папа идёт домой. Кот идёт туда.",
+      "speechText": "Я иду в парк. Мама идёт в магазин. Папа идёт домой. Кот идёт туда.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/lesson_4_text_animals.mp3",
       "text": "Мама здесь. Папа там. Кот здесь. Собака там. Мальчик здесь. Девочка там.",
       "speechText": "Мама здесь. Папа там. Кот здесь. Собака там. Мальчик здесь. Девочка там.",
@@ -2715,7 +2991,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -2806,6 +3082,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_idyot_v_magazin.mp3",
+      "text": "Мама идёт в магазин.",
+      "speechText": "Мама идёт в магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_idyot_v_park.mp3",
+      "text": "Мама идёт в парк.",
+      "speechText": "Мама идёт в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3079,6 +3375,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/nalevo.mp3",
+      "text": "налево",
+      "speechText": "налево",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/napravo.mp3",
+      "text": "направо",
+      "speechText": "направо",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/naydi.mp3",
       "text": "найди",
       "speechText": "найди",
@@ -3195,7 +3511,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3275,7 +3591,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/odin_shag_dva_shaga_tri_shaga.mp3",
+      "text": "один шаг. два шага. три шага.",
+      "speechText": "один шаг. два шага. три шага.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3296,6 +3622,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/on_idyot.mp3",
+      "text": "он идёт",
+      "speechText": "он идёт",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3326,6 +3662,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ona_idyot.mp3",
+      "text": "она идёт",
+      "speechText": "она идёт",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3399,6 +3745,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/papa_idyot_domoy.mp3",
+      "text": "Папа идёт домой.",
+      "speechText": "Папа идёт домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/papa_ne_idyot_papa_sidit.mp3",
       "text": "Папа не идёт. Папа сидит.",
       "speechText": "Папа не идёт. Папа сидит.",
@@ -3425,7 +3781,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3486,6 +3842,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pryamo.mp3",
+      "text": "прямо",
+      "speechText": "прямо",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3569,6 +3935,76 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/route_napravo_2_vverh_2_nalevo_1.mp3",
+      "text": "Направо 2. Вверх 2. Налево 1.",
+      "speechText": "Направо 2. Вверх 2. Налево 1.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_napravo_3_vverh_1_stoy.mp3",
+      "text": "Иди направо 3. Иди вверх 1. Стой.",
+      "speechText": "Иди направо 3. Иди вверх 1. Стой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_vniz_1_nalevo_2.mp3",
+      "text": "Иди вниз 1. Иди налево 2.",
+      "speechText": "Иди вниз 1. Иди налево 2.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_vniz_1_napravo_2_vverh_1.mp3",
+      "text": "Вниз 1. Направо 2. Вверх 1.",
+      "speechText": "Вниз 1. Направо 2. Вверх 1.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_vverh_2_napravo_1.mp3",
+      "text": "Иди вверх 2. Иди направо 1.",
+      "speechText": "Иди вверх 2. Иди направо 1.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_vverh_2_napravo_1_vniz_1.mp3",
+      "text": "Вверх 2. Направо 1. Вниз 1.",
+      "speechText": "Вверх 2. Направо 1. Вниз 1.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/route_vverh_2_napravo_2_dom.mp3",
+      "text": "Иди вверх 2. Иди направо 2. Иди в дом.",
+      "speechText": "Иди вверх 2. Иди направо 2. Иди в дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ru.mp3",
       "text": "ру",
       "speechText": "ру",
@@ -3626,6 +4062,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shag.mp3",
+      "text": "шаг",
+      "speechText": "шаг",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shaga.mp3",
+      "text": "шага",
+      "speechText": "шага",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -3829,6 +4285,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/stoy.mp3",
+      "text": "Стой.",
+      "speechText": "Стой.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/stul.mp3",
       "text": "стул",
       "speechText": "стул",
@@ -3856,6 +4322,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/syuda.mp3",
+      "text": "сюда",
+      "speechText": "сюда",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -4109,6 +4585,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/tri.mp3",
+      "text": "три",
+      "speechText": "три",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ts.mp3",
       "text": "Ц",
       "speechText": "Ц",
@@ -4149,6 +4635,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/tuda.mp3",
+      "text": "туда",
+      "speechText": "туда",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/tut.mp3",
       "text": "тут",
       "speechText": "тут",
@@ -4166,6 +4662,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty_idyosh.mp3",
+      "text": "ты идёшь",
+      "speechText": "ты идёшь",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -4439,6 +4945,56 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u5_l13_final.mp3",
+      "text": "Отлично! Иди. Стой.",
+      "speechText": "Отлично! Иди. Стой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u5_l14_final.mp3",
+      "text": "Отлично! вверх. вниз. налево. направо.",
+      "speechText": "Отлично! вверх. вниз. налево. направо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u5_l14_steps.mp3",
+      "text": "Иди один шаг вверх. Иди два шага направо. Иди три шага вниз.",
+      "speechText": "Иди один шаг вверх. Иди два шага направо. Иди три шага вниз.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u5_l15_final.mp3",
+      "text": "Отлично! Куда? Я иду домой.",
+      "speechText": "Отлично! Куда? Я иду домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u5_map_final.mp3",
+      "text": "Отлично! Ты здесь!",
+      "speechText": "Отлично! Ты здесь!",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u_menya_est.mp3",
       "text": "у меня есть",
       "speechText": "у меня есть",
@@ -4679,6 +5235,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/vniz.mp3",
+      "text": "вниз",
+      "speechText": "вниз",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/vo.mp3",
       "text": "во",
       "speechText": "во",
@@ -4736,6 +5302,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vverh.mp3",
+      "text": "вверх",
+      "speechText": "вверх",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vverh_vniz_nalevo_napravo.mp3",
+      "text": "вверх. вниз. налево. направо.",
+      "speechText": "вверх. вниз. налево. направо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
@@ -4836,6 +5422,66 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu.mp3",
+      "text": "я иду",
+      "speechText": "я иду",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu_domoy.mp3",
+      "text": "Я иду домой.",
+      "speechText": "Я иду домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu_v_dom.mp3",
+      "text": "Я иду в дом.",
+      "speechText": "Я иду в дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu_v_kafe.mp3",
+      "text": "Я иду в кафе.",
+      "speechText": "Я иду в кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu_v_magazin.mp3",
+      "text": "Я иду в магазин.",
+      "speechText": "Я иду в магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_idu_v_park.mp3",
+      "text": "Я иду в парк.",
+      "speechText": "Я иду в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-5-movement-map",
       "exists": true
     },
     {
