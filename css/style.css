@@ -2613,16 +2613,46 @@ button {
 @media (max-height: 720px) {
   .unit2-game-card {
     min-height: auto;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .unit2-game-top {
+    grid-template-columns: 42px 1fr;
     gap: 8px;
-    padding: 12px;
+  }
+
+  .unit2-game-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
   }
 
   .unit2-game-visual,
   .unit2-game-text {
-    min-height: 88px;
+    min-height: 70px;
+    padding: 8px;
+  }
+
+  .unit2-game-visual {
+    font-size: clamp(2.5rem, 10dvh, 4.1rem);
+  }
+
+  .unit2-game-question {
+    font-size: clamp(1rem, 3dvh, 1.25rem);
+  }
+
+  .unit2-game-options {
+    gap: 7px;
   }
 
   .unit2-game-option {
-    min-height: 58px;
+    min-height: 48px;
+    padding: 6px;
+    font-size: clamp(0.95rem, 4.8vw, 1.55rem);
+  }
+
+  .unit2-option-emoji {
+    font-size: clamp(1.35rem, 5.5dvh, 2.1rem);
   }
 }

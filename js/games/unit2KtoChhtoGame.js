@@ -90,7 +90,7 @@
           if (locked) {
             return;
           }
-          checkAnswer(button.getAttribute("data-unit2-choice") === task.correct, button);
+          checkAnswer(button.getAttribute("data-unit2-choice") === task.correct, button, task);
         });
       });
     }
@@ -105,7 +105,7 @@
       });
     }
 
-    function checkAnswer(isCorrect, button) {
+    function checkAnswer(isCorrect, button, task) {
       var feedback = root.querySelector("#unit2-game-feedback");
       locked = true;
 
@@ -114,7 +114,7 @@
         button.classList.add("is-correct");
         feedback.className = "feedback good";
         var success = helpers.playFeedback("success");
-        feedback.textContent = success.text || "✅ Отлично";
+        feedback.textContent = task.correctFeedback || success.text || "✅ Отлично";
         saveState(game, state);
         helpers.afterFeedback(success, next);
         return;
@@ -124,7 +124,7 @@
       button.classList.add("is-wrong");
       feedback.className = "feedback try";
       var retry = helpers.playFeedback("retry");
-      feedback.textContent = retry.text || "❌ попробуй ещё";
+      feedback.textContent = task.wrongFeedback || retry.text || "❌ попробуй ещё";
       saveState(game, state);
       window.setTimeout(function () {
         locked = false;

@@ -1,5 +1,6 @@
 {
   "project": "LexiLand Russian",
+  "generatedLessonCount": 0,
   "runtimeLessons": [
     {
       "id": "lesson-0-reading",
@@ -44,7 +45,7 @@
       "unitCount": 6
     }
   ],
-  "audioCount": 502,
+  "audioCount": 513,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -268,6 +269,46 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/dai_knigu_pozhaluysta.mp3",
+      "text": "Дай книгу, пожалуйста.",
+      "speechText": "Дай книгу, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dai_myach_pozhaluysta.mp3",
+      "text": "Дай мяч, пожалуйста.",
+      "speechText": "Дай мяч, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dai_pozhaluysta.mp3",
+      "text": "Дай, пожалуйста.",
+      "speechText": "Дай, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dai_telefon_pozhaluysta.mp3",
+      "text": "Дай телефон, пожалуйста.",
+      "speechText": "Дай телефон, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/dai_vodu_na_spasibo.mp3",
       "text": "Дай воду, пожалуйста. На. Спасибо.",
       "speechText": "Дай воду, пожалуйста. На. Спасибо.",
@@ -351,6 +392,16 @@
       "audio": "assets/audio/ru/dialog_dai_vodu_na_spasibo.mp3",
       "text": "А: Дай воду, пожалуйста. Б: На. А: Спасибо.",
       "speechText": "А: Дай воду, пожалуйста. Б: На. А: Спасибо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dialog_ya_hochu_vodu_dai_na_spasibo.mp3",
+      "text": "Я хочу воду. Дай воду, пожалуйста. На. Спасибо.",
+      "speechText": "Я хочу воду. Дай воду, пожалуйста. На. Спасибо.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -1478,6 +1529,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/hleba.mp3",
+      "text": "хлеба",
+      "speechText": "хлеба",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ho.mp3",
       "text": "хо",
       "speechText": "хо",
@@ -2439,8 +2500,8 @@
     },
     {
       "audio": "assets/audio/ru/lesson_12_text.mp3",
-      "text": "У меня есть телефон. У меня есть книга. У меня нет мяча. У меня нет воды.",
-      "speechText": "У меня есть телефон. У меня есть книга. У меня нет мяча. У меня нет воды.",
+      "text": "У меня есть телефон. У меня есть книга. У меня нет мяча. Я хочу мяч.",
+      "speechText": "У меня есть телефон. У меня есть книга. У меня нет мяча. Я хочу мяч.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3998,6 +4059,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/telefona.mp3",
+      "text": "телефона",
+      "speechText": "телефона",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/text_2_extra.mp3",
       "text": "Это парк. Я здесь. Это метро. Ты там. Здесь один автобус. Там два дома.",
       "speechText": "Это парк. Я здесь. Это метро. Ты там. Здесь один автобус. Там два дома.",
@@ -4359,8 +4430,8 @@
     },
     {
       "audio": "assets/audio/ru/u4_l12_final.mp3",
-      "text": "Отлично! У меня есть. У меня нет.",
-      "speechText": "Отлично! У меня есть. У меня нет.",
+      "text": "Отлично! У меня есть. У меня нет. Я хочу.",
+      "speechText": "Отлично! У меня есть. У меня нет. Я хочу.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4369,18 +4440,8 @@
     },
     {
       "audio": "assets/audio/ru/u_menya_est.mp3",
-      "text": "У меня есть.",
-      "speechText": "У меня есть.",
-      "rate": "-22%",
-      "pitch": "+0Hz",
-      "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
-      "exists": true
-    },
-    {
-      "audio": "assets/audio/ru/u_menya_est_hleb.mp3",
-      "text": "У меня есть хлеб.",
-      "speechText": "У меня есть хлеб.",
+      "text": "у меня есть",
+      "speechText": "у меня есть",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4398,9 +4459,19 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u_menya_est_myach_q.mp3",
+      "audio": "assets/audio/ru/u_menya_est_myach.mp3",
       "text": "У меня есть мяч.",
       "speechText": "У меня есть мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_myach_u_menya_net_myacha.mp3",
+      "text": "У меня есть мяч. У меня нет мяча.",
+      "speechText": "У меня есть мяч. У меня нет мяча.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4418,7 +4489,17 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u_menya_est_voda_q.mp3",
+      "audio": "assets/audio/ru/u_menya_est_u_menya_net.mp3",
+      "text": "У меня есть. У меня нет.",
+      "speechText": "У меня есть. У меня нет.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_voda.mp3",
       "text": "У меня есть вода.",
       "speechText": "У меня есть вода.",
       "rate": "-22%",
@@ -4429,8 +4510,18 @@
     },
     {
       "audio": "assets/audio/ru/u_menya_net.mp3",
-      "text": "У меня нет.",
-      "speechText": "У меня нет.",
+      "text": "у меня нет",
+      "speechText": "у меня нет",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_net_hleba.mp3",
+      "text": "У меня нет хлеба.",
+      "speechText": "У меня нет хлеба.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4458,7 +4549,7 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/u_menya_net_telefona_q.mp3",
+      "audio": "assets/audio/ru/u_menya_net_telefona.mp3",
       "text": "У меня нет телефона.",
       "speechText": "У меня нет телефона.",
       "rate": "-22%",
@@ -4471,6 +4562,16 @@
       "audio": "assets/audio/ru/u_menya_net_vody.mp3",
       "text": "У меня нет воды.",
       "speechText": "У меня нет воды.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_net_vody_ya_hochu_vodu.mp3",
+      "text": "У меня нет воды. Я хочу воду.",
+      "speechText": "У меня нет воды. Я хочу воду.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4594,7 +4695,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-3-actions",
+      "source": "level-0-unit-4-personal-phrases",
       "exists": true
     },
     {
@@ -4669,8 +4770,8 @@
     },
     {
       "audio": "assets/audio/ru/ya_hochu.mp3",
-      "text": "Я хочу.",
-      "speechText": "Я хочу.",
+      "text": "я хочу",
+      "speechText": "я хочу",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -4749,12 +4850,22 @@
     },
     {
       "audio": "assets/audio/ru/ya_zdes.mp3",
-      "text": "Я здесь.",
-      "speechText": "Я здесь.",
+      "text": "я здесь",
+      "speechText": "я здесь",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/yabloka.mp3",
+      "text": "яблока",
+      "speechText": "яблока",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
       "exists": true
     },
     {
