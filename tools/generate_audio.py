@@ -34,6 +34,11 @@ UNIT2_PATH = ROOT / "js" / "unit2Data.js"
 UNIT3_PATH = ROOT / "js" / "unit3Data.js"
 UNIT4_PATH = ROOT / "js" / "unit4Data.js"
 UNIT5_PATH = ROOT / "js" / "unit5Data.js"
+UNIT6_PATH = ROOT / "js" / "unit6Data.js"
+UNIT7_PATH = ROOT / "js" / "unit7Data.js"
+UNIT8_PATH = ROOT / "js" / "unit8Data.js"
+UNIT9_PATH = ROOT / "js" / "unit9Data.js"
+UNIT10_PATH = ROOT / "js" / "unit10Data.js"
 GENERATED_LESSONS_PATH = ROOT / "js" / "lexiforgeGenerated.js"
 JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
@@ -43,6 +48,11 @@ JS_LESSON_MODULES = [
     (UNIT3_PATH, "LexiLandUnit3Lesson", "after"),
     (UNIT4_PATH, "LexiLandUnit4Lesson", "after"),
     (UNIT5_PATH, "LexiLandUnit5Lesson", "after"),
+    (UNIT6_PATH, "LexiLandUnit6Lesson", "after"),
+    (UNIT7_PATH, "LexiLandUnit7Lesson", "after"),
+    (UNIT8_PATH, "LexiLandUnit8Lesson", "after"),
+    (UNIT9_PATH, "LexiLandUnit9Lesson", "after"),
+    (UNIT10_PATH, "LexiLandUnit10Lesson", "after"),
     (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"

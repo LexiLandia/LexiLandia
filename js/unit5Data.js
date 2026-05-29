@@ -125,6 +125,17 @@
     };
   }
 
+  function secretCommand(dir, steps, text, file) {
+    return {
+      dir: dir,
+      steps: steps,
+      text: text,
+      display: text,
+      speechText: text.replace(/шага/g, "ша́га"),
+      audio: audio(file)
+    };
+  }
+
   function unit(id, title, icon, stageTitle, slides) {
     return {
       id: id,
@@ -184,7 +195,12 @@
     "хлеб": m("хлеб", "🍞"),
     "мяч": m("мяч", "⚽"),
     "да": m("да", "✅"),
-    "нет": m("нет", "❌")
+    "нет": m("нет", "❌"),
+    "дерево": m("дерево", "🌳"),
+    "солнце": m("солнце", "☀️"),
+    "рыба": m("рыба", "🐟"),
+    "картинка": m("картинка", "🖼️"),
+    "рисуй": m("рисуй", "✏️")
   };
 
   var yesNoOptions = [
@@ -248,7 +264,12 @@
     entry("u5-park", "парк", "🌳🌳🌳", "word", "park.mp3"),
     entry("u5-kafe", "кафе", "🏢☕", "word", "kafe.mp3"),
     entry("u5-da", "да", "✅", "word", "da.mp3"),
-    entry("u5-net", "нет", "❌", "word", "net.mp3")
+    entry("u5-net", "нет", "❌", "word", "net.mp3"),
+    entry("u5-derevo", "дерево", "🌳", "word", "derevo.mp3"),
+    entry("u5-solntse", "солнце", "☀️", "word", "solntse.mp3"),
+    entry("u5-ryba", "рыба", "🐟", "word", "ryba.mp3"),
+    entry("u5-kartinka", "картинка", "🖼️", "word", "kartinka.mp3"),
+    entry("u5-risuy", "рисуй", "✏️", "word", "risuy.mp3")
   ];
 
   var lesson13Slides = [
@@ -284,6 +305,10 @@
     slide("u5-l14-6", "прямо", ["Иди прямо."], focus(["🙂", "⬆️", "⭐"]), [line("Иди прямо.", "idi_pryamo.mp3")], null, true),
     slide("u5-l14-7", "шаг", ["один шаг", "два шага", "три шага"], focus(["1️⃣👣", "2️⃣👣", "3️⃣👣"]), [line("один шаг. два шага. три шага.", "odin_shag_dva_shaga_tri_shaga.mp3")], null, true),
     slide("u5-l14-8", "слушай", ["Иди один шаг вверх.", "Иди два шага направо.", "Иди три шага вниз."], wordList([{ text: "один шаг вверх", emoji: "1️⃣⬆️" }, { text: "два шага направо", emoji: "2️⃣➡️" }, { text: "три шага вниз", emoji: "3️⃣⬇️" }]), [line("Иди один шаг вверх. Иди два шага направо. Иди три шага вниз.", "u5_l14_steps.mp3")], null, true),
+    slide("u5-l14-8a", "команды", ["Иди вверх.", "Иди вниз.", "Иди налево.", "Иди направо.", "Стой."], wordList([{ text: "вверх", emoji: "⬆️" }, { text: "вниз", emoji: "⬇️" }, { text: "налево", emoji: "⬅️" }, { text: "направо", emoji: "➡️" }, { text: "стой", emoji: "🛑" }]), [line("Иди вверх. Иди вниз. Иди налево. Иди направо. Стой.", "u5_l14_commands_more.mp3")], null, true),
+    slide("u5-l14-8b", "шаги", ["один шаг", "два шага", "три шага"], focus(["🙂", "⬆️", "⬆️", "🏠"]), [line("один шаг. два шага. три шага.", "u5_l14_more_steps.mp3")], null, true),
+    slide("u5-l14-8c", "смотри", ["Иди налево.", "Иди направо."], focus(["🐱", "⬅️", "🙂", "➡️", "🐶"]), [line("Иди налево. Иди направо.", "u5_l14_left_right_animals.mp3")], null, true),
+    slide("u5-l14-8d", "смотри", ["Иди вверх.", "Иди вниз."], focus(["☀️", "⬆️", "🙂", "⬇️", "🌳"]), [line("Иди вверх. Иди вниз.", "u5_l14_up_down_sun_tree.mp3")], null, true),
     slide("u5-l14-9", "Найди", ["Иди вверх."], focus(["🙂", "⬆️"]), [line("Иди вверх.", "idi_vverh.mp3")], [question("u5-l14-q1", "Куда?", arrowOptions, "up", "⬆️")], true),
     slide("u5-l14-10", "Найди", ["Иди вниз."], focus(["🙂", "⬇️"]), [line("Иди вниз.", "idi_vniz.mp3")], [question("u5-l14-q2", "Куда?", arrowOptions, "down", "⬇️")], true),
     slide("u5-l14-11", "Найди", ["Иди налево."], focus(["⬅️", "🙂"]), [line("Иди налево.", "idi_nalevo.mp3")], [question("u5-l14-q3", "Куда?", arrowOptions, "left", "⬅️")], true),
@@ -309,19 +334,19 @@
 
   var lesson15Slides = [
     slide("u5-l15-1", "Куда?", ["Куда?", "🗺️ ❓"], focus(["🙂", "→", "🏠"]), [line("Куда?", "kuda.mp3")], null, true),
-    slide("u5-l15-2", "я иду", ["Я иду домой."], focus(["🙂", "→", "🏠"]), [line("Я иду домой.", "ya_idu_domoy.mp3")], null, true),
-    slide("u5-l15-3", "в дом", ["Я иду в дом."], focus(["🙂", "→", "🏠"]), [line("Я иду в дом.", "ya_idu_v_dom.mp3")], null, true),
-    slide("u5-l15-4", "в магазин", ["Я иду в магазин."], focus(["🙂", "→", "🏪"]), [line("Я иду в магазин.", "ya_idu_v_magazin.mp3")], null, true),
-    slide("u5-l15-5", "в парк", ["Я иду в парк."], focus(["🙂", "→", "🌳🌳🌳"]), [line("Я иду в парк.", "ya_idu_v_park.mp3")], null, true),
-    slide("u5-l15-6", "в кафе", ["Я иду в кафе."], focus(["🙂", "→", "🏢☕"]), [line("Я иду в кафе.", "ya_idu_v_kafe.mp3")], null, true),
-    slide("u5-l15-7", "мама", ["Мама идёт в магазин."], focus(["👩", "→", "🏪"]), [line("Мама идёт в магазин.", "mama_idyot_v_magazin.mp3")], null, true),
-    slide("u5-l15-8", "папа", ["Папа идёт домой."], focus(["👨", "→", "🏠"]), [line("Папа идёт домой.", "papa_idyot_domoy.mp3")], null, true),
-    slide("u5-l15-9", "кот", ["Кот идёт туда."], focus(["🐱", "→", "👉"]), [line("Кот идёт туда.", "kot_idyot_tuda.mp3")], null, true),
-    slide("u5-l15-10", "Найди", ["Я иду в магазин."], focus(["🙂", "→", "🏪"]), [line("Я иду в магазин.", "ya_idu_v_magazin.mp3")], [question("u5-l15-q1", "Куда я иду?", [option("ya-magazin", "Я иду в магазин.", "🏪"), option("ya-park", "Я иду в парк.", "🌳🌳🌳"), option("ya-domoy", "Я иду домой.", "🏠")], "ya-magazin", "🙂 → 🏪")], true),
-    slide("u5-l15-11", "Найди", ["Мама идёт в парк."], focus(["👩", "→", "🌳🌳🌳"]), [line("Мама идёт в парк.", "mama_idyot_v_park.mp3")], [question("u5-l15-q2", "Куда мама идёт?", [option("mama-park", "Мама идёт в парк.", "🌳🌳🌳"), option("mama-kafe", "Мама идёт в кафе.", "🏢☕"), option("mama-dom", "Мама идёт в дом.", "🏠")], "mama-park", "👩 → 🌳🌳🌳")], true),
-    slide("u5-l15-12", "Куда?", ["Куда я иду?"], focus(["🙂", "→", "🏢☕"]), [line("Куда я иду?", "kuda_ya_idu.mp3")], [question("u5-l15-q3", "Куда?", [option("kafe", "в кафе", "🏢☕"), option("dom", "в дом", "🏠"), option("park", "в парк", "🌳🌳🌳")], "kafe", "🙂 → 🏢☕")], true),
-    slide("u5-l15-13", "Куда?", ["Куда кот идёт?"], focus(["🐱", "→", "👉"]), [line("Куда кот идёт?", "kuda_kot_idyot.mp3")], [question("u5-l15-q4", "Куда?", [option("tuda", "туда", "👉"), option("syuda", "сюда", "👈🙂"), option("domoy", "домой", "🏠")], "tuda", "🐱 → 👉")], true),
-    slide("u5-l15-14", "Читай", ["Я иду в парк.", "Мама идёт в магазин.", "Папа идёт домой.", "Кот идёт туда."], focus(["🙂🌳🌳🌳", "👩🏪", "👨🏠", "🐱👉"]), [line("Я иду в парк. Мама идёт в магазин. Папа идёт домой. Кот идёт туда.", "lesson_15_text.mp3")], [
+    slide("u5-l15-2", "я иду", ["Я иду домой."], focus(["🙂", "🚶‍➡️", "🏠"]), [line("Я иду домой.", "ya_idu_domoy.mp3")], null, true),
+    slide("u5-l15-3", "в дом", ["Я иду в дом."], focus(["🙂", "🚶‍➡️", "🏠"]), [line("Я иду в дом.", "ya_idu_v_dom.mp3")], null, true),
+    slide("u5-l15-4", "в магазин", ["Я иду в магазин."], focus(["🙂", "🚶‍➡️", "🏪"]), [line("Я иду в магазин.", "ya_idu_v_magazin.mp3")], null, true),
+    slide("u5-l15-5", "в парк", ["Я иду в парк."], focus(["🙂", "🚶‍➡️", "🌳🌳🌳"]), [line("Я иду в парк.", "ya_idu_v_park.mp3")], null, true),
+    slide("u5-l15-6", "в кафе", ["Я иду в кафе."], focus(["🙂", "🚶‍➡️", "🏢☕"]), [line("Я иду в кафе.", "ya_idu_v_kafe.mp3")], null, true),
+    slide("u5-l15-7", "мама", ["Мама идёт в магазин."], focus(["👩", "🚶‍➡️", "🏪"]), [line("Мама идёт в магазин.", "mama_idyot_v_magazin.mp3")], null, true),
+    slide("u5-l15-8", "папа", ["Папа идёт домой."], focus(["👨", "🚶‍➡️", "🏠"]), [line("Папа идёт домой.", "papa_idyot_domoy.mp3")], null, true),
+    slide("u5-l15-9", "кот", ["Кот идёт туда."], focus(["🐱", "🚶‍➡️", "👉"]), [line("Кот идёт туда.", "kot_idyot_tuda.mp3")], null, true),
+    slide("u5-l15-10", "Найди", ["Я иду в магазин."], focus(["🙂", "🚶‍➡️", "🏪"]), [line("Я иду в магазин.", "ya_idu_v_magazin.mp3")], [question("u5-l15-q1", "Куда я иду?", [option("ya-magazin", "Я иду в магазин.", "🚶‍➡️🏪"), option("ya-park", "Я иду в парк.", "🚶‍➡️🌳🌳🌳"), option("ya-domoy", "Я иду домой.", "🚶‍➡️🏠")], "ya-magazin", "🙂 🚶‍➡️ 🏪")], true),
+    slide("u5-l15-11", "Найди", ["Мама идёт в парк."], focus(["👩", "🚶‍➡️", "🌳🌳🌳"]), [line("Мама идёт в парк.", "mama_idyot_v_park.mp3")], [question("u5-l15-q2", "Куда мама идёт?", [option("mama-park", "Мама идёт в парк.", "🚶‍➡️🌳🌳🌳"), option("mama-kafe", "Мама идёт в кафе.", "🚶‍➡️🏢☕"), option("mama-dom", "Мама идёт в дом.", "🚶‍➡️🏠")], "mama-park", "👩 🚶‍➡️ 🌳🌳🌳")], true),
+    slide("u5-l15-12", "Куда?", ["Куда я иду?"], focus(["🙂", "🚶‍➡️", "🏢☕"]), [line("Куда я иду?", "kuda_ya_idu.mp3")], [question("u5-l15-q3", "Куда?", [option("kafe", "в кафе", "🚶‍➡️🏢☕"), option("dom", "в дом", "🚶‍➡️🏠"), option("park", "в парк", "🚶‍➡️🌳🌳🌳")], "kafe", "🙂 🚶‍➡️ 🏢☕")], true),
+    slide("u5-l15-13", "Куда?", ["Куда кот идёт?"], focus(["🐱", "🚶‍➡️", "👉"]), [line("Куда кот идёт?", "kuda_kot_idyot.mp3")], [question("u5-l15-q4", "Куда?", [option("tuda", "туда", "🚶‍➡️👉"), option("syuda", "сюда", "👈🙂"), option("domoy", "домой", "🚶‍➡️🏠")], "tuda", "🐱 🚶‍➡️ 👉")], true),
+    slide("u5-l15-14", "Читай", ["Я иду в парк.", "Мама идёт в магазин.", "Папа идёт домой.", "Кот идёт туда."], focus(["🙂🚶‍➡️🌳🌳🌳", "👩🚶‍➡️🏪", "👨🚶‍➡️🏠", "🐱🚶‍➡️👉"]), [line("Я иду в парк. Мама идёт в магазин. Папа идёт домой. Кот идёт туда.", "lesson_15_text.mp3")], [
       question("u5-l15-q5", "Куда я иду?", [option("park", "в парк", "🌳🌳🌳"), option("magazin", "в магазин", "🏪"), option("domoy", "домой", "🏠")], "park", "🙂"),
       question("u5-l15-q6", "Куда папа идёт?", [option("domoy", "домой", "🏠"), option("kafe", "в кафе", "🏢☕"), option("tuda", "туда", "👉")], "domoy", "👨")
     ], true),
@@ -392,15 +417,190 @@
         title: "Куда я иду?",
         instruction: "Куда?",
         tasks: [
-          gameTask("u5g3-1", "🙂 → 🏪", "Куда я иду?", "ya_idu_v_magazin.mp3", [option("ya-magazin", "Я иду в магазин.", "🏪"), option("ya-park", "Я иду в парк.", "🌳🌳🌳"), option("ya-domoy", "Я иду домой.", "🏠")], "ya-magazin", "Я иду в магазин.", "✅ Да!", "❌ Читай ещё раз."),
-          gameTask("u5g3-2", "🙂 → 🌳🌳🌳", "Куда я иду?", "ya_idu_v_park.mp3", [option("ya-park", "Я иду в парк.", "🌳🌳🌳"), option("ya-kafe", "Я иду в кафе.", "🏢☕"), option("ya-magazin", "Я иду в магазин.", "🏪")], "ya-park", "Я иду в парк.", "✅ Да!", "❌ Читай ещё раз."),
-          gameTask("u5g3-3", "👩 → 🌳🌳🌳", "Куда мама идёт?", "mama_idyot_v_park.mp3", [option("mama-park", "Мама идёт в парк.", "🌳🌳🌳"), option("mama-kafe", "Мама идёт в кафе.", "🏢☕"), option("mama-dom", "Мама идёт в дом.", "🏠")], "mama-park", "Мама идёт в парк.", "✅ Да!", "❌ Читай ещё раз."),
-          gameTask("u5g3-4", "👨 → 🏠", "Куда папа идёт?", "papa_idyot_domoy.mp3", [option("papa-domoy", "Папа идёт домой.", "🏠"), option("papa-magazin", "Папа идёт в магазин.", "🏪"), option("papa-park", "Папа идёт в парк.", "🌳🌳🌳")], "papa-domoy", "Папа идёт домой.", "✅ Да!", "❌ Читай ещё раз."),
-          gameTask("u5g3-5", "👧 → 🏢☕", "Куда девочка идёт?", "devochka_idyot_v_kafe.mp3", [option("devochka-kafe", "Девочка идёт в кафе.", "🏢☕"), option("devochka-dom", "Девочка идёт в дом.", "🏠"), option("devochka-park", "Девочка идёт в парк.", "🌳🌳🌳")], "devochka-kafe", "Девочка идёт в кафе.", "✅ Да!", "❌ Читай ещё раз."),
-          gameTask("u5g3-6", "🐱 → 👉", "Куда кот идёт?", "kot_idyot_tuda.mp3", [option("kot-tuda", "Кот идёт туда.", "👉"), option("kot-domoy", "Кот идёт домой.", "🏠"), option("kot-kafe", "Кот идёт в кафе.", "🏢☕")], "kot-tuda", "Кот идёт туда.", "✅ Да!", "❌ Читай ещё раз.")
+          gameTask("u5g3-1", "🙂 🚶‍➡️ 🏪", "Куда я иду?", "ya_idu_v_magazin.mp3", [option("ya-magazin", "Я иду в магазин.", "🚶‍➡️🏪"), option("ya-park", "Я иду в парк.", "🚶‍➡️🌳🌳🌳"), option("ya-domoy", "Я иду домой.", "🚶‍➡️🏠")], "ya-magazin", "Я иду в магазин.", "✅ Да!", "❌ Читай ещё раз."),
+          gameTask("u5g3-2", "🙂 🚶‍➡️ 🌳🌳🌳", "Куда я иду?", "ya_idu_v_park.mp3", [option("ya-park", "Я иду в парк.", "🚶‍➡️🌳🌳🌳"), option("ya-kafe", "Я иду в кафе.", "🚶‍➡️🏢☕"), option("ya-magazin", "Я иду в магазин.", "🚶‍➡️🏪")], "ya-park", "Я иду в парк.", "✅ Да!", "❌ Читай ещё раз."),
+          gameTask("u5g3-3", "👩 🚶‍➡️ 🌳🌳🌳", "Куда мама идёт?", "mama_idyot_v_park.mp3", [option("mama-park", "Мама идёт в парк.", "🚶‍➡️🌳🌳🌳"), option("mama-kafe", "Мама идёт в кафе.", "🚶‍➡️🏢☕"), option("mama-dom", "Мама идёт в дом.", "🚶‍➡️🏠")], "mama-park", "Мама идёт в парк.", "✅ Да!", "❌ Читай ещё раз."),
+          gameTask("u5g3-4", "👨 🚶‍➡️ 🏠", "Куда папа идёт?", "papa_idyot_domoy.mp3", [option("papa-domoy", "Папа идёт домой.", "🚶‍➡️🏠"), option("papa-magazin", "Папа идёт в магазин.", "🚶‍➡️🏪"), option("papa-park", "Папа идёт в парк.", "🚶‍➡️🌳🌳🌳")], "papa-domoy", "Папа идёт домой.", "✅ Да!", "❌ Читай ещё раз."),
+          gameTask("u5g3-5", "👧 🚶‍➡️ 🏢☕", "Куда девочка идёт?", "devochka_idyot_v_kafe.mp3", [option("devochka-kafe", "Девочка идёт в кафе.", "🚶‍➡️🏢☕"), option("devochka-dom", "Девочка идёт в дом.", "🚶‍➡️🏠"), option("devochka-park", "Девочка идёт в парк.", "🚶‍➡️🌳🌳🌳")], "devochka-kafe", "Девочка идёт в кафе.", "✅ Да!", "❌ Читай ещё раз."),
+          gameTask("u5g3-6", "🐱 🚶‍➡️ 👉", "Куда кот идёт?", "kot_idyot_tuda.mp3", [option("kot-tuda", "Кот идёт туда.", "🚶‍➡️👉"), option("kot-domoy", "Кот идёт домой.", "🚶‍➡️🏠"), option("kot-kafe", "Кот идёт в кафе.", "🚶‍➡️🏢☕")], "kot-tuda", "Кот идёт туда.", "✅ Да!", "❌ Читай ещё раз.")
         ]
       }
     ]
+  };
+
+  var SECRET_PICTURE_TRAINING = {
+    gridSize: 8,
+    start: { row: 5, col: 3 },
+    commands: [
+      secretCommand("up", 1, "вверх 1", "vverh_odin.mp3"),
+      secretCommand("down", 1, "вниз 1", "vniz_odin.mp3"),
+      secretCommand("right", 2, "направо два", "napravo_dva.mp3"),
+      secretCommand("left", 1, "налево 1", "nalevo_odin.mp3")
+    ]
+  };
+
+  // Секретная картинка:
+  // - row/col are zero-based grid coordinates: row 0, col 0 is the top-left cell.
+  // - dirs are up/down/left/right and each command draws one cell per step.
+  // - to add a picture, append one object to SECRET_PICTURE_LEVELS and keep every move inside the grid.
+  var SECRET_PICTURE_LEVELS = [
+    {
+      id: "house_easy",
+      hiddenTitle: "Секретная картинка 1",
+      revealText: "Это дом!",
+      emoji: "🏠",
+      gridSize: 8,
+      start: { row: 6, col: 2 },
+      commands: [
+        secretCommand("up", 3, "вверх 3", "vverh_tri.mp3"),
+        secretCommand("right", 1, "направо 1", "napravo_odin.mp3"),
+        secretCommand("up", 1, "вверх 1", "vverh_odin.mp3"),
+        secretCommand("right", 1, "направо 1", "napravo_odin.mp3"),
+        secretCommand("down", 1, "вниз 1", "vniz_odin.mp3"),
+        secretCommand("right", 1, "направо 1", "napravo_odin.mp3"),
+        secretCommand("down", 3, "вниз 3", "vniz_tri.mp3"),
+        secretCommand("left", 3, "налево 3", "nalevo_tri.mp3")
+      ],
+      decorations: [
+        { row: 4, col: 4, emoji: "🪟" },
+        { row: 6, col: 3, emoji: "🚪" }
+      ],
+      finalQuestion: {
+        text: "Что это?",
+        correct: "dom",
+        options: [option("dom", "дом", "🏠"), option("kot", "кот", "🐱"), option("myach", "мяч", "⚽")]
+      }
+    },
+    {
+      id: "tree_easy",
+      hiddenTitle: "Секретная картинка 2",
+      revealText: "Это дерево!",
+      emoji: "🌳",
+      gridSize: 8,
+      start: { row: 6, col: 4 },
+      commands: [
+        secretCommand("up", 3, "вверх 3", "vverh_tri.mp3"),
+        secretCommand("left", 2, "налево 2", "nalevo_dva.mp3"),
+        secretCommand("down", 1, "вниз 1", "vniz_odin.mp3"),
+        secretCommand("right", 4, "направо 4", "napravo_chetyre.mp3"),
+        secretCommand("up", 1, "вверх 1", "vverh_odin.mp3"),
+        secretCommand("left", 2, "налево 2", "nalevo_dva.mp3"),
+        secretCommand("down", 3, "вниз 3", "vniz_tri.mp3")
+      ],
+      decorations: [
+        { row: 3, col: 2, emoji: "🌿" },
+        { row: 3, col: 4, emoji: "🌿" },
+        { row: 3, col: 6, emoji: "🌿" },
+        { row: 6, col: 4, emoji: "🟫" }
+      ],
+      finalQuestion: {
+        text: "Что это?",
+        correct: "derevo",
+        options: [option("derevo", "дерево", "🌳"), option("dom", "дом", "🏠"), option("ryba", "рыба", "🐟")]
+      }
+    },
+    {
+      id: "fish_medium",
+      hiddenTitle: "Секретная картинка 3",
+      revealText: "Это рыба!",
+      emoji: "🐟",
+      gridSize: 10,
+      start: { row: 4, col: 1 },
+      commands: [
+        secretCommand("right", 2, "Иди направо два шага.", "idi_napravo_dva_shaga.mp3"),
+        secretCommand("up", 1, "Иди вверх.", "idi_vverh.mp3"),
+        secretCommand("right", 3, "Иди направо три шага.", "idi_tri_shaga_napravo.mp3"),
+        secretCommand("down", 1, "Иди вниз.", "idi_vniz.mp3"),
+        secretCommand("right", 1, "Иди направо.", "idi_napravo.mp3"),
+        secretCommand("down", 1, "Иди вниз.", "idi_vniz.mp3"),
+        secretCommand("left", 1, "Иди налево.", "idi_nalevo.mp3"),
+        secretCommand("down", 1, "Иди вниз.", "idi_vniz.mp3"),
+        secretCommand("left", 3, "Иди налево три шага.", "idi_nalevo_tri_shaga.mp3"),
+        secretCommand("up", 1, "Иди вверх.", "idi_vverh.mp3"),
+        secretCommand("left", 2, "Иди налево два шага.", "idi_nalevo_dva_shaga.mp3"),
+        secretCommand("up", 1, "Иди вверх.", "idi_vverh.mp3")
+      ],
+      decorations: [
+        { row: 4, col: 6, emoji: "👁️" },
+        { row: 5, col: 2, emoji: "🐟" }
+      ],
+      finalQuestion: {
+        text: "Что это?",
+        correct: "ryba",
+        options: [option("ryba", "рыба", "🐟"), option("kot", "кот", "🐱"), option("dom", "дом", "🏠")]
+      }
+    },
+    {
+      id: "cat_medium",
+      hiddenTitle: "Секретная картинка 4",
+      revealText: "Это кот!",
+      emoji: "🐱",
+      gridSize: 10,
+      start: { row: 6, col: 2 },
+      commands: [
+        secretCommand("up", 3, "Иди вверх три шага.", "idi_tri_shaga_vverh.mp3"),
+        secretCommand("right", 1, "Иди направо.", "idi_napravo.mp3"),
+        secretCommand("up", 1, "Иди вверх.", "idi_vverh.mp3"),
+        secretCommand("right", 1, "Иди направо.", "idi_napravo.mp3"),
+        secretCommand("down", 1, "Иди вниз.", "idi_vniz.mp3"),
+        secretCommand("right", 2, "Иди направо два шага.", "idi_napravo_dva_shaga.mp3"),
+        secretCommand("up", 1, "Иди вверх.", "idi_vverh.mp3"),
+        secretCommand("right", 1, "Иди направо.", "idi_napravo.mp3"),
+        secretCommand("down", 1, "Иди вниз.", "idi_vniz.mp3"),
+        secretCommand("right", 1, "Иди направо.", "idi_napravo.mp3"),
+        secretCommand("down", 3, "Иди вниз три шага.", "idi_tri_shaga_vniz.mp3"),
+        secretCommand("left", 3, "Иди налево три шага.", "idi_nalevo_tri_shaga.mp3"),
+        secretCommand("left", 3, "Иди налево три шага.", "idi_nalevo_tri_shaga.mp3")
+      ],
+      decorations: [
+        { row: 4, col: 4, emoji: "👁️" },
+        { row: 4, col: 6, emoji: "👁️" },
+        { row: 5, col: 3, emoji: "〰️" },
+        { row: 5, col: 7, emoji: "〰️" }
+      ],
+      finalQuestion: {
+        text: "Что это?",
+        correct: "kot",
+        options: [option("kot", "кот", "🐱"), option("sobaka", "собака", "🐶"), option("derevo", "дерево", "🌳")]
+      }
+    },
+    {
+      id: "sun_easy",
+      hiddenTitle: "Секретная картинка 5",
+      revealText: "Это солнце!",
+      emoji: "☀️",
+      gridSize: 8,
+      start: { row: 4, col: 1 },
+      commands: [
+        secretCommand("right", 3, "Иди направо три шага.", "idi_tri_shaga_napravo.mp3"),
+        secretCommand("right", 3, "Иди направо три шага.", "idi_tri_shaga_napravo.mp3"),
+        secretCommand("left", 3, "Иди налево три.", "idi_nalevo_tri.mp3"),
+        secretCommand("up", 3, "Иди вверх три шага.", "idi_tri_shaga_vverh.mp3"),
+        secretCommand("down", 3, "Иди вниз три шага.", "idi_tri_shaga_vniz.mp3"),
+        secretCommand("down", 3, "Иди вниз три шага.", "idi_tri_shaga_vniz.mp3"),
+        secretCommand("up", 3, "Иди вверх три шага.", "idi_tri_shaga_vverh.mp3"),
+        secretCommand("left", 2, "Иди налево два шага.", "idi_nalevo_dva_shaga.mp3"),
+        secretCommand("right", 4, "Иди направо четыре.", "idi_napravo_chetyre.mp3")
+      ],
+      decorations: [
+        { row: 4, col: 4, emoji: "☀️" },
+        { row: 1, col: 4, emoji: "☀️" },
+        { row: 7, col: 4, emoji: "☀️" }
+      ],
+      finalQuestion: {
+        text: "Что это?",
+        correct: "solntse",
+        options: [option("solntse", "солнце", "☀️"), option("derevo", "дерево", "🌳"), option("dom", "дом", "🏠")]
+      }
+    }
+  ];
+
+  var secretPictureGame = {
+    id: "unit-5-game-secret-picture",
+    gameSlug: "unit-5-game-secret-picture",
+    title: "Секретная картинка",
+    training: SECRET_PICTURE_TRAINING,
+    levels: SECRET_PICTURE_LEVELS
   };
 
   var lesson14Unit = {
@@ -485,6 +685,19 @@
             type: "unit-2-kto-chto-game",
             title: "Игра 3: Куда я иду?",
             tasks: [destinationGame]
+          }
+        ]
+      },
+      {
+        id: "unit-5-game-secret-picture",
+        title: "Секретная картинка",
+        icon: "✏️",
+        startLabel: "Играть",
+        stages: [
+          {
+            type: "secret-picture-game",
+            title: "Секретная картинка",
+            tasks: [secretPictureGame]
           }
         ]
       }

@@ -66,6 +66,26 @@
       lessons = lessons.concat([window.LexiLandUnit5Lesson]);
     }
 
+    if (window.LexiLandUnit6Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit6Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit6Lesson]);
+    }
+
+    if (window.LexiLandUnit7Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit7Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit7Lesson]);
+    }
+
+    if (window.LexiLandUnit8Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit8Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit8Lesson]);
+    }
+
+    if (window.LexiLandUnit9Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit9Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit9Lesson]);
+    }
+
+    if (window.LexiLandUnit10Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit10Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit10Lesson]);
+    }
+
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
       window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
         if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {
@@ -466,7 +486,7 @@
       disabled = false;
     } else if (unlocked) {
       status = "Начать";
-      action = "Начать";
+      action = unit.startLabel || "Начать";
       disabled = false;
     }
 
@@ -599,6 +619,70 @@
         '</main>';
 
       window.LexiLandGames.renderUnit2KtoChhtoGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
+    if (stage.type === "secret-picture-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen secret-picture-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderSecretPictureGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
+    if (stage.type === "unit-6-location-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen unit6-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderUnit6LocationGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
+    if (stage.type === "unit-7-description-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen unit7-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderUnit7DescriptionGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
+    if (stage.type === "unit-8-count-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen unit8-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderUnit8CountGame({
         root: document.getElementById("game-root"),
         task: task,
         helpers: gameHelpers(),

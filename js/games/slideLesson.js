@@ -384,6 +384,14 @@
       '</div>';
     }
 
+    if (visual.type === "description-cards") {
+      return renderDescriptionCards(visual, helpers);
+    }
+
+    if (visual.type === "location-scene") {
+      return renderLocationScene(visual, helpers);
+    }
+
     if (visual.type === "copy-line") {
       return '<div class="slide-visual reading-copy-box" data-copy-target="' + helpers.escape(visual.text || "") + '">' +
         '<p class="copy-original">' + helpers.escape(visual.text || "") + '</p>' +
@@ -431,6 +439,44 @@
     }
 
     return "";
+  }
+
+  function renderDescriptionCards(visual, helpers) {
+    if (!visual.items || !visual.items.length) {
+      return "";
+    }
+
+    return '<div class="slide-visual unit7-description-cards" aria-hidden="true">' +
+      visual.items.map(function (item) {
+        return '<span class="unit7-object-card with-text">' +
+          '<span class="unit7-object unit7-kind-' + helpers.escape(item.kind || "thing") + ' unit7-color-' + helpers.escape(item.color || "none") + ' is-' + helpers.escape(item.size || "normal") + '">' +
+            '<span>' + helpers.escape(item.emoji || "") + '</span>' +
+          '</span>' +
+          '<strong>' + helpers.escape(item.text || "") + '</strong>' +
+        '</span>';
+      }).join("") +
+    '</div>';
+  }
+
+  function renderLocationScene(visual, helpers) {
+    var relation = visual.relation || "near";
+    var objectEmoji = visual.objectEmoji || "";
+    var anchorEmoji = visual.anchorEmoji || "";
+    var secondEmoji = visual.secondEmoji || "";
+
+    if (relation === "here" || relation === "there") {
+      return '<div class="slide-visual location-scene-visual here-there-location" aria-hidden="true">' +
+        '<div class="location-zone is-here"><span class="location-zone-mark">📍</span><span class="location-zone-object">' + helpers.escape(relation === "here" ? objectEmoji : secondEmoji) + '</span></div>' +
+        '<div class="location-zone is-there"><span class="location-zone-mark">👉</span><span class="location-zone-object">' + helpers.escape(relation === "there" ? objectEmoji : secondEmoji) + '</span></div>' +
+      '</div>';
+    }
+
+    return '<div class="slide-visual location-scene-visual relation-' + helpers.escape(relation) + '" aria-hidden="true">' +
+      '<div class="location-picture">' +
+        '<span class="location-anchor">' + helpers.escape(anchorEmoji) + '</span>' +
+        '<span class="location-object">' + helpers.escape(objectEmoji) + '</span>' +
+      '</div>' +
+    '</div>';
   }
 
   function renderItems(items, helpers) {
