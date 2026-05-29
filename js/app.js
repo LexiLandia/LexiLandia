@@ -86,6 +86,10 @@
       lessons = lessons.concat([window.LexiLandUnit10Lesson]);
     }
 
+    if (window.LexiLandUnit11Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit11Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit11Lesson]);
+    }
+
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
       window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
         if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {

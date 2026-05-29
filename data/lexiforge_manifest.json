@@ -79,9 +79,15 @@
       "order": 12,
       "title": "Юнит 10: Еда и напитки",
       "unitCount": 9
+    },
+    {
+      "id": "level-0-unit-11-clothes-colors",
+      "order": 13,
+      "title": "Юнит 11: Одежда и цвета",
+      "unitCount": 10
     }
   ],
-  "audioCount": 1027,
+  "audioCount": 1115,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -162,6 +168,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/belye_noski.mp3",
+      "text": "Белые носки.",
+      "speechText": "Белые носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -262,6 +278,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chernaya_kurtka.mp3",
+      "text": "Чёрная куртка.",
+      "speechText": "Чёрная куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -1465,6 +1491,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/futbolka.mp3",
+      "text": "Футболка.",
+      "speechText": "Футболка.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/g.mp3",
       "text": "Г",
       "speechText": "Г",
@@ -2505,6 +2541,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/krasnaya_futbolka.mp3",
+      "text": "Красная футболка.",
+      "speechText": "Красная футболка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/krasniy.mp3",
       "text": "красный",
       "speechText": "красный",
@@ -2632,6 +2678,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kurtka.mp3",
+      "text": "Куртка.",
+      "speechText": "Куртка.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -3961,7 +4017,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-10-food-drinks",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden.mp3",
+      "text": "надень",
+      "speechText": "надень",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -4205,6 +4271,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/noski.mp3",
+      "text": "Носки.",
+      "speechText": "Носки.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/nu.mp3",
       "text": "ну",
       "speechText": "ну",
@@ -4242,6 +4318,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/obuv.mp3",
+      "text": "Обувь.",
+      "speechText": "Обувь.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/odezhda.mp3",
+      "text": "Одежда.",
+      "speechText": "Одежда.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -4542,6 +4638,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/plate.mp3",
+      "text": "Платье.",
+      "speechText": "Платье.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -4895,6 +5001,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/shapka.mp3",
+      "text": "Шапка.",
+      "speechText": "Шапка.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/shar.mp3",
       "text": "шар",
       "speechText": "шар",
@@ -4902,6 +5018,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sharf.mp3",
+      "text": "Шарф.",
+      "speechText": "Шарф.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -4945,6 +5071,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/shtany.mp3",
+      "text": "Штаны.",
+      "speechText": "Штаны.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/sidit.mp3",
       "text": "сидит",
       "speechText": "сидит",
@@ -4982,6 +5118,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sinyaya_shapka.mp3",
+      "text": "Синяя шапка.",
+      "speechText": "Синяя шапка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -5101,7 +5247,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-10-food-drinks",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -6372,6 +6518,726 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-10-food-drinks",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_black_jacket.mp3",
+      "text": "Надень чёрную куртку.",
+      "speechText": "Надень чёрную куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_blue_hat.mp3",
+      "text": "Надень синюю шапку.",
+      "speechText": "Надень синюю шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_kurtka.mp3",
+      "text": "Надень куртку.",
+      "speechText": "Надень куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_obuv.mp3",
+      "text": "Надень обувь.",
+      "speechText": "Надень обувь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_red_shirt.mp3",
+      "text": "Надень красную футболку.",
+      "speechText": "Надень красную футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_shapka.mp3",
+      "text": "Надень шапку.",
+      "speechText": "Надень шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_sharf.mp3",
+      "text": "Надень шарф.",
+      "speechText": "Надень шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_build_white_socks.mp3",
+      "text": "Надень белые носки.",
+      "speechText": "Надень белые носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_dai_sharf_pozhaluysta.mp3",
+      "text": "Дай шарф, пожалуйста.",
+      "speechText": "Дай шарф, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_black_jacket.mp3",
+      "text": "Найди чёрную куртку.",
+      "speechText": "Найди чёрную куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_black_shoes.mp3",
+      "text": "Найди чёрную обувь.",
+      "speechText": "Найди чёрную обувь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_blue_hat.mp3",
+      "text": "Найди синюю шапку.",
+      "speechText": "Найди синюю шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_futbolka.mp3",
+      "text": "Найди футболку.",
+      "speechText": "Найди футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_green_dress.mp3",
+      "text": "Найди зелёное платье.",
+      "speechText": "Найди зелёное платье.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_kurtka.mp3",
+      "text": "Найди куртку.",
+      "speechText": "Найди куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_noski.mp3",
+      "text": "Найди носки.",
+      "speechText": "Найди носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_obuv.mp3",
+      "text": "Найди обувь.",
+      "speechText": "Найди обувь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_plate.mp3",
+      "text": "Найди платье.",
+      "speechText": "Найди платье.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_red_pants.mp3",
+      "text": "Найди красные штаны.",
+      "speechText": "Найди красные штаны.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_red_shirt.mp3",
+      "text": "Найди красную футболку.",
+      "speechText": "Найди красную футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_shapka.mp3",
+      "text": "Найди шапку.",
+      "speechText": "Найди шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_sharf.mp3",
+      "text": "Найди шарф.",
+      "speechText": "Найди шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_shtany.mp3",
+      "text": "Найди штаны.",
+      "speechText": "Найди штаны.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_white_socks.mp3",
+      "text": "Найди белые носки.",
+      "speechText": "Найди белые носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_find_yellow_scarf.mp3",
+      "text": "Найди жёлтый шарф.",
+      "speechText": "Найди жёлтый шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_futbolka.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_kurtka.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_noski.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_obuv.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_plate.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_shapka.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_sharf.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_game_what_shtany.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_black_jacket.mp3",
+      "text": "У меня есть чёрная куртка.",
+      "speechText": "У меня есть чёрная куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_blue_hat_no.mp3",
+      "text": "У меня есть синяя шапка.",
+      "speechText": "У меня есть синяя шапка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_futbolka.mp3",
+      "text": "У меня есть футболка.",
+      "speechText": "У меня есть футболка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_shapka.mp3",
+      "text": "У меня есть шапка.",
+      "speechText": "У меня есть шапка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_sharf_no.mp3",
+      "text": "У меня есть шарф.",
+      "speechText": "У меня есть шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_have_white_socks.mp3",
+      "text": "У меня есть белые носки.",
+      "speechText": "У меня есть белые носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l31_chto_eto_kurtka.mp3",
+      "text": "Что это? Куртка.",
+      "speechText": "Что это? Куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l31_eto_kurtka.mp3",
+      "text": "Это куртка?",
+      "speechText": "Это куртка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l31_final.mp3",
+      "text": "Отлично! Футболка. Куртка. Шапка. Шарф.",
+      "speechText": "Отлично! Футболка. Куртка. Шапка. Шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l31_text.mp3",
+      "text": "Тут одежда. Вот футболка. Вот шапка. Там куртка. У меня есть шарф.",
+      "speechText": "Тут одежда. Вот футболка. Вот шапка. Там куртка. У меня есть шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l32_eto_zelenoe_plate.mp3",
+      "text": "Это зелёное платье?",
+      "speechText": "Это зелёное платье?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l32_final.mp3",
+      "text": "Отлично! Красная футболка. Синяя шапка. Чёрная куртка.",
+      "speechText": "Отлично! Красная футболка. Синяя шапка. Чёрная куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l32_find_blue_hat.mp3",
+      "text": "Найди синюю шапку.",
+      "speechText": "Найди синюю шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l32_text.mp3",
+      "text": "На стуле красная футболка. Рядом синяя шапка. В коробке белые носки. У меня есть чёрная куртка.",
+      "speechText": "На стуле красная футболка. Рядом синяя шапка. В коробке белые носки. У меня есть чёрная куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l32_tsvetnaya_odezhda.mp3",
+      "text": "Цветная одежда.",
+      "speechText": "Цветная одежда.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l33_dialog.mp3",
+      "text": "Я хочу шапку. Дай шапку, пожалуйста. На. Спасибо.",
+      "speechText": "Я хочу шапку. Дай шапку, пожалуйста. На. Спасибо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l33_final.mp3",
+      "text": "Отлично! У меня есть. У меня нет. Я хочу. Дай.",
+      "speechText": "Отлично! У меня есть. У меня нет. Я хочу. Дай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l33_have_red_shirt.mp3",
+      "text": "У меня есть красная футболка.",
+      "speechText": "У меня есть красная футболка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l33_no_blue_hat.mp3",
+      "text": "У меня нет синей шапки.",
+      "speechText": "У меня нет синей шапки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_l33_text.mp3",
+      "text": "Утро. У меня есть футболка. У меня есть шапка. У меня нет куртки. Я хочу куртку.",
+      "speechText": "Утро. У меня есть футболка. У меня есть шапка. У меня нет куртки. Я хочу куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_find_black_jacket.mp3",
+      "text": "Найди чёрную куртку.",
+      "speechText": "Найди чёрную куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_find_blue_hat.mp3",
+      "text": "Найди синюю шапку.",
+      "speechText": "Найди синюю шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_find_white_socks.mp3",
+      "text": "Найди белые носки.",
+      "speechText": "Найди белые носки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_go_home.mp3",
+      "text": "Иди домой.",
+      "speechText": "Иди домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_go_red_shirt.mp3",
+      "text": "Иди к красной футболке.",
+      "speechText": "Иди к красной футболке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_map_go_shop.mp3",
+      "text": "Иди в магазин.",
+      "speechText": "Иди в магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_no_green_dress.mp3",
+      "text": "У меня нет зелёного платья.",
+      "speechText": "У меня нет зелёного платья.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_no_kurtki.mp3",
+      "text": "У меня нет куртки.",
+      "speechText": "У меня нет куртки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_dai_black_jacket.mp3",
+      "text": "Дай чёрную куртку, пожалуйста.",
+      "speechText": "Дай чёрную куртку, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_dai_noski.mp3",
+      "text": "Дай носки, пожалуйста.",
+      "speechText": "Дай носки, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_dai_sharf.mp3",
+      "text": "Дай шарф, пожалуйста.",
+      "speechText": "Дай шарф, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_want_blue_hat.mp3",
+      "text": "Я хочу синюю шапку.",
+      "speechText": "Я хочу синюю шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_want_futbolka.mp3",
+      "text": "Я хочу футболку.",
+      "speechText": "Я хочу футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_want_kurtka.mp3",
+      "text": "Я хочу куртку.",
+      "speechText": "Я хочу куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_want_red_shirt.mp3",
+      "text": "Я хочу красную футболку.",
+      "speechText": "Я хочу красную футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_shop_want_shapka.mp3",
+      "text": "Я хочу шапку.",
+      "speechText": "Я хочу шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_u_menya_est_futbolka.mp3",
+      "text": "У меня есть футболка.",
+      "speechText": "У меня есть футболка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_u_menya_net_kurtki.mp3",
+      "text": "У меня нет куртки.",
+      "speechText": "У меня нет куртки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u11_ya_hochu_shapku.mp3",
+      "text": "Я хочу шапку.",
+      "speechText": "Я хочу шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {
@@ -10235,6 +11101,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/zelenoe_plate.mp3",
+      "text": "Зелёное платье.",
+      "speechText": "Зелёное платье.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/zelenyy.mp3",
       "text": "зелёный",
       "speechText": "зелёный",
@@ -10302,6 +11178,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zheltyy_sharf.mp3",
+      "text": "Жёлтый шарф.",
+      "speechText": "Жёлтый шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-11-clothes-colors",
       "exists": true
     },
     {

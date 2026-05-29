@@ -114,6 +114,15 @@
       if (game.kind === "table-build") {
         return '<div class="unit8-shop-scene" aria-hidden="true"><span>🪑</span><span>🍽️</span><span>🙂</span></div>';
       }
+      if (game.kind === "clothing-shop") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>🏪</span><span>👕</span><span>🙂</span><span>🤲</span></div>';
+      }
+      if (game.kind === "clothing-build") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>🙂</span><span>👕</span><span>🧢</span><span>🧥</span></div>';
+      }
+      if (game.kind === "clothing-find" || game.kind === "clothing-color-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>👕</span><span>🧥</span><span>🧢</span><span>🧣</span></div>';
+      }
       return "";
     }
 
@@ -482,11 +491,11 @@
     }
 
     function isMapGame() {
-      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map";
+      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map" || game.kind === "clothing-map";
     }
 
     function isFindGame() {
-      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build";
+      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build" || game.kind === "clothing-find" || game.kind === "clothing-color-find" || game.kind === "clothing-shop" || game.kind === "clothing-build";
     }
   }
 
