@@ -123,6 +123,15 @@
       if (game.kind === "clothing-find" || game.kind === "clothing-color-find") {
         return '<div class="unit8-shop-scene" aria-hidden="true"><span>👕</span><span>🧥</span><span>🧢</span><span>🧣</span></div>';
       }
+      if (game.kind === "weather-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>☀️</span><span>🌧️</span><span>❄️</span><span>💨</span></div>';
+      }
+      if (game.kind === "health-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>🙂</span><span>✋</span><span>🦶</span><span>👃</span></div>';
+      }
+      if (game.kind === "family-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>👨</span><span>👩</span><span>👦</span><span>👧</span></div>';
+      }
       return "";
     }
 
@@ -235,10 +244,17 @@
 
       Array.prototype.forEach.call(root.querySelectorAll("[data-unit8-choice]"), function (button) {
         button.addEventListener("click", function () {
+          var selected = button.getAttribute("data-unit8-choice");
+
           if (locked) {
             return;
           }
-          check(button.getAttribute("data-unit8-choice") === String(task.correct), button, task);
+
+          locked = true;
+          playChoice(findChoiceItem(task, selected)).then(function () {
+            locked = false;
+            check(selected === String(task.correct), button, task);
+          });
         });
       });
     }
@@ -247,6 +263,7 @@
       Array.prototype.forEach.call(root.querySelectorAll("[data-unit8-add]"), function (button) {
         button.addEventListener("click", function () {
           var item = button.getAttribute("data-unit8-add");
+          playChoice(findChoiceItem(task, item));
           state.basket[item] = Math.min(9, getBasketCount(item) + 1);
           saveState(game, state);
           draw(false);
@@ -439,6 +456,34 @@
       });
     }
 
+    function playChoice(item) {
+      if (!item || !helpers.playWord) {
+        return Promise.resolve(false);
+      }
+
+      return helpers.playWord(item.text || "", item.audio);
+    }
+
+    function findChoiceItem(task, id) {
+      var sources = [
+        task && task.options,
+        task && task.items,
+        game && game.items,
+        game && game.objects
+      ];
+
+      for (var sourceIndex = 0; sourceIndex < sources.length; sourceIndex += 1) {
+        var source = sources[sourceIndex] || [];
+        for (var itemIndex = 0; itemIndex < source.length; itemIndex += 1) {
+          if (String(source[itemIndex].id) === String(id)) {
+            return source[itemIndex];
+          }
+        }
+      }
+
+      return null;
+    }
+
     function setFeedback(text, kind) {
       var feedback = root.querySelector("#unit8-feedback");
       if (feedback) {
@@ -491,11 +536,11 @@
     }
 
     function isMapGame() {
-      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map" || game.kind === "clothing-map";
+      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map" || game.kind === "clothing-map" || game.kind === "weather-map" || game.kind === "health-map" || game.kind === "family-map";
     }
 
     function isFindGame() {
-      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build" || game.kind === "clothing-find" || game.kind === "clothing-color-find" || game.kind === "clothing-shop" || game.kind === "clothing-build";
+      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build" || game.kind === "clothing-find" || game.kind === "clothing-color-find" || game.kind === "clothing-shop" || game.kind === "clothing-build" || game.kind === "weather-find" || game.kind === "health-find" || game.kind === "family-find";
     }
   }
 

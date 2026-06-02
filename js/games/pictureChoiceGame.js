@@ -83,31 +83,39 @@
         }
 
         var selected = button.getAttribute("data-answer");
-        var feedback = root.querySelector("#yesno-feedback");
-        var correctButton = root.querySelector('[data-answer="' + task.correct + '"]');
 
-        helpers.clearAnswers(root);
-
-        if (selected === task.correct) {
-          canAnswer = false;
-          button.classList.add("is-correct");
-          feedback.className = "feedback good";
-          var success = helpers.playFeedback("success");
-          feedback.textContent = success.text;
-          helpers.afterFeedback(success, options.onCorrect);
-          return;
-        }
-
-        button.classList.add("is-wrong");
-        correctButton.classList.add("show-correct");
-        feedback.className = "feedback try";
-        var retry = helpers.playFeedback("retry");
-        feedback.textContent = retry.text;
-        helpers.afterFeedback(retry, function () {
-          helpers.playPrompt(task);
+        canAnswer = false;
+        helpers.playEntryId(selected).then(function () {
+          checkAnswer(selected, button);
         });
       });
     });
+
+    function checkAnswer(selected, button) {
+      var feedback = root.querySelector("#yesno-feedback");
+      var correctButton = root.querySelector('[data-answer="' + task.correct + '"]');
+
+      helpers.clearAnswers(root);
+
+      if (selected === task.correct) {
+        button.classList.add("is-correct");
+        feedback.className = "feedback good";
+        var success = helpers.playFeedback("success");
+        feedback.textContent = success.text;
+        helpers.afterFeedback(success, options.onCorrect);
+        return;
+      }
+
+      button.classList.add("is-wrong");
+      correctButton.classList.add("show-correct");
+      feedback.className = "feedback try";
+      var retry = helpers.playFeedback("retry");
+      feedback.textContent = retry.text;
+      helpers.afterFeedback(retry, function () {
+        canAnswer = true;
+        helpers.playPrompt(task);
+      });
+    }
   }
 
   function renderLocationGame(options) {

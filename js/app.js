@@ -5,6 +5,22 @@
   var appRoot = document.getElementById("app");
   var data = null;
   var lesson = null;
+  var COURSE_SHORT_TITLES = {
+    "Юнит 1": "Старт",
+    "Юнит 2": "Кто и что",
+    "Юнит 3": "Действия",
+    "Юнит 4": "Фразы",
+    "Юнит 5": "Движение",
+    "Юнит 6": "Места",
+    "Юнит 7": "Описание",
+    "Юнит 8": "Счёт",
+    "Юнит 9": "День",
+    "Юнит 10": "Еда",
+    "Юнит 11": "Одежда",
+    "Юнит 12": "Погода",
+    "Юнит 13": "Тело",
+    "Юнит 14": "Семья"
+  };
   var maps = {
     entries: {},
     scenes: {}
@@ -90,6 +106,18 @@
       lessons = lessons.concat([window.LexiLandUnit11Lesson]);
     }
 
+    if (window.LexiLandUnit12Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit12Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit12Lesson]);
+    }
+
+    if (window.LexiLandUnit13Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit13Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit13Lesson]);
+    }
+
+    if (window.LexiLandUnit14Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit14Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit14Lesson]);
+    }
+
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
       window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
         if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {
@@ -143,7 +171,6 @@
           '</div>' +
         '</header>' +
         '<section class="hero">' +
-          '<p class="hero-word">здесь</p>' +
           '<p class="emoji-line">📍 🍎 💧 🚌 🏠</p>' +
         '</section>' +
         '<div class="course-list">' +
@@ -207,7 +234,7 @@
             '<button class="home-button" type="button" data-action="home" aria-label="Домой">🏠</button>' +
             '<div>' +
               '<h1>' + escapeHtml(group.menuLabel) + (complete ? " ✅" : "") + '</h1>' +
-              '<small>' + escapeHtml(group.title) + '</small>' +
+              '<small>' + escapeHtml(group.menuLabel) + '</small>' +
             '</div>' +
           '</div>' +
         '</header>' +
@@ -216,7 +243,7 @@
             '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(complete ? "✅ Готово" : "Открыто") + '</span>' +
           '</div>' +
           renderCourseVisual(group) +
-          '<h3>' + escapeHtml(group.title) + '</h3>' +
+          '<h3>' + escapeHtml(group.menuLabel) + '</h3>' +
           '<div class="unit-list">' +
             childLessons.map(function (child) {
               return lessonMenuCard(child.item, child.lessonIndex);
@@ -242,6 +269,7 @@
     var unlocked = isLessonUnlocked(lessonIndex);
     var labelNumber = getLessonOrder(item, lessonIndex);
     var label = item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber;
+    var displayTitle = getShellDisplayTitle(item, label);
 
     setCurrentLesson(lessonIndex);
     setPlayMode(false);
@@ -253,7 +281,7 @@
             '<button class="home-button" type="button" data-action="home" aria-label="Домой">🏠</button>' +
             '<div>' +
               '<h1>' + escapeHtml(label) + (complete ? " ✅" : "") + '</h1>' +
-              '<small>' + escapeHtml(item.title) + '</small>' +
+              '<small>' + escapeHtml(displayTitle) + '</small>' +
             '</div>' +
           '</div>' +
         '</header>' +
@@ -262,7 +290,7 @@
             '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(complete ? "✅ Готово" : "Открыто") + '</span>' +
           '</div>' +
           renderCourseVisual(item) +
-          '<h3>' + escapeHtml(item.title) + '</h3>' +
+          '<h3>' + escapeHtml(displayTitle) + '</h3>' +
           '<div class="unit-list">' +
             units.map(function (unit, unitIndex) {
               return unitCard(unit, unitIndex, item, lessonIndex, unlocked);
@@ -305,6 +333,7 @@
         id: "unit-1-level-0-3",
         menuLabel: "Юнит 1",
         title: "Юнит 1: Первые шаги",
+        shortTitle: COURSE_SHORT_TITLES["Юнит 1"],
         coverEmoji: "📖",
         lessonIndexes: unitOneIndexes
       });
@@ -319,6 +348,7 @@
         id: item.id,
         menuLabel: item.menuLabel || "\u0423\u0440\u043e\u043a " + getLessonOrder(item, lessonIndex),
         title: item.title,
+        shortTitle: getCourseShortTitle(item),
         coverImage: item.coverImage,
         image: item.image,
         cardImage: item.cardImage,
@@ -341,15 +371,45 @@
     var label = group.menuLabel + (complete ? " \u2705" : "");
     var readyCount = getCourseReadyCount(group);
     var countLabel = group.lessonIndexes ? formatLessonCount(readyCount) : formatItemCount(readyCount);
+    var shortTitle = getCourseShortTitle(group);
 
     return '<button class="course-card" type="button" data-course="' + courseIndex + '"' + (unlocked ? "" : " disabled") + '>' +
       renderCourseVisual(group) +
       '<div class="course-copy">' +
         '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(unlocked ? label : label + " 🔒") + '</span>' +
-        '<h3>' + escapeHtml(group.title) + '</h3>' +
+        (shortTitle ? '<h3>' + escapeHtml(shortTitle) + '</h3>' : "") +
         '<small>' + escapeHtml(readyCount + " " + countLabel) + '</small>' +
       '</div>' +
     '</button>';
+  }
+
+  function getCourseShortTitle(item) {
+    var label = item && item.menuLabel;
+    var title = (item && item.shortTitle) || "";
+    var rawTitle = (item && item.title) || "";
+    var afterColon = rawTitle.indexOf(":") !== -1 ? rawTitle.split(":").slice(1).join(":").trim() : rawTitle;
+
+    if (label && COURSE_SHORT_TITLES[label]) {
+      return COURSE_SHORT_TITLES[label];
+    }
+
+    if (title) {
+      return title;
+    }
+
+    if (afterColon && afterColon.length <= 14) {
+      return afterColon;
+    }
+
+    return "";
+  }
+
+  function getShellDisplayTitle(item, fallback) {
+    if (item && item.menuLabel && /^Юнит\s+\d+/.test(item.menuLabel)) {
+      return getCourseShortTitle(item) || item.menuLabel;
+    }
+
+    return (item && item.title) || fallback || "";
   }
 
   function renderCourseVisual(item) {
@@ -921,7 +981,9 @@
       escape: escapeHtml,
       afterFeedback: afterFeedback,
       playFeedback: playFeedback,
+      playEntryId: playEntryId,
       playPrompt: playPrompt,
+      playWord: playWord,
       playAudioList: playAudioList,
       getMapAria: getMapAria,
       getMapTarget: getMapTarget,
@@ -981,6 +1043,74 @@
   function playEntry(entry) {
     setWarning("");
     window.LexiLandAudio.playAudio(entry.audio, entry.speechText || entry.text, setWarning);
+  }
+
+  function playEntryId(entryId) {
+    var entry = maps.entries[entryId];
+
+    if (!entry) {
+      return Promise.resolve(false);
+    }
+
+    return playWord(entry.text, entry.audio);
+  }
+
+  function playWord(text, audioPath) {
+    var cleanText = cleanAudioLookupText(text);
+    var path = audioPath || findAudioForText(cleanText);
+
+    setWarning("");
+
+    if (!path || !window.LexiLandAudio) {
+      setWarning("Аудио скоро будет");
+      return Promise.resolve(false);
+    }
+
+    return window.LexiLandAudio.playAudio(path, cleanText, setWarning);
+  }
+
+  function findAudioForText(text) {
+    var normalized = normalizeAudioLookup(text);
+    var lessons = data && data.lessons ? data.lessons : [];
+    var local = findAudioInDictionary(lesson && lesson.dictionary, normalized);
+
+    if (local) {
+      return local;
+    }
+
+    for (var lessonIndex = 0; lessonIndex < lessons.length; lessonIndex += 1) {
+      var found = findAudioInDictionary(lessons[lessonIndex].dictionary, normalized);
+      if (found) {
+        return found;
+      }
+    }
+
+    return "";
+  }
+
+  function findAudioInDictionary(dictionary, normalizedText) {
+    var entries = dictionary || [];
+
+    for (var index = 0; index < entries.length; index += 1) {
+      if (normalizeAudioLookup(entries[index].text) === normalizedText && entries[index].audio) {
+        return entries[index].audio;
+      }
+    }
+
+    return "";
+  }
+
+  function cleanAudioLookupText(text) {
+    return String(text || "")
+      .trim()
+      .replace(/\s+/g, " ")
+      .replace(/[.!?]+$/g, "");
+  }
+
+  function normalizeAudioLookup(text) {
+    return cleanAudioLookupText(text)
+      .replace(/[«»"“”]/g, "")
+      .toLowerCase();
   }
 
   function playAudioList(items) {

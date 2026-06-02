@@ -103,6 +103,7 @@
           ' data-word="' + helpers.escape(meaning.word || key) + '"' +
           ' data-emoji="' + helpers.escape(meaning.emoji || "") + '"' +
           ' data-translation="' + helpers.escape(meaning.translation || "") + '"' +
+          ' data-audio="' + helpers.escape(meaning.audio || "") + '"' +
           ' data-image="' + helpers.escape(meaning.image || "") + '">' +
           helpers.escape(part) +
         '</button>';
@@ -117,6 +118,7 @@
         word: fallbackWord,
         emoji: value,
         translation: "",
+        audio: "",
         image: ""
       };
     }
@@ -125,6 +127,7 @@
       word: value.word || value.text || fallbackWord,
       emoji: value.emoji || "",
       translation: value.translation || value.meaning || "",
+      audio: value.audio || "",
       image: value.image || ""
     };
   }
@@ -181,6 +184,7 @@
         var word = button.getAttribute("data-word") || button.textContent || "";
         var emoji = button.getAttribute("data-emoji") || "";
         var translation = button.getAttribute("data-translation") || "";
+        var audio = button.getAttribute("data-audio") || "";
         var image = button.getAttribute("data-image") || "";
 
         feedback.textContent = "";
@@ -220,6 +224,9 @@
         }
 
         feedback.appendChild(card);
+        if (helpers.playWord) {
+          helpers.playWord(word, audio);
+        }
         Array.prototype.forEach.call(root.querySelectorAll(".read-word"), function (item) {
           item.classList.remove("is-open");
         });
@@ -284,10 +291,26 @@
   }
 
   function bindQuestion(root, questions, answered, helpers, questionIndex, onDone) {
+    var checking = false;
+
     Array.prototype.forEach.call(root.querySelectorAll("[data-choice]"), function (button) {
       button.addEventListener("click", function () {
         var question = questions[questionIndex];
         var selected = button.getAttribute("data-choice");
+
+        if (checking) {
+          return;
+        }
+
+        checking = true;
+        playAnswer(question, selected, helpers).then(function () {
+          checking = false;
+          checkAnswer(question, selected, button);
+        });
+      });
+    });
+
+    function checkAnswer(question, selected, button) {
         var feedback = root.querySelector("#slide-feedback");
         var questionRoot = root.querySelector('[data-question="' + questionIndex + '"]');
         var correctButton = questionRoot.querySelector('[data-choice="' + helpers.escape(question.correct) + '"]');
@@ -321,8 +344,19 @@
           return;
         }
         feedback.textContent = helpers.playFeedback("retry").text;
-      });
-    });
+    }
+  }
+
+  function playAnswer(question, selected, helpers) {
+    var answer = (question.options || []).filter(function (item) {
+      return String(item.id) === String(selected);
+    })[0];
+
+    if (!answer || !helpers.playWord) {
+      return Promise.resolve(false);
+    }
+
+    return helpers.playWord(answer.text || "", answer.audio);
   }
 
   function updateNext(root, questions, answered) {

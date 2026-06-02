@@ -85,9 +85,27 @@
       "order": 13,
       "title": "Юнит 11: Одежда и цвета",
       "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-12-weather",
+      "order": 14,
+      "title": "Юнит 12: Погода",
+      "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-13-body-health",
+      "order": 15,
+      "title": "Юнит 13: Тело и здоровье",
+      "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-14-family-people",
+      "order": 16,
+      "title": "Юнит 14: Семья и люди",
+      "unitCount": 10
     }
   ],
-  "audioCount": 1115,
+  "audioCount": 1386,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -151,6 +169,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/babushka.mp3",
+      "text": "бабушка",
+      "speechText": "бабушка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/babushka_pyot_chay.mp3",
+      "text": "Бабушка пьёт чай.",
+      "speechText": "Бабушка пьёт чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/belaya.mp3",
       "text": "белая",
       "speechText": "белая",
@@ -201,6 +239,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/bolit.mp3",
+      "text": "Болит.",
+      "speechText": "Болит.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/bolshaya.mp3",
       "text": "большая",
       "speechText": "большая",
@@ -237,7 +285,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/brat_igraet.mp3",
+      "text": "Брат играет.",
+      "speechText": "Брат играет.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -338,6 +396,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chto_bolit.mp3",
+      "text": "что болит",
+      "speechText": "что болит",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -498,6 +566,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dedushka.mp3",
+      "text": "дедушка",
+      "speechText": "дедушка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dedushka_est_sup.mp3",
+      "text": "Дедушка ест суп.",
+      "speechText": "Дедушка ест суп.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -681,13 +769,33 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/dozhd.mp3",
+      "text": "Дождь.",
+      "speechText": "Дождь.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/drug.mp3",
       "text": "друг",
       "speechText": "друг",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/drug_idyot_v_park.mp3",
+      "text": "Друг идёт в парк.",
+      "speechText": "Друг идёт в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -788,6 +896,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_babushka.mp3",
+      "text": "Это бабушка.",
+      "speechText": "Это бабушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_brat.mp3",
+      "text": "Это брат.",
+      "speechText": "Это брат.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_dedushka.mp3",
+      "text": "Это дедушка.",
+      "speechText": "Это дедушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -897,7 +1035,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -927,7 +1065,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -948,6 +1086,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-6-location-room",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/eto_sestra.mp3",
+      "text": "Это сестра.",
+      "speechText": "Это сестра.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -1741,6 +1889,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/glaz.mp3",
+      "text": "Глаз.",
+      "speechText": "Глаз.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/god.mp3",
       "text": "год",
       "speechText": "год",
@@ -1748,6 +1906,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/golova.mp3",
+      "text": "Голова.",
+      "speechText": "Голова.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/golova_bolit.mp3",
+      "text": "Голова болит.",
+      "speechText": "Голова болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -1821,6 +1999,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/holodno.mp3",
+      "text": "холодно",
+      "speechText": "холодно",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/i.mp3",
       "text": "и",
       "speechText": "и",
@@ -1838,6 +2026,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_domoy.mp3",
+      "text": "Иди домой.",
+      "speechText": "Иди домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -2141,6 +2339,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/igray.mp3",
+      "text": "играй",
+      "speechText": "играй",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/k.mp3",
       "text": "К",
       "speechText": "К",
@@ -2188,6 +2396,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kakaya_pogoda.mp3",
+      "text": "Какая погода?",
+      "speechText": "Какая погода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
       "exists": true
     },
     {
@@ -3597,7 +3815,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -3658,6 +3876,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_pomogaet.mp3",
+      "text": "Мама помогает.",
+      "speechText": "Мама помогает.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -3741,6 +3969,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/mne_horosho.mp3",
+      "text": "Мне хорошо.",
+      "speechText": "Мне хорошо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mne_ploho.mp3",
+      "text": "Мне плохо.",
+      "speechText": "Мне плохо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/mnogo.mp3",
       "text": "много",
       "speechText": "много",
@@ -3771,6 +4019,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/mokro.mp3",
+      "text": "мокро",
+      "speechText": "мокро",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/moloko.mp3",
       "text": "молоко",
       "speechText": "молоко",
@@ -3791,6 +4049,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/moy_brat.mp3",
+      "text": "мой брат",
+      "speechText": "мой брат",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moy_dedushka.mp3",
+      "text": "мой дедушка",
+      "speechText": "мой дедушка",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/moy_den.mp3",
       "text": "мой день",
       "speechText": "мой день",
@@ -3798,6 +4076,76 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moy_drug.mp3",
+      "text": "мой друг",
+      "speechText": "мой друг",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moy_papa.mp3",
+      "text": "мой папа",
+      "speechText": "мой папа",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moya_babushka.mp3",
+      "text": "моя бабушка",
+      "speechText": "моя бабушка",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moya_mama.mp3",
+      "text": "моя мама",
+      "speechText": "моя мама",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moya_podruga.mp3",
+      "text": "моя подруга",
+      "speechText": "моя подруга",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moya_semya.mp3",
+      "text": "Моя семья.",
+      "speechText": "Моя семья.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/moya_sestra.mp3",
+      "text": "моя сестра",
+      "speechText": "моя сестра",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -4021,6 +4369,86 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/na_ulitse.mp3",
+      "text": "на улице",
+      "speechText": "на улице",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_holodno.mp3",
+      "text": "На улице холодно.",
+      "speechText": "На улице холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_mokro.mp3",
+      "text": "На улице мокро.",
+      "speechText": "На улице мокро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_sneg.mp3",
+      "text": "На улице снег.",
+      "speechText": "На улице снег.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_suho.mp3",
+      "text": "На улице сухо.",
+      "speechText": "На улице сухо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_teplo.mp3",
+      "text": "На улице тепло.",
+      "speechText": "На улице тепло.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_veter.mp3",
+      "text": "На улице ветер.",
+      "speechText": "На улице ветер.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_ulitse_zharko.mp3",
+      "text": "На улице жарко.",
+      "speechText": "На улице жарко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/naden.mp3",
       "text": "надень",
       "speechText": "надень",
@@ -4028,6 +4456,56 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden_futbolku.mp3",
+      "text": "надень футболку",
+      "speechText": "надень футболку",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden_kurtku.mp3",
+      "text": "надень куртку",
+      "speechText": "надень куртку",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden_obuv.mp3",
+      "text": "надень обувь",
+      "speechText": "надень обувь",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden_shapku.mp3",
+      "text": "надень шапку",
+      "speechText": "надень шапку",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naden_sharf.mp3",
+      "text": "надень шарф",
+      "speechText": "надень шарф",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
       "exists": true
     },
     {
@@ -4261,13 +4739,33 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/nos.mp3",
-      "text": "нос",
-      "speechText": "нос",
+      "audio": "assets/audio/ru/noga.mp3",
+      "text": "Нога.",
+      "speechText": "Нога.",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/noga_bolit.mp3",
+      "text": "Нога болит.",
+      "speechText": "Нога болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nos.mp3",
+      "text": "Нос.",
+      "speechText": "Нос.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -4557,7 +5055,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/papa_chitaet.mp3",
+      "text": "Папа читает.",
+      "speechText": "Папа читает.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -4681,6 +5189,96 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/podruga.mp3",
+      "text": "подруга",
+      "speechText": "подруга",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/podruga_chitaet_knigu.mp3",
+      "text": "Подруга читает книгу.",
+      "speechText": "Подруга читает книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pogoda.mp3",
+      "text": "погода",
+      "speechText": "погода",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pokazhi.mp3",
+      "text": "покажи",
+      "speechText": "покажи",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pokazhi_golovu.mp3",
+      "text": "Покажи голову.",
+      "speechText": "Покажи голову.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pokazhi_nogu.mp3",
+      "text": "Покажи ногу.",
+      "speechText": "Покажи ногу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pokazhi_nos.mp3",
+      "text": "Покажи нос.",
+      "speechText": "Покажи нос.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pokazhi_ruku.mp3",
+      "text": "Покажи руку.",
+      "speechText": "Покажи руку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pomogaet.mp3",
+      "text": "помогает",
+      "speechText": "помогает",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/potom.mp3",
       "text": "потом",
       "speechText": "потом",
@@ -4781,6 +5379,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/risuet.mp3",
+      "text": "рисует",
+      "speechText": "рисует",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/risuy.mp3",
       "text": "рисуй",
       "speechText": "рисуй",
@@ -4802,12 +5410,12 @@
     },
     {
       "audio": "assets/audio/ru/rot.mp3",
-      "text": "рот",
-      "speechText": "рот",
+      "text": "Рот.",
+      "speechText": "Рот.",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -4891,6 +5499,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/ruka.mp3",
+      "text": "Рука.",
+      "speechText": "Рука.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ruka_bolit.mp3",
+      "text": "Рука болит.",
+      "speechText": "Рука болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ryadom.mp3",
       "text": "рядом",
       "speechText": "рядом",
@@ -4941,13 +5569,43 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/segodnya.mp3",
+      "text": "сегодня",
+      "speechText": "сегодня",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/segodnya_dozhd.mp3",
+      "text": "Сегодня дождь.",
+      "speechText": "Сегодня дождь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/segodnya_solntse.mp3",
+      "text": "Сегодня солнце.",
+      "speechText": "Сегодня солнце.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/semya.mp3",
       "text": "семья",
       "speechText": "семья",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -4957,7 +5615,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sestra_risuet.mp3",
+      "text": "Сестра рисует.",
+      "speechText": "Сестра рисует.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -5141,6 +5809,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/sneg.mp3",
+      "text": "Снег.",
+      "speechText": "Снег.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/so.mp3",
       "text": "со",
       "speechText": "со",
@@ -5232,12 +5910,12 @@
     },
     {
       "audio": "assets/audio/ru/solntse.mp3",
-      "text": "солнце",
-      "speechText": "солнце",
+      "text": "Солнце.",
+      "speechText": "Солнце.",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-12-weather",
       "exists": true
     },
     {
@@ -5307,7 +5985,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -5341,6 +6019,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/suho.mp3",
+      "text": "сухо",
+      "speechText": "сухо",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/sup.mp3",
       "text": "суп",
       "speechText": "суп",
@@ -5348,6 +6036,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-10-food-drinks",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/syad.mp3",
+      "text": "Сядь.",
+      "speechText": "Сядь.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -5578,6 +6276,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/telo.mp3",
+      "text": "Тело.",
+      "speechText": "Тело.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/teplo.mp3",
+      "text": "тепло",
+      "speechText": "тепло",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
       "exists": true
     },
     {
@@ -7238,6 +7956,1866 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_cold_jacket.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_rain_jacket.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_snow_hat.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_warm_shirt.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_wet_shoes.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_clothes_wind_scarf.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_hot.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_rain_wet.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_snow_cold.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_sun_dry.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_sun_warm.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_feel_wind_snow_cold.mp3",
+      "text": "Как на улице?",
+      "speechText": "Как на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_cold.mp3",
+      "text": "Найди холодно.",
+      "speechText": "Найди холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_rain.mp3",
+      "text": "Найди дождь.",
+      "speechText": "Найди дождь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_snow.mp3",
+      "text": "Найди снег.",
+      "speechText": "Найди снег.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_sun.mp3",
+      "text": "Найди солнце.",
+      "speechText": "Найди солнце.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_warm.mp3",
+      "text": "Найди тепло.",
+      "speechText": "Найди тепло.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_find_wind.mp3",
+      "text": "Найди ветер.",
+      "speechText": "Найди ветер.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_outside_snow.mp3",
+      "text": "Что на улице?",
+      "speechText": "Что на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_outside_wind.mp3",
+      "text": "Что на улице?",
+      "speechText": "Что на улице?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_today_rain.mp3",
+      "text": "Что сегодня?",
+      "speechText": "Что сегодня?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_today_sun.mp3",
+      "text": "Что сегодня?",
+      "speechText": "Что сегодня?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_weather_rain.mp3",
+      "text": "Какая погода?",
+      "speechText": "Какая погода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_weather_snow.mp3",
+      "text": "Какая погода?",
+      "speechText": "Какая погода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_weather_sun.mp3",
+      "text": "Какая погода?",
+      "speechText": "Какая погода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_game_weather_wind.mp3",
+      "text": "Какая погода?",
+      "speechText": "Какая погода?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l34_final.mp3",
+      "text": "Отлично! Солнце. Дождь. Снег. Ветер.",
+      "speechText": "Отлично! Солнце. Дождь. Снег. Ветер.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l34_text.mp3",
+      "text": "Сегодня солнце. На улице тепло. Я иду в парк. У меня есть футболка.",
+      "speechText": "Сегодня солнце. На улице тепло. Я иду в парк. У меня есть футболка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_dozhd_mokro.mp3",
+      "text": "Дождь. Мокро.",
+      "speechText": "Дождь. Мокро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_final.mp3",
+      "text": "Отлично! Тепло. Холодно. Мокро. Сухо.",
+      "speechText": "Отлично! Тепло. Холодно. Мокро. Сухо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_sneg_holodno.mp3",
+      "text": "Снег. Холодно.",
+      "speechText": "Снег. Холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_solntse_teplo.mp3",
+      "text": "Солнце. Тепло.",
+      "speechText": "Солнце. Тепло.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_teplo_holodno.mp3",
+      "text": "Тепло. Холодно.",
+      "speechText": "Тепло. Холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l35_text.mp3",
+      "text": "На улице дождь. На улице мокро. Я дома. У меня есть куртка.",
+      "speechText": "На улице дождь. На улице мокро. Я дома. У меня есть куртка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_chto_nadet.mp3",
+      "text": "Что надеть?",
+      "speechText": "Что надеть?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_dozhd_naden_kurtku.mp3",
+      "text": "Дождь. Надень куртку.",
+      "speechText": "Дождь. Надень куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_final.mp3",
+      "text": "Отлично! Надень куртку. Надень шапку. Надень шарф. Надень футболку.",
+      "speechText": "Отлично! Надень куртку. Надень шапку. Надень шарф. Надень футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_holodno_naden_kurtku.mp3",
+      "text": "Холодно. Надень куртку.",
+      "speechText": "Холодно. Надень куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_idu_v_park_teplo.mp3",
+      "text": "Я иду в парк. Тепло.",
+      "speechText": "Я иду в парк. Тепло.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_idu_v_shkolu_holodno.mp3",
+      "text": "Я иду в школу. Холодно.",
+      "speechText": "Я иду в школу. Холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_sneg_naden_shapku.mp3",
+      "text": "Снег. Надень шапку.",
+      "speechText": "Снег. Надень шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_teplo_naden_futbolku.mp3",
+      "text": "Тепло. Надень футболку.",
+      "speechText": "Тепло. Надень футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_text.mp3",
+      "text": "Утро. На улице холодно. Я иду в школу. Надень куртку. Надень шапку.",
+      "speechText": "Утро. На улице холодно. Я иду в школу. Надень куртку. Надень шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_l36_veter_naden_sharf.mp3",
+      "text": "Ветер. Надень шарф.",
+      "speechText": "Ветер. Надень шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_cold_find_jacket.mp3",
+      "text": "Холодно. Найди куртку.",
+      "speechText": "Холодно. Найди куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_find_rain.mp3",
+      "text": "Найди дождь.",
+      "speechText": "Найди дождь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_find_snow.mp3",
+      "text": "Найди снег.",
+      "speechText": "Найди снег.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_find_wind.mp3",
+      "text": "Найди ветер.",
+      "speechText": "Найди ветер.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_go_home.mp3",
+      "text": "Иди домой.",
+      "speechText": "Иди домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_go_school.mp3",
+      "text": "Иди в школу.",
+      "speechText": "Иди в школу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_go_sun.mp3",
+      "text": "Иди к солнцу.",
+      "speechText": "Иди к солнцу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_snow_find_hat.mp3",
+      "text": "Снег. Найди шапку.",
+      "speechText": "Снег. Найди шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_warm_find_shirt.mp3",
+      "text": "Тепло. Найди футболку.",
+      "speechText": "Тепло. Найди футболку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_map_wind_find_scarf.mp3",
+      "text": "Ветер. Найди шарф.",
+      "speechText": "Ветер. Найди шарф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_cold_jacket.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_rain_jacket.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_snow_hat.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_warm_shirt.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_wet_shoes.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_phrase_wind_scarf.mp3",
+      "text": "Выбери.",
+      "speechText": "Выбери.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_cold.mp3",
+      "text": "На улице холодно.",
+      "speechText": "На улице холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_rain.mp3",
+      "text": "Сегодня дождь.",
+      "speechText": "Сегодня дождь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_snow.mp3",
+      "text": "Сегодня снег.",
+      "speechText": "Сегодня снег.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_sun.mp3",
+      "text": "Сегодня солнце.",
+      "speechText": "Сегодня солнце.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_warm.mp3",
+      "text": "На улице тепло.",
+      "speechText": "На улице тепло.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u12_today_wind.mp3",
+      "text": "Сегодня ветер.",
+      "speechText": "Сегодня ветер.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_bad_sad.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_good_smile.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_head_bad.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_park_good.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_tired_bad.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_feel_water_good.mp3",
+      "text": "Как?",
+      "speechText": "Как?",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_glaz.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_golova.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_noga.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_nos.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_rot.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_ruka.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_uho.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_game_what_zhivot.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_belly_home.mp3",
+      "text": "Живот болит.",
+      "speechText": "Живот болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_cold_jacket.mp3",
+      "text": "Холодно.",
+      "speechText": "Холодно.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_good_play.mp3",
+      "text": "Мне хорошо.",
+      "speechText": "Мне хорошо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_head_home.mp3",
+      "text": "Голова болит.",
+      "speechText": "Голова болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_tired_sit.mp3",
+      "text": "Я устал.",
+      "speechText": "Я устал.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_help_want_water.mp3",
+      "text": "Мне плохо. Я хочу воду.",
+      "speechText": "Мне плохо. Я хочу воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l37_chto_eto_ruka.mp3",
+      "text": "Что это? Рука.",
+      "speechText": "Что это? Рука.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l37_eto_golova.mp3",
+      "text": "Это голова?",
+      "speechText": "Это голова?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l37_eto_noga.mp3",
+      "text": "Это нога?",
+      "speechText": "Это нога?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l37_final.mp3",
+      "text": "Отлично! Голова. Рука. Нога. Нос.",
+      "speechText": "Отлично! Голова. Рука. Нога. Нос.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l37_text.mp3",
+      "text": "Вот голова. Вот рука. Вот нога. У меня есть нос. У меня есть рот.",
+      "speechText": "Вот голова. Вот рука. Вот нога. У меня есть нос. У меня есть рот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l38_final.mp3",
+      "text": "Отлично! Болит. Голова болит. Живот болит.",
+      "speechText": "Отлично! Болит. Голова болит. Живот болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l38_text.mp3",
+      "text": "Утро. Я дома. У меня болит голова. Мне плохо. Я хочу воду.",
+      "speechText": "Утро. Я дома. У меня болит голова. Мне плохо. Я хочу воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l39_dialog.mp3",
+      "text": "Мне плохо. Что болит? Голова болит. Я хочу воду.",
+      "speechText": "Мне плохо. Что болит? Голова болит. Я хочу воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l39_final.mp3",
+      "text": "Отлично! Мне хорошо. Мне плохо. Я устал. Сядь.",
+      "speechText": "Отлично! Мне хорошо. Мне плохо. Я устал. Сядь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_l39_text.mp3",
+      "text": "День. Я в школе. Я устал. Мне плохо. Я хочу домой.",
+      "speechText": "День. Я в школе. Я устал. Мне плохо. Я хочу домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_bad_go_home.mp3",
+      "text": "Мне плохо. Иди домой.",
+      "speechText": "Мне плохо. Иди домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_cold_jacket.mp3",
+      "text": "Холодно. Найди куртку.",
+      "speechText": "Холодно. Найди куртку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_find_golova.mp3",
+      "text": "Найди голову.",
+      "speechText": "Найди голову.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_find_noga.mp3",
+      "text": "Найди ногу.",
+      "speechText": "Найди ногу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_find_ruka.mp3",
+      "text": "Найди руку.",
+      "speechText": "Найди руку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_find_zhivot.mp3",
+      "text": "Найди живот.",
+      "speechText": "Найди живот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_snow_hat.mp3",
+      "text": "Снег. Найди шапку.",
+      "speechText": "Снег. Найди шапку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_map_want_water.mp3",
+      "text": "Я хочу воду. Найди воду.",
+      "speechText": "Я хочу воду. Найди воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_golova_bolit.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_noga_bolit.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_ruka_bolit.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_u_menya_golova.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_u_menya_zhivot.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_pain_zhivot_bolit.mp3",
+      "text": "Что болит?",
+      "speechText": "Что болит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_show_glaz.mp3",
+      "text": "Покажи глаз.",
+      "speechText": "Покажи глаз.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_show_rot.mp3",
+      "text": "Покажи рот.",
+      "speechText": "Покажи рот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_show_uho.mp3",
+      "text": "Покажи ухо.",
+      "speechText": "Покажи ухо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_show_zhivot.mp3",
+      "text": "Покажи живот.",
+      "speechText": "Покажи живот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_story_1.mp3",
+      "text": "Утро. Я дома. У меня болит голова. Я хочу воду.",
+      "speechText": "Утро. Я дома. У меня болит голова. Я хочу воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_story_2.mp3",
+      "text": "День. Я в школе. Я устал. Мне плохо. Я хочу домой.",
+      "speechText": "День. Я в школе. Я устал. Мне плохо. Я хочу домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_story_3.mp3",
+      "text": "Вечер. Я дома. Мне хорошо. Кот рядом. Я пью чай.",
+      "speechText": "Вечер. Я дома. Мне хорошо. Кот рядом. Я пью чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u13_story_final.mp3",
+      "text": "Отлично! Ты читаешь. Тело и здоровье.",
+      "speechText": "Отлично! Ты читаешь. Тело и здоровье.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_babushka.mp3",
+      "text": "Что делает бабушка?",
+      "speechText": "Что делает бабушка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_brat.mp3",
+      "text": "Что делает брат?",
+      "speechText": "Что делает брат?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_dedushka.mp3",
+      "text": "Что делает дедушка?",
+      "speechText": "Что делает дедушка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_drug.mp3",
+      "text": "Что делает друг?",
+      "speechText": "Что делает друг?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_mama.mp3",
+      "text": "Что делает мама?",
+      "speechText": "Что делает мама?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_papa.mp3",
+      "text": "Что делает папа?",
+      "speechText": "Что делает папа?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_podruga.mp3",
+      "text": "Что делает подруга?",
+      "speechText": "Что делает подруга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_action_sestra.mp3",
+      "text": "Что делает сестра?",
+      "speechText": "Что делает сестра?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_babushku.mp3",
+      "text": "Найди бабушку.",
+      "speechText": "Найди бабушку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_brata.mp3",
+      "text": "Найди брата.",
+      "speechText": "Найди брата.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_dedushku.mp3",
+      "text": "Найди дедушку.",
+      "speechText": "Найди дедушку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_druga.mp3",
+      "text": "Найди друга.",
+      "speechText": "Найди друга.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_mamu.mp3",
+      "text": "Найди маму.",
+      "speechText": "Найди маму.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_papu.mp3",
+      "text": "Найди папу.",
+      "speechText": "Найди папу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_podrugu.mp3",
+      "text": "Найди подругу.",
+      "speechText": "Найди подругу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_find_sestru.mp3",
+      "text": "Найди сестру.",
+      "speechText": "Найди сестру.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_babushka.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_brat.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_dedushka.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_drug.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_mama.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_papa.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_podruga.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_game_who_sestra.mp3",
+      "text": "Кто это?",
+      "speechText": "Кто это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_babushka.mp3",
+      "text": "У меня есть бабушка.",
+      "speechText": "У меня есть бабушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_brat.mp3",
+      "text": "У меня есть брат.",
+      "speechText": "У меня есть брат.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_dedushka.mp3",
+      "text": "У меня есть дедушка.",
+      "speechText": "У меня есть дедушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_family.mp3",
+      "text": "У меня есть семья.",
+      "speechText": "У меня есть семья.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_mama_papa.mp3",
+      "text": "У меня есть мама и папа.",
+      "speechText": "У меня есть мама и папа.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_have_sestra.mp3",
+      "text": "У меня есть сестра.",
+      "speechText": "У меня есть сестра.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_babushka_tea.mp3",
+      "text": "Бабушка хочет чай.",
+      "speechText": "Бабушка хочет чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_bad_water.mp3",
+      "text": "Мне плохо.",
+      "speechText": "Мне плохо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_brat_ball.mp3",
+      "text": "Брат хочет мяч.",
+      "speechText": "Брат хочет мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_cold_jacket.mp3",
+      "text": "Мне холодно.",
+      "speechText": "Мне холодно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_dedushka_soup.mp3",
+      "text": "Дедушка хочет суп.",
+      "speechText": "Дедушка хочет суп.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_mama_water.mp3",
+      "text": "Мама говорит: дай воду, пожалуйста.",
+      "speechText": "Мама говорит: дай воду, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_papa_sit.mp3",
+      "text": "Папа устал.",
+      "speechText": "Папа устал.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_help_sestra_book.mp3",
+      "text": "Сестра хочет книгу.",
+      "speechText": "Сестра хочет книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l40_eto_brat.mp3",
+      "text": "Это брат?",
+      "speechText": "Это брат?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l40_final.mp3",
+      "text": "Отлично! Мама. Папа. Брат. Сестра.",
+      "speechText": "Отлично! Мама. Папа. Брат. Сестра.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l40_kto_eto_brat.mp3",
+      "text": "Кто это? Брат.",
+      "speechText": "Кто это? Брат.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l40_mama_i_papa_doma.mp3",
+      "text": "Мама и папа дома.",
+      "speechText": "Мама и папа дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l40_text.mp3",
+      "text": "Это моя семья. Тут мама. Тут папа. Там брат. Там сестра. Все дома.",
+      "speechText": "Это моя семья. Тут мама. Тут папа. Там брат. Там сестра. Все дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l41_est_semya.mp3",
+      "text": "У меня есть семья.",
+      "speechText": "У меня есть семья.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l41_est_sestra_no.mp3",
+      "text": "У меня есть сестра.",
+      "speechText": "У меня есть сестра.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l41_final.mp3",
+      "text": "Отлично! У меня есть брат. У меня есть сестра. У меня нет сестры.",
+      "speechText": "Отлично! У меня есть брат. У меня есть сестра. У меня нет сестры.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l41_mama_i_papa.mp3",
+      "text": "У меня есть мама и папа.",
+      "speechText": "У меня есть мама и папа.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l41_text.mp3",
+      "text": "У меня есть семья. У меня есть мама. У меня есть папа. У меня есть брат. У меня нет сестры.",
+      "speechText": "У меня есть семья. У меня есть мама. У меня есть папа. У меня есть брат. У меня нет сестры.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l42_chto_delaet_mama.mp3",
+      "text": "Что делает мама?",
+      "speechText": "Что делает мама?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l42_final.mp3",
+      "text": "Отлично! Помогает. Читает. Играет. Рисует.",
+      "speechText": "Отлично! Помогает. Читает. Играет. Рисует.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l42_kto_chitaet.mp3",
+      "text": "Кто читает?",
+      "speechText": "Кто читает?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_l42_text.mp3",
+      "text": "Вечер. Моя семья дома. Мама помогает. Папа читает. Брат играет. Бабушка пьёт чай.",
+      "speechText": "Вечер. Моя семья дома. Мама помогает. Папа читает. Брат играет. Бабушка пьёт чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_drug_park.mp3",
+      "text": "Друг в парке. Иди в парк.",
+      "speechText": "Друг в парке. Иди в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_babushka.mp3",
+      "text": "Найди бабушку.",
+      "speechText": "Найди бабушку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_brat.mp3",
+      "text": "Найди брата.",
+      "speechText": "Найди брата.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_dedushka.mp3",
+      "text": "Найди дедушку.",
+      "speechText": "Найди дедушку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_mama.mp3",
+      "text": "Найди маму.",
+      "speechText": "Найди маму.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_papa.mp3",
+      "text": "Найди папу.",
+      "speechText": "Найди папу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_find_sestra.mp3",
+      "text": "Найди сестру.",
+      "speechText": "Найди сестру.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_go_drug.mp3",
+      "text": "Иди к другу.",
+      "speechText": "Иди к другу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_go_podruga.mp3",
+      "text": "Иди к подруге.",
+      "speechText": "Иди к подруге.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_map_mama_home.mp3",
+      "text": "Мама дома. Иди домой.",
+      "speechText": "Мама дома. Иди домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_no_brata.mp3",
+      "text": "У меня нет брата.",
+      "speechText": "У меня нет брата.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_no_sestry.mp3",
+      "text": "У меня нет сестры.",
+      "speechText": "У меня нет сестры.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_scene_1.mp3",
+      "text": "Это моя семья. Мама дома. Папа читает. Брат играет.",
+      "speechText": "Это моя семья. Мама дома. Папа читает. Брат играет.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_scene_2.mp3",
+      "text": "Бабушка пьёт чай. Дедушка ест суп. Сестра рисует. Мне хорошо.",
+      "speechText": "Бабушка пьёт чай. Дедушка ест суп. Сестра рисует. Мне хорошо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_scene_3.mp3",
+      "text": "День. Друг в парке. Подруга читает книгу. Я иду в парк.",
+      "speechText": "День. Друг в парке. Подруга читает книгу. Я иду в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u14_scene_final.mp3",
+      "text": "Отлично! Ты читаешь. Семья.",
+      "speechText": "Отлично! Ты читаешь. Семья.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -10181,6 +12759,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u_menya_bolit_golova.mp3",
+      "text": "У меня болит голова.",
+      "speechText": "У меня болит голова.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_bolit_zhivot.mp3",
+      "text": "У меня болит живот.",
+      "speechText": "У меня болит живот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u_menya_est.mp3",
       "text": "у меня есть",
       "speechText": "у меня есть",
@@ -10188,6 +12786,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_babushka.mp3",
+      "text": "У меня есть бабушка.",
+      "speechText": "У меня есть бабушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_brat.mp3",
+      "text": "У меня есть брат.",
+      "speechText": "У меня есть брат.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_dedushka.mp3",
+      "text": "У меня есть дедушка.",
+      "speechText": "У меня есть дедушка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -10218,6 +12846,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_est_sestra.mp3",
+      "text": "У меня есть сестра.",
+      "speechText": "У меня есть сестра.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -10261,6 +12899,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u_menya_net_brata.mp3",
+      "text": "У меня нет брата.",
+      "speechText": "У меня нет брата.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u_menya_net_hleba.mp3",
       "text": "У меня нет хлеба.",
       "speechText": "У меня нет хлеба.",
@@ -10288,6 +12936,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_net_sestry.mp3",
+      "text": "У меня нет сестры.",
+      "speechText": "У меня нет сестры.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-14-family-people",
       "exists": true
     },
     {
@@ -10328,6 +12986,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/uho.mp3",
+      "text": "Ухо.",
+      "speechText": "Ухо.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -10458,6 +13126,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/veter.mp3",
+      "text": "Ветер.",
+      "speechText": "Ветер.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
       "exists": true
     },
     {
@@ -10671,6 +13349,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/ya_hochu_domoy.mp3",
+      "text": "Я хочу домой.",
+      "speechText": "Я хочу домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ya_hochu_hleb.mp3",
       "text": "Я хочу хлеб.",
       "speechText": "Я хочу хлеб.",
@@ -10717,7 +13405,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-10-food-drinks",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -10818,6 +13506,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_ustal.mp3",
+      "text": "Я устал.",
+      "speechText": "Я устал.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
@@ -11151,6 +13849,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/zharko.mp3",
+      "text": "жарко",
+      "speechText": "жарко",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-12-weather",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/zheltaya.mp3",
       "text": "жёлтая",
       "speechText": "жёлтая",
@@ -11188,6 +13896,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zhivot.mp3",
+      "text": "Живот.",
+      "speechText": "Живот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zhivot_bolit.mp3",
+      "text": "Живот болит.",
+      "speechText": "Живот болит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-13-body-health",
       "exists": true
     },
     {
