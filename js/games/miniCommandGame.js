@@ -70,6 +70,9 @@
         : action === task.correctAction && isOnTarget;
 
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, action + ":" + selectedObject.id);
+        }
         canAnswer = false;
         feedback.className = "feedback good";
         var success = helpers.playFeedback("success");
@@ -79,6 +82,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, action + ":" + selectedObject.id);
+      }
       feedback.className = "feedback try";
       var retry = helpers.playFeedback("retry");
       feedback.textContent = retry.text;
@@ -201,6 +207,9 @@
       var feedback = root.querySelector("#map-feedback");
       var target = helpers.getMapTarget(task);
       if (target && player.x === target.x && player.y === target.y) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, player.x + "," + player.y);
+        }
         canAnswer = false;
         feedback.className = "feedback good";
         var success = helpers.playFeedback("success");
@@ -210,6 +219,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, player.x + "," + player.y);
+      }
       feedback.className = "feedback try";
       var retry = helpers.playFeedback("retry");
       feedback.textContent = task.wrongFeedback || retry.text;

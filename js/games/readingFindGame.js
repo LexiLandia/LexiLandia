@@ -156,7 +156,7 @@
         });
 
         root.querySelector('[data-reading-action="check"]').addEventListener("click", function () {
-          checkAnswer(arraysEqual(selectedTiles, task.correct));
+          checkAnswer(arraysEqual(selectedTiles, task.correct), null, selectedTiles.join("+"));
         });
         return;
       }
@@ -167,7 +167,7 @@
             return;
           }
           var selected = button.getAttribute("data-choice");
-          checkAnswer(selected === task.correct, button);
+          checkAnswer(selected === task.correct, button, selected);
         });
       });
     }
@@ -189,11 +189,14 @@
       }
     }
 
-    function checkAnswer(isCorrect, button) {
+    function checkAnswer(isCorrect, button, selected) {
       var feedback = root.querySelector("#reading-game-feedback");
       locked = true;
 
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, selected || selectedTiles.join("+"));
+        }
         state.correct += 1;
         feedback.className = "feedback good";
         feedback.textContent = "✅ отлично";
@@ -205,6 +208,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, selected || selectedTiles.join("+"));
+      }
       state.mistakes += 1;
       feedback.className = "feedback try";
       feedback.textContent = "❌ попробуй ещё";

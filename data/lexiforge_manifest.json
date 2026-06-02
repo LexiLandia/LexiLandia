@@ -103,9 +103,21 @@
       "order": 16,
       "title": "Юнит 14: Семья и люди",
       "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-15-home-rooms",
+      "order": 17,
+      "title": "Юнит 15: Дом и комнаты",
+      "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-16-city-transport",
+      "order": 18,
+      "title": "Юнит 16: Город и транспорт",
+      "unitCount": 10
     }
   ],
-  "audioCount": 1386,
+  "audioCount": 1541,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -140,12 +152,32 @@
     },
     {
       "audio": "assets/audio/ru/avtobus.mp3",
-      "text": "автобус",
-      "speechText": "автобус",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/avtobus_edet_v_gorod.mp3",
+      "text": "Автобус едет в город.",
+      "speechText": "Автобус едет в город.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/avtobus_na_ostanovke.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -280,12 +312,12 @@
     },
     {
       "audio": "assets/audio/ru/brat.mp3",
-      "text": "брат",
-      "speechText": "брат",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-14-family-people",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -700,12 +732,12 @@
     },
     {
       "audio": "assets/audio/ru/dom.mp3",
-      "text": "дом",
-      "speechText": "дом",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -730,12 +762,12 @@
     },
     {
       "audio": "assets/audio/ru/doma.mp3",
-      "text": "дома",
-      "speechText": "дома",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -760,12 +792,12 @@
     },
     {
       "audio": "assets/audio/ru/domoy.mp3",
-      "text": "домой",
-      "speechText": "домой",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -839,6 +871,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/dver.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/e.mp3",
       "text": "Э",
       "speechText": "Э",
@@ -856,6 +898,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-10-food-drinks",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/edet.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/edu.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/edu_domoy.mp3",
+      "text": "еду домой",
+      "speechText": "еду домой",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -1929,6 +2001,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/gorod.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/h.mp3",
       "text": "Х",
       "speechText": "Х",
@@ -2020,12 +2102,12 @@
     },
     {
       "audio": "assets/audio/ru/idi.mp3",
-      "text": "иди",
-      "speechText": "иди",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2035,7 +2117,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-13-body-health",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -2059,6 +2141,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/idi_k_dveri.mp3",
+      "text": "Иди к двери.",
+      "speechText": "Иди к двери.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/idi_k_krasnomu_domu.mp3",
       "text": "иди к красному дому",
       "speechText": "иди к красному дому",
@@ -2066,6 +2158,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_k_oknu.mp3",
+      "text": "Иди к окну.",
+      "speechText": "Иди к окну.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2086,6 +2188,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-1",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_na_kuhnyu.mp3",
+      "text": "Иди на кухню.",
+      "speechText": "Иди на кухню.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2259,6 +2371,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/idi_v_komnatu.mp3",
+      "text": "Иди в комнату.",
+      "speechText": "Иди в комнату.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/idi_v_magazin.mp3",
       "text": "Иди в магазин.",
       "speechText": "Иди в магазин.",
@@ -2276,6 +2398,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idi_v_vannuyu.mp3",
+      "text": "Иди в ванную.",
+      "speechText": "Иди в ванную.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2319,13 +2451,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/idyot.mp3",
-      "text": "идёт",
-      "speechText": "идёт",
-      "rate": "-40%",
+      "audio": "assets/audio/ru/idu.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-3-actions",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/idyot.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -2380,12 +2522,12 @@
     },
     {
       "audio": "assets/audio/ru/kafe.mp3",
-      "text": "кафе",
-      "speechText": "кафе",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -2470,12 +2612,12 @@
     },
     {
       "audio": "assets/audio/ru/kniga.mp3",
-      "text": "книга",
-      "speechText": "книга",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2485,7 +2627,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2559,6 +2701,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/komnata.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kon.mp3",
       "text": "конь",
       "speechText": "конь",
@@ -2580,12 +2732,12 @@
     },
     {
       "audio": "assets/audio/ru/kot.mp3",
-      "text": "кот",
-      "speechText": "кот",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2646,6 +2798,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_pod_krovatyu.mp3",
+      "text": "Кот под кроватью.",
+      "speechText": "Кот под кроватью.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -2799,6 +2961,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/krovat.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kto.mp3",
       "text": "Кто?",
       "speechText": "Кто?",
@@ -2870,12 +3042,12 @@
     },
     {
       "audio": "assets/audio/ru/kuda.mp3",
-      "text": "Куда?",
-      "speechText": "Куда?",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -2899,13 +3071,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/kurtka.mp3",
-      "text": "Куртка.",
-      "speechText": "Куртка.",
-      "rate": "-40%",
+      "audio": "assets/audio/ru/kuhnya.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-11-clothes-colors",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kurtka.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -3720,12 +3902,12 @@
     },
     {
       "audio": "assets/audio/ru/magazin.mp3",
-      "text": "магазин",
-      "speechText": "магазин",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -3810,12 +3992,12 @@
     },
     {
       "audio": "assets/audio/ru/mama.mp3",
-      "text": "мама",
-      "speechText": "мама",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-14-family-people",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -3865,7 +4047,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -3876,6 +4058,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-5-movement-map",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mama_na_kuhne.mp3",
+      "text": "Мама на кухне.",
+      "speechText": "Мама на кухне.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -3906,6 +4098,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mashina.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/mashina_na_ulitse.mp3",
+      "text": "Машина на улице.",
+      "speechText": "Машина на улице.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -3940,12 +4152,22 @@
     },
     {
       "audio": "assets/audio/ru/metro.mp3",
-      "text": "метро",
-      "speechText": "метро",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/metro_ryadom.mp3",
+      "text": "Метро рядом.",
+      "speechText": "Метро рядом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -4190,12 +4412,12 @@
     },
     {
       "audio": "assets/audio/ru/myach.mp3",
-      "text": "мяч",
-      "speechText": "мяч",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4310,12 +4532,22 @@
     },
     {
       "audio": "assets/audio/ru/na.mp3",
-      "text": "на",
-      "speechText": "на",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_kuhne.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4350,12 +4582,12 @@
     },
     {
       "audio": "assets/audio/ru/na_stole.mp3",
-      "text": "на столе",
-      "speechText": "на столе",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4370,12 +4602,12 @@
     },
     {
       "audio": "assets/audio/ru/na_ulitse.mp3",
-      "text": "на улице",
-      "speechText": "на улице",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-12-weather",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -4600,12 +4832,12 @@
     },
     {
       "audio": "assets/audio/ru/naydi.mp3",
-      "text": "найди",
-      "speechText": "найди",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-3-actions",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -4649,6 +4881,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/naydi_krovat.mp3",
+      "text": "Найди кровать.",
+      "speechText": "Найди кровать.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/naydi_malchik_est_hleb.mp3",
       "text": "Найди: мальчик ест хлеб.",
       "speechText": "Найди: мальчик ест хлеб.",
@@ -4679,6 +4921,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/naydi_shkaf.mp3",
+      "text": "Найди шкаф.",
+      "speechText": "Найди шкаф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/naydi_sobaka_igraet.mp3",
       "text": "Найди: собака играет.",
       "speechText": "Найди: собака играет.",
@@ -4686,6 +4938,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/naydi_stol.mp3",
+      "text": "Найди стол.",
+      "speechText": "Найди стол.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4820,12 +5082,12 @@
     },
     {
       "audio": "assets/audio/ru/obuv.mp3",
-      "text": "Обувь.",
-      "speechText": "Обувь.",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-11-clothes-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4876,6 +5138,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/okno.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -4999,6 +5271,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/ostanovka.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/otlichno.mp3",
       "text": "Отлично!",
       "speechText": "Отлично!",
@@ -5050,12 +5332,12 @@
     },
     {
       "audio": "assets/audio/ru/papa.mp3",
-      "text": "папа",
-      "speechText": "папа",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-14-family-people",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -5076,6 +5358,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/papa_edet_domoy.mp3",
+      "text": "Папа едет домой.",
+      "speechText": "Папа едет домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -5119,13 +5411,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/park.mp3",
-      "text": "парк",
-      "speechText": "парк",
-      "rate": "-40%",
+      "audio": "assets/audio/ru/papa_v_komnate.mp3",
+      "text": "Папа в комнате.",
+      "speechText": "Папа в комнате.",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/park.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -5176,6 +5478,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-6-location-room",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/pod_krovatyu.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5520,12 +5832,12 @@
     },
     {
       "audio": "assets/audio/ru/ryadom.mp3",
-      "text": "рядом",
-      "speechText": "рядом",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -5536,6 +5848,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-6-location-room",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ryadom_so_shkafom.mp3",
+      "text": "рядом со шкафом",
+      "speechText": "рядом со шкафом",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5610,12 +5932,12 @@
     },
     {
       "audio": "assets/audio/ru/sestra.mp3",
-      "text": "сестра",
-      "speechText": "сестра",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-14-family-people",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5670,12 +5992,12 @@
     },
     {
       "audio": "assets/audio/ru/shapka.mp3",
-      "text": "Шапка.",
-      "speechText": "Шапка.",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-11-clothes-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5719,13 +6041,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/shkola.mp3",
-      "text": "школа",
-      "speechText": "школа",
-      "rate": "-40%",
+      "audio": "assets/audio/ru/shkaf.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shkola.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -5840,12 +6172,12 @@
     },
     {
       "audio": "assets/audio/ru/sobaka.mp3",
-      "text": "собака",
-      "speechText": "собака",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5886,6 +6218,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sobaka_u_dveri.mp3",
+      "text": "Собака у двери.",
+      "speechText": "Собака у двери.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5950,12 +6292,12 @@
     },
     {
       "audio": "assets/audio/ru/stol.mp3",
-      "text": "стол",
-      "speechText": "стол",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -5990,12 +6332,12 @@
     },
     {
       "audio": "assets/audio/ru/stul.mp3",
-      "text": "стул",
-      "speechText": "стул",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-7-descriptions-colors",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -6336,6 +6678,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/transport.mp3",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -9819,6 +10171,1126 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u15_brat_v_vannoy.mp3",
+      "text": "Брат в ванной.",
+      "speechText": "Брат в ванной.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_dver.mp3",
+      "text": "Найди дверь.",
+      "speechText": "Найди дверь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_komnatu.mp3",
+      "text": "Найди комнату.",
+      "speechText": "Найди комнату.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_kuhnyu.mp3",
+      "text": "Найди кухню.",
+      "speechText": "Найди кухню.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_okno.mp3",
+      "text": "Найди окно.",
+      "speechText": "Найди окно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_stul.mp3",
+      "text": "Найди стул.",
+      "speechText": "Найди стул.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_find_vannuyu.mp3",
+      "text": "Найди ванную.",
+      "speechText": "Найди ванную.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_dom.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_dver.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_komnata.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_krovat.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_kuhnya.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_okno.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_shkaf.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_stol.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_stul.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_game_what_vannaya.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l43_chto_eto_dver.mp3",
+      "text": "Что это? Дверь.",
+      "speechText": "Что это? Дверь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l43_eto_kuhnya.mp3",
+      "text": "Это кухня?",
+      "speechText": "Это кухня?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l43_final.mp3",
+      "text": "Отлично! Дом. Комната. Кухня. Ванная.",
+      "speechText": "Отлично! Дом. Комната. Кухня. Ванная.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l43_text.mp3",
+      "text": "Это дом. Тут комната. Там кухня. В комнате кровать. Рядом окно.",
+      "speechText": "Это дом. Тут комната. Там кухня. В комнате кровать. Рядом окно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l44_chto_na_stole.mp3",
+      "text": "Что на столе?",
+      "speechText": "Что на столе?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l44_final.mp3",
+      "text": "Отлично! На кухне. В комнате. Под кроватью.",
+      "speechText": "Отлично! На кухне. В комнате. Под кроватью.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l44_gde_mama.mp3",
+      "text": "Где мама?",
+      "speechText": "Где мама?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l44_text.mp3",
+      "text": "Мама на кухне. Папа в комнате. Кот под кроватью. Книга на столе. Собака у двери.",
+      "speechText": "Мама на кухне. Папа в комнате. Кот под кроватью. Книга на столе. Собака у двери.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l45_final.mp3",
+      "text": "Отлично! Иди в комнату. Иди на кухню. Найди кровать.",
+      "speechText": "Отлично! Иди в комнату. Иди на кухню. Найди кровать.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l45_naydi_kota.mp3",
+      "text": "Найди кота.",
+      "speechText": "Найди кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_l45_text.mp3",
+      "text": "Утро. Я дома. Мама на кухне. Кот в комнате. Иди в комнату. Найди кота.",
+      "speechText": "Утро. Я дома. Мама на кухне. Кот в комнате. Иди в комнату. Найди кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_map_find_kot.mp3",
+      "text": "Кот под кроватью. Найди кота.",
+      "speechText": "Кот под кроватью. Найди кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_map_find_mama.mp3",
+      "text": "Мама на кухне. Найди маму.",
+      "speechText": "Мама на кухне. Найди маму.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_map_find_sobaka.mp3",
+      "text": "Собака у двери. Найди собаку.",
+      "speechText": "Собака у двери. Найди собаку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_myach_ryadom_so_shkafom.mp3",
+      "text": "Мяч рядом со шкафом.",
+      "speechText": "Мяч рядом со шкафом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_room_final.mp3",
+      "text": "Отлично! Комната. Кухня. Дверь.",
+      "speechText": "Отлично! Комната. Кухня. Дверь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_room_scene_1.mp3",
+      "text": "Это комната. В комнате кровать. Кот под кроватью. Книга на столе.",
+      "speechText": "Это комната. В комнате кровать. Кот под кроватью. Книга на столе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_room_scene_2.mp3",
+      "text": "Это кухня. Мама на кухне. На столе суп. Рядом чай.",
+      "speechText": "Это кухня. Мама на кухне. На столе суп. Рядом чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_room_scene_3.mp3",
+      "text": "Я дома. Собака у двери. Шапка в шкафу. Окно рядом.",
+      "speechText": "Я дома. Собака у двери. Шапка в шкафу. Окно рядом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_stul_u_okna.mp3",
+      "text": "Стул у окна.",
+      "speechText": "Стул у окна.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_kniga.mp3",
+      "text": "Где книга?",
+      "speechText": "Где книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_kot.mp3",
+      "text": "Где кот?",
+      "speechText": "Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_kurtka.mp3",
+      "text": "Где куртка?",
+      "speechText": "Где куртка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_myach.mp3",
+      "text": "Где мяч?",
+      "speechText": "Где мяч?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_obuv.mp3",
+      "text": "Где обувь?",
+      "speechText": "Где обувь?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_shapka.mp3",
+      "text": "Где шапка?",
+      "speechText": "Где шапка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_sobaka.mp3",
+      "text": "Где собака?",
+      "speechText": "Где собака?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_thing_stul.mp3",
+      "text": "Где стул?",
+      "speechText": "Где стул?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_babushka.mp3",
+      "text": "Где бабушка?",
+      "speechText": "Где бабушка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_brat.mp3",
+      "text": "Где брат?",
+      "speechText": "Где брат?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_dedushka.mp3",
+      "text": "Где дедушка?",
+      "speechText": "Где дедушка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_kot.mp3",
+      "text": "Где кот?",
+      "speechText": "Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_mama.mp3",
+      "text": "Где мама?",
+      "speechText": "Где мама?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_papa.mp3",
+      "text": "Где папа?",
+      "speechText": "Где папа?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_sestra.mp3",
+      "text": "Где сестра?",
+      "speechText": "Где сестра?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u15_where_sobaka.mp3",
+      "text": "Где собака?",
+      "speechText": "Где собака?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_avtobus.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_gorod.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_kafe.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_magazin.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_mashina.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_metro.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_ostanovka.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_park.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_shkola.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_game_what_ulitsa.mp3",
+      "text": "Что это?",
+      "speechText": "Что это?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_go_park.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_go_school.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_go_shop.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_mama_idyot_v_magazin.mp3",
+      "text": "Куда мама идёт?",
+      "speechText": "Куда мама идёт?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_papa_edet_domoy.mp3",
+      "text": "Куда папа едет?",
+      "speechText": "Куда папа едет?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_edu_domoy.mp3",
+      "text": "Куда я еду?",
+      "speechText": "Куда я еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_edu_v_shkolu.mp3",
+      "text": "Куда я еду?",
+      "speechText": "Куда я еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_idu_v_kafe.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_idu_v_magazin.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_idu_v_park.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_kuda_ya_idu_v_shkolu.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l46_chto_eto_ostanovka.mp3",
+      "text": "Что это? Остановка.",
+      "speechText": "Что это? Остановка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l46_eto_park.mp3",
+      "text": "Это парк?",
+      "speechText": "Это парк?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l46_final.mp3",
+      "text": "Отлично! Город. Улица. Остановка.",
+      "speechText": "Отлично! Город. Улица. Остановка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l46_text.mp3",
+      "text": "Это город. Тут улица. Там школа. Рядом парк. На улице остановка.",
+      "speechText": "Это город. Тут улица. Там школа. Рядом парк. На улице остановка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l47_chto_eto_mashina.mp3",
+      "text": "Что это? Машина.",
+      "speechText": "Что это? Машина.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l47_final.mp3",
+      "text": "Отлично! Автобус. Метро. Машина.",
+      "speechText": "Отлично! Автобус. Метро. Машина.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l47_text.mp3",
+      "text": "Я на улице. Автобус на остановке. Машина на улице. Я еду домой.",
+      "speechText": "Я на улице. Автобус на остановке. Машина на улице. Я еду домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l48_final.mp3",
+      "text": "Отлично! Иду. Еду. Домой.",
+      "speechText": "Отлично! Иду. Еду. Домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l48_kuda_ya_idu.mp3",
+      "text": "Куда я иду?",
+      "speechText": "Куда я иду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_l48_text.mp3",
+      "text": "Утро. Я иду в школу. День. Мама идёт в магазин. Вечер. Папа едет домой. Автобус на остановке.",
+      "speechText": "Утро. Я иду в школу. День. Мама идёт в магазин. Вечер. Папа едет домой. Автобус на остановке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_mama_idet.mp3",
+      "text": "Мама идёт или едет?",
+      "speechText": "Мама идёт или едет?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_find_bus_stop.mp3",
+      "text": "Автобус на остановке. Найди автобус.",
+      "speechText": "Автобус на остановке. Найди автобус.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_find_car_street.mp3",
+      "text": "Машина на улице. Найди машину.",
+      "speechText": "Машина на улице. Найди машину.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_go_kafe.mp3",
+      "text": "Иди в кафе.",
+      "speechText": "Иди в кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_go_magazin.mp3",
+      "text": "Иди в магазин.",
+      "speechText": "Иди в магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_go_park.mp3",
+      "text": "Иди в парк.",
+      "speechText": "Иди в парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_map_go_school.mp3",
+      "text": "Иди в школу.",
+      "speechText": "Иди в школу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_avtobus.mp3",
+      "text": "Найди автобус.",
+      "speechText": "Найди автобус.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_avtobus_na_ostanovke.mp3",
+      "text": "Найди автобус на остановке.",
+      "speechText": "Найди автобус на остановке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_dom.mp3",
+      "text": "Найди дом.",
+      "speechText": "Найди дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_kafe.mp3",
+      "text": "Найди кафе.",
+      "speechText": "Найди кафе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_magazin.mp3",
+      "text": "Найди магазин.",
+      "speechText": "Найди магазин.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_mashinu.mp3",
+      "text": "Найди машину.",
+      "speechText": "Найди машину.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_mashinu_na_ulitse.mp3",
+      "text": "Найди машину на улице.",
+      "speechText": "Найди машину на улице.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_metro.mp3",
+      "text": "Найди метро.",
+      "speechText": "Найди метро.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_metro_ryadom.mp3",
+      "text": "Найди метро рядом.",
+      "speechText": "Найди метро рядом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_ostanovku.mp3",
+      "text": "Найди остановку.",
+      "speechText": "Найди остановку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_park.mp3",
+      "text": "Найди парк.",
+      "speechText": "Найди парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_shkolu.mp3",
+      "text": "Найди школу.",
+      "speechText": "Найди школу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_naydi_ulitsu.mp3",
+      "text": "Найди улицу.",
+      "speechText": "Найди улицу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_papa_edet.mp3",
+      "text": "Папа идёт или едет?",
+      "speechText": "Папа идёт или едет?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_ride_bus.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_ride_car.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_ride_metro.mp3",
+      "text": "Я иду или еду?",
+      "speechText": "Я иду или еду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_scene_1.mp3",
+      "text": "Это город. На улице автобус. Автобус на остановке. Я еду домой.",
+      "speechText": "Это город. На улице автобус. Автобус на остановке. Я еду домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_scene_2.mp3",
+      "text": "Утро. Я иду в школу. Мама идёт в магазин. Парк рядом.",
+      "speechText": "Утро. Я иду в школу. Мама идёт в магазин. Парк рядом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_scene_3.mp3",
+      "text": "Вечер. Папа едет домой. Машина на улице. Кафе рядом.",
+      "speechText": "Вечер. Папа едет домой. Машина на улице. Кафе рядом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u16_scene_final.mp3",
+      "text": "Отлично! Город. Улица. Транспорт.",
+      "speechText": "Отлично! Город. Улица. Транспорт.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u2_game_devochka_kniga_tam.mp3",
       "text": "Девочка там.\nКнига там.",
       "speechText": "Девочка там.\nКнига там.",
@@ -12759,6 +14231,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u_dveri.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u_menya_bolit_golova.mp3",
       "text": "У меня болит голова.",
       "speechText": "У меня болит голова.",
@@ -12989,6 +14471,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u_okna.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/uho.mp3",
       "text": "Ухо.",
       "speechText": "Ухо.",
@@ -13000,12 +14492,12 @@
     },
     {
       "audio": "assets/audio/ru/ulitsa.mp3",
-      "text": "улица",
-      "speechText": "улица",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -13070,12 +14562,22 @@
     },
     {
       "audio": "assets/audio/ru/v.mp3",
-      "text": "в",
-      "speechText": "в",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_komnate.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -13086,6 +14588,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-6-location-room",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_shkafu.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_vannoy.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -13106,6 +14628,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vannaya.mp3",
+      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-15-home-rooms",
       "exists": true
     },
     {
@@ -13310,12 +14842,12 @@
     },
     {
       "audio": "assets/audio/ru/ya.mp3",
-      "text": "я",
-      "speechText": "я",
-      "rate": "-40%",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -13326,6 +14858,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_edu.mp3",
+      "text": "Я еду.",
+      "speechText": "Я еду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_edu_domoy.mp3",
+      "text": "Я еду домой.",
+      "speechText": "Я еду домой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_edu_v_shkolu.mp3",
+      "text": "Я еду в школу.",
+      "speechText": "Я еду в школу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -13465,7 +15027,7 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
@@ -13475,17 +15037,17 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {
       "audio": "assets/audio/ru/ya_idu_v_shkolu.mp3",
-      "text": "Я иду в школу.",
-      "speechText": "Я иду в школу.",
+      "text": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
+      "speechText": "['Отлично! ✅', 'город', 'улица', 'транспорт']",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-9-my-day",
+      "source": "level-0-unit-16-city-transport",
       "exists": true
     },
     {

@@ -273,6 +273,9 @@
 
       locked = true;
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, button ? (button.getAttribute("data-unit7-choice") || button.getAttribute("data-unit7-check") || "карта") : "");
+        }
         state.correct += 1;
         if (button) {
           button.classList.add("is-correct");
@@ -285,6 +288,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, button ? (button.getAttribute("data-unit7-choice") || button.getAttribute("data-unit7-check") || "карта") : "");
+      }
       state.mistakes += 1;
       if (button) {
         button.classList.add("is-wrong");

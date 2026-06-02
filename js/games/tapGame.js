@@ -42,6 +42,9 @@
       helpers.clearAnswers(root);
 
       if (selected === task.correct) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, selected);
+        }
         button.classList.add("is-correct");
         feedback.className = "feedback good";
         var success = helpers.playFeedback("success");
@@ -50,6 +53,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, selected);
+      }
       button.classList.add("is-wrong");
       correctButton.classList.add("show-correct");
       feedback.className = "feedback try";

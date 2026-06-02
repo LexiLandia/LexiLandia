@@ -110,6 +110,9 @@
       locked = true;
 
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, button ? button.getAttribute("data-unit2-choice") : "");
+        }
         state.correct += 1;
         button.classList.add("is-correct");
         feedback.className = "feedback good";
@@ -120,6 +123,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, button ? button.getAttribute("data-unit2-choice") : "");
+      }
       state.mistakes += 1;
       button.classList.add("is-wrong");
       feedback.className = "feedback try";

@@ -2,9 +2,15 @@
   "use strict";
 
   var STORAGE_KEY = "lexiland-russian-progress-v2";
+  var PROGRESS_VERSION = 1;
+  var PROGRESS_COOKIE_KEY = "lexiland_progress_backup";
+  var PROGRESS_DB_NAME = "lexiland-progress";
+  var PROGRESS_STORE_NAME = "progress";
+  var PROGRESS_RECORD_KEY = "main";
   var appRoot = document.getElementById("app");
   var data = null;
   var lesson = null;
+  var progressCache = null;
   var COURSE_SHORT_TITLES = {
     "Юнит 1": "Старт",
     "Юнит 2": "Кто и что",
@@ -19,7 +25,9 @@
     "Юнит 11": "Одежда",
     "Юнит 12": "Погода",
     "Юнит 13": "Тело",
-    "Юнит 14": "Семья"
+    "Юнит 14": "Семья",
+    "Юнит 15": "Дом",
+    "Юнит 16": "Город"
   };
   var maps = {
     entries: {},
@@ -33,11 +41,22 @@
   };
 
   document.addEventListener("DOMContentLoaded", init);
+  window.addEventListener("beforeunload", flushProgress);
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") {
+      flushProgress();
+    }
+  });
 
   function init() {
     loadLessonData().then(function (loadedData) {
       data = normalizeLessonData(loadedData);
       setCurrentLesson(0);
+      return hydrateProgress();
+    }).then(function () {
+      restoreLastScreen();
+    }).catch(function () {
+      progressCache = createEmptyProgress();
       renderHome();
     });
   }
@@ -118,6 +137,14 @@
       lessons = lessons.concat([window.LexiLandUnit14Lesson]);
     }
 
+    if (window.LexiLandUnit15Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit15Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit15Lesson]);
+    }
+
+    if (window.LexiLandUnit16Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit16Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit16Lesson]);
+    }
+
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
       window.LexiForgeGeneratedLessons.forEach(function (generatedLesson) {
         if (generatedLesson && !lessons.some(function (item) { return item.id === generatedLesson.id; })) {
@@ -158,6 +185,7 @@
     var courses = getCourseGroups();
 
     setPlayMode(false);
+    recordNavigation("home");
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -226,6 +254,12 @@
     });
 
     setPlayMode(false);
+    recordNavigation("course", {
+      courseId: group.id,
+      courseIndex: getCourseGroups().findIndex(function (item) { return item.id === group.id; }),
+      unitLabel: group.menuLabel,
+      unitTitle: group.shortTitle || group.title || group.menuLabel
+    });
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -252,7 +286,10 @@
         '</section>' +
       '</main>';
 
-    appRoot.querySelector('[data-action="home"]').addEventListener("click", renderHome);
+    appRoot.querySelector('[data-action="home"]').addEventListener("click", function () {
+      recordNavigation("home");
+      renderHome();
+    });
     Array.prototype.forEach.call(appRoot.querySelectorAll("[data-lesson-menu]"), function (button) {
       button.addEventListener("click", function () {
         renderUnitMenu(Number(button.getAttribute("data-lesson-menu")));
@@ -273,6 +310,10 @@
 
     setCurrentLesson(lessonIndex);
     setPlayMode(false);
+    recordNavigation("unit", {
+      lessonIndex: lessonIndex,
+      lessonId: item.id
+    });
 
     appRoot.innerHTML =
       '<main class="screen">' +
@@ -299,7 +340,10 @@
         '</section>' +
       '</main>';
 
-    appRoot.querySelector('[data-action="home"]').addEventListener("click", renderHome);
+    appRoot.querySelector('[data-action="home"]').addEventListener("click", function () {
+      recordNavigation("home");
+      renderHome();
+    });
     bindUnitButtons();
     bindCourseImages();
   }
@@ -311,6 +355,14 @@
         var unitIndex = Number(button.getAttribute("data-unit"));
         setCurrentLesson(lessonIndex);
         var unit = getUnits()[unitIndex];
+        recordNavigation("lesson", {
+          lessonIndex: lessonIndex,
+          lessonId: lesson.id,
+          unitIndex: unitIndex,
+          unitId: unit && unit.id,
+          stageIndex: 0,
+          taskIndex: 0
+        });
         var saved = isUnitComplete(unit.id) ? {} : getUnitProgress(unit.id);
         startFrom(unitIndex, saved.stageIndex || 0, saved.taskIndex || 0);
       });
@@ -579,6 +631,7 @@
     var stage = unit.stages[position.stageIndex];
 
     setPlayMode(true);
+    recordNavigation("lesson");
 
     if (!stage) {
       renderFinish();
@@ -848,7 +901,10 @@
         '</section>' +
       '</main>';
 
-    appRoot.querySelector('[data-action="home"]').addEventListener("click", renderHome);
+    appRoot.querySelector('[data-action="home"]').addEventListener("click", function () {
+      recordNavigation("home");
+      renderHome();
+    });
     appRoot.querySelector('[data-action="again"]').addEventListener("click", function () {
       startFrom(position.unitIndex, 0, 0);
     });
@@ -859,6 +915,7 @@
     var unit = getCurrentUnit();
     return '<header class="topbar">' +
       '<div class="brand">' +
+        '<button class="home-button" type="button" onclick="LexiLandApp.unit()" aria-label="Юнит">↩️</button>' +
         '<button class="home-button" type="button" onclick="LexiLandApp.home()" aria-label="Домой">🏠</button>' +
         '<div>' +
           '<h2>' + escapeHtml(unit.title) + '</h2>' +
@@ -985,6 +1042,7 @@
       playPrompt: playPrompt,
       playWord: playWord,
       playAudioList: playAudioList,
+      recordAnswer: recordAnswer,
       getMapAria: getMapAria,
       getMapTarget: getMapTarget,
       mapHeight: mapHeight,
@@ -1382,55 +1440,525 @@
     });
   }
 
-  function getProgress() {
-    try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-    } catch (error) {
-      return {};
+  function hydrateProgress() {
+    var localProgress = normalizeProgressEnvelope(safeReadLocal(STORAGE_KEY));
+    var cookieProgress = normalizeCookieProgress(readProgressCookie());
+
+    return readIndexedProgress().then(function (indexedProgress) {
+      progressCache = chooseFreshestProgress([
+        localProgress,
+        normalizeProgressEnvelope(indexedProgress),
+        cookieProgress
+      ]) || createEmptyProgress();
+      persistProgress(progressCache);
+      return progressCache;
+    }).catch(function () {
+      progressCache = chooseFreshestProgress([localProgress, cookieProgress]) || createEmptyProgress();
+      persistProgress(progressCache);
+      return progressCache;
+    });
+  }
+
+  function restoreLastScreen() {
+    var progress = getProgressEnvelope();
+    var last = progress.last || {};
+    var lessons = data.lessons || [];
+    var lessonIndex = Number(last.lessonIndex);
+
+    if ((!Number.isFinite(lessonIndex) || !lessons[lessonIndex]) && last.lessonId) {
+      lessonIndex = lessons.findIndex(function (item) {
+        return item && item.id === last.lessonId;
+      });
     }
+
+    if (Number.isFinite(lessonIndex) && lessons[lessonIndex]) {
+      setCurrentLesson(lessonIndex);
+      position.unitIndex = Number(last.unitIndex) || 0;
+      position.stageIndex = Number(last.stageIndex) || 0;
+      position.taskIndex = Number(last.taskIndex) || 0;
+    }
+
+    if (last.screen === "lesson" && lessons[position.lessonIndex]) {
+      var unit = getUnits()[position.unitIndex];
+      if (unit && !isUnitComplete(unit.id)) {
+        startFrom(position.unitIndex, position.stageIndex, position.taskIndex);
+        return;
+      }
+    }
+
+    if (last.screen === "unit" && lessons[position.lessonIndex]) {
+      renderUnitMenu(position.lessonIndex);
+      return;
+    }
+
+    if (last.screen === "course" && typeof last.courseIndex === "number") {
+      renderCoursePage(last.courseIndex);
+      return;
+    }
+
+    renderHome();
+  }
+
+  function getProgressEnvelope() {
+    if (!progressCache) {
+      progressCache = normalizeProgressEnvelope(safeReadLocal(STORAGE_KEY)) || createEmptyProgress();
+    }
+
+    return progressCache;
+  }
+
+  function getProgress() {
+    return getProgressEnvelope().lessons || {};
   }
 
   function savePosition() {
-    var progress = getProgress();
+    var envelope = getProgressEnvelope();
+    var progress = envelope.lessons || {};
     var existing = progress[lesson.id] || {};
     var unit = getCurrentUnit();
     var units = existing.units || {};
+    var previousUnit = units[unit.id] || {};
+    var now = new Date().toISOString();
+
     units[unit.id] = {
-      complete: Boolean(units[unit.id] && units[unit.id].complete),
-      completedAt: units[unit.id] && units[unit.id].completedAt,
+      complete: Boolean(previousUnit.complete),
+      completedAt: previousUnit.completedAt,
       completionCount: getUnitPassCount(unit.id),
       stageIndex: position.stageIndex,
-      taskIndex: position.taskIndex
+      taskIndex: position.taskIndex,
+      attempts: Number(previousUnit.attempts) || 0,
+      correctAnswers: Number(previousUnit.correctAnswers) || 0,
+      mistakes: Number(previousUnit.mistakes) || 0,
+      bestScore: Number(previousUnit.bestScore) || 0,
+      openedAt: previousUnit.openedAt || now,
+      updatedAt: now
     };
+
     progress[lesson.id] = {
       complete: Boolean(existing.complete),
       completedAt: existing.completedAt,
+      updatedAt: now,
       units: units
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+
+    envelope.lessons = progress;
+    recordNavigation("lesson", null, envelope);
+    updateUnitSummary(envelope, lesson);
+    touchProgress(envelope, now);
+    persistProgress(envelope);
   }
 
   function markUnitComplete() {
-    var progress = getProgress();
+    var envelope = getProgressEnvelope();
+    var progress = envelope.lessons || {};
     var existing = progress[lesson.id] || {};
     var units = existing.units || {};
     var unit = getCurrentUnit();
+    var previousUnit = units[unit.id] || {};
+    var now = new Date().toISOString();
     var completionCount = getUnitPassCount(unit.id) + 1;
+    var attempts = Number(previousUnit.attempts) || 0;
+    var correctAnswers = Number(previousUnit.correctAnswers) || 0;
+    var mistakes = Number(previousUnit.mistakes) || 0;
+    var score = attempts ? Math.round((correctAnswers / attempts) * 100) : 100;
+    var bestScore = isGameUnit(unit) ? Math.max(Number(previousUnit.bestScore) || 0, score) : Number(previousUnit.bestScore) || 0;
+
     units[unit.id] = {
       complete: true,
-      completedAt: new Date().toISOString(),
-      completionCount: completionCount
+      completedAt: now,
+      updatedAt: now,
+      completionCount: completionCount,
+      attempts: attempts,
+      correctAnswers: correctAnswers,
+      mistakes: mistakes,
+      bestScore: bestScore,
+      stageIndex: 0,
+      taskIndex: 0
     };
+
     progress[lesson.id] = {
       complete: getUnits().filter(function (item) {
         return !item.comingSoon;
       }).every(function (item) {
         return item.id === unit.id || Boolean(units[item.id] && units[item.id].complete);
       }),
-      completedAt: new Date().toISOString(),
+      completedAt: now,
+      updatedAt: now,
       units: units
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+
+    envelope.lessons = progress;
+    recordNavigation("finish", null, envelope);
+    updateUnitSummary(envelope, lesson);
+    touchProgress(envelope, now);
+    persistProgress(envelope);
+  }
+
+  function recordAnswer(isCorrect, task, selected) {
+    if (!lesson) {
+      return;
+    }
+
+    var envelope = getProgressEnvelope();
+    var progress = envelope.lessons || {};
+    var existing = progress[lesson.id] || {};
+    var units = existing.units || {};
+    var unit = getCurrentUnit();
+    var unitProgress = units[unit.id] || {};
+    var now = new Date().toISOString();
+    var stats = envelope.stats || {};
+
+    unitProgress.attempts = (Number(unitProgress.attempts) || 0) + 1;
+    unitProgress.correctAnswers = (Number(unitProgress.correctAnswers) || 0) + (isCorrect ? 1 : 0);
+    unitProgress.mistakes = (Number(unitProgress.mistakes) || 0) + (isCorrect ? 0 : 1);
+    unitProgress.lastAnswerAt = now;
+    unitProgress.lastTaskId = task && task.id || "";
+    unitProgress.stageIndex = position.stageIndex;
+    unitProgress.taskIndex = position.taskIndex;
+    unitProgress.complete = Boolean(unitProgress.complete);
+
+    units[unit.id] = unitProgress;
+    progress[lesson.id] = {
+      complete: Boolean(existing.complete),
+      completedAt: existing.completedAt,
+      updatedAt: now,
+      units: units
+    };
+
+    stats.attempts = (Number(stats.attempts) || 0) + 1;
+    stats.correctAnswers = (Number(stats.correctAnswers) || 0) + (isCorrect ? 1 : 0);
+    stats.mistakes = (Number(stats.mistakes) || 0) + (isCorrect ? 0 : 1);
+    stats.lastAnswerAt = now;
+
+    envelope.stats = stats;
+    envelope.lessons = progress;
+    envelope.lastAnswer = {
+      lessonId: lesson.id,
+      unitId: unit.id,
+      taskId: task && task.id || "",
+      selected: selected || "",
+      correct: Boolean(isCorrect),
+      updatedAt: now
+    };
+
+    recordNavigation("lesson", null, envelope);
+    updateUnitSummary(envelope, lesson);
+    touchProgress(envelope, now);
+    persistProgress(envelope);
+  }
+
+  function recordNavigation(screen, extra, targetEnvelope) {
+    var envelope = targetEnvelope || getProgressEnvelope();
+    var now = new Date().toISOString();
+    var currentLesson = lesson;
+    var currentUnit = currentLesson ? getCurrentUnit() : null;
+    var courseIndex = getCurrentCourseIndex();
+    var course = courseIndex >= 0 ? getCourseGroups()[courseIndex] : null;
+    var last = {
+      screen: screen || "home",
+      courseIndex: typeof courseIndex === "number" ? courseIndex : -1,
+      courseId: course && course.id || "",
+      unitLabel: course && course.menuLabel || "",
+      unitTitle: course && (course.shortTitle || course.title || course.menuLabel) || "",
+      lessonIndex: position.lessonIndex,
+      lessonId: currentLesson && currentLesson.id || "",
+      lessonTitle: currentLesson && currentLesson.title || "",
+      unitIndex: position.unitIndex,
+      unitId: currentUnit && currentUnit.id || "",
+      lessonOrGameTitle: currentUnit && currentUnit.title || "",
+      stageIndex: position.stageIndex,
+      taskIndex: position.taskIndex,
+      updatedAt: now
+    };
+
+    Object.keys(extra || {}).forEach(function (key) {
+      last[key] = extra[key];
+    });
+
+    envelope.last = last;
+    envelope.lastOpenedAt = now;
+    touchProgress(envelope, now);
+    persistProgress(envelope);
+  }
+
+  function updateUnitSummary(envelope, targetLesson) {
+    if (!targetLesson) {
+      return;
+    }
+
+    var units = getUnits(targetLesson).filter(function (unit) {
+      return !unit.comingSoon;
+    });
+    var lessonProgress = (envelope.lessons || {})[targetLesson.id] || {};
+    var completed = units.filter(function (unit) {
+      return Boolean(lessonProgress.units && lessonProgress.units[unit.id] && lessonProgress.units[unit.id].complete);
+    }).length;
+
+    envelope.unitSummaries = envelope.unitSummaries || {};
+    envelope.unitSummaries[targetLesson.id] = {
+      title: targetLesson.title || "",
+      menuLabel: targetLesson.menuLabel || "",
+      total: units.length,
+      completed: completed,
+      percent: units.length ? Math.round((completed / units.length) * 100) : 0,
+      updatedAt: new Date().toISOString()
+    };
+  }
+
+  function isGameUnit(unit) {
+    return Boolean(unit && (/Игра/.test(unit.title || "") || (unit.stages || []).some(function (stage) {
+      return /game/.test(stage.type || "");
+    })));
+  }
+
+  function getCurrentCourseIndex() {
+    if (!data || !data.lessons) {
+      return -1;
+    }
+
+    var groups = getCourseGroups();
+    for (var index = 0; index < groups.length; index += 1) {
+      if (groups[index].lessonIndexes && groups[index].lessonIndexes.indexOf(position.lessonIndex) !== -1) {
+        return index;
+      }
+      if (groups[index].lessonIndex === position.lessonIndex) {
+        return index;
+      }
+    }
+
+    return -1;
+  }
+
+  function normalizeProgressEnvelope(raw) {
+    if (!raw || typeof raw !== "object") {
+      return null;
+    }
+
+    if (raw.progressVersion === PROGRESS_VERSION) {
+      return {
+        progressVersion: PROGRESS_VERSION,
+        updatedAt: raw.updatedAt || latestDateFromLessons(raw.lessons) || new Date().toISOString(),
+        lastOpenedAt: raw.lastOpenedAt || raw.updatedAt || "",
+        last: raw.last || {},
+        lastAnswer: raw.lastAnswer || {},
+        lessons: raw.lessons || {},
+        unitSummaries: raw.unitSummaries || {},
+        stats: raw.stats || {}
+      };
+    }
+
+    return {
+      progressVersion: PROGRESS_VERSION,
+      updatedAt: latestDateFromLessons(raw) || "1970-01-01T00:00:00.000Z",
+      lastOpenedAt: "",
+      last: {},
+      lastAnswer: {},
+      lessons: raw,
+      unitSummaries: {},
+      stats: {}
+    };
+  }
+
+  function normalizeCookieProgress(raw) {
+    if (!raw || typeof raw !== "object") {
+      return null;
+    }
+
+    return {
+      progressVersion: PROGRESS_VERSION,
+      updatedAt: raw.updatedAt || "1970-01-01T00:00:00.000Z",
+      lastOpenedAt: raw.updatedAt || "",
+      last: raw.last || {},
+      lastAnswer: {},
+      lessons: {},
+      unitSummaries: {},
+      stats: {}
+    };
+  }
+
+  function createEmptyProgress() {
+    var now = new Date().toISOString();
+    return {
+      progressVersion: PROGRESS_VERSION,
+      updatedAt: now,
+      lastOpenedAt: "",
+      last: {},
+      lastAnswer: {},
+      lessons: {},
+      unitSummaries: {},
+      stats: {}
+    };
+  }
+
+  function chooseFreshestProgress(items) {
+    return (items || []).filter(Boolean).sort(function (a, b) {
+      return dateValue(b.updatedAt) - dateValue(a.updatedAt);
+    })[0] || null;
+  }
+
+  function latestDateFromLessons(lessons) {
+    var latest = 0;
+    Object.keys(lessons || {}).forEach(function (lessonId) {
+      var lessonProgress = lessons[lessonId] || {};
+      latest = Math.max(latest, dateValue(lessonProgress.updatedAt), dateValue(lessonProgress.completedAt));
+      Object.keys(lessonProgress.units || {}).forEach(function (unitId) {
+        var unitProgress = lessonProgress.units[unitId] || {};
+        latest = Math.max(latest, dateValue(unitProgress.updatedAt), dateValue(unitProgress.completedAt), dateValue(unitProgress.lastAnswerAt));
+      });
+    });
+    return latest ? new Date(latest).toISOString() : "";
+  }
+
+  function dateValue(value) {
+    var time = Date.parse(value || "");
+    return Number.isFinite(time) ? time : 0;
+  }
+
+  function touchProgress(envelope, now) {
+    envelope.progressVersion = PROGRESS_VERSION;
+    envelope.updatedAt = now || new Date().toISOString();
+  }
+
+  function persistProgress(envelope) {
+    progressCache = envelope || progressCache || createEmptyProgress();
+    safeWriteLocal(STORAGE_KEY, progressCache);
+    writeProgressCookie(progressCache);
+    writeIndexedProgress(progressCache);
+  }
+
+  function flushProgress() {
+    if (!progressCache) {
+      return;
+    }
+    touchProgress(progressCache);
+    safeWriteLocal(STORAGE_KEY, progressCache);
+    writeProgressCookie(progressCache);
+    writeIndexedProgress(progressCache);
+  }
+
+  function safeReadLocal(key) {
+    try {
+      return JSON.parse(window.localStorage.getItem(key) || "null");
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function safeWriteLocal(key, value) {
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      return false;
+    }
+    return true;
+  }
+
+  function readProgressCookie() {
+    try {
+      var prefix = PROGRESS_COOKIE_KEY + "=";
+      var parts = String(document.cookie || "").split(";").map(function (part) {
+        return part.trim();
+      });
+      var match = parts.filter(function (part) {
+        return part.indexOf(prefix) === 0;
+      })[0];
+      return match ? JSON.parse(decodeURIComponent(match.slice(prefix.length))) : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function writeProgressCookie(envelope) {
+    try {
+      var backup = {
+        progressVersion: PROGRESS_VERSION,
+        updatedAt: envelope.updatedAt,
+        last: envelope.last || {},
+        hash: progressHash(envelope)
+      };
+      document.cookie = PROGRESS_COOKIE_KEY + "=" + encodeURIComponent(JSON.stringify(backup)) + "; Max-Age=31536000; Path=/; SameSite=Lax";
+    } catch (error) {
+      return false;
+    }
+    return true;
+  }
+
+  function progressHash(envelope) {
+    var source = [
+      envelope.updatedAt || "",
+      envelope.last && envelope.last.lessonId || "",
+      envelope.last && envelope.last.unitId || "",
+      envelope.stats && envelope.stats.attempts || 0
+    ].join("|");
+    var hash = 0;
+
+    for (var index = 0; index < source.length; index += 1) {
+      hash = ((hash << 5) - hash) + source.charCodeAt(index);
+      hash |= 0;
+    }
+
+    return String(Math.abs(hash));
+  }
+
+  function openProgressDb() {
+    return new Promise(function (resolve, reject) {
+      if (!window.indexedDB) {
+        reject(new Error("idb"));
+        return;
+      }
+
+      var request = window.indexedDB.open(PROGRESS_DB_NAME, 1);
+      request.onupgradeneeded = function () {
+        var db = request.result;
+        if (!db.objectStoreNames.contains(PROGRESS_STORE_NAME)) {
+          db.createObjectStore(PROGRESS_STORE_NAME);
+        }
+      };
+      request.onsuccess = function () {
+        resolve(request.result);
+      };
+      request.onerror = function () {
+        reject(request.error || new Error("idb"));
+      };
+    });
+  }
+
+  function readIndexedProgress() {
+    return openProgressDb().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var transaction = db.transaction(PROGRESS_STORE_NAME, "readonly");
+        var store = transaction.objectStore(PROGRESS_STORE_NAME);
+        var request = store.get(PROGRESS_RECORD_KEY);
+        request.onsuccess = function () {
+          db.close();
+          resolve(request.result || null);
+        };
+        request.onerror = function () {
+          db.close();
+          reject(request.error || new Error("idb"));
+        };
+      });
+    });
+  }
+
+  function writeIndexedProgress(envelope) {
+    openProgressDb().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var transaction = db.transaction(PROGRESS_STORE_NAME, "readwrite");
+        var store = transaction.objectStore(PROGRESS_STORE_NAME);
+        var request = store.put(JSON.parse(JSON.stringify(envelope)), PROGRESS_RECORD_KEY);
+        request.onsuccess = function () {
+          db.close();
+          resolve(true);
+        };
+        request.onerror = function () {
+          db.close();
+          reject(request.error || new Error("idb"));
+        };
+      });
+    }).catch(function () {
+      return false;
+    });
   }
 
   function escapeHtml(value) {
@@ -1867,7 +2395,12 @@
   window.LexiLandApp = {
     home: function () {
       window.LexiLandAudio.stopAudio();
+      recordNavigation("home");
       renderHome();
+    },
+    unit: function () {
+      window.LexiLandAudio.stopAudio();
+      renderUnitMenu(position.lessonIndex);
     }
   };
 }());

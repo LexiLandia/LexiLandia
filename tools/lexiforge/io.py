@@ -149,6 +149,14 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
     if isinstance(unit14, dict) and not any(item.get("id") == unit14.get("id") for item in lessons):
         lessons.append(unit14)
 
+    unit15 = load_js_global(ROOT / "js" / "unit15Data.js", "LexiLandUnit15Lesson")
+    if isinstance(unit15, dict) and not any(item.get("id") == unit15.get("id") for item in lessons):
+        lessons.append(unit15)
+
+    unit16 = load_js_global(ROOT / "js" / "unit16Data.js", "LexiLandUnit16Lesson")
+    if isinstance(unit16, dict) and not any(item.get("id") == unit16.get("id") for item in lessons):
+        lessons.append(unit16)
+
     if include_generated:
         generated = load_js_global(ROOT / "js" / "lexiforgeGenerated.js", "LexiForgeGeneratedLessons")
         if isinstance(generated, list):

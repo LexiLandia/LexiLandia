@@ -221,6 +221,9 @@
 
       locked = true;
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, button ? (button.getAttribute("data-unit6-choice") || button.getAttribute("data-unit6-room-object") || button.getAttribute("data-unit6-zone") || "") : "");
+        }
         state.correct += 1;
         if (button) {
           button.classList.add("is-correct");
@@ -233,6 +236,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, button ? (button.getAttribute("data-unit6-choice") || button.getAttribute("data-unit6-room-object") || button.getAttribute("data-unit6-zone") || "") : "");
+      }
       state.mistakes += 1;
       if (button) {
         button.classList.add("is-wrong");

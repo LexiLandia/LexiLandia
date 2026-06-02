@@ -263,6 +263,9 @@
       var isCorrect = normalizeCopy(input.value) === normalizeCopy(target);
 
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, input.value);
+        }
         var success = helpers.playFeedback("success");
         feedback.className = "copy-feedback good";
         feedback.textContent = success.text || "✅ Отлично";
@@ -272,6 +275,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, input.value);
+      }
       var retry = helpers.playFeedback("retry");
       feedback.className = "copy-feedback try";
       feedback.textContent = retry.text || "↩️ Ещё раз";
@@ -320,6 +326,9 @@
         });
 
         if (selected === question.correct) {
+          if (helpers.recordAnswer) {
+            helpers.recordAnswer(true, question, selected);
+          }
           answered[question.id] = true;
           button.classList.add("is-correct");
           feedback.className = "feedback good";
@@ -334,6 +343,9 @@
           return;
         }
 
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(false, question, selected);
+        }
         button.classList.add("is-wrong");
         if (correctButton) {
           correctButton.classList.add("show-correct");

@@ -51,8 +51,10 @@ const USE_TTS_FALLBACK = false;
         safetyTimer = window.setTimeout(function () {
           finish(true);
         }, 7000);
-      }).catch(function () {
-        handleMissing(currentRequest);
+      }).catch(function (error) {
+        if (!error || error.name !== "NotAllowedError") {
+          handleMissing(currentRequest);
+        }
         finish(false);
       });
     });

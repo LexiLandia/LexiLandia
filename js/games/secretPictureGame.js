@@ -205,6 +205,9 @@
 
       if (direction !== command.dir) {
         state.mistakes += 1;
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(false, level, direction);
+        }
         state.message = choose(["Попробуй ещё раз 🙂", "Не туда 🙂", "Посмотри на стрелку " + DIRS[command.dir].label]);
         saveStats("mistake", { reason: "direction", levelId: level.id });
         drawSoft();
@@ -218,6 +221,9 @@
 
       if (next.row < 0 || next.col < 0 || next.row >= size || next.col >= size) {
         state.mistakes += 1;
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(false, level, "край");
+        }
         state.message = "Стой! Край карты.";
         saveStats("mistake", { reason: "edge", levelId: level.id });
         drawSoft();
@@ -257,6 +263,9 @@
       }
       if (state.completedPictures.indexOf(level.id) === -1) {
         state.completedPictures.push(level.id);
+      }
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(true, level, level.id);
       }
       saveStats("level-completed", {
         levelId: level.id,
@@ -347,6 +356,9 @@
           });
 
           if (selected === question.correct) {
+            if (helpers.recordAnswer) {
+              helpers.recordAnswer(true, question, selected);
+            }
             button.classList.add("is-correct");
             state.questionAnswered = true;
             feedback.className = "secret-question-feedback good";
@@ -354,6 +366,9 @@
             return;
           }
 
+          if (helpers.recordAnswer) {
+            helpers.recordAnswer(false, question, selected);
+          }
           button.classList.add("is-wrong");
           feedback.className = "secret-question-feedback try";
           feedback.textContent = "Посмотри ещё 🙂";

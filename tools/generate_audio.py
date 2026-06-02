@@ -43,6 +43,8 @@ UNIT11_PATH = ROOT / "js" / "unit11Data.js"
 UNIT12_PATH = ROOT / "js" / "unit12Data.js"
 UNIT13_PATH = ROOT / "js" / "unit13Data.js"
 UNIT14_PATH = ROOT / "js" / "unit14Data.js"
+UNIT15_PATH = ROOT / "js" / "unit15Data.js"
+UNIT16_PATH = ROOT / "js" / "unit16Data.js"
 GENERATED_LESSONS_PATH = ROOT / "js" / "lexiforgeGenerated.js"
 JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
@@ -61,6 +63,8 @@ JS_LESSON_MODULES = [
     (UNIT12_PATH, "LexiLandUnit12Lesson", "after"),
     (UNIT13_PATH, "LexiLandUnit13Lesson", "after"),
     (UNIT14_PATH, "LexiLandUnit14Lesson", "after"),
+    (UNIT15_PATH, "LexiLandUnit15Lesson", "after"),
+    (UNIT16_PATH, "LexiLandUnit16Lesson", "after"),
     (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"
@@ -187,6 +191,8 @@ def add_line(
 ) -> None:
     target = ROOT / audio_path
     existing = lines.get(str(target))
+    if existing and not (speech_text or rate or pitch):
+        return
     if existing and existing.rate and not rate:
         return
 

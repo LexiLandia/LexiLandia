@@ -132,6 +132,12 @@
       if (game.kind === "family-find") {
         return '<div class="unit8-shop-scene" aria-hidden="true"><span>👨</span><span>👩</span><span>👦</span><span>👧</span></div>';
       }
+      if (game.kind === "home-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>🏠</span><span>🛏️</span><span>🍽️</span><span>🚪</span></div>';
+      }
+      if (game.kind === "city-find") {
+        return '<div class="unit8-shop-scene" aria-hidden="true"><span>🏙️</span><span>🚏</span><span>🚌</span><span>🚇</span></div>';
+      }
       return "";
     }
 
@@ -357,6 +363,9 @@
 
       locked = true;
       if (isCorrect) {
+        if (helpers.recordAnswer) {
+          helpers.recordAnswer(true, task, button ? (button.getAttribute("data-unit8-choice") || button.getAttribute("data-unit8-check") || "карта") : "");
+        }
         state.correct += 1;
         if (button) {
           button.classList.add("is-correct");
@@ -369,6 +378,9 @@
         return;
       }
 
+      if (helpers.recordAnswer) {
+        helpers.recordAnswer(false, task, button ? (button.getAttribute("data-unit8-choice") || button.getAttribute("data-unit8-check") || "карта") : "");
+      }
       state.mistakes += 1;
       if (button) {
         button.classList.add("is-wrong");
@@ -536,11 +548,11 @@
     }
 
     function isMapGame() {
-      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map" || game.kind === "clothing-map" || game.kind === "weather-map" || game.kind === "health-map" || game.kind === "family-map";
+      return game.kind === "count-map" || game.kind === "day-map" || game.kind === "cafe-map" || game.kind === "clothing-map" || game.kind === "weather-map" || game.kind === "health-map" || game.kind === "family-map" || game.kind === "home-map" || game.kind === "city-map";
     }
 
     function isFindGame() {
-      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build" || game.kind === "clothing-find" || game.kind === "clothing-color-find" || game.kind === "clothing-shop" || game.kind === "clothing-build" || game.kind === "weather-find" || game.kind === "health-find" || game.kind === "family-find";
+      return game.kind === "find-count" || game.kind === "shop-count" || game.kind === "cafe-order" || game.kind === "table-build" || game.kind === "clothing-find" || game.kind === "clothing-color-find" || game.kind === "clothing-shop" || game.kind === "clothing-build" || game.kind === "weather-find" || game.kind === "health-find" || game.kind === "family-find" || game.kind === "home-find" || game.kind === "city-find";
     }
   }
 
