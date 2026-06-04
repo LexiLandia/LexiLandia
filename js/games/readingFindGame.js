@@ -20,6 +20,7 @@
 
       root.innerHTML =
         '<section class="stage-card reading-find-card">' +
+          renderDebugBadge(stage, task) +
           '<div class="reading-game-top">' +
             '<span class="reading-game-kid" aria-hidden="true">🙂</span>' +
             '<div>' +
@@ -43,6 +44,21 @@
       if (shouldPlay !== false) {
         maybePlay(task);
       }
+    }
+
+    function renderDebugBadge(stage, task) {
+      if (!helpers.debugBadge) {
+        return "";
+      }
+
+      var visible = "р" + (state.stageIndex + 1) + "-з" + (state.taskIndex + 1);
+      var source = [
+        game.id || game.gameSlug || "",
+        stage && stage.id || "",
+        task && task.id || visible
+      ].filter(Boolean).join(":");
+
+      return helpers.debugBadge(visible, source, "game-debug-badge");
     }
 
     function drawFinal() {

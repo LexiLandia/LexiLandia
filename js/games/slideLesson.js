@@ -147,6 +147,7 @@
     var options = shuffleByCorrect(question.options || [], question.correct, "id");
 
     return '<div class="slide-question active-question" data-question="' + questionIndex + '">' +
+      renderQuestionDebugBadge(question, questionIndex, helpers) +
       (questionCount > 1 ? '<div class="question-step">' + (questionIndex + 1) + " / " + questionCount + '</div>' : "") +
       (question.visual ? '<div class="question-visual" aria-hidden="true">' + helpers.escape(question.visual) + '</div>' : "") +
       '<p class="question-text">' + helpers.escape(question.text) + '</p>' +
@@ -159,6 +160,13 @@
         }).join("") +
       '</div>' +
     '</div>';
+  }
+
+  function renderQuestionDebugBadge(question, questionIndex, helpers) {
+    var visible = "з" + (questionIndex + 1);
+    var source = question && question.id ? question.id : visible;
+
+    return '<span class="debug-id-badge question-debug-badge" data-debug-id="' + helpers.escape(visible) + '" data-debug-source="' + helpers.escape(source) + '" title="Скопировать ID" aria-hidden="true">#' + helpers.escape(visible) + '</span>';
   }
 
   function bindReveal(root, task, helpers) {

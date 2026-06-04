@@ -25,6 +25,7 @@
 
       root.innerHTML =
         '<section class="stage-card unit2-game-card">' +
+          renderDebugBadge(stage, task) +
           '<div class="unit2-game-top">' +
             '<div class="unit2-game-mark" aria-hidden="true">❓</div>' +
             '<div>' +
@@ -53,6 +54,21 @@
         (task.question ? '<p class="unit2-game-question">' + helpers.escape(task.question) + '</p>' : "") +
         renderOptions(task.options || [], helpers, task.correct) +
       '</div>';
+    }
+
+    function renderDebugBadge(stage, task) {
+      if (!helpers.debugBadge) {
+        return "";
+      }
+
+      var visible = "р" + (state.stageIndex + 1) + "-з" + (state.taskIndex + 1);
+      var source = [
+        game.id || game.gameSlug || "",
+        stage && stage.id || "",
+        task && task.id || visible
+      ].filter(Boolean).join(":");
+
+      return helpers.debugBadge(visible, source, "game-debug-badge");
     }
 
     function renderVisual(task, helpers) {

@@ -113,6 +113,7 @@ button {
 }
 
 .topbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,6 +227,7 @@ button {
 .lesson-card,
 .stage-card,
 .roadmap-card {
+  position: relative;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -249,6 +251,7 @@ button {
 }
 
 .course-card {
+  position: relative;
   width: 100%;
   min-height: 156px;
   padding: 14px;
@@ -320,6 +323,7 @@ button {
 }
 
 .unit-card {
+  position: relative;
   width: 100%;
   min-height: 76px;
   padding: 12px;
@@ -334,6 +338,106 @@ button {
   gap: 12px;
   text-align: left;
   overflow: hidden;
+}
+
+.debug-id-badge {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  z-index: 3;
+  max-width: min(46vw, 260px);
+  padding: 2px 5px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: currentColor;
+  background: rgba(255, 255, 255, 0.28);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.58rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0;
+  opacity: 0.045;
+  cursor: copy;
+  pointer-events: auto;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 120ms ease, background 120ms ease, transform 120ms ease;
+}
+
+.debug-id-badge.lesson-debug-badge {
+  top: 4px;
+  right: 4px;
+  color: var(--orange);
+  background: rgba(4, 12, 24, 0.32);
+  opacity: 0.06;
+}
+
+.debug-id-badge.question-debug-badge {
+  top: 4px;
+  right: 5px;
+  color: var(--orange);
+  background: rgba(4, 12, 24, 0.3);
+  opacity: 0.045;
+}
+
+.debug-id-badge.game-debug-badge {
+  top: 4px;
+  right: 5px;
+  color: var(--orange);
+  background: rgba(4, 12, 24, 0.3);
+  opacity: 0.045;
+}
+
+.course-card:hover .debug-id-badge,
+.unit-card:hover .debug-id-badge,
+.topbar:hover .debug-id-badge,
+.slide-question:hover .debug-id-badge,
+.stage-card:hover .debug-id-badge {
+  opacity: 0.42;
+}
+
+body.debug-mode .debug-id-badge {
+  background: rgba(255, 255, 255, 0.78);
+  opacity: 0.62;
+}
+
+body.debug-mode .debug-id-badge.lesson-debug-badge,
+body.debug-mode .debug-id-badge.question-debug-badge,
+body.debug-mode .debug-id-badge.game-debug-badge {
+  background: rgba(4, 12, 24, 0.72);
+  opacity: 0.56;
+}
+
+.debug-id-badge.is-copied {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+.debug-copy-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  z-index: 9999;
+  max-width: min(92vw, 360px);
+  padding: 8px 12px;
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  color: #ffffff;
+  background: rgba(4, 12, 24, 0.92);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 10px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.debug-copy-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .unit-card:disabled {
@@ -938,6 +1042,7 @@ button {
 .slide-question {
   display: grid;
   gap: 8px;
+  position: relative;
 }
 
 .active-question {

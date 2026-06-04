@@ -44,6 +44,7 @@
 
       root.innerHTML =
         '<section class="stage-card unit7-game-card">' +
+          renderDebugBadge(task) +
           '<div class="unit7-game-top">' +
             '<div class="unit7-game-mark" aria-hidden="true">' + helpers.escape(game.icon || "🎨") + '</div>' +
             '<div>' +
@@ -63,6 +64,20 @@
       bindTask(task);
       bindAudio(task);
       maybePlay(task);
+    }
+
+    function renderDebugBadge(task) {
+      if (!helpers.debugBadge) {
+        return "";
+      }
+
+      var visible = "з" + (state.taskIndex + 1);
+      var source = [
+        game.id || game.gameSlug || game.kind || "",
+        task && task.id || visible
+      ].filter(Boolean).join(":");
+
+      return helpers.debugBadge(visible, source, "game-debug-badge");
     }
 
     function renderTask(task) {

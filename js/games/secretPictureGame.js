@@ -64,6 +64,7 @@
 
       root.innerHTML =
         '<section class="stage-card secret-picture-card">' +
+          renderDebugBadge(level, command) +
           '<div class="secret-top">' +
             '<div class="secret-mark" aria-hidden="true">' + helpers.escape(state.mode === "training" ? "🧭" : "✏️") + '</div>' +
             '<div>' +
@@ -81,6 +82,23 @@
       bindControls(command);
       bindKeyboard(command);
       autoPlayCommand(command);
+    }
+
+    function renderDebugBadge(level, command) {
+      if (!helpers.debugBadge) {
+        return "";
+      }
+
+      var visible = state.mode === "training"
+        ? "т" + (state.trainingIndex + 1)
+        : "к" + (state.levelIndex + 1) + "-ш" + (state.commandIndex + 1);
+      var source = [
+        game.id || game.gameSlug || "",
+        level && level.id || "",
+        command && (command.id || command.text || command.display) || visible
+      ].filter(Boolean).join(":");
+
+      return helpers.debugBadge(visible, source, "game-debug-badge");
     }
 
     function currentLevel() {

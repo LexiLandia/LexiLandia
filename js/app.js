@@ -7,6 +7,7 @@
   var PROGRESS_DB_NAME = "lexiland-progress";
   var PROGRESS_STORE_NAME = "progress";
   var PROGRESS_RECORD_KEY = "main";
+  var DEBUG_STORAGE_KEY = "lexiland-debug-mode";
   var appRoot = document.getElementById("app");
   var data = null;
   var lesson = null;
@@ -49,6 +50,8 @@
   });
 
   function init() {
+    setupDebugMode();
+    bindDebugBadgeCopy();
     loadLessonData().then(function (loadedData) {
       data = normalizeLessonData(loadedData);
       setCurrentLesson(0);
@@ -424,8 +427,10 @@
     var readyCount = getCourseReadyCount(group);
     var countLabel = group.lessonIndexes ? formatLessonCount(readyCount) : formatItemCount(readyCount);
     var shortTitle = getCourseShortTitle(group);
+    var debugId = getCourseDebugId(courseIndex);
 
-    return '<button class="course-card" type="button" data-course="' + courseIndex + '"' + (unlocked ? "" : " disabled") + '>' +
+    return '<button class="course-card" type="button" data-course="' + courseIndex + '" data-debug-id="' + escapeHtml(debugId) + '"' + (unlocked ? "" : " disabled") + '>' +
+      renderDebugBadge(debugId, group.id || group.menuLabel) +
       renderCourseVisual(group) +
       '<div class="course-copy">' +
         '<span class="pill' + (complete ? " done" : "") + '">' + escapeHtml(unlocked ? label : label + " 🔒") + '</span>' +
@@ -433,6 +438,222 @@
         '<small>' + escapeHtml(readyCount + " " + countLabel) + '</small>' +
       '</div>' +
     '</button>';
+  }
+
+  function renderDebugBadge(debugId, sourceId, extraClass) {
+    if (!debugId) {
+      return "";
+    }
+
+    return '<span class="debug-id-badge ' + escapeHtml(extraClass || "") + '" data-debug-id="' + escapeHtml(debugId) + '" data-debug-source="' + escapeHtml(sourceId || debugId) + '" title="Скопировать ID" aria-hidden="true">#' + escapeHtml(debugId) + '</span>';
+  }
+
+  function setupDebugMode() {
+    var enabled = false;
+
+    try {
+      var params = new URLSearchParams(window.location.search || "");
+      if (params.has("debug")) {
+        enabled = params.get("debug") === "1";
+        if (enabled) {
+          window.localStorage.setItem(DEBUG_STORAGE_KEY, "1");
+        } else {
+          window.localStorage.removeItem(DEBUG_STORAGE_KEY);
+        }
+      } else {
+        enabled = window.localStorage.getItem(DEBUG_STORAGE_KEY) === "1";
+      }
+    } catch (error) {
+      enabled = false;
+    }
+
+    document.body.classList.toggle("debug-mode", enabled);
+  }
+
+  function bindDebugBadgeCopy() {
+    document.addEventListener("click", function (event) {
+      var target = event.target && event.target.closest ? event.target.closest(".debug-id-badge") : null;
+
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      copyDebugId(target);
+    }, true);
+  }
+
+  function copyDebugId(target) {
+    var rawId = target.getAttribute("data-debug-id") || target.textContent || "";
+    var debugId = rawId.charAt(0) === "#" ? rawId : "#" + rawId;
+
+    copyText(debugId).then(function () {
+      target.classList.add("is-copied");
+      showDebugToast("ID скопирован: " + debugId);
+      window.setTimeout(function () {
+        target.classList.remove("is-copied");
+      }, 900);
+    }).catch(function () {
+      showDebugToast("ID: " + debugId);
+    });
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+
+    return new Promise(function (resolve, reject) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "readonly");
+      area.style.position = "fixed";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+
+      try {
+        if (document.execCommand("copy")) {
+          resolve(true);
+        } else {
+          reject(new Error("copy"));
+        }
+      } catch (error) {
+        reject(error);
+      } finally {
+        area.remove();
+      }
+    });
+  }
+
+  function showDebugToast(text) {
+    var toast = document.getElementById("debug-copy-toast");
+
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.id = "debug-copy-toast";
+      toast.className = "debug-copy-toast";
+      toast.setAttribute("aria-live", "polite");
+      document.body.appendChild(toast);
+    }
+
+    toast.textContent = text;
+    toast.classList.add("is-visible");
+    window.clearTimeout(showDebugToast.timer);
+    showDebugToast.timer = window.setTimeout(function () {
+      toast.classList.remove("is-visible");
+    }, 1300);
+  }
+
+  function getCourseDebugId(courseIndex) {
+    return "\u044e" + (Number(courseIndex) + 1);
+  }
+
+  function getCourseNumberByLessonIndex(lessonIndex) {
+    var groups = getCourseGroups();
+    var index;
+
+    for (index = 0; index < groups.length; index += 1) {
+      if (groups[index].lessonIndexes && groups[index].lessonIndexes.indexOf(lessonIndex) !== -1) {
+        return index + 1;
+      }
+      if (groups[index].lessonIndex === lessonIndex) {
+        return index + 1;
+      }
+    }
+
+    return Math.max(1, Number(lessonIndex) + 1);
+  }
+
+  function getLessonDebugId(targetLesson, lessonIndex) {
+    return "\u044e" + getCourseNumberByLessonIndex(lessonIndex) + "-\u0443" + getLessonOrder(targetLesson, lessonIndex);
+  }
+
+  function getUnitDebugId(unit, index, targetLesson, lessonIndex) {
+    var courseNumber = getCourseNumberByLessonIndex(lessonIndex);
+    var lessonNumber = getUnitLessonNumber(unit);
+    var gameNumber;
+
+    if (lessonNumber !== null) {
+      return "\u044e" + courseNumber + "-\u0443" + lessonNumber;
+    }
+
+    if (isGameUnit(unit)) {
+      gameNumber = getGameNumberInLesson(unit, index, targetLesson);
+      return "\u044e" + courseNumber + "-\u0438" + gameNumber;
+    }
+
+    return "\u044e" + courseNumber + "-\u0440" + (Number(index) + 1);
+  }
+
+  function getUnitLessonNumber(unit) {
+    var match = String(unit && unit.id || "").match(/lesson-(\d+)/);
+
+    if (match) {
+      return Number(match[1]);
+    }
+
+    return null;
+  }
+
+  function getGameNumberInLesson(unit, index, targetLesson) {
+    var units = getUnits(targetLesson);
+    var count = 0;
+    var cursor;
+
+    for (cursor = 0; cursor <= index; cursor += 1) {
+      if (isGameUnit(units[cursor])) {
+        count += 1;
+      }
+    }
+
+    return Math.max(1, count);
+  }
+
+  function getCurrentScreenDebug() {
+    var unit = getCurrentUnit();
+    var base = getUnitDebugId(unit, position.unitIndex, lesson, position.lessonIndex);
+    var stage = unit && unit.stages && unit.stages[position.stageIndex];
+    var task = getCurrentTaskForDebug(stage);
+    var visible = base;
+    var source = [
+      "lesson:" + (lesson && lesson.id || ""),
+      "unit:" + (unit && unit.id || "")
+    ];
+
+    if (stage) {
+      visible += "-\u0441" + (position.stageIndex + 1);
+      source.push("stage:" + (stage.id || stage.type || position.stageIndex));
+    }
+
+    if (task) {
+      visible += "-\u0437" + (position.taskIndex + 1);
+      source.push("task:" + (task.id || task.entryId || task.text || position.taskIndex));
+    } else if (!stage) {
+      visible += "-\u0444";
+      source.push("finish");
+    }
+
+    return {
+      visible: visible,
+      source: source.join(" | ")
+    };
+  }
+
+  function getCurrentTaskForDebug(stage) {
+    if (!stage) {
+      return null;
+    }
+
+    if (stage.type === "intro") {
+      return {
+        id: stage.items && stage.items[position.taskIndex] || "",
+        entryId: stage.items && stage.items[position.taskIndex] || ""
+      };
+    }
+
+    return (stage.tasks || [])[position.taskIndex] || null;
   }
 
   function getCourseShortTitle(item) {
@@ -487,8 +708,10 @@
     var labelNumber = getLessonOrder(item, lessonIndex);
     var label = item.menuLabel || "\u0423\u0440\u043e\u043a " + labelNumber;
     var readyCount = getReadyUnitCount(item);
+    var debugId = getLessonDebugId(item, lessonIndex);
 
-    return '<button class="unit-card lesson-menu-card" type="button" data-lesson-menu="' + lessonIndex + '">' +
+    return '<button class="unit-card lesson-menu-card" type="button" data-lesson-menu="' + lessonIndex + '" data-debug-id="' + escapeHtml(debugId) + '">' +
+      renderDebugBadge(debugId, item.id) +
       '<span class="unit-icon">' + escapeHtml(item.coverEmoji || item.emoji || firstUnitIcon(item) || "⭐") + '</span>' +
       '<span class="unit-copy">' +
         '<strong>' + escapeHtml(label) + '</strong>' +
@@ -606,7 +829,10 @@
       disabled = false;
     }
 
-    return '<button class="unit-card" type="button" ' + (disabled ? "disabled" : 'data-lesson="' + lessonIndex + '" data-unit="' + index + '"') + '>' +
+    var debugId = getUnitDebugId(unit, index, targetLesson, lessonIndex);
+
+    return '<button class="unit-card" type="button" data-debug-id="' + escapeHtml(debugId) + '" ' + (disabled ? "disabled" : 'data-lesson="' + lessonIndex + '" data-unit="' + index + '"') + '>' +
+      renderDebugBadge(debugId, unit.id) +
       '<span class="unit-icon">' + escapeHtml(unit.icon || "⭐") + '</span>' +
       '<span class="unit-copy">' +
         '<strong>' + escapeHtml(unit.title) + '</strong>' +
@@ -913,6 +1139,7 @@
   function renderLessonHeader(title) {
     var percent = getProgressPercent();
     var unit = getCurrentUnit();
+    var debug = getCurrentScreenDebug();
     return '<header class="topbar">' +
       '<div class="brand">' +
         '<button class="home-button" type="button" onclick="LexiLandApp.unit()" aria-label="Юнит">↩️</button>' +
@@ -922,6 +1149,7 @@
           '<small>' + escapeHtml(title) + '</small>' +
         '</div>' +
       '</div>' +
+      renderDebugBadge(debug.visible, debug.source, "lesson-debug-badge") +
       '</header>' +
       '<div class="progress-wrap" aria-label="Путь">' +
         '<div class="progress-label"><span>Путь</span><span>' + percent + '%</span></div>' +
@@ -1043,6 +1271,7 @@
       playWord: playWord,
       playAudioList: playAudioList,
       recordAnswer: recordAnswer,
+      debugBadge: renderDebugBadge,
       getMapAria: getMapAria,
       getMapTarget: getMapTarget,
       mapHeight: mapHeight,
