@@ -172,8 +172,8 @@
     "кроватью": m("кроватью", "🛏️", "pod_krovatyu.mp3"),
     "шкаф": m("шкаф", "🗄️", "shkaf.mp3"),
     "шкафу": m("шкафу", "🗄️", "v_shkafu.mp3"),
-    "стол": m("стол", "🪑", "stol.mp3"),
-    "столе": m("столе", "🪑", "na_stole.mp3"),
+    "стол": m("стол", "🍽️", "stol.mp3"),
+    "столе": m("столе", "🍽️", "na_stole.mp3"),
     "стул": m("стул", "🪑", "stul.mp3"),
     "мама": m("мама", "👩", "mama.mp3"),
     "папа": m("папа", "👨", "papa.mp3"),
@@ -203,7 +203,7 @@
     entry("u15-v-vannoy", "в ванной", "🛁", "chunk", "v_vannoy.mp3"),
     entry("u15-u-okna", "у окна", "🪟", "chunk", "u_okna.mp3"),
     entry("u15-u-dveri", "у двери", "🚪", "chunk", "u_dveri.mp3"),
-    entry("u15-na-stole", "на столе", "🪑", "chunk", "na_stole.mp3"),
+    entry("u15-na-stole", "на столе", "⬆️🍽️", "chunk", "na_stole.mp3"),
     entry("u15-pod-krovatyu", "под кроватью", "🛏️", "chunk", "pod_krovatyu.mp3"),
     entry("u15-ryadom-so-shkafom", "рядом со шкафом", "🗄️", "chunk", "ryadom_so_shkafom.mp3"),
     entry("u15-v-shkafu", "в шкафу", "🗄️", "chunk", "v_shkafu.mp3"),
@@ -214,11 +214,11 @@
     entry("u15-idi-k-oknu", "иди к окну", "🚶‍➡️🪟", "chunk", "idi_k_oknu.mp3"),
     entry("u15-naydi-krovat", "найди кровать", "🔎🛏️", "chunk", "naydi_krovat.mp3"),
     entry("u15-naydi-shkaf", "найди шкаф", "🔎🗄️", "chunk", "naydi_shkaf.mp3"),
-    entry("u15-naydi-stol", "найди стол", "🔎🪑", "chunk", "naydi_stol.mp3"),
+    entry("u15-naydi-stol", "найди стол", "🔎🍽️", "chunk", "naydi_stol.mp3"),
     entry("u15-mama-na-kuhne", "мама на кухне", "👩🍽️", "chunk", "mama_na_kuhne.mp3"),
     entry("u15-papa-v-komnate", "папа в комнате", "👨🛏️", "chunk", "papa_v_komnate.mp3"),
     entry("u15-kot-pod-krovatyu", "кот под кроватью", "🐱🛏️", "chunk", "kot_pod_krovatyu.mp3"),
-    entry("u15-kniga-na-stole", "книга на столе", "📖🪑", "chunk", "kniga_na_stole.mp3"),
+    entry("u15-kniga-na-stole", "книга на столе", "📖🍽️", "chunk", "kniga_na_stole.mp3"),
     entry("u15-sobaka-u-dveri", "собака у двери", "🐶🚪", "chunk", "sobaka_u_dveri.mp3")
   ];
 
@@ -235,7 +235,7 @@
     option("okno", "окно", "🪟"),
     option("krovat", "кровать", "🛏️"),
     option("shkaf", "шкаф", "🗄️"),
-    option("stol", "стол", "🪑"),
+    option("stol", "стол", "🍽️"),
     option("stul", "стул", "🪑"),
     option("dom", "дом", "🏠")
   ];
@@ -250,7 +250,7 @@
   ];
 
   var objectLocationOptions = [
-    option("na-stole", "на столе", "🪑"),
+    option("na-stole", "на столе", "⬆️🍽️"),
     option("pod-krovatyu", "под кроватью", "🛏️"),
     option("v-shkafu", "в шкафу", "🗄️"),
     option("u-dveri", "у двери", "🚪"),
@@ -266,7 +266,7 @@
     option("okno", "к окну", "🪟"),
     option("krovat", "кровать", "🛏️"),
     option("shkaf", "шкаф", "🗄️"),
-    option("stol", "стол", "🪑")
+    option("stol", "стол", "🍽️")
   ];
 
   var homeItems = [
@@ -277,7 +277,7 @@
     group("okno", "окно", "🪟", 1, "object"),
     group("krovat", "кровать", "🛏️", 1, "object"),
     group("shkaf", "шкаф", "🗄️", 1, "object"),
-    group("stol", "стол", "🪑", 1, "object"),
+    group("stol", "стол", "🍽️", 1, "object"),
     group("stul", "стул", "🪑", 1, "object")
   ];
 
@@ -309,20 +309,20 @@
     slide("u15-l44-2", "В комнате", ["Папа в комнате."], focus(["👨", "🛏️"]), [line("Папа в комнате.", "papa_v_komnate.mp3")], null, true),
     slide("u15-l44-3", "В ванной", ["Брат в ванной."], focus(["👦", "🛁"]), [line("Брат в ванной.", "u15_brat_v_vannoy.mp3")], null, true),
     slide("u15-l44-4", "Под кроватью", ["Кот под кроватью."], focus(["🐱", "⬇️", "🛏️"]), [line("Кот под кроватью.", "kot_pod_krovatyu.mp3")], null, true),
-    slide("u15-l44-5", "На столе", ["Книга на столе."], focus(["📖", "⬆️", "🪑"]), [line("Книга на столе.", "kniga_na_stole.mp3")], null, true),
+    slide("u15-l44-5", "На столе", ["Книга на столе."], focus(["📖", "⬆️", "🍽️"]), [line("Книга на столе.", "kniga_na_stole.mp3")], null, true),
     slide("u15-l44-6", "У двери", ["Собака у двери."], focus(["🐶", "🚪"]), [line("Собака у двери.", "sobaka_u_dveri.mp3")], null, true),
     slide("u15-l44-7", "У окна", ["Стул у окна."], focus(["🪑", "🪟"]), [line("Стул у окна.", "u15_stul_u_okna.mp3")], null, true),
     slide("u15-l44-8", "У шкафа", ["Мяч рядом со шкафом."], focus(["⚽", "↔️", "🗄️"]), [line("Мяч рядом со шкафом.", "u15_myach_ryadom_so_shkafom.mp3")], null, true),
     slide("u15-l44-9", "Где?", ["Где мама?"], focus(["👩", "🍽️"]), [line("Где мама?", "u15_l44_gde_mama.mp3")], [
       question("u15-l44-q1", "Где мама?", locationOptions, "na-kuhne", "👩")
     ], true),
-    slide("u15-l44-10", "Что?", ["Что на столе?"], focus(["📖", "🪑"]), [line("Что на столе?", "u15_l44_chto_na_stole.mp3")], [
-      question("u15-l44-q2", "Что на столе?", [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽"), option("shapka", "шапка", "🧢")], "kniga", "🪑")
+    slide("u15-l44-10", "Что?", ["Что на столе?"], focus(["📖", "🍽️"]), [line("Что на столе?", "u15_l44_chto_na_stole.mp3")], [
+      question("u15-l44-q2", "Что на столе?", [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽"), option("shapka", "шапка", "🧢")], "kniga", "🍽️")
     ], true),
-    slide("u15-l44-11", "Читай", ["Мама на кухне.", "Папа в комнате.", "Кот под кроватью.", "Книга на столе.", "Собака у двери."], focus(["👩🍽️", "👨🛏️", "🐱⬇️🛏️", "📖🪑", "🐶🚪"]), [line("Мама на кухне. Папа в комнате. Кот под кроватью. Книга на столе. Собака у двери.", "u15_l44_text.mp3")], [
+    slide("u15-l44-11", "Читай", ["Мама на кухне.", "Папа в комнате.", "Кот под кроватью.", "Книга на столе.", "Собака у двери."], focus(["👩🍽️", "👨🛏️", "🐱⬇️🛏️", "📖🍽️", "🐶🚪"]), [line("Мама на кухне. Папа в комнате. Кот под кроватью. Книга на столе. Собака у двери.", "u15_l44_text.mp3")], [
       question("u15-l44-q3", "Где папа?", locationOptions, "v-komnate", "👨"),
       question("u15-l44-q4", "Где кот?", locationOptions, "pod-krovatyu", "🐱"),
-      question("u15-l44-q5", "Что на столе?", [option("kniga", "книга", "📖"), option("stul", "стул", "🪑"), option("okno", "окно", "🪟")], "kniga", "🪑")
+      question("u15-l44-q5", "Что на столе?", [option("kniga", "книга", "📖"), option("stul", "стул", "🪑"), option("okno", "окно", "🪟")], "kniga", "🍽️")
     ], true),
     slide("u15-l44-12", "Отлично!", ["Отлично! ✅", "на кухне", "в комнате", "под кроватью"], wordList([{ text: "на кухне", emoji: "🍽️" }, { text: "в комнате", emoji: "🛏️" }, { text: "под кроватью", emoji: "⬇️🛏️" }]), [line("Отлично! На кухне. В комнате. Под кроватью.", "u15_l44_final.mp3")], null, true)
   ];
@@ -335,7 +335,7 @@
     slide("u15-l45-5", "Окно", ["Иди к окну."], focus(["🙂", "🚶‍➡️", "🪟"]), [line("Иди к окну.", "idi_k_oknu.mp3")], null, true),
     slide("u15-l45-6", "Найди", ["Найди кровать."], focus(["🔎", "🛏️"]), [line("Найди кровать.", "naydi_krovat.mp3")], null, true),
     slide("u15-l45-7", "Найди", ["Найди шкаф."], focus(["🔎", "🗄️"]), [line("Найди шкаф.", "naydi_shkaf.mp3")], null, true),
-    slide("u15-l45-8", "Найди", ["Найди стол."], focus(["🔎", "🪑"]), [line("Найди стол.", "naydi_stol.mp3")], null, true),
+    slide("u15-l45-8", "Найди", ["Найди стол."], focus(["🔎", "🍽️"]), [line("Найди стол.", "naydi_stol.mp3")], null, true),
     slide("u15-l45-9", "Куда?", ["Иди на кухню."], focus(["🏠", "🍽️", "🛏️", "🛁"]), [line("Иди на кухню.", "idi_na_kuhnyu.mp3")], [
       question("u15-l45-q1", "Куда идти?", moveOptions, "kuhnya", "🍽️")
     ], true),
@@ -368,7 +368,7 @@
       choiceTask("u15-what-6", "Что это?", group("okno", "окно", "🪟"), "u15_game_what_okno.mp3", homePlaceOptions, "okno", "Да! Окно.", "Нет. Это окно."),
       choiceTask("u15-what-7", "Что это?", group("krovat", "кровать", "🛏️"), "u15_game_what_krovat.mp3", homePlaceOptions, "krovat", "Да! Кровать.", "Нет. Это кровать."),
       choiceTask("u15-what-8", "Что это?", group("shkaf", "шкаф", "🗄️"), "u15_game_what_shkaf.mp3", homePlaceOptions, "shkaf", "Да! Шкаф.", "Нет. Это шкаф."),
-      choiceTask("u15-what-9", "Что это?", group("stol", "стол", "🪑"), "u15_game_what_stol.mp3", homePlaceOptions, "stol", "Да! Стол.", "Нет. Это стол."),
+      choiceTask("u15-what-9", "Что это?", group("stol", "стол", "🍽️"), "u15_game_what_stol.mp3", homePlaceOptions, "stol", "Да! Стол.", "Нет. Это стол."),
       choiceTask("u15-what-10", "Что это?", group("stul", "стул", "🪑"), "u15_game_what_stul.mp3", homePlaceOptions, "stul", "Да! Стул.", "Нет. Это стул.")
     ]
   };
@@ -427,7 +427,7 @@
     finalText: "что где",
     finalWords: ["на столе", "в шкафу", "у двери"],
     rounds: [
-      choiceTask("u15-thing-1", "Где книга?", group("book-table", "книга на столе", "📖🪑"), "u15_thing_kniga.mp3", objectLocationOptions, "na-stole", "Да! На столе.", "Нет. Книга на столе."),
+      choiceTask("u15-thing-1", "Где книга?", group("book-table", "книга на столе", "📖🍽️"), "u15_thing_kniga.mp3", objectLocationOptions, "na-stole", "Да! На столе.", "Нет. Книга на столе."),
       choiceTask("u15-thing-2", "Где мяч?", group("ball-bed", "мяч под кроватью", "⚽⬇️🛏️"), "u15_thing_myach.mp3", objectLocationOptions, "pod-krovatyu", "Да! Под кроватью.", "Нет. Мяч под кроватью."),
       choiceTask("u15-thing-3", "Где шапка?", group("hat-closet", "шапка в шкафу", "🧢🗄️"), "u15_thing_shapka.mp3", objectLocationOptions, "v-shkafu", "Да! В шкафу.", "Нет. Шапка в шкафу."),
       choiceTask("u15-thing-4", "Где куртка?", group("jacket-closet", "куртка в шкафу", "🧥🗄️"), "u15_thing_kurtka.mp3", objectLocationOptions, "v-shkafu", "Да! В шкафу.", "Нет. Куртка в шкафу."),
@@ -461,14 +461,14 @@
   };
 
   var roomSceneSlides = [
-    slide("u15-room-1", "Комната", ["Это комната.", "В комнате кровать.", "Кот под кроватью.", "Книга на столе."], focus(["🛏️", "🛏️", "🐱⬇️🛏️", "📖🪑"]), [line("Это комната. В комнате кровать. Кот под кроватью. Книга на столе.", "u15_room_scene_1.mp3")], [
+    slide("u15-room-1", "Комната", ["Это комната.", "В комнате кровать.", "Кот под кроватью.", "Книга на столе."], focus(["🛏️", "🛏️", "🐱⬇️🛏️", "📖🍽️"]), [line("Это комната. В комнате кровать. Кот под кроватью. Книга на столе.", "u15_room_scene_1.mp3")], [
       question("u15-room-q1", "Где кот?", locationOptions, "pod-krovatyu", "🐱"),
-      question("u15-room-q2", "Что на столе?", [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽"), option("okno", "окно", "🪟")], "kniga", "🪑"),
+      question("u15-room-q2", "Что на столе?", [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽"), option("okno", "окно", "🪟")], "kniga", "🍽️"),
       question("u15-room-q3", "Что в комнате?", homePlaceOptions, "krovat", "🛏️")
     ], true),
-    slide("u15-room-2", "Кухня", ["Это кухня.", "Мама на кухне.", "На столе суп.", "Рядом чай."], focus(["🍽️", "👩🍽️", "🪑🍲", "↔️🍵"]), [line("Это кухня. Мама на кухне. На столе суп. Рядом чай.", "u15_room_scene_2.mp3")], [
+    slide("u15-room-2", "Кухня", ["Это кухня.", "Мама на кухне.", "На столе суп.", "Рядом чай."], focus(["🍽️", "👩🍽️", "🍽️🍲", "↔️🍵"]), [line("Это кухня. Мама на кухне. На столе суп. Рядом чай.", "u15_room_scene_2.mp3")], [
       question("u15-room-q4", "Где мама?", locationOptions, "na-kuhne", "👩"),
-      question("u15-room-q5", "Что на столе?", [option("soup", "суп", "🍲"), option("tea", "чай", "🍵"), option("book", "книга", "📖")], "soup", "🪑"),
+      question("u15-room-q5", "Что на столе?", [option("soup", "суп", "🍲"), option("tea", "чай", "🍵"), option("book", "книга", "📖")], "soup", "🍽️"),
       question("u15-room-q6", "Что рядом?", [option("tea", "чай", "🍵"), option("ball", "мяч", "⚽"), option("hat", "шапка", "🧢")], "tea", "↔️")
     ], true),
     slide("u15-room-3", "Дверь", ["Я дома.", "Собака у двери.", "Шапка в шкафу.", "Окно рядом."], focus(["🙂🏠", "🐶🚪", "🧢🗄️", "🪟↔️"]), [line("Я дома. Собака у двери. Шапка в шкафу. Окно рядом.", "u15_room_scene_3.mp3")], [
@@ -499,7 +499,7 @@
       group("okno", "окно", "🪟", 1, "object", 0, 1),
       group("krovat", "кровать", "🛏️", 1, "object", 2, 1),
       group("shkaf", "шкаф", "🗄️", 1, "object", 4, 4),
-      group("stol", "стол", "🪑", 1, "object", 2, 3),
+      group("stol", "стол", "🍽️", 1, "object", 2, 3),
       group("mama", "мама", "👩", 1, "person", 3, 2),
       group("papa", "папа", "👨", 1, "person", 1, 1),
       group("kot", "кот", "🐱", 1, "animal", 2, 2),

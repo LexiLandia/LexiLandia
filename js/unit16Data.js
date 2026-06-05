@@ -96,6 +96,7 @@
   function m(word, emojiText, file) {
     return {
       word: word,
+      text: word,
       emoji: emojiText,
       translation: "",
       audio: file ? audio(file) : ""
@@ -158,15 +159,15 @@
   var meanings = {
     "город": m("город", "🏙️", "gorod.mp3"),
     "улица": m("улица", "🛣️", "ulitsa.mp3"),
-    "улице": m("улице", "🛣️", "na_ulitse.mp3"),
+    "улице": m("улице", "🛣️", "ulitse.mp3"),
     "остановка": m("остановка", "🚏", "ostanovka.mp3"),
-    "остановке": m("остановке", "🚏", "avtobus_na_ostanovke.mp3"),
+    "остановке": m("остановке", "🚏", "ostanovke.mp3"),
     "транспорт": m("транспорт", "🚌", "transport.mp3"),
     "автобус": m("автобус", "🚌", "avtobus.mp3"),
     "метро": m("метро", "🚇", "metro.mp3"),
     "машина": m("машина", "🚗", "mashina.mp3"),
     "школа": m("школа", "🏫", "shkola.mp3"),
-    "школу": m("школу", "🏫", "ya_idu_v_shkolu.mp3"),
+    "школу": m("школу", "🏫", "shkolu.mp3"),
     "магазин": m("магазин", "🏪", "magazin.mp3"),
     "парк": m("парк", "🌳", "park.mp3"),
     "кафе": m("кафе", "☕", "kafe.mp3"),

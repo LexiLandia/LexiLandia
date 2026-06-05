@@ -324,7 +324,7 @@
           (question ? renderQuestion(question, helpers) : "") +
           '<div class="secret-reveal-actions">' +
             '<button class="secondary-button" type="button" data-secret-repeat>Ещё раз</button>' +
-            '<button class="primary-button" type="button" data-secret-next>' + helpers.escape(nextLevelLabel()) + '</button>' +
+            '<button class="primary-button" type="button" data-secret-next' + (question && !state.questionAnswered ? " disabled" : "") + '>' + helpers.escape(nextLevelLabel()) + '</button>' +
           '</div>' +
         '</section>';
 
@@ -379,6 +379,10 @@
             }
             button.classList.add("is-correct");
             state.questionAnswered = true;
+            var nextButton = root.querySelector("[data-secret-next]");
+            if (nextButton) {
+              nextButton.disabled = false;
+            }
             feedback.className = "secret-question-feedback good";
             feedback.textContent = "Да! ✅";
             return;

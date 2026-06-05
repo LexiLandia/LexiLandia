@@ -378,18 +378,18 @@
   };
 
   var mapGameTasks = [
-    mapTask("u5-map-1", "Иди вверх 2.", "2️⃣⬆️", "idi_vverh_dva.mp3", { x: 2, y: 4 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("dom", "🏠", 4, 0, "house")], "Иди вверх 2."),
-    mapTask("u5-map-2", "Иди направо 3.", "3️⃣➡️", "idi_napravo_tri.mp3", { x: 0, y: 3 }, { x: 3, y: 3 }, [mapObj("goal", "⭐", 3, 3, "object"), mapObj("park", "🌳🌳🌳", 1, 0, "park")], "Иди направо 3."),
-    mapTask("u5-map-3", "Иди вниз 1.", "1️⃣⬇️", "idi_vniz_odin.mp3", { x: 2, y: 1 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("voda", "💧", 4, 4, "water")], "Иди вниз 1."),
-    mapTask("u5-map-4", "Иди налево 2.", "2️⃣⬅️", "idi_nalevo_dva.mp3", { x: 4, y: 2 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("hleb", "🍞", 0, 4, "food")], "Иди налево 2."),
+    mapTask("u5-map-1", "Иди два шага вверх.", "2️⃣⬆️", "idi_dva_shaga_vverh.mp3", { x: 2, y: 4 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("dom", "🏠", 4, 0, "house")], "Иди два шага вверх."),
+    mapTask("u5-map-2", "Иди три шага направо.", "3️⃣➡️", "idi_tri_shaga_napravo.mp3", { x: 0, y: 3 }, { x: 3, y: 3 }, [mapObj("goal", "⭐", 3, 3, "object"), mapObj("park", "🌳🌳🌳", 1, 0, "park")], "Иди три шага направо."),
+    mapTask("u5-map-3", "Иди один шаг вниз.", "1️⃣⬇️", "idi_odin_shag_vniz.mp3", { x: 2, y: 1 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("voda", "💧", 4, 4, "water")], "Иди один шаг вниз."),
+    mapTask("u5-map-4", "Иди налево два шага.", "2️⃣⬅️", "idi_nalevo_dva_shaga.mp3", { x: 4, y: 2 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("hleb", "🍞", 0, 4, "food")], "Иди налево два шага."),
     mapTask("u5-map-5", "Иди в дом.", "🏠", "idi_v_dom.mp3", { x: 0, y: 4 }, { x: 4, y: 1 }, [mapObj("dom", "🏠", 4, 1, "house"), mapObj("magazin", "🏪", 1, 1, "shop"), mapObj("park", "🌳🌳🌳", 3, 4, "park"), mapObj("kafe", "🏢☕", 0, 0, "cafe")], "Иди в дом."),
     mapTask("u5-map-6", "Иди в магазин.", "🏪", "idi_v_magazin.mp3", { x: 4, y: 4 }, { x: 1, y: 2 }, [mapObj("magazin", "🏪", 1, 2, "shop"), mapObj("dom", "🏠", 4, 0, "house"), mapObj("park", "🌳🌳🌳", 0, 4, "park"), mapObj("myach", "⚽", 2, 0, "object")], "Иди в магазин."),
     mapTask("u5-map-7", "Иди в парк.", "🌳🌳🌳", "idi_v_park.mp3", { x: 2, y: 4 }, { x: 0, y: 1 }, [mapObj("park", "🌳🌳🌳", 0, 1, "park"), mapObj("kafe", "🏢☕", 4, 1, "cafe"), mapObj("dom", "🏠", 2, 0, "house"), mapObj("voda", "💧", 3, 3, "water")], "Иди в парк."),
     mapTask("u5-map-8", "Иди в кафе.", "🏢☕", "idi_v_kafe.mp3", { x: 0, y: 0 }, { x: 4, y: 3 }, [mapObj("kafe", "🏢☕", 4, 3, "cafe"), mapObj("magazin", "🏪", 2, 1, "shop"), mapObj("park", "🌳🌳🌳", 0, 4, "park"), mapObj("hleb", "🍞", 3, 0, "food")], "Иди в кафе."),
-    mapTask("u5-map-9", "Иди вверх 2. Иди направо 1.", "2️⃣⬆️ 1️⃣➡️", "route_vverh_2_napravo_1.mp3", { x: 1, y: 4 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("telefon", "📱", 4, 4, "object")], "Ты здесь!"),
-    mapTask("u5-map-10", "Иди вниз 1. Иди налево 2.", "1️⃣⬇️ 2️⃣⬅️", "route_vniz_1_nalevo_2.mp3", { x: 4, y: 1 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("voda", "💧", 0, 0, "water")], "Ты здесь!"),
-    mapTask("u5-map-11", "Иди направо 3. Иди вверх 1. Стой.", "3️⃣➡️ 1️⃣⬆️ 🛑", "route_napravo_3_vverh_1_stoy.mp3", { x: 0, y: 3 }, { x: 3, y: 2 }, [mapObj("goal", "⭐", 3, 2, "object"), mapObj("kafe", "🏢☕", 4, 4, "cafe")], "Стой."),
-    mapTask("u5-map-12", "Иди вверх 2. Иди направо 2. Иди в дом.", "2️⃣⬆️ 2️⃣➡️ 🏠", "route_vverh_2_napravo_2_dom.mp3", { x: 0, y: 4 }, { x: 2, y: 2 }, [mapObj("dom", "🏠", 2, 2, "house"), mapObj("magazin", "🏪", 4, 4, "shop"), mapObj("park", "🌳🌳🌳", 1, 0, "park")], "Иди в дом.")
+    mapTask("u5-map-9", "Иди два шага вверх. Иди один шаг направо.", "2️⃣⬆️ 1️⃣➡️", "route_dva_shaga_vverh_odin_shag_napravo.mp3", { x: 1, y: 4 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("telefon", "📱", 4, 4, "object")], "Ты здесь!"),
+    mapTask("u5-map-10", "Иди один шаг вниз. Иди налево два шага.", "1️⃣⬇️ 2️⃣⬅️", "route_odin_shag_vniz_nalevo_dva_shaga.mp3", { x: 4, y: 1 }, { x: 2, y: 2 }, [mapObj("goal", "⭐", 2, 2, "object"), mapObj("voda", "💧", 0, 0, "water")], "Ты здесь!"),
+    mapTask("u5-map-11", "Иди три шага направо. Иди один шаг вверх. Стой.", "3️⃣➡️ 1️⃣⬆️ 🛑", "route_tri_shaga_napravo_odin_shag_vverh_stoy.mp3", { x: 0, y: 3 }, { x: 3, y: 2 }, [mapObj("goal", "⭐", 3, 2, "object"), mapObj("kafe", "🏢☕", 4, 4, "cafe")], "Стой."),
+    mapTask("u5-map-12", "Иди два шага вверх. Иди два шага направо. Иди в дом.", "2️⃣⬆️ 2️⃣➡️ 🏠", "route_dva_shaga_vverh_dva_shaga_napravo_dom.mp3", { x: 0, y: 4 }, { x: 2, y: 2 }, [mapObj("dom", "🏠", 2, 2, "house"), mapObj("magazin", "🏪", 4, 4, "shop"), mapObj("park", "🌳🌳🌳", 1, 0, "park")], "Иди в дом.")
   ];
   mapGameTasks.forEach(function (task, index) {
     task.roundLabel = (index + 1) + " / " + mapGameTasks.length;
@@ -574,13 +574,13 @@
       commands: [
         secretCommand("right", 3, "Иди направо три шага.", "idi_tri_shaga_napravo.mp3"),
         secretCommand("right", 3, "Иди направо три шага.", "idi_tri_shaga_napravo.mp3"),
-        secretCommand("left", 3, "Иди налево три.", "idi_nalevo_tri.mp3"),
+        secretCommand("left", 3, "Иди налево три шага.", "idi_nalevo_tri_shaga.mp3"),
         secretCommand("up", 3, "Иди вверх три шага.", "idi_tri_shaga_vverh.mp3"),
         secretCommand("down", 3, "Иди вниз три шага.", "idi_tri_shaga_vniz.mp3"),
         secretCommand("down", 3, "Иди вниз три шага.", "idi_tri_shaga_vniz.mp3"),
         secretCommand("up", 3, "Иди вверх три шага.", "idi_tri_shaga_vverh.mp3"),
         secretCommand("left", 2, "Иди налево два шага.", "idi_nalevo_dva_shaga.mp3"),
-        secretCommand("right", 4, "Иди направо четыре.", "idi_napravo_chetyre.mp3")
+        secretCommand("right", 4, "Иди направо четыре шага.", "idi_napravo_chetyre_shaga.mp3")
       ],
       decorations: [
         { row: 4, col: 4, emoji: "☀️" },

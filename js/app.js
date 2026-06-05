@@ -1101,6 +1101,7 @@
     markUnitComplete();
     var unit = getCurrentUnit();
     var passCount = getUnitPassCount(unit.id);
+    var finishWords = collectUnitFinishWords(unit);
 
     setPlayMode(true);
 
@@ -1113,9 +1114,7 @@
           '<p class="unit-finish-title">' + escapeHtml(unit.title) + '</p>' +
           '<p class="unit-pass-count">✅ ' + escapeHtml(formatPassCount(passCount)) + '</p>' +
           '<ul class="word-list">' +
-            lesson.dictionary.filter(function (entry) {
-              return entry.type === "word";
-            }).map(function (entry) {
+            finishWords.map(function (entry) {
               return '<li>' +
                 '<span class="word-list-emoji" aria-hidden="true">' + escapeHtml(entry.emoji) + '</span>' +
                 '<span>' + escapeHtml(entry.text) + '</span>' +
@@ -1134,6 +1133,91 @@
     appRoot.querySelector('[data-action="again"]').addEventListener("click", function () {
       startFrom(position.unitIndex, 0, 0);
     });
+  }
+
+  function collectUnitFinishWords(unit) {
+    var dictionary = lesson && Array.isArray(lesson.dictionary) ? lesson.dictionary : [];
+    var dictionaryWords = dictionary.filter(function (entry) {
+      return entry && entry.type === "word";
+    });
+    var textParts = [];
+    var source;
+    var found = [];
+
+    if (!unit || !dictionaryWords.length) {
+      return dictionaryWords.slice(0, 24);
+    }
+
+    collectUnitText(unit, textParts);
+    source = normalizeFinishText(textParts.join(" "));
+
+    dictionaryWords.forEach(function (entry) {
+      var target = normalizeFinishText(entry.text);
+      if (target && hasFinishWord(source, target)) {
+        found.push(entry);
+      }
+    });
+
+    return (found.length ? found : dictionaryWords).slice(0, 24);
+  }
+
+  function collectUnitText(value, output) {
+    var skipKeys = {
+      audio: true,
+      id: true,
+      emoji: true,
+      icon: true,
+      image: true,
+      x: true,
+      y: true,
+      color: true,
+      size: true,
+      type: true,
+      correct: true,
+      answer: true,
+      target: true,
+      rate: true,
+      pitch: true
+    };
+
+    if (!value) {
+      return;
+    }
+
+    if (typeof value === "string") {
+      output.push(value);
+      return;
+    }
+
+    if (Array.isArray(value)) {
+      value.forEach(function (item) {
+        collectUnitText(item, output);
+      });
+      return;
+    }
+
+    if (typeof value === "object") {
+      Object.keys(value).forEach(function (key) {
+        if (!skipKeys[key]) {
+          collectUnitText(value[key], output);
+        }
+      });
+    }
+  }
+
+  function normalizeFinishText(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/[^\u0400-\u04ff0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function hasFinishWord(source, target) {
+    if (!source || !target) {
+      return false;
+    }
+    return (" " + source + " ").indexOf(" " + target + " ") >= 0;
   }
 
   function renderLessonHeader(title) {
@@ -1995,6 +2079,7 @@
 
     return {
       progressVersion: PROGRESS_VERSION,
+      backupScope: raw.backupScope || "last-screen",
       updatedAt: raw.updatedAt || "1970-01-01T00:00:00.000Z",
       lastOpenedAt: raw.updatedAt || "",
       last: raw.last || {},
@@ -2020,9 +2105,38 @@
   }
 
   function chooseFreshestProgress(items) {
-    return (items || []).filter(Boolean).sort(function (a, b) {
+    var available = (items || []).filter(Boolean);
+    var cookieBackups = available.filter(function (item) {
+      return item.backupScope === "last-screen";
+    });
+    var fullSources = available.filter(function (item) {
+      return item.backupScope !== "last-screen" || hasStoredProgressData(item);
+    });
+    var freshestFull = fullSources.sort(function (a, b) {
       return dateValue(b.updatedAt) - dateValue(a.updatedAt);
     })[0] || null;
+    var freshestCookie = cookieBackups.sort(function (a, b) {
+      return dateValue(b.updatedAt) - dateValue(a.updatedAt);
+    })[0] || null;
+
+    if (freshestFull) {
+      if (freshestCookie && dateValue(freshestCookie.updatedAt) > dateValue(freshestFull.updatedAt)) {
+        freshestFull.last = freshestCookie.last || freshestFull.last;
+        freshestFull.lastOpenedAt = freshestCookie.lastOpenedAt || freshestCookie.updatedAt || freshestFull.lastOpenedAt;
+      }
+      return freshestFull;
+    }
+
+    return freshestCookie || null;
+  }
+
+  function hasStoredProgressData(envelope) {
+    return Boolean(
+      Object.keys(envelope.lessons || {}).length ||
+      Object.keys(envelope.unitSummaries || {}).length ||
+      Object.keys(envelope.stats || {}).length ||
+      envelope.lastAnswer && Object.keys(envelope.lastAnswer).length
+    );
   }
 
   function latestDateFromLessons(lessons) {
@@ -2101,6 +2215,7 @@
     try {
       var backup = {
         progressVersion: PROGRESS_VERSION,
+        backupScope: "last-screen",
         updatedAt: envelope.updatedAt,
         last: envelope.last || {},
         hash: progressHash(envelope)

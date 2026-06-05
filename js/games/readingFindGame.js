@@ -172,7 +172,7 @@
         });
 
         root.querySelector('[data-reading-action="check"]').addEventListener("click", function () {
-          checkAnswer(arraysEqual(selectedTiles, task.correct), null, selectedTiles.join("+"));
+          checkAnswer(arraysEqual(selectedTiles, task.correct), null, selectedTiles.join("+"), task);
         });
         return;
       }
@@ -183,7 +183,7 @@
             return;
           }
           var selected = button.getAttribute("data-choice");
-          checkAnswer(selected === task.correct, button, selected);
+          checkAnswer(selected === task.correct, button, selected, task);
         });
       });
     }
@@ -205,7 +205,7 @@
       }
     }
 
-    function checkAnswer(isCorrect, button, selected) {
+    function checkAnswer(isCorrect, button, selected, task) {
       var feedback = root.querySelector("#reading-game-feedback");
       locked = true;
 

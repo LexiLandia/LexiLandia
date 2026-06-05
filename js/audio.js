@@ -52,7 +52,11 @@ const USE_TTS_FALLBACK = false;
           finish(true);
         }, 7000);
       }).catch(function (error) {
-        if (!error || error.name !== "NotAllowedError") {
+        if (error && error.name === "NotAllowedError") {
+          if (currentRequest && typeof currentRequest.onMissing === "function") {
+            currentRequest.onMissing("Нажми «Слушать», чтобы включить звук");
+          }
+        } else {
           handleMissing(currentRequest);
         }
         finish(false);
