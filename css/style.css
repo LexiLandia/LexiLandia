@@ -4483,6 +4483,135 @@ button.unit6-room-object {
   grid-template-columns: 1fr;
 }
 
+.unit2-scene-visual {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 112px;
+  border: 3px solid var(--orange);
+  background: #050505;
+}
+
+.unit2-scene-zone {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 6px;
+  min-width: 0;
+  padding: 9px;
+  text-align: center;
+}
+
+.unit2-scene-zone + .unit2-scene-zone {
+  border-left: 2px dashed var(--orange);
+}
+
+.unit2-scene-zone > strong {
+  color: var(--orange);
+  font-size: 1.3rem;
+}
+
+.unit2-scene-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: clamp(2rem, 9vw, 4rem);
+  line-height: 1;
+}
+
+.unit2-scene-text {
+  display: grid;
+  gap: 2px;
+  padding: 7px 9px;
+  border: 2px solid var(--orange);
+  background: #050505;
+  text-align: center;
+}
+
+.unit2-scene-text p {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(0.95rem, 4vw, 1.45rem);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.unit2-pair-map {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.unit2-pair-cell {
+  min-height: 78px;
+  padding: 7px;
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  background: #050505;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.unit2-pair-cell span,
+.unit2-pair-cell small {
+  display: block;
+}
+
+.unit2-pair-cell span {
+  font-size: clamp(1.8rem, 7vw, 3rem);
+}
+
+.unit2-pair-cell small {
+  margin-top: 3px;
+  font-size: clamp(0.72rem, 3vw, 1rem);
+}
+
+.unit2-pair-cell.is-selected {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+  transform: translateY(-2px);
+}
+
+.unit2-pair-check {
+  width: 100%;
+}
+
+.reading-syllable-road {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  min-height: 104px;
+  padding: 10px;
+  border: 3px solid var(--orange);
+  background: #050505;
+}
+
+.reading-road-chip {
+  min-width: 64px;
+  padding: 8px 10px;
+  border: 2px solid var(--orange);
+  color: #ffffff;
+  font-size: clamp(1.5rem, 7vw, 2.6rem);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.reading-road-arrow {
+  color: var(--orange);
+  font-size: clamp(1.4rem, 6vw, 2.2rem);
+  font-weight: 1000;
+}
+
+.reading-road-result {
+  margin-left: 5px;
+  font-size: clamp(2rem, 9vw, 4rem);
+}
+
 .unit2-game-final {
   min-height: min(62dvh, 560px);
   place-items: center;
@@ -4565,5 +4694,471 @@ button.unit6-room-object {
 
   .unit2-option-emoji {
     font-size: clamp(1.35rem, 5.5dvh, 2.1rem);
+  }
+
+  .unit2-scene-visual {
+    min-height: 76px;
+  }
+
+  .unit2-scene-zone {
+    padding: 5px;
+  }
+
+  .unit2-scene-items {
+    font-size: clamp(1.6rem, 7dvh, 2.7rem);
+  }
+
+  .unit2-scene-text {
+    padding: 4px 6px;
+  }
+
+  .unit2-pair-cell {
+    min-height: 54px;
+    padding: 4px;
+  }
+
+  .unit2-pair-cell span {
+    font-size: clamp(1.45rem, 6dvh, 2.2rem);
+  }
+
+  .reading-syllable-road {
+    min-height: 72px;
+    padding: 6px;
+  }
+
+  .reading-road-chip {
+    min-width: 48px;
+    padding: 5px 7px;
+    font-size: clamp(1.1rem, 5dvh, 1.8rem);
+  }
+}
+
+.world-game-screen {
+  align-content: start;
+}
+
+.world-game-card {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  min-height: min(72dvh, 680px);
+  border-color: var(--orange);
+  background: #0a0a0a;
+}
+
+.world-game-top {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.world-game-mark {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border: 3px solid var(--orange);
+  background: #050505;
+  font-size: 1.8rem;
+}
+
+.world-game-label,
+.world-game-title,
+.world-game-instruction,
+.world-scene-title,
+.world-movie-prompt {
+  margin: 0;
+}
+
+.world-game-label {
+  color: var(--orange);
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.world-game-title {
+  color: #ffffff;
+  font-size: clamp(1.35rem, 6vw, 2.4rem);
+  font-weight: 1000;
+  line-height: 1.02;
+}
+
+.world-game-progress {
+  height: 8px;
+  border: 2px solid var(--orange);
+  background: #050505;
+}
+
+.world-game-progress span {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+}
+
+.world-game-instruction {
+  color: var(--orange);
+  font-size: clamp(1.15rem, 5vw, 1.9rem);
+  font-weight: 1000;
+  line-height: 1.08;
+}
+
+.world-game-task {
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+}
+
+.world-scene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.world-scene-cell,
+.world-freeze-cell,
+.world-item-button,
+.world-option-button,
+.world-tile-button {
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  background: #050505;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.world-scene-cell {
+  display: grid;
+  gap: 3px;
+  min-height: 90px;
+  place-items: center;
+  padding: 7px 5px;
+}
+
+.world-scene-emoji {
+  font-size: clamp(2rem, 9vw, 3.9rem);
+  line-height: 1;
+}
+
+.world-scene-label,
+.world-freeze-text,
+.world-item-button strong,
+.world-option-button strong,
+.world-tile-button strong {
+  font-size: clamp(0.9rem, 4vw, 1.35rem);
+  line-height: 1.05;
+}
+
+.world-scene-cell.is-correct,
+.world-item-button.is-correct,
+.world-option-button.is-correct,
+.world-tile-button.is-correct,
+.world-freeze-cell.is-correct {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.world-scene-cell.is-wrong,
+.world-item-button.is-wrong,
+.world-option-button.is-wrong,
+.world-tile-button.is-wrong,
+.world-freeze-cell.is-wrong {
+  border-color: var(--red);
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+.world-scene-cell.is-forbidden {
+  border-color: #ffd27a;
+  background: rgba(255, 160, 43, 0.16);
+  color: #ffd27a;
+}
+
+.world-freeze-task {
+  place-items: center;
+}
+
+.world-freeze-cell {
+  display: grid;
+  width: min(100%, 420px);
+  min-height: min(34dvh, 280px);
+  place-items: center;
+  padding: 18px;
+}
+
+.world-freeze-emoji {
+  font-size: clamp(4rem, 24vw, 8rem);
+  line-height: 1;
+}
+
+.world-soft-hint {
+  margin: 0;
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.world-shop-scene,
+.world-dialogue-scene,
+.world-flow-box,
+.world-director-scene,
+.world-request-target,
+.world-backpack {
+  border: 2px solid var(--orange);
+  background: #050505;
+}
+
+.world-shop-scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 78px;
+  font-size: clamp(2.3rem, 11vw, 4.8rem);
+}
+
+.world-shelf,
+.world-option-grid,
+.world-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.world-item-button,
+.world-option-button,
+.world-tile-button {
+  display: grid;
+  gap: 4px;
+  min-height: 78px;
+  place-items: center;
+  padding: 8px 7px;
+}
+
+.world-item-button span,
+.world-option-button span,
+.world-tile-button span {
+  font-size: clamp(1.9rem, 8vw, 3.3rem);
+  line-height: 1;
+}
+
+.world-dialogue-scene,
+.world-flow-box {
+  display: grid;
+  gap: 8px;
+  min-height: 96px;
+  place-items: center;
+  padding: 12px;
+  text-align: center;
+}
+
+.world-dialogue-scene span {
+  font-size: clamp(2.6rem, 12vw, 4.2rem);
+}
+
+.world-dialogue-scene p,
+.world-flow-box p,
+.world-final-text {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 5vw, 1.75rem);
+  font-weight: 1000;
+  line-height: 1.12;
+}
+
+.world-director-scene,
+.world-request-target {
+  display: grid;
+  min-height: 88px;
+  place-items: center;
+  font-size: clamp(3rem, 15vw, 5.6rem);
+}
+
+.world-builder-row {
+  display: grid;
+  gap: 6px;
+}
+
+.world-builder-row p {
+  margin: 0;
+  color: var(--orange);
+  font-weight: 1000;
+}
+
+.world-selected-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 7px;
+  border: 2px dashed var(--orange);
+  background: #050505;
+}
+
+.world-selected-row span {
+  padding: 6px 9px;
+  background: var(--orange);
+  color: #050505;
+  font-weight: 1000;
+}
+
+.world-placeholder {
+  opacity: 0.6;
+}
+
+.world-tile-button.is-selected,
+.world-tile-button:disabled {
+  opacity: 0.62;
+}
+
+.world-check-button,
+.world-build-buttons {
+  width: 100%;
+}
+
+.world-backpack {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.world-backpack-icon {
+  text-align: center;
+  font-size: clamp(3rem, 14vw, 5rem);
+}
+
+.world-net-button {
+  color: var(--red);
+}
+
+.world-movie-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.world-movie-frame {
+  display: grid;
+  min-height: 72px;
+  place-items: center;
+  border: 2px solid var(--orange);
+  background: #050505;
+  font-size: clamp(2rem, 9vw, 3.5rem);
+}
+
+.world-movie-frame.is-done {
+  border-color: var(--green);
+  background: var(--green-soft);
+}
+
+.world-movie-prompt {
+  color: #ffffff;
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.world-game-feedback {
+  min-height: 42px;
+}
+
+.world-game-nav {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 480px) {
+  .world-game-card {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .world-game-top {
+    grid-template-columns: 46px minmax(0, 1fr);
+  }
+
+  .world-game-mark {
+    width: 46px;
+    height: 46px;
+    font-size: 1.45rem;
+  }
+
+  .world-scene-grid,
+  .world-shelf,
+  .world-option-grid,
+  .world-tile-grid {
+    gap: 6px;
+  }
+}
+
+@media (max-height: 740px) {
+  .world-game-card {
+    min-height: auto;
+    gap: 6px;
+    padding: 9px;
+  }
+
+  .world-game-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1.35rem;
+  }
+
+  .world-game-top {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .world-game-title {
+    font-size: clamp(1.1rem, 4dvh, 1.8rem);
+  }
+
+  .world-game-instruction {
+    font-size: clamp(1rem, 3.7dvh, 1.45rem);
+  }
+
+  .world-scene-cell,
+  .world-item-button,
+  .world-option-button,
+  .world-tile-button {
+    min-height: 56px;
+    padding: 5px;
+  }
+
+  .world-scene-emoji,
+  .world-item-button span,
+  .world-option-button span,
+  .world-tile-button span {
+    font-size: clamp(1.5rem, 6.4dvh, 2.4rem);
+  }
+
+  .world-freeze-cell {
+    min-height: min(28dvh, 190px);
+    padding: 10px;
+  }
+
+  .world-freeze-emoji {
+    font-size: clamp(3rem, 16dvh, 5.2rem);
+  }
+
+  .world-shop-scene,
+  .world-director-scene,
+  .world-request-target {
+    min-height: 58px;
+  }
+
+  .world-shop-scene,
+  .world-director-scene,
+  .world-request-target,
+  .world-backpack-icon {
+    font-size: clamp(2.2rem, 10dvh, 3.6rem);
+  }
+
+  .world-dialogue-scene,
+  .world-flow-box {
+    min-height: 64px;
+    padding: 8px;
   }
 }

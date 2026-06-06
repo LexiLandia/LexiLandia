@@ -27,22 +27,28 @@
       "unitCount": 2
     },
     {
+      "id": "unit-1-reading-world-games",
+      "order": 4,
+      "title": "Игры чтения",
+      "unitCount": 5
+    },
+    {
       "id": "level-0-unit-2-kto-chto-malenkiy-mir",
       "order": 4,
       "title": "Юнит 2: Кто? Что? Маленький мир",
-      "unitCount": 5
+      "unitCount": 11
     },
     {
       "id": "level-0-unit-3-actions",
       "order": 5,
       "title": "Юнит 3: Что делает? Маленький мир живёт",
-      "unitCount": 6
+      "unitCount": 11
     },
     {
       "id": "level-0-unit-4-personal-phrases",
       "order": 6,
       "title": "Юнит 4: Я хочу. Дай. У меня есть.",
-      "unitCount": 6
+      "unitCount": 12
     },
     {
       "id": "level-0-unit-5-movement-map",
@@ -115,9 +121,15 @@
       "order": 18,
       "title": "Юнит 16: Город и транспорт",
       "unitCount": 10
+    },
+    {
+      "id": "level-0-unit-17-kitchen-things",
+      "order": 19,
+      "title": "Юнит 17: Кухня и вещи вокруг",
+      "unitCount": 3
     }
   ],
-  "audioCount": 1540,
+  "audioCount": 1700,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -341,6 +353,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/butylka.mp3",
+      "text": "бутылка",
+      "speechText": "бутылка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/bystrye_zakazy.mp3",
+      "text": "быстрые заказы",
+      "speechText": "быстрые заказы",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/ch.mp3",
       "text": "Ч",
       "speechText": "Ч",
@@ -351,13 +383,73 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/chashka.mp3",
+      "text": "чашка",
+      "speechText": "чашка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chashka_na_stole.mp3",
+      "text": "Чашка на столе.",
+      "speechText": "Чашка на столе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chashke.mp3",
+      "text": "чашке",
+      "speechText": "чашке",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chashki.mp3",
+      "text": "чашки",
+      "speechText": "чашки",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chashku.mp3",
+      "text": "чашку",
+      "speechText": "чашку",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/chay.mp3",
       "text": "чай",
       "speechText": "чай",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-10-food-drinks",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chaynik.mp3",
+      "text": "чайник",
+      "speechText": "чайник",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -422,12 +514,12 @@
     },
     {
       "audio": "assets/audio/ru/chto.mp3",
-      "text": "Что?",
-      "speechText": "Что?",
+      "text": "что",
+      "speechText": "что",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -457,7 +549,17 @@
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chto_skazat.mp3",
+      "text": "что сказать?",
+      "speechText": "что сказать?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
       "exists": true
     },
     {
@@ -512,12 +614,22 @@
     },
     {
       "audio": "assets/audio/ru/dai.mp3",
-      "text": "Дай.",
-      "speechText": "Дай.",
+      "text": "дай",
+      "speechText": "дай",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dai_chashku_pozhaluysta.mp3",
+      "text": "Дай чашку, пожалуйста.",
+      "speechText": "Дай чашку, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -538,6 +650,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/dai_lozhku_pozhaluysta.mp3",
+      "text": "Дай ложку, пожалуйста.",
+      "speechText": "Дай ложку, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -872,12 +994,12 @@
     },
     {
       "audio": "assets/audio/ru/dver.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "дверь",
+      "speechText": "дверь",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -947,7 +1069,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -957,7 +1079,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -1681,6 +1803,36 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/film_kot.mp3",
+      "text": "Фильм: кот",
+      "speechText": "Фильм: кот",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/film_malchik.mp3",
+      "text": "Фильм: мальчик",
+      "speechText": "Фильм: мальчик",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/film_mama.mp3",
+      "text": "Фильм: мама",
+      "speechText": "Фильм: мама",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/fo.mp3",
       "text": "фо",
       "speechText": "фо",
@@ -1732,12 +1884,12 @@
     },
     {
       "audio": "assets/audio/ru/gde.mp3",
-      "text": "Где?",
-      "speechText": "Где?",
+      "text": "где",
+      "speechText": "где",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -2037,7 +2189,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-10-food-drinks",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -2077,7 +2229,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/holodilnik.mp3",
+      "text": "холодильник",
+      "speechText": "холодильник",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -2551,6 +2713,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kastryulya.mp3",
+      "text": "кастрюля",
+      "speechText": "кастрюля",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/klass.mp3",
       "text": "класс",
       "speechText": "класс",
@@ -2627,7 +2799,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -2721,6 +2893,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kot_idyot_gde_kot.mp3",
+      "text": "Кот идёт. Где кот?",
+      "speechText": "Кот идёт. Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kot_idyot_tuda.mp3",
       "text": "Кот идёт туда.",
       "speechText": "Кот идёт туда.",
@@ -2741,6 +2923,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kot_igraet_naydi_kota.mp3",
+      "text": "Кот играет. Найди кота.",
+      "speechText": "Кот играет. Найди кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kot_igraet_q.mp3",
       "text": "Кот играет?",
       "speechText": "Кот играет?",
@@ -2751,9 +2943,29 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kot_ne_spit.mp3",
+      "text": "Кот не спит.",
+      "speechText": "Кот не спит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kot_ne_spit_kot_idyot.mp3",
       "text": "Кот не спит. Кот идёт.",
       "speechText": "Кот не спит. Кот идёт.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_ne_spit_naydi_kota.mp3",
+      "text": "Кот не спит. Найди кота.",
+      "speechText": "Кот не спит. Найди кота.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -2808,6 +3020,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-9-my-day",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_spit_naydi_mamu.mp3",
+      "text": "Кот спит. Найди маму.",
+      "speechText": "Кот спит. Найди маму.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_spit_naydi_myach.mp3",
+      "text": "Кот спит. Найди мяч.",
+      "speechText": "Кот спит. Найди мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kot_spit_naydi_sobaku.mp3",
+      "text": "Кот спит. Найди собаку.",
+      "speechText": "Кот спит. Найди собаку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
       "exists": true
     },
     {
@@ -2941,6 +3183,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kto_chitaet.mp3",
+      "text": "Кто читает?",
+      "speechText": "Кто читает?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto_est_hleb.mp3",
+      "text": "Кто ест хлеб?",
+      "speechText": "Кто ест хлеб?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kto_eto.mp3",
       "text": "Кто это?",
       "speechText": "Кто это?",
@@ -2971,9 +3233,39 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/kto_igraet.mp3",
+      "text": "Кто играет?",
+      "speechText": "Кто играет?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto_pyot_vodu.mp3",
+      "text": "Кто пьёт воду?",
+      "speechText": "Кто пьёт воду?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/kto_sidit.mp3",
       "text": "Кто сидит?",
       "speechText": "Кто сидит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kto_spit.mp3",
+      "text": "Кто спит?",
+      "speechText": "Кто спит?",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -3031,13 +3323,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/kuhnya.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "audio": "assets/audio/ru/kuhne.mp3",
+      "text": "кухне",
+      "speechText": "кухне",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/kuhnya.mp3",
+      "text": "кухня",
+      "speechText": "кухня",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -3731,6 +4033,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/lezhit.mp3",
+      "text": "лежит",
+      "speechText": "лежит",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/li.mp3",
       "text": "ли",
       "speechText": "ли",
@@ -3748,6 +4060,36 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lozhka.mp3",
+      "text": "ложка",
+      "speechText": "ложка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lozhka_v_chashke.mp3",
+      "text": "Ложка в чашке.",
+      "speechText": "Ложка в чашке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/lozhku.mp3",
+      "text": "ложку",
+      "speechText": "ложку",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -3911,6 +4253,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/malchik_igraet.mp3",
+      "text": "Мальчик играет.",
+      "speechText": "Мальчик играет.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/malchik_pyot_vodu.mp3",
+      "text": "Мальчик пьёт воду.",
+      "speechText": "Мальчик пьёт воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/malenkaya.mp3",
       "text": "маленькая",
       "speechText": "маленькая",
@@ -3928,6 +4290,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/malenkiy_film.mp3",
+      "text": "маленький фильм",
+      "speechText": "маленький фильм",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
       "exists": true
     },
     {
@@ -4107,7 +4479,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4148,6 +4520,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/miska.mp3",
+      "text": "миска",
+      "speechText": "миска",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4372,12 +4754,12 @@
     },
     {
       "audio": "assets/audio/ru/myach.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "мяч",
+      "speechText": "мяч",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4497,17 +4879,17 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-16-city-transport",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
       "audio": "assets/audio/ru/na_kuhne.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "text": "на кухне",
+      "speechText": "на кухне",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4541,13 +4923,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/na_stole.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "audio": "assets/audio/ru/na_polke.mp3",
+      "text": "на полке",
+      "speechText": "на полке",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/na_stole.mp3",
+      "text": "на столе",
+      "speechText": "на столе",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4931,13 +5323,33 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/ne_hvataet.mp3",
+      "text": "не хватает",
+      "speechText": "не хватает",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ne_trogay_kota.mp3",
+      "text": "не трогай кота",
+      "speechText": "не трогай кота",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/net.mp3",
       "text": "нет",
       "speechText": "нет",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-5-movement-map",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -4998,6 +5410,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-11-clothes-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nozh.mp3",
+      "text": "нож",
+      "speechText": "нож",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/nozh_ryadom_s_tarelkoy.mp3",
+      "text": "Нож рядом с тарелкой.",
+      "speechText": "Нож рядом с тарелкой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5102,12 +5534,12 @@
     },
     {
       "audio": "assets/audio/ru/okno.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "окно",
+      "speechText": "окно",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5252,12 +5684,12 @@
     },
     {
       "audio": "assets/audio/ru/otlichno.mp3",
-      "text": "Отлично!",
-      "speechText": "Отлично!",
+      "text": "отлично",
+      "speechText": "отлично",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-3-actions",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5431,6 +5863,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/plita.mp3",
+      "text": "плита",
+      "speechText": "плита",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/po.mp3",
       "text": "по",
       "speechText": "по",
@@ -5501,6 +5943,76 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/poimay.mp3",
+      "text": "поймай",
+      "speechText": "поймай",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_devochka_pyot_vodu.mp3",
+      "text": "Поймай: девочка пьёт воду.",
+      "speechText": "Поймай: девочка пьёт воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_kot_spit.mp3",
+      "text": "Поймай: кот спит.",
+      "speechText": "Поймай: кот спит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_malchik_est_hleb.mp3",
+      "text": "Поймай: мальчик ест хлеб.",
+      "speechText": "Поймай: мальчик ест хлеб.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_mama_chitaet.mp3",
+      "text": "Поймай: мама читает.",
+      "speechText": "Поймай: мама читает.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_papa_sidit.mp3",
+      "text": "Поймай: папа сидит.",
+      "speechText": "Поймай: папа сидит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poimay_sobaka_stoit.mp3",
+      "text": "Поймай: собака стоит.",
+      "speechText": "Поймай: собака стоит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/pokazhi.mp3",
       "text": "покажи",
       "speechText": "покажи",
@@ -5551,6 +6063,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/polka.mp3",
+      "text": "полка",
+      "speechText": "полка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/polke.mp3",
+      "text": "полке",
+      "speechText": "полке",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/pomogaet.mp3",
       "text": "помогает",
       "speechText": "помогает",
@@ -5558,6 +6090,46 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-14-family-people",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poprosi.mp3",
+      "text": "попроси",
+      "speechText": "попроси",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poprosi_knigu.mp3",
+      "text": "Попроси книгу.",
+      "speechText": "Попроси книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/poprosi_myach.mp3",
+      "text": "Попроси мяч.",
+      "speechText": "Попроси мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/posuda.mp3",
+      "text": "посуда",
+      "speechText": "посуда",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5575,6 +6147,26 @@
       "text": "пожалуйста",
       "speechText": "пожалуйста",
       "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/prodavec.mp3",
+      "text": "продавец",
+      "speechText": "продавец",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/prodavec_govorit_na.mp3",
+      "text": "Продавец говорит: На.",
+      "speechText": "Продавец говорит: На.",
+      "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
@@ -5658,6 +6250,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/rakovina.mp3",
+      "text": "раковина",
+      "speechText": "раковина",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/rezhissyor.mp3",
+      "text": "режиссёр",
+      "speechText": "режиссёр",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
       "exists": true
     },
     {
@@ -5807,7 +6419,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-16-city-transport",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5818,6 +6430,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-6-location-room",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ryadom_s_tarelkoy.mp3",
+      "text": "рядом с тарелкой",
+      "speechText": "рядом с тарелкой",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5841,13 +6463,23 @@
       "exists": true
     },
     {
-      "audio": "assets/audio/ru/s.mp3",
-      "text": "С",
-      "speechText": "С",
-      "rate": "-50%",
+      "audio": "assets/audio/ru/ryukzak.mp3",
+      "text": "рюкзак",
+      "speechText": "рюкзак",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/s.mp3",
+      "text": "с",
+      "speechText": "с",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -5858,6 +6490,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/salfetka.mp3",
+      "text": "салфетка",
+      "speechText": "салфетка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6012,12 +6654,22 @@
     },
     {
       "audio": "assets/audio/ru/shkaf.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "шкаф",
+      "speechText": "шкаф",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/shkafu.mp3",
+      "text": "шкафу",
+      "speechText": "шкафу",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6121,6 +6773,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/skovoroda.mp3",
+      "text": "сковорода",
+      "speechText": "сковорода",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/sneg.mp3",
       "text": "Снег.",
       "speechText": "Снег.",
@@ -6158,6 +6820,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-15-home-rooms",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/sobaka_igraet.mp3",
+      "text": "Собака играет.",
+      "speechText": "Собака играет.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
       "exists": true
     },
     {
@@ -6211,6 +6883,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/soberi_prosbu.mp3",
+      "text": "собери просьбу",
+      "speechText": "собери просьбу",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/soft.mp3",
       "text": "Ь",
       "speechText": "Ь",
@@ -6242,12 +6924,12 @@
     },
     {
       "audio": "assets/audio/ru/spasibo.mp3",
-      "text": "Спасибо.",
-      "speechText": "Спасибо.",
+      "text": "спасибо",
+      "speechText": "спасибо",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-11-clothes-colors",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6258,6 +6940,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/stakan.mp3",
+      "text": "стакан",
+      "speechText": "стакан",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6272,12 +6964,12 @@
     },
     {
       "audio": "assets/audio/ru/stol.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "стол",
+      "speechText": "стол",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6301,6 +6993,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/stole.mp3",
+      "text": "столе",
+      "speechText": "столе",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/stoy.mp3",
       "text": "Стой.",
       "speechText": "Стой.",
@@ -6312,12 +7014,12 @@
     },
     {
       "audio": "assets/audio/ru/stul.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "rate": "-22%",
+      "text": "стул",
+      "speechText": "стул",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6437,7 +7139,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6551,6 +7253,46 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/tarelka.mp3",
+      "text": "тарелка",
+      "speechText": "тарелка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tarelki.mp3",
+      "text": "тарелки",
+      "speechText": "тарелки",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tarelkoy.mp3",
+      "text": "тарелкой",
+      "speechText": "тарелкой",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/tarelku.mp3",
+      "text": "тарелку",
+      "speechText": "тарелку",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/te.mp3",
       "text": "тэ",
       "speechText": "тэ",
@@ -6561,13 +7303,23 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/tebe_dali_telefon.mp3",
+      "text": "Тебе дали телефон.",
+      "speechText": "Тебе дали телефон.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/telefon.mp3",
       "text": "телефон",
       "speechText": "телефон",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6737,7 +7489,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-6-location-room",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -6748,6 +7500,26 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "lesson-2-gde-zdes-tam",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty_hochesh_hleb.mp3",
+      "text": "Ты хочешь хлеб.",
+      "speechText": "Ты хочешь хлеб.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ty_hochesh_vodu.mp3",
+      "text": "Ты хочешь воду.",
+      "speechText": "Ты хочешь воду.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
       "exists": true
     },
     {
@@ -6802,12 +7574,12 @@
     },
     {
       "audio": "assets/audio/ru/u.mp3",
-      "text": "У",
-      "speechText": "У",
-      "rate": "-50%",
+      "text": "у",
+      "speechText": "у",
+      "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-0-reading",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -11271,6 +12043,436 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u17_l49_dver_zdes.mp3",
+      "text": "Дверь здесь.",
+      "speechText": "Дверь здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_eto_holodilnik.mp3",
+      "text": "Это холодильник.",
+      "speechText": "Это холодильник.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_eto_plita.mp3",
+      "text": "Это плита.",
+      "speechText": "Это плита.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_eto_rakovina.mp3",
+      "text": "Это раковина.",
+      "speechText": "Это раковина.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_final.mp3",
+      "text": "Отлично! Кухня. Стол. Стул. Холодильник. Плита. Раковина.",
+      "speechText": "Отлично! Кухня. Стол. Стул. Холодильник. Плита. Раковина.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_na_kuhne_stol.mp3",
+      "text": "На кухне стол.",
+      "speechText": "На кухне стол.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_na_kuhne_stul.mp3",
+      "text": "На кухне стул.",
+      "speechText": "На кухне стул.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_okno_tam.mp3",
+      "text": "Окно там.",
+      "speechText": "Окно там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_tam_polka.mp3",
+      "text": "Там полка.",
+      "speechText": "Там полка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_text_1.mp3",
+      "text": "Это кухня. На кухне стол. Тут холодильник. Там окно.",
+      "speechText": "Это кухня. На кухне стол. Тут холодильник. Там окно.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l49_tut_shkaf.mp3",
+      "text": "Тут шкаф.",
+      "speechText": "Тут шкаф.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_chashka_i_lozhka.mp3",
+      "text": "Чашка и ложка.",
+      "speechText": "Чашка и ложка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_butylka.mp3",
+      "text": "Это бутылка.",
+      "speechText": "Это бутылка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_chashka.mp3",
+      "text": "Это чашка.",
+      "speechText": "Это чашка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_chaynik.mp3",
+      "text": "Это чайник.",
+      "speechText": "Это чайник.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_lozhka.mp3",
+      "text": "Это ложка.",
+      "speechText": "Это ложка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_miska.mp3",
+      "text": "Это миска.",
+      "speechText": "Это миска.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_nozh.mp3",
+      "text": "Это нож.",
+      "speechText": "Это нож.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_stakan.mp3",
+      "text": "Это стакан.",
+      "speechText": "Это стакан.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_tarelka.mp3",
+      "text": "Это тарелка.",
+      "speechText": "Это тарелка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_eto_vilka.mp3",
+      "text": "Это вилка.",
+      "speechText": "Это вилка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_final.mp3",
+      "text": "Отлично! Тарелка. Чашка. Ложка. Вилка. Нож. Стакан.",
+      "speechText": "Отлично! Тарелка. Чашка. Ложка. Вилка. Нож. Стакан.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_na_stole_tarelka.mp3",
+      "text": "На столе тарелка.",
+      "speechText": "На столе тарелка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l50_text_1.mp3",
+      "text": "На столе тарелка. Тут чашка. У меня есть ложка. У меня нет вилки.",
+      "speechText": "На столе тарелка. Тут чашка. У меня есть ложка. У меня нет вилки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_butylka_tam.mp3",
+      "text": "Бутылка там.",
+      "speechText": "Бутылка там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_chaynik_zdes.mp3",
+      "text": "Чайник здесь.",
+      "speechText": "Чайник здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_final.mp3",
+      "text": "Отлично! Кухня. Чашка. Ложка. Тарелка. На столе. В чашке.",
+      "speechText": "Отлично! Кухня. Чашка. Ложка. Тарелка. На столе. В чашке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_final_text.mp3",
+      "text": "Я на кухне. На столе чашка. В чашке ложка. Я хочу чай. Дай чашку, пожалуйста. Спасибо.",
+      "speechText": "Я на кухне. На столе чашка. В чашке ложка. Я хочу чай. Дай чашку, пожалуйста. Спасибо.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_gde_chashka.mp3",
+      "text": "Где чашка?",
+      "speechText": "Где чашка?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_small_kitchen.mp3",
+      "text": "Это кухня. На столе чашка. В чашке ложка. Рядом тарелка.",
+      "speechText": "Это кухня. На столе чашка. В чашке ложка. Рядом тарелка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_stakan_na_polke.mp3",
+      "text": "Стакан на полке.",
+      "speechText": "Стакан на полке.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_tarelka_na_stole.mp3",
+      "text": "Тарелка на столе.",
+      "speechText": "Тарелка на столе.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_text_1.mp3",
+      "text": "Чашка на столе. Ложка в чашке. Нож рядом с тарелкой.",
+      "speechText": "Чашка на столе. Ложка в чашке. Нож рядом с тарелкой.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_text_2.mp3",
+      "text": "Вилка в шкафу. Стакан на полке. Чайник здесь. Бутылка там.",
+      "speechText": "Вилка в шкафу. Стакан на полке. Чайник здесь. Бутылка там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u17_l51_vilka_v_shkafu.mp3",
+      "text": "Вилка в шкафу.",
+      "speechText": "Вилка в шкафу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_appeared_full.mp3",
+      "text": "Тут дом.\nТут кот.\nМама дома.",
+      "speechText": "Тут дом.\nТут кот.\nМама дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_appeared_mama_doma.mp3",
+      "text": "Мама дома.",
+      "speechText": "Мама дома.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_appeared_tut_dom.mp3",
+      "text": "Тут дом.",
+      "speechText": "Тут дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_appeared_tut_kot.mp3",
+      "text": "Тут кот.",
+      "speechText": "Тут кот.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_little_world_full.mp3",
+      "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
+      "speechText": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_little_world_kto_doma.mp3",
+      "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
+      "speechText": "Кто дома?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_little_world_kto_spit.mp3",
+      "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
+      "speechText": "Кто спит?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_little_world_kto_tut.mp3",
+      "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
+      "speechText": "Кто тут?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u2_game_devochka_kniga_tam.mp3",
       "text": "Девочка там.\nКнига там.",
       "speechText": "Девочка там.\nКнига там.",
@@ -11441,6 +12643,276 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u2_pairs_mama_kot.mp3",
+      "text": "Найди маму и кота.",
+      "speechText": "Найди маму и кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_pairs_myach_kniga.mp3",
+      "text": "Найди мяч и книгу.",
+      "speechText": "Найди мяч и книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_pairs_papa_sobaka.mp3",
+      "text": "Найди папу и собаку.",
+      "speechText": "Найди папу и собаку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_pairs_stol_stul.mp3",
+      "text": "Найди стол и стул.",
+      "speechText": "Найди стол и стул.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_pairs_telefon_yabloko.mp3",
+      "text": "Найди телефон и яблоко.",
+      "speechText": "Найди телефон и яблоко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_pairs_voda_hleb.mp3",
+      "text": "Найди воду и хлеб.",
+      "speechText": "Найди воду и хлеб.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_kniga_tam.mp3",
+      "text": "Книга там.",
+      "speechText": "Книга там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_kot_zdes.mp3",
+      "text": "Кот здесь.",
+      "speechText": "Кот здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_mama_zdes.mp3",
+      "text": "Мама здесь.",
+      "speechText": "Мама здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_myach_zdes.mp3",
+      "text": "Мяч здесь.",
+      "speechText": "Мяч здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_papa_tam.mp3",
+      "text": "Папа там.",
+      "speechText": "Папа там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_sobaka_tam.mp3",
+      "text": "Собака там.",
+      "speechText": "Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_telefon_zdes.mp3",
+      "text": "Телефон здесь.",
+      "speechText": "Телефон здесь.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_place_voda_tam.mp3",
+      "text": "Вода там.",
+      "speechText": "Вода там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_chto_tam.mp3",
+      "text": "Мама, кот и мяч здесь. Папа, собака и книга там.",
+      "speechText": "Что там?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_chto_zdes.mp3",
+      "text": "Мама, кот и мяч здесь. Папа, собака и книга там.",
+      "speechText": "Что здесь?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_gde_kniga.mp3",
+      "text": "Книга там.",
+      "speechText": "Где книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_gde_kot.mp3",
+      "text": "Кот здесь.",
+      "speechText": "Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_kto_tam.mp3",
+      "text": "Мама, кот и мяч здесь. Папа, собака и книга там.",
+      "speechText": "Кто там?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_small_world_kto_zdes.mp3",
+      "text": "Мама, кот и мяч здесь. Папа, собака и книга там.",
+      "speechText": "Кто здесь?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_story_1.mp3",
+      "text": "Мама здесь.\nКот здесь.\nПапа там.\nСобака там.\nТут дом.\nТам парк.",
+      "speechText": "Мама здесь.\nКот здесь.\nПапа там.\nСобака там.\nТут дом.\nТам парк.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_story_2.mp3",
+      "text": "Мальчик здесь.\nТелефон здесь.\nДевочка там.\nКнига там.\nТут кафе.\nТам дом.",
+      "speechText": "Мальчик здесь.\nТелефон здесь.\nДевочка там.\nКнига там.\nТут кафе.\nТам дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_story_3.mp3",
+      "text": "Кот здесь.\nСобака там.\nМяч здесь.\nКнига там.",
+      "speechText": "Кот здесь.\nСобака там.\nМяч здесь.\nКнига там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_truth_scene_1.mp3",
+      "text": "Мама здесь. Кот здесь. Папа там. Собака там.",
+      "speechText": "Мама здесь. Кот здесь. Папа там. Собака там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_truth_scene_2.mp3",
+      "text": "Мяч здесь. Телефон здесь. Книга там. Хлеб там.",
+      "speechText": "Мяч здесь. Телефон здесь. Книга там. Хлеб там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_truth_scene_3.mp3",
+      "text": "Мальчик здесь. Стол здесь. Девочка там. Стул там.",
+      "speechText": "Мальчик здесь. Стол здесь. Девочка там. Стул там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u2_truth_scene_4.mp3",
+      "text": "Кот здесь. Мяч здесь. Собака там. Книга там.",
+      "speechText": "Кот здесь. Мяч здесь. Собака там. Книга там.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-2-kto-chto-malenkiy-mir",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u3_game3_final.mp3",
       "text": "Отлично! Маленький мир живёт!",
       "speechText": "Отлично! Маленький мир живёт!",
@@ -11484,6 +12956,46 @@
       "audio": "assets/audio/ru/u4_l12_final.mp3",
       "text": "Отлично! У меня есть. У меня нет. Я хочу.",
       "speechText": "Отлично! У меня есть. У меня нет. Я хочу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u4_missing_hleb.mp3",
+      "text": "У меня нет хлеба. Я хочу хлеб.",
+      "speechText": "У меня нет хлеба. Я хочу хлеб.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u4_missing_kniga.mp3",
+      "text": "У меня нет книги. Я хочу книгу.",
+      "speechText": "У меня нет книги. Я хочу книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u4_missing_myach.mp3",
+      "text": "У меня нет мяча. Я хочу мяч.",
+      "speechText": "У меня нет мяча. Я хочу мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u4_missing_telefon.mp3",
+      "text": "У меня нет телефона. Я хочу телефон.",
+      "speechText": "У меня нет телефона. Я хочу телефон.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -14291,6 +15803,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u_menya_est_lozhka.mp3",
+      "text": "У меня есть ложка.",
+      "speechText": "У меня есть ложка.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u_menya_est_myach.mp3",
       "text": "У меня есть мяч.",
       "speechText": "У меня есть мяч.",
@@ -14418,6 +15940,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u_menya_net_vilki.mp3",
+      "text": "У меня нет вилки.",
+      "speechText": "У меня нет вилки.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -14557,7 +16089,27 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-16-city-transport",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_chashke.mp3",
+      "text": "в чашке",
+      "speechText": "в чашке",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_gorode.mp3",
+      "text": "в городе",
+      "speechText": "в городе",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -14582,12 +16134,22 @@
     },
     {
       "audio": "assets/audio/ru/v_shkafu.mp3",
-      "text": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
-      "speechText": "['Отлично! ✅', 'комната', 'кухня', 'дверь']",
+      "text": "в шкафу",
+      "speechText": "в шкафу",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-15-home-rooms",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/v_shkole.mp3",
+      "text": "в школе",
+      "speechText": "в школе",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -14671,6 +16233,26 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/vilka.mp3",
+      "text": "вилка",
+      "speechText": "вилка",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/vilki.mp3",
+      "text": "вилки",
+      "speechText": "вилки",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/vkusno.mp3",
       "text": "вкусно",
       "speechText": "вкусно",
@@ -14747,7 +16329,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-4-personal-phrases",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -14837,7 +16419,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "level-0-unit-16-city-transport",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -14898,6 +16480,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/ya_hochu_chay.mp3",
+      "text": "Я хочу чай.",
+      "speechText": "Я хочу чай.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -15181,6 +16773,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/zakaz.mp3",
+      "text": "заказ",
+      "speechText": "заказ",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-4-personal-phrases",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/zal.mp3",
       "text": "зал",
       "speechText": "зал",
@@ -15197,7 +16799,7 @@
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
-      "source": "lesson-2-gde-zdes-tam",
+      "source": "level-0-unit-17-kitchen-things",
       "exists": true
     },
     {
@@ -15468,6 +17070,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-13-body-health",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/zhivoy_dvor.mp3",
+      "text": "живой двор",
+      "speechText": "живой двор",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-3-actions",
       "exists": true
     },
     {

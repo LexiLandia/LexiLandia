@@ -468,6 +468,233 @@
     ]
   };
 
+  var smallWorldGame = {
+    id: "unit-2-game-small-world-data",
+    gameSlug: "unit-2-game-small-world",
+    title: "Маленький мир",
+    finalTitle: "Мир понятен! ✅",
+    finalText: "Ты видишь: кто, что и где! 🌍",
+    finalWords: ["кто?", "что?", "где?", "здесь", "там"],
+    stages: [
+      {
+        id: "u2-small-world-stage-1",
+        type: "scene_questions",
+        title: "Маленький мир",
+        instruction: "Смотри на одну сцену:",
+        tasks: [
+          {
+            id: "u2-small-world-1",
+            text: "Мама, кот и мяч здесь. Папа, собака и книга там.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Кто здесь?",
+            speechText: "Кто здесь?",
+            audio: audio("u2_small_world_kto_zdes.mp3"),
+            options: [option("mama-kot", "мама и кот", "👩‍👧➕🐱"), option("papa-sobaka", "папа и собака", "👨➕🐶")],
+            correct: "mama-kot"
+          },
+          {
+            id: "u2-small-world-2",
+            text: "Мама, кот и мяч здесь. Папа, собака и книга там.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Кто там?",
+            speechText: "Кто там?",
+            audio: audio("u2_small_world_kto_tam.mp3"),
+            options: [option("papa-sobaka", "папа и собака", "👨➕🐶"), option("mama-kot", "мама и кот", "👩‍👧➕🐱")],
+            correct: "papa-sobaka"
+          },
+          {
+            id: "u2-small-world-3",
+            text: "Мама, кот и мяч здесь. Папа, собака и книга там.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Что здесь?",
+            speechText: "Что здесь?",
+            audio: audio("u2_small_world_chto_zdes.mp3"),
+            options: [option("myach", "мяч", "⚽"), option("kniga", "книга", "📖")],
+            correct: "myach"
+          },
+          {
+            id: "u2-small-world-4",
+            text: "Мама, кот и мяч здесь. Папа, собака и книга там.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Что там?",
+            speechText: "Что там?",
+            audio: audio("u2_small_world_chto_tam.mp3"),
+            options: [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽")],
+            correct: "kniga"
+          },
+          {
+            id: "u2-small-world-5",
+            text: "Кот здесь.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Где кот?",
+            speechText: "Где кот?",
+            audio: audio("u2_small_world_gde_kot.mp3"),
+            options: hereThereOptions,
+            correct: "zdes"
+          },
+          {
+            id: "u2-small-world-6",
+            text: "Книга там.",
+            scene: { near: ["👩‍👧", "🐱", "⚽"], far: ["👨", "🐶", "📖"] },
+            question: "Где книга?",
+            speechText: "Где книга?",
+            audio: audio("u2_small_world_gde_kniga.mp3"),
+            options: hereThereOptions,
+            correct: "tam"
+          }
+        ]
+      }
+    ]
+  };
+
+  var placeHereThereGame = {
+    id: "unit-2-game-place-here-there-data",
+    gameSlug: "unit-2-game-place-here-there",
+    title: "Положи: здесь или там",
+    finalTitle: "Всё на месте! ✅",
+    finalText: "Здесь и там понятны! 📍👉",
+    finalWords: ["здесь", "там", "кот", "мяч", "книга"],
+    stages: [
+      {
+        id: "u2-place-stage-1",
+        type: "place_zone",
+        title: "Здесь или там",
+        instruction: "Выбери место:",
+        tasks: [
+          { id: "u2-place-1", text: "Кот здесь.", visual: "🐱", question: "Куда?", audio: audio("u2_place_kot_zdes.mp3"), options: hereThereOptions, correct: "zdes" },
+          { id: "u2-place-2", text: "Собака там.", visual: "🐶", question: "Куда?", audio: audio("u2_place_sobaka_tam.mp3"), options: hereThereOptions, correct: "tam" },
+          { id: "u2-place-3", text: "Мяч здесь.", visual: "⚽", question: "Куда?", audio: audio("u2_place_myach_zdes.mp3"), options: hereThereOptions, correct: "zdes" },
+          { id: "u2-place-4", text: "Книга там.", visual: "📖", question: "Куда?", audio: audio("u2_place_kniga_tam.mp3"), options: hereThereOptions, correct: "tam" },
+          { id: "u2-place-5", text: "Мама здесь.", visual: "👩‍👧", question: "Куда?", audio: audio("u2_place_mama_zdes.mp3"), options: hereThereOptions, correct: "zdes" },
+          { id: "u2-place-6", text: "Папа там.", visual: "👨", question: "Куда?", audio: audio("u2_place_papa_tam.mp3"), options: hereThereOptions, correct: "tam" },
+          { id: "u2-place-7", text: "Телефон здесь.", visual: "📱", question: "Куда?", audio: audio("u2_place_telefon_zdes.mp3"), options: hereThereOptions, correct: "zdes" },
+          { id: "u2-place-8", text: "Вода там.", visual: "💧", question: "Куда?", audio: audio("u2_place_voda_tam.mp3"), options: hereThereOptions, correct: "tam" }
+        ]
+      }
+    ]
+  };
+
+  var ktoChhtoSortGame = {
+    id: "unit-2-game-kto-chto-sort-data",
+    gameSlug: "unit-2-game-kto-chto-sort",
+    title: "Кто или что?",
+    finalTitle: "Верно! ✅",
+    finalText: "Кто? 👩‍👧 🐱   Что? ⚽ 📖",
+    finalWords: ["кто?", "что?", "кот", "собака", "книга"],
+    stages: [
+      {
+        id: "u2-sort-stage-1",
+        type: "sort_choice",
+        title: "Кто или что?",
+        instruction: "Смотри и выбери:",
+        tasks: [
+          { id: "u2-sort-1", text: "мама", visual: "👩‍👧", question: "Кто или что?", audio: audio("mama.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "kto" },
+          { id: "u2-sort-2", text: "папа", visual: "👨", question: "Кто или что?", audio: audio("papa.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "kto" },
+          { id: "u2-sort-3", text: "кот", visual: "🐱", question: "Кто или что?", audio: audio("kot.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "kto" },
+          { id: "u2-sort-4", text: "собака", visual: "🐶", question: "Кто или что?", audio: audio("sobaka.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "kto" },
+          { id: "u2-sort-5", text: "мяч", visual: "⚽", question: "Кто или что?", audio: audio("myach.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-6", text: "книга", visual: "📖", question: "Кто или что?", audio: audio("kniga.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-7", text: "стол", visual: "🟫", question: "Кто или что?", audio: audio("stol.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-8", text: "стул", visual: "🪑", question: "Кто или что?", audio: audio("stul.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" }
+        ]
+      }
+    ]
+  };
+
+  var pairCells = [
+    { id: "mama", text: "мама", emoji: "👩‍👧" },
+    { id: "papa", text: "папа", emoji: "👨" },
+    { id: "kot", text: "кот", emoji: "🐱" },
+    { id: "sobaka", text: "собака", emoji: "🐶" },
+    { id: "myach", text: "мяч", emoji: "⚽" },
+    { id: "kniga", text: "книга", emoji: "📖" },
+    { id: "stol", text: "стол", emoji: "🟫" },
+    { id: "stul", text: "стул", emoji: "🪑" },
+    { id: "voda", text: "вода", emoji: "💧" },
+    { id: "hleb", text: "хлеб", emoji: "🍞" },
+    { id: "telefon", text: "телефон", emoji: "📱" },
+    { id: "yabloko", text: "яблоко", emoji: "🍎" }
+  ];
+
+  function cellsFor(ids) {
+    return pairCells.filter(function (cell) {
+      return ids.indexOf(cell.id) !== -1;
+    });
+  }
+
+  var mapPairsGame = {
+    id: "unit-2-map-pairs-data",
+    gameSlug: "unit-2-map-pairs",
+    title: "Найди пару",
+    finalTitle: "Все пары найдены! ✅",
+    finalText: "Ты читаешь два слова вместе! ➕",
+    finalWords: ["мама и кот", "мяч и книга", "стол и стул"],
+    stages: [
+      {
+        id: "u2-pairs-stage-1",
+        type: "select_many",
+        title: "Найди пару",
+        instruction: "Нажми на два предмета:",
+        tasks: [
+          { id: "u2-map-pair-1", text: "Найди маму и кота.", question: "мама и кот", audio: audio("u2_pairs_mama_kot.mp3"), targetIds: ["mama", "kot"], cells: cellsFor(["mama", "kot", "papa", "sobaka", "myach", "kniga"]) },
+          { id: "u2-map-pair-2", text: "Найди мяч и книгу.", question: "мяч и книга", audio: audio("u2_pairs_myach_kniga.mp3"), targetIds: ["myach", "kniga"], cells: cellsFor(["myach", "kniga", "stol", "stul", "voda", "hleb"]) },
+          { id: "u2-map-pair-3", text: "Найди стол и стул.", question: "стол и стул", audio: audio("u2_pairs_stol_stul.mp3"), targetIds: ["stol", "stul"], cells: cellsFor(["stol", "stul", "telefon", "yabloko", "kot", "sobaka"]) },
+          { id: "u2-map-pair-4", text: "Найди воду и хлеб.", question: "вода и хлеб", audio: audio("u2_pairs_voda_hleb.mp3"), targetIds: ["voda", "hleb"], cells: cellsFor(["voda", "hleb", "myach", "kniga", "telefon", "yabloko"]) },
+          { id: "u2-map-pair-5", text: "Найди папу и собаку.", question: "папа и собака", audio: audio("u2_pairs_papa_sobaka.mp3"), targetIds: ["papa", "sobaka"], cells: cellsFor(["papa", "sobaka", "mama", "kot", "stol", "stul"]) },
+          { id: "u2-map-pair-6", text: "Найди телефон и яблоко.", question: "телефон и яблоко", audio: audio("u2_pairs_telefon_yabloko.mp3"), targetIds: ["telefon", "yabloko"], cells: cellsFor(["telefon", "yabloko", "voda", "hleb", "myach", "kniga"]) }
+        ]
+      }
+    ]
+  };
+
+  var storySmallWorldGame = {
+    id: "unit-2-story-small-world-data",
+    gameSlug: "unit-2-story-small-world",
+    title: "Истории маленького мира",
+    finalTitle: "Истории понятны! ✅",
+    finalText: "Ты читаешь маленькие истории! 📖",
+    finalWords: ["мама", "папа", "кот", "собака", "здесь", "там"],
+    stages: [
+      {
+        id: "u2-story-stage-1",
+        type: "mini_reading",
+        title: "История 1",
+        instruction: "Читай:",
+        tasks: [
+          { id: "u2-story-1", text: "Мама здесь.\nКот здесь.\nПапа там.\nСобака там.\nТут дом.\nТам парк.", scene: { near: ["👩‍👧", "🐱", "🏠"], far: ["👨", "🐶", "🌳🌳🌳"] }, question: "Кто здесь?", audio: audio("u2_story_1.mp3"), options: [option("mama-kot", "мама и кот", "👩‍👧➕🐱"), option("papa-sobaka", "папа и собака", "👨➕🐶")], correct: "mama-kot" },
+          { id: "u2-story-2", text: "Мама здесь.\nКот здесь.\nПапа там.\nСобака там.\nТут дом.\nТам парк.", scene: { near: ["👩‍👧", "🐱", "🏠"], far: ["👨", "🐶", "🌳🌳🌳"] }, question: "Кто там?", audio: audio("u2_story_1.mp3"), options: [option("papa-sobaka", "папа и собака", "👨➕🐶"), option("mama-kot", "мама и кот", "👩‍👧➕🐱")], correct: "papa-sobaka" },
+          { id: "u2-story-3", text: "Мальчик здесь.\nТелефон здесь.\nДевочка там.\nКнига там.\nТут кафе.\nТам дом.", scene: { near: ["👦", "📱", "🏢☕"], far: ["👧", "📖", "🏠"] }, question: "Кто здесь?", audio: audio("u2_story_2.mp3"), options: [option("malchik", "мальчик", "👦"), option("devochka", "девочка", "👧")], correct: "malchik" },
+          { id: "u2-story-4", text: "Мальчик здесь.\nТелефон здесь.\nДевочка там.\nКнига там.\nТут кафе.\nТам дом.", scene: { near: ["👦", "📱", "🏢☕"], far: ["👧", "📖", "🏠"] }, question: "Что там?", audio: audio("u2_story_2.mp3"), options: [option("kniga-dom", "книга и дом", "📖➕🏠"), option("telefon-kafe", "телефон и кафе", "📱➕🏢☕")], correct: "kniga-dom" },
+          { id: "u2-story-5", text: "Кот здесь.\nСобака там.\nМяч здесь.\nКнига там.", scene: { near: ["🐱", "⚽"], far: ["🐶", "📖"] }, question: "Что здесь?", audio: audio("u2_story_3.mp3"), options: [option("myach", "мяч", "⚽"), option("kniga", "книга", "📖")], correct: "myach" },
+          { id: "u2-story-6", text: "Кот здесь.\nСобака там.\nМяч здесь.\nКнига там.", scene: { near: ["🐱", "⚽"], far: ["🐶", "📖"] }, question: "Что там?", audio: audio("u2_story_3.mp3"), options: [option("kniga", "книга", "📖"), option("myach", "мяч", "⚽")], correct: "kniga" }
+        ]
+      }
+    ]
+  };
+
+  var truthSceneGame = {
+    id: "unit-2-game-truth-scene-data",
+    gameSlug: "unit-2-game-truth-scene",
+    title: "Выбери правду",
+    finalTitle: "Всё правильно! ✅",
+    finalText: "Ты читаешь сцену! 👀",
+    finalWords: ["здесь", "там", "кто?", "что?"],
+    stages: [
+      {
+        id: "u2-truth-stage-1",
+        type: "truth_scene",
+        title: "Выбери правду",
+        instruction: "Смотри и читай:",
+        tasks: [
+          { id: "u2-truth-1", text: "Мама здесь. Кот здесь. Папа там. Собака там.", scene: { near: ["👩‍👧", "🐱"], far: ["👨", "🐶"] }, question: "Выбери правду.", audio: audio("u2_truth_scene_1.mp3"), options: [option("true", "Мама здесь.", "👩‍👧📍"), option("false-1", "Папа здесь.", "👨📍"), option("false-2", "Кот там.", "🐱👉")], correct: "true" },
+          { id: "u2-truth-2", text: "Мяч здесь. Телефон здесь. Книга там. Хлеб там.", scene: { near: ["⚽", "📱"], far: ["📖", "🍞"] }, question: "Выбери правду.", audio: audio("u2_truth_scene_2.mp3"), options: [option("false-1", "Телефон там.", "📱👉"), option("true", "Книга там.", "📖👉"), option("false-2", "Хлеб здесь.", "🍞📍")], correct: "true" },
+          { id: "u2-truth-3", text: "Мальчик здесь. Стол здесь. Девочка там. Стул там.", scene: { near: ["👦", "🟫"], far: ["👧", "🪑"] }, question: "Выбери правду.", audio: audio("u2_truth_scene_3.mp3"), options: [option("false-1", "Стол там.", "🟫👉"), option("false-2", "Девочка здесь.", "👧📍"), option("true", "Стул там.", "🪑👉")], correct: "true" },
+          { id: "u2-truth-4", text: "Кот здесь. Мяч здесь. Собака там. Книга там.", scene: { near: ["🐱", "⚽"], far: ["🐶", "📖"] }, question: "Выбери правду.", audio: audio("u2_truth_scene_4.mp3"), options: [option("true", "Кот здесь.", "🐱📍"), option("false-1", "Собака здесь.", "🐶📍"), option("false-2", "Мяч там.", "⚽👉")], correct: "true" }
+        ]
+      }
+    ]
+  };
+
   var lesson4Unit = {
     id: "lesson-4-kto",
     title: "Урок 4: Кто?",
@@ -606,6 +833,48 @@
     ]
   };
 
+  var smallWorldUnit = {
+    id: "unit-2-game-small-world",
+    title: "Игра 3: Маленький мир",
+    icon: "🌍",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Маленький мир", tasks: [smallWorldGame] }]
+  };
+
+  var placeHereThereUnit = {
+    id: "unit-2-game-place-here-there",
+    title: "Игра 4: Здесь или там",
+    icon: "📍👉",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Здесь или там", tasks: [placeHereThereGame] }]
+  };
+
+  var ktoChhtoSortUnit = {
+    id: "unit-2-game-kto-chto-sort",
+    title: "Игра 5: Кто или что?",
+    icon: "👤📦",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Кто или что?", tasks: [ktoChhtoSortGame] }]
+  };
+
+  var mapPairsUnit = {
+    id: "unit-2-map-pairs",
+    title: "Игра 6: Найди пару",
+    icon: "➕",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Найди пару", tasks: [mapPairsGame] }]
+  };
+
+  var storySmallWorldUnit = {
+    id: "unit-2-story-small-world",
+    title: "Игра 7: Маленькие истории",
+    icon: "📖",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Маленькие истории", tasks: [storySmallWorldGame] }]
+  };
+
+  var truthSceneUnit = {
+    id: "unit-2-game-truth-scene",
+    title: "Игра 8: Выбери правду",
+    icon: "✅",
+    stages: [{ type: "unit-2-kto-chto-game", title: "Выбери правду", tasks: [truthSceneGame] }]
+  };
+
   root.LexiLandUnit2Lesson = {
     id: "level-0-unit-2-kto-chto-malenkiy-mir",
     order: 4,
@@ -614,7 +883,19 @@
     level: "Уровень 0",
     dictionary: dictionary,
     scenes: [],
-    units: [lesson4Unit, lesson5Unit, lesson6Unit, gameUnit, mapGame2Unit]
+    units: [
+      lesson4Unit,
+      lesson5Unit,
+      lesson6Unit,
+      gameUnit,
+      mapGame2Unit,
+      smallWorldUnit,
+      placeHereThereUnit,
+      ktoChhtoSortUnit,
+      mapPairsUnit,
+      storySmallWorldUnit,
+      truthSceneUnit
+    ]
   };
   root.LexiLandUnit2 = root.LexiLandUnit2Lesson;
   root.LexiLandUnit2AudioLesson = root.LexiLandUnit2Lesson;

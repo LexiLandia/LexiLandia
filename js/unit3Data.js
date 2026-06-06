@@ -412,6 +412,310 @@
     };
   }
 
+  function worldUnit(id, title, icon, game) {
+    return {
+      id: id,
+      title: title,
+      icon: icon,
+      stages: [
+        {
+          type: "world-mission-game",
+          title: title,
+          tasks: [game]
+        }
+      ]
+    };
+  }
+
+  function worldStage(id, type, title, instruction, tasks) {
+    return {
+      id: id,
+      type: type,
+      title: title,
+      instruction: instruction,
+      tasks: tasks
+    };
+  }
+
+  function sceneItem(id, emojiText, label) {
+    return {
+      id: id,
+      emoji: emojiText,
+      label: label || ""
+    };
+  }
+
+  var yardItems = [
+    sceneItem("kot", "🐱💤", "кот"),
+    sceneItem("mama", "👩📖", "мама"),
+    sceneItem("malchik", "👦🍞", "мальчик"),
+    sceneItem("devochka", "👧💧", "девочка"),
+    sceneItem("papa", "👨🪑", "папа"),
+    sceneItem("sobaka", "🐶⚽", "собака")
+  ];
+
+  var yardMoveItems = [
+    sceneItem("kot", "🐱🚶", "кот"),
+    sceneItem("mama", "👩👀🏠", "мама"),
+    sceneItem("malchik", "👦🍞", "мальчик"),
+    sceneItem("devochka", "👧💧", "девочка"),
+    sceneItem("papa", "👨🪑", "папа"),
+    sceneItem("sobaka", "🐶⚽", "собака")
+  ];
+
+  function sceneTapTask(id, command, file, items, correctTarget, successText) {
+    return {
+      id: id,
+      command: command,
+      text: command,
+      audio: audio(file),
+      items: items,
+      correctTarget: correctTarget,
+      successText: successText || "Да! ✅",
+      errorText: "Смотри ещё 🙂"
+    };
+  }
+
+  function freezeTask(id, command, file, correctState, states) {
+    return {
+      id: id,
+      command: command,
+      text: command,
+      audio: audio(file),
+      correctState: correctState,
+      states: states,
+      interval: 1900,
+      successText: "Поймал! ✅",
+      errorText: "Ещё кадр 🙂"
+    };
+  }
+
+  function directorTask(id, phrase, file, groups, correct, resultEmoji) {
+    return {
+      id: id,
+      command: phrase,
+      text: phrase,
+      audio: audio(file),
+      groups: groups,
+      correct: correct,
+      resultEmoji: resultEmoji,
+      successText: "Сцена готова! ✅",
+      errorText: "Собери ещё 🙂"
+    };
+  }
+
+  function movieTask(id, title, file, frames) {
+    return {
+      id: id,
+      command: title,
+      text: title,
+      audio: audio(file),
+      frames: frames,
+      successText: "Кадр готов! ✅",
+      errorText: "Смотри фильм ещё 🙂"
+    };
+  }
+
+  var directorWho = [
+    option("kot", "кот", "🐱"),
+    option("mama", "мама", "👩"),
+    option("papa", "папа", "👨"),
+    option("malchik", "мальчик", "👦"),
+    option("devochka", "девочка", "👧"),
+    option("sobaka", "собака", "🐶")
+  ];
+
+  var directorActions = [
+    option("spit", "спит", "😴"),
+    option("sidit", "сидит", "🪑"),
+    option("chitaet", "читает", "📖"),
+    option("est", "ест", "🍞"),
+    option("pyot", "пьёт", "💧"),
+    option("igraet", "играет", "⚽"),
+    option("idyot", "идёт", "🚶"),
+    option("vidit", "видит", "👀")
+  ];
+
+  var directorObjects = [
+    option("kniga", "книга", "📖"),
+    option("hleb", "хлеб", "🍞"),
+    option("voda", "вода", "💧"),
+    option("myach", "мяч", "⚽"),
+    option("dom", "дом", "🏠")
+  ];
+
+  function directorGroups(includeObject) {
+    var groups = [
+      { key: "who", title: "Кто?", options: directorWho },
+      { key: "action", title: "Что делает?", options: directorActions }
+    ];
+
+    if (includeObject) {
+      groups.push({ key: "object", title: "Что?", options: directorObjects });
+    }
+
+    return groups;
+  }
+
+  dictionary.push(
+    entry("u3-zhivoy-dvor", "живой двор", "🌳", "chunk", "zhivoy_dvor.mp3"),
+    entry("u3-poimay", "поймай", "🎬", "word", "poimay.mp3"),
+    entry("u3-ne-trogay-kota", "не трогай кота", "🐱💤", "chunk", "ne_trogay_kota.mp3"),
+    entry("u3-rezhissyor", "режиссёр", "🎬", "word", "rezhissyor.mp3"),
+    entry("u3-malenkiy-film", "маленький фильм", "🎥", "chunk", "malenkiy_film.mp3")
+  );
+
+  var livingYardGame = {
+    id: "unit-3-game-living-yard-data",
+    gameSlug: "unit-3-game-living-yard",
+    title: "Игра: Живой двор",
+    icon: "🌳",
+    finalTitle: "Двор живёт! 🏆",
+    finalText: "Кто что делает?",
+    finalWords: ["кот спит", "мама читает", "мальчик ест", "девочка пьёт"],
+    stages: [
+      worldStage("u3-yard-stage", "scene_tap", "Живой двор", "Найди:", [
+        sceneTapTask("u3-yard-1", "Кто спит?", "kto_spit.mp3", yardItems, "kot", "Да! Кот спит. ✅"),
+        sceneTapTask("u3-yard-2", "Кто читает?", "kto_chitaet.mp3", yardItems, "mama", "Да! Мама читает. ✅"),
+        sceneTapTask("u3-yard-3", "Кто ест хлеб?", "kto_est_hleb.mp3", yardItems, "malchik", "Да! Мальчик ест хлеб. ✅"),
+        sceneTapTask("u3-yard-4", "Кто пьёт воду?", "kto_pyot_vodu.mp3", yardItems, "devochka", "Да! Девочка пьёт воду. ✅"),
+        sceneTapTask("u3-yard-5", "Кто сидит?", "kto_sidit.mp3", yardItems, "papa", "Да! Папа сидит. ✅"),
+        sceneTapTask("u3-yard-6", "Кто играет?", "kto_igraet.mp3", yardItems, "sobaka", "Да! Собака играет. ✅"),
+        sceneTapTask("u3-yard-7", "Кто видит дом?", "kto_vidit_dom.mp3", yardMoveItems, "mama", "Да! Мама видит дом. ✅"),
+        sceneTapTask("u3-yard-8", "Кто идёт?", "kto_idyot.mp3", yardMoveItems, "kot", "Да! Кот идёт. ✅")
+      ])
+    ]
+  };
+
+  var freezeGame = {
+    id: "unit-3-game-freeze-data",
+    gameSlug: "unit-3-game-freeze",
+    title: "Игра: Стоп-кадр",
+    icon: "🎬",
+    finalTitle: "Кадры пойманы! 🏆",
+    finalText: "Стоп-кадр",
+    finalWords: ["кот спит", "мама читает", "папа сидит"],
+    stages: [
+      worldStage("u3-freeze-stage", "freeze", "Стоп-кадр", "Поймай:", [
+        freezeTask("u3-freeze-1", "Поймай: кот спит.", "poimay_kot_spit.mp3", "spit", [
+          { id: "spit", emoji: "🐱💤", text: "Кот спит." },
+          { id: "idyot", emoji: "🐱🚶", text: "Кот идёт." },
+          { id: "igraet", emoji: "🐱⚽", text: "Кот играет." }
+        ]),
+        freezeTask("u3-freeze-2", "Поймай: мама читает.", "poimay_mama_chitaet.mp3", "chitaet", [
+          { id: "idyot", emoji: "👩🚶", text: "Мама идёт." },
+          { id: "chitaet", emoji: "👩📖", text: "Мама читает." },
+          { id: "vidit", emoji: "👩👀🏠", text: "Мама видит дом." }
+        ]),
+        freezeTask("u3-freeze-3", "Поймай: папа сидит.", "poimay_papa_sidit.mp3", "sidit", [
+          { id: "idyot", emoji: "👨🚶", text: "Папа идёт." },
+          { id: "sidit", emoji: "👨🪑", text: "Папа сидит." },
+          { id: "chitaet", emoji: "👨📖", text: "Папа читает." }
+        ]),
+        freezeTask("u3-freeze-4", "Поймай: собака стоит.", "poimay_sobaka_stoit.mp3", "stoit", [
+          { id: "igraet", emoji: "🐶⚽", text: "Собака играет." },
+          { id: "stoit", emoji: "🐶🧍", text: "Собака стоит." },
+          { id: "sidit", emoji: "🐶🪑", text: "Собака сидит." }
+        ]),
+        freezeTask("u3-freeze-5", "Поймай: девочка пьёт воду.", "poimay_devochka_pyot_vodu.mp3", "pyot", [
+          { id: "igraet", emoji: "👧⚽", text: "Девочка играет." },
+          { id: "pyot", emoji: "👧💧", text: "Девочка пьёт воду." },
+          { id: "chitaet", emoji: "👧📖", text: "Девочка читает." }
+        ]),
+        freezeTask("u3-freeze-6", "Поймай: мальчик ест хлеб.", "poimay_malchik_est_hleb.mp3", "est", [
+          { id: "idyot", emoji: "👦🚶", text: "Мальчик идёт." },
+          { id: "est", emoji: "👦🍞", text: "Мальчик ест хлеб." },
+          { id: "pyot", emoji: "👦💧", text: "Мальчик пьёт воду." }
+        ])
+      ])
+    ]
+  };
+
+  var sleepyCatItems = [
+    sceneItem("kot-spit", "🐱💤", "кот"),
+    sceneItem("mama", "👩📖", "мама"),
+    sceneItem("myach", "⚽", "мяч"),
+    sceneItem("sobaka", "🐶⚽", "собака")
+  ];
+
+  var awakeCatItems = [
+    sceneItem("kot", "🐱🚶", "кот"),
+    sceneItem("mama", "👩📖", "мама"),
+    sceneItem("myach", "⚽", "мяч"),
+    sceneItem("sobaka", "🐶⚽", "собака")
+  ];
+
+  var dontWakeCatGame = {
+    id: "unit-3-game-dont-wake-cat-data",
+    gameSlug: "unit-3-game-dont-wake-cat",
+    title: "Игра: Не разбуди кота",
+    icon: "🐱💤",
+    finalTitle: "Тихо и точно! 🏆",
+    finalText: "Кот спит. Кот идёт.",
+    finalWords: ["не трогай кота", "найди маму", "найди мяч"],
+    stages: [
+      worldStage("u3-cat-stage", "stealth", "Не разбуди кота", "Тихо:", [
+        Object.assign(sceneTapTask("u3-cat-1", "Кот спит. Найди маму.", "kot_spit_naydi_mamu.mp3", sleepyCatItems, "mama", "Да! Мама. ✅"), { forbiddenTarget: "kot-spit", forbiddenFeedback: "Тихо! Кот спит. 🙂" }),
+        Object.assign(sceneTapTask("u3-cat-2", "Кот спит. Найди мяч.", "kot_spit_naydi_myach.mp3", sleepyCatItems, "myach", "Да! Мяч. ✅"), { forbiddenTarget: "kot-spit", forbiddenFeedback: "Тихо! Кот спит. 🙂" }),
+        Object.assign(sceneTapTask("u3-cat-3", "Кот спит. Найди собаку.", "kot_spit_naydi_sobaku.mp3", sleepyCatItems, "sobaka", "Да! Собака. ✅"), { forbiddenTarget: "kot-spit", forbiddenFeedback: "Тихо! Кот спит. 🙂" }),
+        sceneTapTask("u3-cat-4", "Кот не спит. Найди кота.", "kot_ne_spit_naydi_kota.mp3", awakeCatItems, "kot", "Да! Кот не спит. ✅"),
+        sceneTapTask("u3-cat-5", "Кот идёт. Где кот?", "kot_idyot_gde_kot.mp3", awakeCatItems, "kot", "Да! Кот идёт. ✅"),
+        sceneTapTask("u3-cat-6", "Кот играет. Найди кота.", "kot_igraet_naydi_kota.mp3", [sceneItem("kot", "🐱⚽", "кот"), sceneItem("mama", "👩📖", "мама"), sceneItem("myach", "⚽", "мяч"), sceneItem("sobaka", "🐶🧍", "собака")], "kot", "Да! Кот играет. ✅")
+      ])
+    ]
+  };
+
+  var directorGame = {
+    id: "unit-3-game-director-data",
+    gameSlug: "unit-3-game-director",
+    title: "Игра: Режиссёр",
+    icon: "🎬",
+    finalTitle: "Фильм готов! 🏆",
+    finalText: "Режиссёр",
+    finalWords: ["кот спит", "мама читает", "девочка видит мяч"],
+    stages: [
+      worldStage("u3-director-stage", "director", "Режиссёр", "Собери сцену:", [
+        directorTask("u3-director-1", "Кот спит.", "kot_spit.mp3", directorGroups(false), { who: "kot", action: "spit" }, "🐱💤"),
+        directorTask("u3-director-2", "Папа сидит.", "papa_sidit.mp3", directorGroups(false), { who: "papa", action: "sidit" }, "👨🪑"),
+        directorTask("u3-director-3", "Мама читает книгу.", "mama_chitaet_knigu.mp3", directorGroups(true), { who: "mama", action: "chitaet", object: "kniga" }, "👩📖"),
+        directorTask("u3-director-4", "Мальчик ест хлеб.", "malchik_est_hleb.mp3", directorGroups(true), { who: "malchik", action: "est", object: "hleb" }, "👦🍞"),
+        directorTask("u3-director-5", "Девочка пьёт воду.", "devochka_pyot_vodu.mp3", directorGroups(true), { who: "devochka", action: "pyot", object: "voda" }, "👧💧"),
+        directorTask("u3-director-6", "Собака играет.", "sobaka_igraet.mp3", directorGroups(false), { who: "sobaka", action: "igraet" }, "🐶⚽"),
+        directorTask("u3-director-7", "Кот не спит. Кот идёт.", "kot_ne_spit_kot_idyot.mp3", directorGroups(false), { who: "kot", action: "idyot" }, "🐱🚶"),
+        directorTask("u3-director-8", "Девочка видит мяч.", "devochka_vidit_myach.mp3", directorGroups(true), { who: "devochka", action: "vidit", object: "myach" }, "👧👀⚽")
+      ])
+    ]
+  };
+
+  var movieGame = {
+    id: "unit-3-game-movie-scene-data",
+    gameSlug: "unit-3-game-movie-scene",
+    title: "Игра: Маленький фильм",
+    icon: "🎥",
+    finalTitle: "Маленький фильм готов! 🏆",
+    finalText: "Кадр за кадром",
+    finalWords: ["кот спит", "кот идёт", "мама идёт"],
+    stages: [
+      worldStage("u3-movie-stage", "movie", "Маленький фильм", "Выбери кадр:", [
+        movieTask("u3-movie-1", "Фильм: кот", "film_kot.mp3", [
+          { id: "kot-spit", text: "Кот спит.", emoji: "🐱💤", audio: audio("kot_spit.mp3") },
+          { id: "kot-ne-spit", text: "Кот не спит.", emoji: "🐱❌💤", audio: audio("kot_ne_spit.mp3") },
+          { id: "kot-idyot", text: "Кот идёт.", emoji: "🐱🚶", audio: audio("kot_idyot.mp3") }
+        ]),
+        movieTask("u3-movie-2", "Фильм: мальчик", "film_malchik.mp3", [
+          { id: "malchik-est", text: "Мальчик ест хлеб.", emoji: "👦🍞", audio: audio("malchik_est_hleb.mp3") },
+          { id: "malchik-pyot", text: "Мальчик пьёт воду.", emoji: "👦💧", audio: audio("malchik_pyot_vodu.mp3") },
+          { id: "malchik-igraet", text: "Мальчик играет.", emoji: "👦⚽", audio: audio("malchik_igraet.mp3") }
+        ]),
+        movieTask("u3-movie-3", "Фильм: мама", "film_mama.mp3", [
+          { id: "mama-chitaet", text: "Мама читает книгу.", emoji: "👩📖", audio: audio("mama_chitaet_knigu.mp3") },
+          { id: "mama-vidit-dom", text: "Мама видит дом.", emoji: "👩👀🏠", audio: audio("mama_vidit_dom.mp3") },
+          { id: "mama-idyot", text: "Мама идёт.", emoji: "👩🚶", audio: audio("mama_idyot.mp3") }
+        ])
+      ])
+    ]
+  };
+
   root.LexiLandUnit3Lesson = {
     id: "level-0-unit-3-actions",
     order: 5,
@@ -468,7 +772,12 @@
             ]
           }
         ]
-      }
+      },
+      worldUnit("unit-3-game-living-yard", "Игра: Живой двор", "🌳", livingYardGame),
+      worldUnit("unit-3-game-freeze", "Игра: Стоп-кадр", "🎬", freezeGame),
+      worldUnit("unit-3-game-dont-wake-cat", "Игра: Не разбуди кота", "🐱💤", dontWakeCatGame),
+      worldUnit("unit-3-game-director", "Игра: Режиссёр", "🎬", directorGame),
+      worldUnit("unit-3-game-movie-scene", "Игра: Маленький фильм", "🎥", movieGame)
     ]
   };
 

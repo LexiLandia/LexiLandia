@@ -444,6 +444,287 @@
     ]
   };
 
+  function worldUnit(id, title, icon, game) {
+    return {
+      id: id,
+      title: title,
+      icon: icon,
+      stages: [
+        {
+          type: "world-mission-game",
+          title: title,
+          tasks: [game]
+        }
+      ]
+    };
+  }
+
+  function worldStage(id, type, title, instruction, tasks) {
+    return {
+      id: id,
+      type: type,
+      title: title,
+      instruction: instruction,
+      tasks: tasks
+    };
+  }
+
+  function shelfItem(id, text, emoji) {
+    return {
+      id: id,
+      text: text,
+      emoji: emoji
+    };
+  }
+
+  var shelfItems = [
+    shelfItem("vodu", "воду", "💧"),
+    shelfItem("hleb", "хлеб", "🍞"),
+    shelfItem("yabloko", "яблоко", "🍎"),
+    shelfItem("myach", "мяч", "⚽"),
+    shelfItem("knigu", "книгу", "📚"),
+    shelfItem("telefon", "телефон", "📱")
+  ];
+
+  function shopTask(id, request, file, correctItem, customer) {
+    return {
+      id: id,
+      command: request,
+      text: request,
+      audio: audio(file),
+      customer: customer || "🙂",
+      shelf: shelfItems,
+      correctItem: correctItem,
+      giveText: "На. ✅",
+      thanksText: "Спасибо! 😊",
+      errorText: "Смотри ещё 🙂"
+    };
+  }
+
+  function dialogueTask(id, situation, file, visual, options, correct) {
+    return {
+      id: id,
+      command: "Что сказать?",
+      text: situation,
+      audio: audio(file),
+      situation: situation,
+      visual: visual,
+      options: options,
+      correct: correct,
+      successText: "Да! ✅",
+      errorText: "Смотри ещё 🙂"
+    };
+  }
+
+  function buildTask(id, phrase, file, itemEmoji, tiles) {
+    return {
+      id: id,
+      command: phrase,
+      text: phrase,
+      audio: audio(file),
+      itemEmoji: itemEmoji,
+      tiles: tiles.map(function (text) { return { id: text, text: text }; }),
+      correctTiles: tiles.map(function (text) { return { id: text, text: text }; }),
+      successText: "На. Спасибо. ✅",
+      errorText: "Собери ещё 🙂"
+    };
+  }
+
+  function backpackTask(id, phrase, file, inventory, correctItem) {
+    return {
+      id: id,
+      command: phrase,
+      text: phrase,
+      audio: audio(file),
+      inventory: inventory,
+      correctItem: correctItem,
+      successText: "Да! ✅",
+      errorText: "Смотри ещё 🙂"
+    };
+  }
+
+  function missingTask(id, missingText, wantText, file, correct, missingEmoji) {
+    return {
+      id: id,
+      command: "Не хватает!",
+      text: missingText + " " + wantText,
+      audio: audio(file),
+      haveText: "🎒",
+      missingText: missingText,
+      wantText: wantText,
+      options: [
+        option(correct, requestText(correct), missingEmoji),
+        option("dai-vodu", "Дай воду, пожалуйста.", "💧"),
+        option("dai-hleb", "Дай хлеб, пожалуйста.", "🍞"),
+        option("dai-knigu", "Дай книгу, пожалуйста.", "📚"),
+        option("dai-myach", "Дай мяч, пожалуйста.", "⚽"),
+        option("dai-telefon", "Дай телефон, пожалуйста.", "📱")
+      ].filter(function (item, index, list) {
+        return list.findIndex(function (other) { return other.id === item.id; }) === index;
+      }),
+      correct: correct,
+      successText: "На. Спасибо. ✅",
+      errorText: "Смотри ещё 🙂"
+    };
+  }
+
+  function requestText(id) {
+    var found = politeOptions.concat([
+      option("dai-vodu", "Дай воду, пожалуйста.", "💧")
+    ]).find(function (item) {
+      return item.id === id;
+    });
+    return found ? found.text : "Дай, пожалуйста.";
+  }
+
+  dictionary.push(
+    entry("u4-chto-skazat", "что сказать?", "💬", "chunk", "chto_skazat.mp3"),
+    entry("u4-soberi-prosbu", "собери просьбу", "🧩", "chunk", "soberi_prosbu.mp3"),
+    entry("u4-ryukzak", "рюкзак", "🎒", "word", "ryukzak.mp3"),
+    entry("u4-bystrye-zakazy", "быстрые заказы", "⚡🏪", "chunk", "bystrye_zakazy.mp3"),
+    entry("u4-ne-hvataet", "не хватает", "🎒❌", "chunk", "ne_hvataet.mp3"),
+    entry("u4-poprosi", "попроси", "🤲", "word", "poprosi.mp3"),
+    entry("u4-prodavec", "продавец", "🏪", "word", "prodavec.mp3"),
+    entry("u4-zakaz", "заказ", "🧾", "word", "zakaz.mp3")
+  );
+
+  var shopSimulatorGame = {
+    id: "unit-4-game-shop-simulator-data",
+    gameSlug: "unit-4-game-shop-simulator",
+    title: "Игра: Магазин",
+    icon: "🏪",
+    finalTitle: "Магазин открыт! 🏆",
+    finalText: "На. Спасибо.",
+    finalWords: ["Я хочу воду.", "Я хочу хлеб.", "Я хочу книгу."],
+    stages: [
+      worldStage("u4-shop2-stage", "shop", "Магазин", "Дай:", [
+        shopTask("u4-shop2-1", "Я хочу воду.", "ya_hochu_vodu.mp3", "vodu"),
+        shopTask("u4-shop2-2", "Я хочу хлеб.", "ya_hochu_hleb.mp3", "hleb"),
+        shopTask("u4-shop2-3", "Я хочу яблоко.", "ya_hochu_yabloko.mp3", "yabloko"),
+        shopTask("u4-shop2-4", "Я хочу мяч.", "ya_hochu_myach.mp3", "myach"),
+        shopTask("u4-shop2-5", "Я хочу книгу.", "ya_hochu_knigu.mp3", "knigu"),
+        shopTask("u4-shop2-6", "Я хочу телефон.", "ya_hochu_telefon.mp3", "telefon")
+      ])
+    ]
+  };
+
+  var sayItOptions = [
+    option("ya-hochu-vodu", "Я хочу воду.", "💧"),
+    option("ya-hochu-hleb", "Я хочу хлеб.", "🍞"),
+    option("dai-knigu", "Дай книгу, пожалуйста.", "📚"),
+    option("dai-myach", "Дай мяч, пожалуйста.", "⚽"),
+    option("spasibo", "Спасибо.", "😊"),
+    option("net-myacha", "У меня нет мяча.", "⚽❌")
+  ];
+
+  var sayItGame = {
+    id: "unit-4-game-say-it-data",
+    gameSlug: "unit-4-game-say-it",
+    title: "Игра: Что сказать?",
+    icon: "💬",
+    finalTitle: "Ты знаешь, что сказать! 🏆",
+    finalText: "Я хочу. Дай. Спасибо.",
+    finalWords: ["Я хочу воду.", "Дай книгу, пожалуйста.", "Спасибо."],
+    stages: [
+      worldStage("u4-say-stage", "dialogue", "Что сказать?", "Что сказать?", [
+        dialogueTask("u4-say-1", "Ты хочешь воду.", "ty_hochesh_vodu.mp3", "🙂💧", sayItOptions, "ya-hochu-vodu"),
+        dialogueTask("u4-say-2", "Ты хочешь хлеб.", "ty_hochesh_hleb.mp3", "🙂🍞", sayItOptions, "ya-hochu-hleb"),
+        dialogueTask("u4-say-3", "Попроси книгу.", "poprosi_knigu.mp3", "🤲📚", sayItOptions, "dai-knigu"),
+        dialogueTask("u4-say-4", "Попроси мяч.", "poprosi_myach.mp3", "🤲⚽", sayItOptions, "dai-myach"),
+        dialogueTask("u4-say-5", "Тебе дали телефон.", "tebe_dali_telefon.mp3", "📱➡️🙂", sayItOptions, "spasibo"),
+        dialogueTask("u4-say-6", "Продавец говорит: На.", "prodavec_govorit_na.mp3", "🏪🤲", sayItOptions, "spasibo")
+      ])
+    ]
+  };
+
+  var buildRequestGame = {
+    id: "unit-4-game-build-request-data",
+    gameSlug: "unit-4-game-build-request",
+    title: "Игра: Собери просьбу",
+    icon: "🧩",
+    finalTitle: "Просьбы собраны! 🏆",
+    finalText: "Дай, пожалуйста.",
+    finalWords: ["Дай воду, пожалуйста.", "Дай хлеб, пожалуйста.", "Спасибо."],
+    stages: [
+      worldStage("u4-build-stage", "build_phrase", "Собери просьбу", "Собери:", [
+        buildTask("u4-build-1", "Дай воду, пожалуйста.", "dai_vodu_pozhaluysta.mp3", "💧", ["Дай", "воду", "пожалуйста"]),
+        buildTask("u4-build-2", "Дай хлеб, пожалуйста.", "dai_hleb_pozhaluysta.mp3", "🍞", ["Дай", "хлеб", "пожалуйста"]),
+        buildTask("u4-build-3", "Дай яблоко, пожалуйста.", "dai_yabloko_pozhaluysta.mp3", "🍎", ["Дай", "яблоко", "пожалуйста"]),
+        buildTask("u4-build-4", "Дай мяч, пожалуйста.", "dai_myach_pozhaluysta.mp3", "⚽", ["Дай", "мяч", "пожалуйста"]),
+        buildTask("u4-build-5", "Дай книгу, пожалуйста.", "dai_knigu_pozhaluysta.mp3", "📚", ["Дай", "книгу", "пожалуйста"]),
+        buildTask("u4-build-6", "Дай телефон, пожалуйста.", "dai_telefon_pozhaluysta.mp3", "📱", ["Дай", "телефон", "пожалуйста"])
+      ])
+    ]
+  };
+
+  var backpackInventory = [
+    shelfItem("telefon", "телефон", "📱"),
+    shelfItem("kniga", "книга", "📚"),
+    shelfItem("myach", "мяч", "⚽")
+  ];
+
+  var backpackGame = {
+    id: "unit-4-game-backpack-data",
+    gameSlug: "unit-4-game-backpack",
+    title: "Игра: Рюкзак",
+    icon: "🎒",
+    finalTitle: "Рюкзак проверен! 🏆",
+    finalText: "есть / нет",
+    finalWords: ["телефон", "книга", "мяч", "нет"],
+    stages: [
+      worldStage("u4-backpack-stage", "backpack", "Рюкзак", "Проверь:", [
+        backpackTask("u4-backpack-1", "У меня есть телефон.", "u_menya_est_telefon.mp3", backpackInventory, "telefon"),
+        backpackTask("u4-backpack-2", "У меня есть книга.", "u_menya_est_kniga.mp3", backpackInventory, "kniga"),
+        backpackTask("u4-backpack-3", "У меня есть мяч.", "u_menya_est_myach.mp3", backpackInventory, "myach"),
+        backpackTask("u4-backpack-4", "У меня нет воды.", "u_menya_net_vody.mp3", backpackInventory, "net"),
+        backpackTask("u4-backpack-5", "У меня нет хлеба.", "u_menya_net_hleba.mp3", backpackInventory, "net"),
+        backpackTask("u4-backpack-6", "У меня нет яблока.", "u_menya_net_yabloka.mp3", backpackInventory, "net")
+      ])
+    ]
+  };
+
+  var fastOrdersGame = {
+    id: "unit-4-game-fast-orders-data",
+    gameSlug: "unit-4-game-fast-orders",
+    title: "Игра: Быстрые заказы",
+    icon: "⚡🏪",
+    finalTitle: "Все заказы готовы! 🏆",
+    finalText: "Ещё заказ!",
+    finalWords: ["вода", "хлеб", "книга"],
+    stages: [
+      worldStage("u4-fast-stage", "fast_orders", "Быстрые заказы", "Заказ:", [
+        shopTask("u4-fast-1", "Я хочу воду.", "ya_hochu_vodu.mp3", "vodu", "🧑"),
+        shopTask("u4-fast-2", "Я хочу хлеб.", "ya_hochu_hleb.mp3", "hleb", "👩"),
+        shopTask("u4-fast-3", "Я хочу яблоко.", "ya_hochu_yabloko.mp3", "yabloko", "👦"),
+        shopTask("u4-fast-4", "Я хочу мяч.", "ya_hochu_myach.mp3", "myach", "👧"),
+        shopTask("u4-fast-5", "Я хочу книгу.", "ya_hochu_knigu.mp3", "knigu", "👨"),
+        shopTask("u4-fast-6", "Я хочу телефон.", "ya_hochu_telefon.mp3", "telefon", "🙂"),
+        shopTask("u4-fast-7", "Дай воду, пожалуйста.", "dai_vodu_pozhaluysta.mp3", "vodu", "👩"),
+        shopTask("u4-fast-8", "Дай хлеб, пожалуйста.", "dai_hleb_pozhaluysta.mp3", "hleb", "👦"),
+        shopTask("u4-fast-9", "Дай книгу, пожалуйста.", "dai_knigu_pozhaluysta.mp3", "knigu", "👧")
+      ])
+    ]
+  };
+
+  var missingItemGame = {
+    id: "unit-4-game-missing-item-data",
+    gameSlug: "unit-4-game-missing-item",
+    title: "Игра: Не хватает!",
+    icon: "🎒❌",
+    finalTitle: "Теперь всё есть! 🏆",
+    finalText: "Я хочу. Дай. Спасибо.",
+    finalWords: ["нет воды", "я хочу воду", "дай воду"],
+    stages: [
+      worldStage("u4-missing-stage", "missing", "Не хватает!", "Проси:", [
+        missingTask("u4-missing-1", "У меня нет воды.", "Я хочу воду.", "u_menya_net_vody_ya_hochu_vodu.mp3", "dai-vodu", "💧"),
+        missingTask("u4-missing-2", "У меня нет хлеба.", "Я хочу хлеб.", "u4_missing_hleb.mp3", "dai-hleb", "🍞"),
+        missingTask("u4-missing-3", "У меня нет книги.", "Я хочу книгу.", "u4_missing_kniga.mp3", "dai-knigu", "📚"),
+        missingTask("u4-missing-4", "У меня нет мяча.", "Я хочу мяч.", "u4_missing_myach.mp3", "dai-myach", "⚽"),
+        missingTask("u4-missing-5", "У меня нет телефона.", "Я хочу телефон.", "u4_missing_telefon.mp3", "dai-telefon", "📱")
+      ])
+    ]
+  };
+
   root.LexiLandUnit4Lesson = {
     id: "level-0-unit-4-personal-phrases",
     order: 6,
@@ -493,7 +774,13 @@
             tasks: [game3]
           }
         ]
-      }
+      },
+      worldUnit("unit-4-game-shop-simulator", "Игра: Магазин", "🏪", shopSimulatorGame),
+      worldUnit("unit-4-game-say-it", "Игра: Что сказать?", "💬", sayItGame),
+      worldUnit("unit-4-game-build-request", "Игра: Собери просьбу", "🧩", buildRequestGame),
+      worldUnit("unit-4-game-backpack", "Игра: Рюкзак", "🎒", backpackGame),
+      worldUnit("unit-4-game-fast-orders", "Игра: Быстрые заказы", "⚡🏪", fastOrdersGame),
+      worldUnit("unit-4-game-missing-item", "Игра: Не хватает!", "🎒❌", missingItemGame)
     ]
   };
 

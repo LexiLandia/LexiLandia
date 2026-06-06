@@ -30,6 +30,7 @@ LESSONS_PATH = ROOT / "data" / "lessons.json"
 LEVEL0_PATH = ROOT / "js" / "level0Data.js"
 LESSON3_PATH = ROOT / "js" / "lesson3Data.js"
 LESSON3_GAME_PATH = ROOT / "js" / "lesson3GameData.js"
+UNIT1_ENHANCEMENTS_PATH = ROOT / "js" / "unit1Enhancements.js"
 UNIT2_PATH = ROOT / "js" / "unit2Data.js"
 UNIT3_PATH = ROOT / "js" / "unit3Data.js"
 UNIT4_PATH = ROOT / "js" / "unit4Data.js"
@@ -45,11 +46,13 @@ UNIT13_PATH = ROOT / "js" / "unit13Data.js"
 UNIT14_PATH = ROOT / "js" / "unit14Data.js"
 UNIT15_PATH = ROOT / "js" / "unit15Data.js"
 UNIT16_PATH = ROOT / "js" / "unit16Data.js"
+UNIT17_PATH = ROOT / "js" / "unit17Data.js"
 GENERATED_LESSONS_PATH = ROOT / "js" / "lexiforgeGenerated.js"
 JS_LESSON_MODULES = [
     (LEVEL0_PATH, "LexiLandLevel0", "before"),
     (LESSON3_PATH, "LexiLandLesson3", "after"),
     (LESSON3_GAME_PATH, "LexiLandLesson3ReadingGame", "after"),
+    (UNIT1_ENHANCEMENTS_PATH, "LexiLandUnit1Enhancements", "after"),
     (UNIT2_PATH, "LexiLandUnit2Lesson", "after"),
     (UNIT3_PATH, "LexiLandUnit3Lesson", "after"),
     (UNIT4_PATH, "LexiLandUnit4Lesson", "after"),
@@ -65,6 +68,7 @@ JS_LESSON_MODULES = [
     (UNIT14_PATH, "LexiLandUnit14Lesson", "after"),
     (UNIT15_PATH, "LexiLandUnit15Lesson", "after"),
     (UNIT16_PATH, "LexiLandUnit16Lesson", "after"),
+    (UNIT17_PATH, "LexiLandUnit17Lesson", "after"),
     (GENERATED_LESSONS_PATH, "LexiForgeGeneratedLessons", "after"),
 ]
 DEFAULT_VOICE = "ru-RU-SvetlanaNeural"

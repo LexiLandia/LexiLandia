@@ -9,6 +9,7 @@
     var helpers = options.helpers;
     var state = loadState(game);
     var locked = false;
+    var selectedCells = [];
 
     if (state.completed) {
       state = freshState();
@@ -35,7 +36,7 @@
           '</div>' +
           '<div class="unit2-game-progress" aria-hidden="true"><span style="width:' + Math.round((done / total) * 100) + '%"></span></div>' +
           '<p class="unit2-game-instruction">' + helpers.escape(stage.instruction) + '</p>' +
-          renderTask(task, helpers) +
+          renderTask(stage, task, helpers) +
           '<div id="unit2-game-feedback" class="feedback" aria-live="polite"></div>' +
           '<div id="audio-warning" class="audio-warning" aria-live="polite"></div>' +
         '</section>' +
@@ -43,12 +44,20 @@
           '<button class="secondary-button" type="button" data-unit2-action="listen">▶️ Слушать</button>' +
         '</div>';
 
-      bindTask(task);
+      bindTask(stage, task);
       bindAudio(task);
       maybePlay(task);
     }
 
-    function renderTask(task, helpers) {
+    function renderTask(stage, task, helpers) {
+      if (stage.type === "select_many") {
+        return '<div class="unit2-game-task">' +
+          renderPairMap(task, helpers) +
+          (task.question ? '<p class="unit2-game-question">' + helpers.escape(task.question) + '</p>' : "") +
+          '<button class="primary-button unit2-pair-check" type="button" data-unit2-action="check">✅ проверить</button>' +
+        '</div>';
+      }
+
       return '<div class="unit2-game-task">' +
         renderVisual(task, helpers) +
         (task.question ? '<p class="unit2-game-question">' + helpers.escape(task.question) + '</p>' : "") +
@@ -72,6 +81,18 @@
     }
 
     function renderVisual(task, helpers) {
+      if (task.scene) {
+        return '<div class="unit2-scene-visual">' +
+          renderSceneZone("📍", task.scene.near || [], helpers) +
+          renderSceneZone("👉", task.scene.far || [], helpers) +
+        '</div>' +
+        (task.text ? '<div class="unit2-scene-text">' +
+          String(task.text).split("\n").map(function (line) {
+            return '<p>' + helpers.escape(line) + '</p>';
+          }).join("") +
+        '</div>' : "");
+      }
+
       if (task.visual) {
         return '<div class="unit2-game-visual" aria-hidden="true">' + helpers.escape(task.visual) + '</div>';
       }
@@ -87,6 +108,36 @@
       return "";
     }
 
+    function renderSceneZone(label, items, helpers) {
+      return '<div class="unit2-scene-zone">' +
+        '<strong aria-hidden="true">' + label + '</strong>' +
+        '<div class="unit2-scene-items">' +
+          items.map(function (item) {
+            return '<span>' + helpers.escape(typeof item === "string" ? item : item.emoji || "") + '</span>';
+          }).join("") +
+        '</div>' +
+      '</div>';
+    }
+
+    function renderPairMap(task, helpers) {
+      var cells = shuffleOptions((task.cells || []).map(function (cell) {
+        return {
+          id: cell.id,
+          text: cell.text || "",
+          emoji: cell.emoji || ""
+        };
+      }), "");
+
+      return '<div class="unit2-pair-map">' +
+        cells.map(function (cell) {
+          return '<button class="unit2-pair-cell" type="button" data-unit2-cell="' + helpers.escape(cell.id) + '">' +
+            '<span aria-hidden="true">' + helpers.escape(cell.emoji) + '</span>' +
+            (cell.text ? '<small>' + helpers.escape(cell.text) + '</small>' : "") +
+          '</button>';
+        }).join("") +
+      '</div>';
+    }
+
     function renderOptions(items, helpers, correct) {
       var shuffled = shuffleOptions(items || [], correct);
 
@@ -100,7 +151,39 @@
       '</div>';
     }
 
-    function bindTask(task) {
+    function bindTask(stage, task) {
+      if (stage.type === "select_many") {
+        Array.prototype.forEach.call(root.querySelectorAll("[data-unit2-cell]"), function (button) {
+          button.addEventListener("click", function () {
+            if (locked) {
+              return;
+            }
+            var cellId = button.getAttribute("data-unit2-cell");
+            var selectedIndex = selectedCells.indexOf(cellId);
+
+            if (selectedIndex !== -1) {
+              selectedCells.splice(selectedIndex, 1);
+              button.classList.remove("is-selected");
+              return;
+            }
+
+            if (selectedCells.length >= (task.targetIds || []).length) {
+              return;
+            }
+
+            selectedCells.push(cellId);
+            button.classList.add("is-selected");
+          });
+        });
+
+        root.querySelector('[data-unit2-action="check"]').addEventListener("click", function () {
+          var targetIds = (task.targetIds || []).slice().sort();
+          var answerIds = selectedCells.slice().sort();
+          checkAnswer(sameValues(targetIds, answerIds), this, task, selectedCells.join("+"));
+        });
+        return;
+      }
+
       Array.prototype.forEach.call(root.querySelectorAll("[data-unit2-choice]"), function (button) {
         button.addEventListener("click", function () {
           if (locked) {
@@ -121,16 +204,18 @@
       });
     }
 
-    function checkAnswer(isCorrect, button, task) {
+    function checkAnswer(isCorrect, button, task, selectedValue) {
       var feedback = root.querySelector("#unit2-game-feedback");
       locked = true;
 
       if (isCorrect) {
         if (helpers.recordAnswer) {
-          helpers.recordAnswer(true, task, button ? button.getAttribute("data-unit2-choice") : "");
+          helpers.recordAnswer(true, task, selectedValue || (button ? button.getAttribute("data-unit2-choice") : ""));
         }
         state.correct += 1;
-        button.classList.add("is-correct");
+        if (button) {
+          button.classList.add("is-correct");
+        }
         feedback.className = "feedback good";
         var success = helpers.playFeedback("success");
         feedback.textContent = task.correctFeedback || success.text || "✅ Отлично";
@@ -140,17 +225,25 @@
       }
 
       if (helpers.recordAnswer) {
-        helpers.recordAnswer(false, task, button ? button.getAttribute("data-unit2-choice") : "");
+        helpers.recordAnswer(false, task, selectedValue || (button ? button.getAttribute("data-unit2-choice") : ""));
       }
       state.mistakes += 1;
-      button.classList.add("is-wrong");
+      if (button) {
+        button.classList.add("is-wrong");
+      }
       feedback.className = "feedback try";
       var retry = helpers.playFeedback("retry");
       feedback.textContent = task.wrongFeedback || retry.text || "❌ попробуй ещё";
       saveState(game, state);
       window.setTimeout(function () {
         locked = false;
-        button.classList.remove("is-wrong");
+        selectedCells = [];
+        Array.prototype.forEach.call(root.querySelectorAll(".unit2-pair-cell"), function (cell) {
+          cell.classList.remove("is-selected");
+        });
+        if (button) {
+          button.classList.remove("is-wrong");
+        }
         feedback.textContent = "";
       }, 920);
     }
@@ -158,6 +251,7 @@
     function next() {
       var stage = game.stages[state.stageIndex];
       locked = false;
+      selectedCells = [];
 
       if (state.taskIndex < stage.tasks.length - 1) {
         state.taskIndex += 1;
@@ -222,10 +316,13 @@
       if (!task.audio) {
         return Promise.resolve(false);
       }
-      return window.LexiLandAudio.playAudio(task.audio, task.speechText || task.text || "", function () {
-        var warning = root.querySelector("#audio-warning");
+      var warning = root.querySelector("#audio-warning");
+      if (warning) {
+        warning.textContent = "";
+      }
+      return window.LexiLandAudio.playAudio(task.audio, task.speechText || task.text || "", function (message) {
         if (warning) {
-          warning.textContent = "Аудио скоро будет";
+          warning.textContent = message || "Аудио скоро будет";
         }
       });
     }
@@ -279,6 +376,15 @@
       count += game.stages[index].tasks.length;
     }
     return count + taskIndex;
+  }
+
+  function sameValues(left, right) {
+    if (left.length !== right.length) {
+      return false;
+    }
+    return left.every(function (item, index) {
+      return item === right[index];
+    });
   }
 
   function shuffleOptions(items, correct) {

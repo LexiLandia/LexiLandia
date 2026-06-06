@@ -28,7 +28,8 @@
     "Юнит 13": "Тело",
     "Юнит 14": "Семья",
     "Юнит 15": "Дом",
-    "Юнит 16": "Город"
+    "Юнит 16": "Город",
+    "Юнит 17": "Кухня"
   };
   var maps = {
     entries: {},
@@ -86,6 +87,10 @@
 
     if (window.LexiLandLesson3 && !lessons.some(function (item) { return item.id === window.LexiLandLesson3.id; })) {
       lessons = lessons.concat([window.LexiLandLesson3]);
+    }
+
+    if (window.LexiLandUnit1Enhancements && !lessons.some(function (item) { return item.id === window.LexiLandUnit1Enhancements.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit1Enhancements]);
     }
 
     if (window.LexiLandUnit2Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit2Lesson.id; })) {
@@ -146,6 +151,10 @@
 
     if (window.LexiLandUnit16Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit16Lesson.id; })) {
       lessons = lessons.concat([window.LexiLandUnit16Lesson]);
+    }
+
+    if (window.LexiLandUnit17Lesson && !lessons.some(function (item) { return item.id === window.LexiLandUnit17Lesson.id; })) {
+      lessons = lessons.concat([window.LexiLandUnit17Lesson]);
     }
 
     if (Array.isArray(window.LexiForgeGeneratedLessons)) {
@@ -417,7 +426,7 @@
 
   function isUnitOneLesson(item, lessonIndex) {
     var order = getLessonOrder(item, lessonIndex);
-    return order >= 0 && order <= 3 && !item.menuLabel;
+    return item.unitOne === true || (order >= 0 && order <= 3 && !item.menuLabel);
   }
 
   function courseCard(group, courseIndex) {
@@ -1026,6 +1035,22 @@
         '</main>';
 
       window.LexiLandGames.renderUnit8CountGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
+    if (stage.type === "world-mission-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen world-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderWorldMissionGame({
         root: document.getElementById("game-root"),
         task: task,
         helpers: gameHelpers(),

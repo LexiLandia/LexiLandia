@@ -28,7 +28,7 @@
       '</div>';
 
     bindReveal(root, task, helpers);
-    bindReading(root);
+    bindReading(root, helpers);
     bindOptionalImages(root);
     bindCopy(root, task, helpers);
     drawQuestion();
@@ -185,7 +185,7 @@
     });
   }
 
-  function bindReading(root) {
+  function bindReading(root, helpers) {
     Array.prototype.forEach.call(root.querySelectorAll(".read-word"), function (button) {
       button.addEventListener("click", function () {
         var feedback = root.querySelector("#word-feedback");

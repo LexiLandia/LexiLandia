@@ -64,7 +64,9 @@
     function drawFinal() {
       var total = totalTasks(game);
       var percent = total ? state.correct / total : 0;
-      var result = percent >= 0.9 ? "Отлично! ✅" : percent >= 0.6 ? "Хорошо! 👍" : "Попробуй ещё! 🔁";
+      var result = game.finalTitle || (percent >= 0.9 ? "Отлично! ✅" : percent >= 0.6 ? "Хорошо! 👍" : "Попробуй ещё! 🔁");
+      var finalText = game.finalText || "Ты читаешь! 📖";
+      var finalWords = game.finalWords || ["мама", "дом", "там", "он", "она"];
 
       state.completed = true;
       saveState(game, state);
@@ -73,9 +75,11 @@
         '<section class="stage-card reading-find-card reading-find-final">' +
           '<div class="reading-game-final-mark">✅</div>' +
           '<h2 class="reading-game-title">' + result + '</h2>' +
-          '<p class="reading-game-big">Ты читаешь! 📖</p>' +
+          '<p class="reading-game-big">' + helpers.escape(finalText) + '</p>' +
           '<div class="reading-final-words" aria-label="слова">' +
-            '<span>мама</span><span>дом</span><span>там</span><span>он</span><span>она</span>' +
+            finalWords.map(function (word) {
+              return '<span>' + helpers.escape(word) + '</span>';
+            }).join("") +
           '</div>' +
           '<div class="reading-score-row">' +
             '<span>✅ ' + state.correct + '</span>' +
@@ -123,6 +127,19 @@
 
       if (stage.type === "image_to_word") {
         return renderAudioPrompt(helpers) + renderOptions(task.options, "text", helpers, task.correct);
+      }
+
+      if (stage.type === "syllable_road") {
+        return renderAudioPrompt(helpers) +
+          '<div class="reading-syllable-road" aria-label="слоговая дорожка">' +
+            (task.path || []).map(function (part, index) {
+              return '<span class="reading-road-chip">' + helpers.escape(part) + '</span>' +
+                (index < task.path.length - 1 ? '<span class="reading-road-arrow" aria-hidden="true">→</span>' : "");
+            }).join("") +
+            (task.emoji ? '<span class="reading-road-result" aria-hidden="true">' + helpers.escape(task.emoji) + '</span>' : "") +
+          '</div>' +
+          '<p class="reading-question">' + helpers.escape(task.question || "Что получилось?") + '</p>' +
+          renderOptions(task.options, "text", helpers, task.correct);
       }
 
       return renderAudioPrompt(helpers) +
@@ -271,10 +288,13 @@
       if (!task.audio) {
         return Promise.resolve(false);
       }
-      return window.LexiLandAudio.playAudio(task.audio, task.text || task.target || "", function () {
-        var warning = root.querySelector("#audio-warning");
+      var warning = root.querySelector("#audio-warning");
+      if (warning) {
+        warning.textContent = "";
+      }
+      return window.LexiLandAudio.playAudio(task.audio, task.text || task.target || "", function (message) {
         if (warning) {
-          warning.textContent = "Аудио скоро будет";
+          warning.textContent = message || "Аудио скоро будет";
         }
       });
     }

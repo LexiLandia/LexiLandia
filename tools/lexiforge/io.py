@@ -97,6 +97,15 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
     if isinstance(lesson3, dict) and not any(item.get("id") == lesson3.get("id") for item in lessons):
         lessons.append(lesson3)
 
+    unit1_enhancements = load_js_global(
+        ROOT / "js" / "unit1Enhancements.js",
+        "LexiLandUnit1Enhancements",
+    )
+    if isinstance(unit1_enhancements, dict) and not any(
+        item.get("id") == unit1_enhancements.get("id") for item in lessons
+    ):
+        lessons.append(unit1_enhancements)
+
     unit2 = load_js_global(ROOT / "js" / "unit2Data.js", "LexiLandUnit2Lesson")
     if isinstance(unit2, dict) and not any(item.get("id") == unit2.get("id") for item in lessons):
         lessons.append(unit2)
@@ -156,6 +165,10 @@ def load_runtime_lessons(include_generated: bool = True) -> list[dict[str, Any]]
     unit16 = load_js_global(ROOT / "js" / "unit16Data.js", "LexiLandUnit16Lesson")
     if isinstance(unit16, dict) and not any(item.get("id") == unit16.get("id") for item in lessons):
         lessons.append(unit16)
+
+    unit17 = load_js_global(ROOT / "js" / "unit17Data.js", "LexiLandUnit17Lesson")
+    if isinstance(unit17, dict) and not any(item.get("id") == unit17.get("id") for item in lessons):
+        lessons.append(unit17)
 
     if include_generated:
         generated = load_js_global(ROOT / "js" / "lexiforgeGenerated.js", "LexiForgeGeneratedLessons")
