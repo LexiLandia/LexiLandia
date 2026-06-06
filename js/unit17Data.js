@@ -84,6 +84,21 @@
     };
   }
 
+  function gameUnit(id, title, icon, game) {
+    return {
+      id: id,
+      title: title,
+      icon: icon,
+      stages: [
+        {
+          type: "unit-17-kitchen-game",
+          title: title,
+          tasks: [game]
+        }
+      ]
+    };
+  }
+
   function m(word, emojiText, file) {
     return {
       word: word,
@@ -162,7 +177,11 @@
     "я": m("я", "🙂", "ya.mp3"),
     "хочу": m("хочу", "🙏", "hochu.mp3"),
     "спасибо": m("спасибо", "😊", "spasibo.mp3"),
-    "отлично": m("отлично", "✅", "otlichno.mp3")
+    "отлично": m("отлично", "✅", "otlichno.mp3"),
+    "положи": m("положи", "👇", "polozhi.mp3"),
+    "найди": m("найди", "🔎", "naydi.mp3"),
+    "гость": m("гость", "😊", "gost.mp3"),
+    "готов": m("готов", "✅", "gotov.mp3")
   };
 
   var dictionary = [
@@ -204,7 +223,53 @@
     entry("u17-ya-hochu-chay", "я хочу чай", "🙂🙏🫖", "chunk", "ya_hochu_chay.mp3"),
     entry("u17-chashka-na-stole", "чашка на столе", "☕🟫", "chunk", "chashka_na_stole.mp3"),
     entry("u17-lozhka-v-chashke", "ложка в чашке", "🥄☕", "chunk", "lozhka_v_chashke.mp3"),
-    entry("u17-nozh-ryadom-s-tarelkoy", "нож рядом с тарелкой", "🔪↔️🍽️", "chunk", "nozh_ryadom_s_tarelkoy.mp3")
+    entry("u17-nozh-ryadom-s-tarelkoy", "нож рядом с тарелкой", "🔪↔️🍽️", "chunk", "nozh_ryadom_s_tarelkoy.mp3"),
+    entry("u17-polozhi", "положи", "👇", "word", "polozhi.mp3"),
+    entry("u17-naydi", "найди", "🔎", "word", "naydi.mp3"),
+    entry("u17-gost", "гость", "😊", "word", "gost.mp3"),
+    entry("u17-gotov", "готов", "✅", "word", "gotov.mp3"),
+    entry("u17-polozhi-tarelku", "положи тарелку", "👇🍽️", "chunk", "u17_polozhi_tarelku.mp3"),
+    entry("u17-polozhi-chashku", "положи чашку", "👇☕", "chunk", "u17_polozhi_chashku.mp3"),
+    entry("u17-polozhi-lozhku", "положи ложку", "👇🥄", "chunk", "u17_polozhi_lozhku.mp3"),
+    entry("u17-polozhi-vilku", "положи вилку", "👇🍴", "chunk", "u17_polozhi_vilku.mp3"),
+    entry("u17-polozhi-nozh", "положи нож", "👇🔪", "chunk", "u17_polozhi_nozh.mp3"),
+    entry("u17-polozhi-stakan", "положи стакан", "👇🥛", "chunk", "u17_polozhi_stakan.mp3"),
+    entry("u17-polozhi-salfetku", "положи салфетку", "👇◻️", "chunk", "u17_polozhi_salfetku.mp3"),
+    entry("u17-stol-gotov", "стол готов", "🟫✅", "chunk", "u17_stol_gotov.mp3"),
+    entry("u17-naydi-chashku", "найди чашку", "🔎☕", "chunk", "u17_naydi_chashku.mp3"),
+    entry("u17-naydi-lozhku", "найди ложку", "🔎🥄", "chunk", "u17_naydi_lozhku.mp3"),
+    entry("u17-naydi-tarelku", "найди тарелку", "🔎🍽️", "chunk", "u17_naydi_tarelku.mp3"),
+    entry("u17-naydi-nozh", "найди нож", "🔎🔪", "chunk", "u17_naydi_nozh.mp3"),
+    entry("u17-naydi-vilku", "найди вилку", "🔎🍴", "chunk", "u17_naydi_vilku.mp3"),
+    entry("u17-naydi-chaynik", "найди чайник", "🔎🫖", "chunk", "u17_naydi_chaynik.mp3"),
+    entry("u17-naydi-holodilnik", "найди холодильник", "🔎🧊", "chunk", "u17_naydi_holodilnik.mp3"),
+    entry("u17-naydi-rakovinu", "найди раковину", "🔎🚰", "chunk", "u17_naydi_rakovinu.mp3"),
+    entry("u17-gost-zdes", "гость здесь", "😊🚪", "chunk", "u17_gost_zdes.mp3"),
+    entry("u17-gde-chaynik", "где чайник", "❓🫖", "chunk", "u17_gde_chaynik.mp3"),
+    entry("u17-chay-gotov", "чай готов", "🫖✅", "chunk", "u17_chay_gotov.mp3"),
+    entry("u17-table-success-tarelka", "да, на столе тарелка", "✅🍽️", "feedback", "u17_table_na_stole_tarelka.mp3"),
+    entry("u17-table-success-chashka", "да, на столе чашка", "✅☕", "feedback", "u17_table_na_stole_chashka.mp3"),
+    entry("u17-table-success-lozhka", "да, на столе ложка", "✅🥄", "feedback", "u17_table_na_stole_lozhka.mp3"),
+    entry("u17-table-success-vilka", "да, на столе вилка", "✅🍴", "feedback", "u17_table_na_stole_vilka.mp3"),
+    entry("u17-table-success-nozh", "да, на столе нож", "✅🔪", "feedback", "u17_table_na_stole_nozh.mp3"),
+    entry("u17-table-success-stakan", "да, на столе стакан", "✅🥛", "feedback", "u17_table_na_stole_stakan.mp3"),
+    entry("u17-table-success-salfetka", "да, на столе салфетка", "✅◻️", "feedback", "u17_table_na_stole_salfetka.mp3"),
+    entry("u17-table-final", "отлично, стол готов", "🍽️✅", "feedback", "u17_table_final_stol_gotov.mp3"),
+    entry("u17-find-vot-chashka", "вот чашка", "✅☕", "feedback", "u17_find_vot_chashka.mp3"),
+    entry("u17-find-vot-lozhka", "вот ложка", "✅🥄", "feedback", "u17_find_vot_lozhka.mp3"),
+    entry("u17-find-vot-tarelka", "вот тарелка", "✅🍽️", "feedback", "u17_find_vot_tarelka.mp3"),
+    entry("u17-find-vot-nozh", "вот нож", "✅🔪", "feedback", "u17_find_vot_nozh.mp3"),
+    entry("u17-find-vot-vilka", "вот вилка", "✅🍴", "feedback", "u17_find_vot_vilka.mp3"),
+    entry("u17-find-vot-chaynik", "вот чайник", "✅🫖", "feedback", "u17_find_vot_chaynik.mp3"),
+    entry("u17-find-vot-holodilnik", "вот холодильник", "✅🧊", "feedback", "u17_find_vot_holodilnik.mp3"),
+    entry("u17-find-vot-rakovina", "вот раковина", "✅🚰", "feedback", "u17_find_vot_rakovina.mp3"),
+    entry("u17-find-vot-butylka", "вот бутылка", "✅🧴", "feedback", "u17_find_vot_butylka.mp3"),
+    entry("u17-find-final", "отлично, ты нашёл всё на кухне", "🔎✅", "feedback", "u17_find_final.mp3"),
+    entry("u17-tea-chay", "чай", "🫖", "feedback", "u17_tea_chay.mp3"),
+    entry("u17-tea-vot-chashka", "вот чашка", "✅☕", "feedback", "u17_tea_vot_chashka.mp3"),
+    entry("u17-tea-vot-lozhka", "вот ложка", "✅🥄", "feedback", "u17_tea_vot_lozhka.mp3"),
+    entry("u17-tea-vot-chaynik", "вот чайник", "✅🫖", "feedback", "u17_tea_vot_chaynik.mp3"),
+    entry("u17-tea-final", "чай готов, спасибо", "🫖😊", "feedback", "u17_tea_final_chay_gotov_spasibo.mp3")
   ];
 
   var placeOptions = [
@@ -378,6 +443,108 @@
     ]), [line("Отлично! Кухня. Чашка. Ложка. Тарелка. На столе. В чашке.", "u17_l51_final.mp3")], null, true)
   ];
 
+  var unit17TableObjects = [
+    { id: "tarelka", text: "тарелка", emoji: "🍽️" },
+    { id: "chashka", text: "чашка", emoji: "☕" },
+    { id: "lozhka", text: "ложка", emoji: "🥄" },
+    { id: "vilka", text: "вилка", emoji: "🍴" },
+    { id: "nozh", text: "нож", emoji: "🔪" },
+    { id: "stakan", text: "стакан", emoji: "🥛" },
+    { id: "salfetka", text: "салфетка", emoji: "◻️" }
+  ];
+
+  var unit17KitchenSceneObjects = [
+    { id: "chashka", text: "чашка", emoji: "☕", x: 34, y: 57 },
+    { id: "lozhka", text: "ложка", emoji: "🥄", x: 52, y: 64 },
+    { id: "tarelka", text: "тарелка", emoji: "🍽️", x: 21, y: 67 },
+    { id: "nozh", text: "нож", emoji: "🔪", x: 67, y: 66 },
+    { id: "vilka", text: "вилка", emoji: "🍴", x: 79, y: 65 },
+    { id: "chaynik", text: "чайник", emoji: "🫖", x: 56, y: 30 },
+    { id: "holodilnik", text: "холодильник", emoji: "🧊", x: 84, y: 36 },
+    { id: "rakovina", text: "раковина", emoji: "🚰", x: 14, y: 42 },
+    { id: "butylka", text: "бутылка", emoji: "🧴", x: 38, y: 30 },
+    { id: "stakan", text: "стакан", emoji: "🥛", x: 47, y: 50 }
+  ];
+
+  var unit17TeaObjects = [
+    { id: "chashka", text: "чашка", emoji: "☕" },
+    { id: "lozhka", text: "ложка", emoji: "🥄" },
+    { id: "chaynik", text: "чайник", emoji: "🫖" },
+    { id: "tarelka", text: "тарелка", emoji: "🍽️" },
+    { id: "stakan", text: "стакан", emoji: "🥛" },
+    { id: "butylka", text: "бутылка", emoji: "🧴" }
+  ];
+
+  var setTableGame = {
+    id: "unit-17-game-set-table-data",
+    gameSlug: "unit-17-game-set-table",
+    kind: "set-table",
+    title: "Игра: Накрой стол",
+    icon: "🍽️",
+    objects: unit17TableObjects,
+    finalEmoji: "🍽️✅",
+    finalTitle: "Стол готов",
+    finalText: "Отлично! Стол готов.",
+    finalAudio: audio("u17_table_final_stol_gotov.mp3"),
+    rounds: [
+      { id: "u17-table-1", title: "Накрой стол", text: "Положи тарелку.", audio: audio("u17_table_polozhi_tarelku.mp3"), correct: "tarelka", successText: "Да! На столе тарелка.", successAudio: audio("u17_table_na_stole_tarelka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-2", title: "Накрой стол", text: "Положи чашку.", audio: audio("u17_table_polozhi_chashku.mp3"), correct: "chashka", successText: "Да! На столе чашка.", successAudio: audio("u17_table_na_stole_chashka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-3", title: "Накрой стол", text: "Положи ложку.", audio: audio("u17_table_polozhi_lozhku.mp3"), correct: "lozhka", successText: "Да! На столе ложка.", successAudio: audio("u17_table_na_stole_lozhka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-4", title: "Накрой стол", text: "Положи вилку.", audio: audio("u17_table_polozhi_vilku.mp3"), correct: "vilka", successText: "Да! На столе вилка.", successAudio: audio("u17_table_na_stole_vilka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-5", title: "Накрой стол", text: "Положи нож.", audio: audio("u17_table_polozhi_nozh.mp3"), correct: "nozh", successText: "Да! На столе нож.", successAudio: audio("u17_table_na_stole_nozh.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-6", title: "Накрой стол", text: "Положи стакан.", audio: audio("u17_table_polozhi_stakan.mp3"), correct: "stakan", successText: "Да! На столе стакан.", successAudio: audio("u17_table_na_stole_stakan.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-table-7", title: "Накрой стол", text: "Положи салфетку.", audio: audio("u17_table_polozhi_salfetku.mp3"), correct: "salfetka", successText: "Да! На столе салфетка.", successAudio: audio("u17_table_na_stole_salfetka.mp3"), errorText: "Смотри ещё 🙂" }
+    ]
+  };
+
+  var kitchenFindGame = {
+    id: "unit-17-game-kitchen-find-data",
+    gameSlug: "unit-17-game-kitchen-find",
+    kind: "kitchen-find",
+    title: "Игра: Найди на кухне",
+    icon: "🔎🍽️",
+    sceneItems: unit17KitchenSceneObjects,
+    finalEmoji: "🔎✅",
+    finalTitle: "Кухня",
+    finalText: "Отлично! Ты нашёл всё на кухне.",
+    finalAudio: audio("u17_find_final.mp3"),
+    rounds: [
+      { id: "u17-find-1", title: "Найди", text: "Найди чашку.", audio: audio("u17_find_naydi_chashku.mp3"), correct: "chashka", successText: "Вот чашка. ✅", successAudio: audio("u17_find_vot_chashka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-2", title: "Найди", text: "Найди ложку.", audio: audio("u17_find_naydi_lozhku.mp3"), correct: "lozhka", successText: "Вот ложка. ✅", successAudio: audio("u17_find_vot_lozhka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-3", title: "Найди", text: "Найди тарелку.", audio: audio("u17_find_naydi_tarelku.mp3"), correct: "tarelka", successText: "Вот тарелка. ✅", successAudio: audio("u17_find_vot_tarelka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-4", title: "Найди", text: "Найди нож.", audio: audio("u17_find_naydi_nozh.mp3"), correct: "nozh", successText: "Вот нож. ✅", successAudio: audio("u17_find_vot_nozh.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-5", title: "Найди", text: "Найди вилку.", audio: audio("u17_find_naydi_vilku.mp3"), correct: "vilka", successText: "Вот вилка. ✅", successAudio: audio("u17_find_vot_vilka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-6", title: "Найди", text: "Найди чайник.", audio: audio("u17_find_naydi_chaynik.mp3"), correct: "chaynik", successText: "Вот чайник. ✅", successAudio: audio("u17_find_vot_chaynik.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-7", title: "Найди", text: "Найди холодильник.", audio: audio("u17_find_naydi_holodilnik.mp3"), correct: "holodilnik", successText: "Вот холодильник. ✅", successAudio: audio("u17_find_vot_holodilnik.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-8", title: "Найди", text: "Найди раковину.", audio: audio("u17_find_naydi_rakovinu.mp3"), correct: "rakovina", successText: "Вот раковина. ✅", successAudio: audio("u17_find_vot_rakovina.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-9", title: "Где?", text: "Где чашка?", audio: audio("u17_find_gde_chashka.mp3"), correct: "chashka", successText: "Вот чашка. ✅", successAudio: audio("u17_find_vot_chashka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-find-10", title: "Где?", text: "Где бутылка?", audio: audio("u17_find_gde_butylka.mp3"), correct: "butylka", successText: "Вот бутылка. ✅", successAudio: audio("u17_find_vot_butylka.mp3"), errorText: "Смотри ещё 🙂" }
+    ]
+  };
+
+  var teaGuestGame = {
+    id: "unit-17-game-tea-guest-data",
+    gameSlug: "unit-17-game-tea-guest",
+    kind: "tea-guest",
+    title: "Игра: Чай для гостя",
+    icon: "🫖😊",
+    objects: unit17TeaObjects,
+    finalEmoji: "🫖😊",
+    finalTitle: "Чай готов",
+    finalText: "Чай готов. Спасибо!",
+    finalAudio: audio("u17_tea_final_chay_gotov_spasibo.mp3"),
+    rounds: [
+      { id: "u17-tea-1", title: "Гость", text: "Гость здесь.", audio: audio("u17_tea_gost_zdes.mp3"), action: "continue", successText: "Гость здесь.", successAudio: audio("u17_tea_gost_zdes.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-2", title: "Чай", text: "Я хочу чай.", audio: audio("u17_tea_ya_hochu_chay.mp3"), correct: "chaynik", successText: "Чай. ✅", successAudio: audio("u17_tea_chay.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-3", title: "Найди", text: "Найди чашку.", audio: audio("u17_tea_naydi_chashku.mp3"), correct: "chashka", successText: "Вот чашка. ✅", successAudio: audio("u17_tea_vot_chashka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-4", title: "Найди", text: "Найди ложку.", audio: audio("u17_tea_naydi_lozhku.mp3"), correct: "lozhka", successText: "Вот ложка. ✅", successAudio: audio("u17_tea_vot_lozhka.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-5", title: "Найди", text: "Найди чайник.", audio: audio("u17_tea_naydi_chaynik.mp3"), correct: "chaynik", successText: "Вот чайник. ✅", successAudio: audio("u17_tea_vot_chaynik.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-6", title: "Дай", text: "Дай чашку, пожалуйста.", audio: audio("u17_tea_dai_chashku_pozhaluysta.mp3"), correct: "chashka", successText: "На.", successAudio: audio("na.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-7", title: "На", text: "На.", audio: audio("na.mp3"), action: "continue", successText: "На.", successAudio: audio("na.mp3"), errorText: "Смотри ещё 🙂" },
+      { id: "u17-tea-8", title: "Спасибо", text: "Спасибо.", audio: audio("spasibo.mp3"), action: "continue", successText: "Спасибо.", successAudio: audio("spasibo.mp3"), errorText: "Смотри ещё 🙂" }
+    ]
+  };
+
   root.LexiLandUnit17Lesson = {
     id: "level-0-unit-17-kitchen-things",
     order: 19,
@@ -392,7 +559,10 @@
     units: [
       unit("lesson-49-kitchen", "Урок 49: Кухня", "🍽️", "Урок 49: Кухня", lesson49Slides),
       unit("lesson-50-tableware", "Урок 50: Посуда", "☕", "Урок 50: Посуда", lesson50Slides),
-      unit("lesson-51-where-is-it", "Урок 51: Где лежит?", "📍", "Урок 51: Где лежит?", lesson51Slides)
+      unit("lesson-51-where-is-it", "Урок 51: Где лежит?", "📍", "Урок 51: Где лежит?", lesson51Slides),
+      gameUnit("unit-17-game-set-table", "Игра: Накрой стол", "🍽️", setTableGame),
+      gameUnit("unit-17-game-kitchen-find", "Игра 2: Найди на кухне", "🔎🍽️", kitchenFindGame),
+      gameUnit("unit-17-game-tea-guest", "Игра 3: Чай для гостя", "🫖😊", teaGuestGame)
     ]
   };
 

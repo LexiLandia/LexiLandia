@@ -1043,6 +1043,22 @@
       return;
     }
 
+    if (stage.type === "unit-17-kitchen-game") {
+      appRoot.innerHTML =
+        renderLessonHeader(stage.title) +
+        '<main class="lesson-screen task-screen unit17-game-screen">' +
+          '<div id="game-root"></div>' +
+        '</main>';
+
+      window.LexiLandGames.renderUnit17KitchenGame({
+        root: document.getElementById("game-root"),
+        task: task,
+        helpers: gameHelpers(),
+        onCorrect: nextTask
+      });
+      return;
+    }
+
     if (stage.type === "world-mission-game") {
       appRoot.innerHTML =
         renderLessonHeader(stage.title) +

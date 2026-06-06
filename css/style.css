@@ -5162,3 +5162,311 @@ button.unit6-room-object {
     padding: 8px;
   }
 }
+
+.unit17-game-screen {
+  --kitchen-line: var(--orange);
+}
+
+.unit17-game-card {
+  display: grid;
+  gap: 10px;
+  min-height: min(72dvh, 680px);
+  border: 2px solid var(--orange);
+  background: #090909;
+}
+
+.unit17-game-top {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.unit17-game-mark {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border: 3px solid var(--orange);
+  background: #050505;
+  font-size: 1.8rem;
+}
+
+.unit17-game-label {
+  margin: 0;
+  color: var(--orange);
+  font-weight: 1000;
+}
+
+.unit17-game-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.45rem, 6vw, 2.45rem);
+  font-weight: 1000;
+}
+
+.unit17-game-progress {
+  height: 8px;
+  border: 2px solid var(--orange);
+  background: #020202;
+}
+
+.unit17-game-progress span {
+  display: block;
+  height: 100%;
+  background: var(--orange);
+}
+
+.unit17-game-task {
+  display: grid;
+  gap: 10px;
+}
+
+.unit17-command {
+  margin: 0;
+  color: var(--orange);
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  font-weight: 1000;
+  text-align: center;
+}
+
+.unit17-table-scene,
+.unit17-tea-scene,
+.unit17-kitchen-scene {
+  border: 2px solid var(--orange);
+  background: #050505;
+}
+
+.unit17-table-scene {
+  display: grid;
+  min-height: min(25dvh, 190px);
+  place-items: center;
+  padding: 12px;
+}
+
+.unit17-table-area {
+  display: grid;
+  width: min(100%, 520px);
+  min-height: 118px;
+  place-items: center;
+  gap: 8px;
+  border: 3px solid #8b5a2b;
+  background: linear-gradient(135deg, #5a351c, #2e1b10);
+}
+
+.unit17-table-label {
+  color: #ffd08a;
+  font-size: 0.9rem;
+  font-weight: 1000;
+}
+
+.unit17-placed-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.unit17-table-placeholder,
+.unit17-placed-item {
+  display: grid;
+  min-width: 44px;
+  min-height: 44px;
+  place-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: clamp(1.6rem, 8vw, 2.5rem);
+}
+
+.unit17-object-tray {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 8px;
+}
+
+.unit17-object-button,
+.unit17-scene-object {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  border: 2px solid var(--orange);
+  background: #030303;
+  color: #ffffff;
+  font-weight: 1000;
+  min-height: 76px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.unit17-object-button span,
+.unit17-scene-object span {
+  font-size: clamp(1.9rem, 9vw, 3rem);
+  line-height: 1;
+}
+
+.unit17-object-button strong,
+.unit17-scene-object small {
+  color: #ffffff;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 1000;
+}
+
+.unit17-kitchen-scene {
+  position: relative;
+  min-height: min(43dvh, 330px);
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(32, 82, 110, 0.18), rgba(0, 0, 0, 0) 44%),
+    #050505;
+}
+
+.unit17-kitchen-counter,
+.unit17-kitchen-shelf,
+.unit17-kitchen-wall {
+  position: absolute;
+  color: #ffd08a;
+  font-weight: 1000;
+  pointer-events: none;
+}
+
+.unit17-kitchen-counter {
+  left: 8%;
+  right: 8%;
+  bottom: 12%;
+  height: 22%;
+  border: 2px solid #8b5a2b;
+  background: rgba(139, 90, 43, 0.34);
+  text-align: center;
+}
+
+.unit17-kitchen-shelf {
+  left: 28%;
+  right: 22%;
+  top: 22%;
+  height: 6px;
+  background: #8b5a2b;
+}
+
+.unit17-kitchen-wall {
+  left: 10%;
+  top: 16%;
+  font-size: 2rem;
+}
+
+.unit17-scene-object {
+  position: absolute;
+  z-index: 2;
+  min-width: 74px;
+  min-height: 62px;
+  transform: translate(-50%, -50%);
+  background: rgba(2, 2, 2, 0.88);
+}
+
+.unit17-tea-scene {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: stretch;
+  min-height: min(28dvh, 220px);
+  padding: 10px;
+}
+
+.unit17-guest,
+.unit17-tea-table {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-weight: 1000;
+}
+
+.unit17-guest span,
+.unit17-tea-table > span {
+  font-size: clamp(3rem, 14vw, 5rem);
+}
+
+.unit17-wide-action {
+  width: 100%;
+}
+
+.unit17-feedback {
+  min-height: 38px;
+}
+
+.unit17-feedback.is-good {
+  color: var(--green);
+}
+
+.unit17-feedback.is-try {
+  color: var(--orange);
+}
+
+.unit17-final-card {
+  align-content: center;
+  text-align: center;
+}
+
+.unit17-final-emoji {
+  font-size: clamp(4rem, 18vw, 7rem);
+}
+
+.unit17-final-text {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
+  font-weight: 1000;
+}
+
+.unit17-game-nav {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 560px) {
+  .unit17-object-tray {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unit17-tea-scene {
+    grid-template-columns: 1fr;
+  }
+
+  .unit17-scene-object {
+    min-width: 58px;
+    min-height: 54px;
+    padding: 5px;
+  }
+}
+
+@media (max-height: 740px) {
+  .unit17-game-card {
+    min-height: auto;
+    gap: 7px;
+    padding: 9px;
+  }
+
+  .unit17-game-top {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .unit17-game-mark {
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+  }
+
+  .unit17-command {
+    font-size: clamp(1.05rem, 4dvh, 1.55rem);
+  }
+
+  .unit17-object-button {
+    min-height: 58px;
+    padding: 5px;
+  }
+
+  .unit17-kitchen-scene {
+    min-height: min(36dvh, 260px);
+  }
+}
