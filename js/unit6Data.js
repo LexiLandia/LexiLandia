@@ -374,7 +374,7 @@
     slide("u6-near-extra-1", "Рядом", ["Кот рядом с собакой."], loc("near", "🐱", "🐶"), [line("Кот рядом с собакой.", "kot_ryadom_s_sobakoy.mp3")], null, true),
     slide("u6-near-extra-2", "Рядом", ["Мяч рядом с домом."], loc("near", "⚽", "🏠"), [line("Мяч рядом с домом.", "myach_ryadom_s_domom.mp3")], null, true),
     slide("u6-near-extra-3", "Рядом", ["Мама рядом с папой."], loc("near", "👩", "👨"), [line("Мама рядом с папой.", "mama_ryadom_s_papoy.mp3")], null, true),
-    slide("u6-near-extra-4", "Не рядом", ["Мяч не рядом."], focus(["⚽", "        ", "🏠"]), [line("Мяч не рядом.", "myach_ne_ryadom.mp3")], null, true),
+    slide("u6-near-extra-4", "Не рядом", ["Мяч не рядом."], focus(["⚽", "━━━━", "🏠"]), [line("Мяч не рядом.", "myach_ne_ryadom.mp3")], null, true),
     slide("u6-near-extra-5", "Читай", ["Кот рядом с собакой.", "Мяч рядом с домом.", "Мама рядом с папой."], focus(["🐱↔️🐶", "⚽↔️🏠", "👩↔️👨"]), [line("Кот рядом с собакой. Мяч рядом с домом. Мама рядом с папой.", "u6_near_extra_text.mp3")], [
       question("u6-near-extra-q1", "Кто рядом с собакой?", [option("kot", "кот", "🐱"), option("mama", "мама", "👩"), option("papa", "папа", "👨")], "kot", "🐶"),
       question("u6-near-extra-q2", "Что рядом с домом?", [option("myach", "мяч", "⚽"), option("kniga", "книга", "📘"), option("kot", "кот", "🐱")], "myach", "🏠"),
@@ -382,7 +382,7 @@
     ], true),
     slide("u6-near-extra-6", "Где?", ["Где кот?", "Кот рядом с собакой."], loc("near", "🐱", "🐶"), [line("Где кот? Кот рядом с собакой.", "u6_near_extra_gde_kot.mp3")], null, true),
     slide("u6-near-extra-7", "Отлично", ["Отлично!", "Рядом.", "В.", "На.", "Под."], focus(["✅", "↔️", "📦", "⬆️", "⬇️"]), [line("Отлично! Рядом. В. На. Под.", "u6_l18_final.mp3")], null, true),
-    slide("u6-near-extra-8", "Смотри", ["Мяч рядом.", "Мяч не рядом."], focus(["⚽↔️🏠", "⚽     🏠"]), [line("Мяч рядом. Мяч не рядом.", "u6_near_extra_ryadom_ne_ryadom.mp3")], null, true)
+    slide("u6-near-extra-8", "Смотри", ["Мяч рядом.", "Мяч не рядом."], focus(["⚽↔️🏠", "⚽━━━━🏠"]), [line("Мяч рядом. Мяч не рядом.", "u6_near_extra_ryadom_ne_ryadom.mp3")], null, true)
   ];
 
   var lesson16WithRoomExtraSlides = lesson16Slides.slice(0, -1).concat(lesson16RoomExtraSlides, lesson16Slides.slice(-1));
