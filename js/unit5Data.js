@@ -162,6 +162,9 @@
   var meanings = {
     "иди": m("иди", "🚶"),
     "стой": m("стой", "🛑"),
+    "тут": m("тут", "📍"),
+    "там": m("там", "👉"),
+    "что": m("что", "❓"),
     "сюда": m("сюда", "👈🙂"),
     "туда": m("туда", "👉"),
     "вверх": m("вверх", "⬆️"),
@@ -180,8 +183,10 @@
     "иду": m("иду", "🙂🚶"),
     "идёшь": m("идёшь", "🧑🚶"),
     "идёт": m("идёт", "🚶"),
+    "дома": m("дома", "🏠"),
     "домой": m("домой", "🏠"),
     "дом": m("дом", "🏠"),
+    "магазине": m("магазине", "🏪"),
     "магазин": m("магазин", "🏪"),
     "парк": m("парк", "🌳🌳🌳"),
     "кафе": m("кафе", "🏢☕"),
@@ -200,7 +205,13 @@
     "солнце": m("солнце", "☀️"),
     "рыба": m("рыба", "🐟"),
     "картинка": m("картинка", "🖼️"),
-    "рисуй": m("рисуй", "✏️")
+    "рисуй": m("рисуй", "✏️"),
+    "карта": m("карта", "🗺️"),
+    "путь": m("путь", "🛤️"),
+    "сначала": m("сначала", "1️⃣"),
+    "потом": m("потом", "➡️"),
+    "конце": m("конце", "🏁"),
+    "парке": m("парке", "🌳🌳🌳")
   };
 
   var yesNoOptions = [
@@ -241,6 +252,9 @@
   var dictionary = [
     entry("u5-idi", "иди", "🚶", "word", "idi.mp3"),
     entry("u5-stoy", "стой", "🛑", "word", "stoy.mp3"),
+    entry("u5-tut", "тут", "📍", "word", "tut.mp3"),
+    entry("u5-tam", "там", "👉", "word", "tam.mp3"),
+    entry("u5-chto", "что?", "❓", "word", "chto.mp3"),
     entry("u5-syuda", "сюда", "👈🙂", "word", "syuda.mp3"),
     entry("u5-tuda", "туда", "👉", "word", "tuda.mp3"),
     entry("u5-vverh", "вверх", "⬆️", "word", "vverh.mp3"),
@@ -259,6 +273,7 @@
     entry("u5-on-idyot", "он идёт", "👦🚶", "chunk", "on_idyot.mp3"),
     entry("u5-ona-idyot", "она идёт", "👧🚶", "chunk", "ona_idyot.mp3"),
     entry("u5-domoy", "домой", "🏠", "word", "domoy.mp3"),
+    entry("u5-doma", "дома", "🏠", "word", "doma.mp3"),
     entry("u5-dom", "дом", "🏠", "word", "dom.mp3"),
     entry("u5-magazin", "магазин", "🏪", "word", "magazin.mp3"),
     entry("u5-park", "парк", "🌳🌳🌳", "word", "park.mp3"),
@@ -269,7 +284,14 @@
     entry("u5-solntse", "солнце", "☀️", "word", "solntse.mp3"),
     entry("u5-ryba", "рыба", "🐟", "word", "ryba.mp3"),
     entry("u5-kartinka", "картинка", "🖼️", "word", "kartinka.mp3"),
-    entry("u5-risuy", "рисуй", "✏️", "word", "risuy.mp3")
+    entry("u5-risuy", "рисуй", "✏️", "word", "risuy.mp3"),
+    entry("u5-karta", "карта", "🗺️", "word", "karta.mp3"),
+    entry("u5-put", "путь", "🛤️", "word", "put.mp3"),
+    entry("u5-snachala", "сначала", "1️⃣", "word", "snachala.mp3"),
+    entry("u5-potom", "потом", "➡️", "word", "potom.mp3"),
+    entry("u5-v-kontse", "в конце", "🏁", "chunk", "v_kontse.mp3"),
+    entry("u5-v-parke", "в парке", "🌳🌳🌳", "chunk", "v_parke.mp3"),
+    entry("u5-v-magazine", "в магазине", "🏪", "chunk", "v_magazine.mp3")
   ];
 
   var lesson13Slides = [
@@ -296,6 +318,24 @@
     slide("u5-l13-18", "Отлично!", ["Отлично! ✅", "Иди.", "Стой.", "Иди сюда.", "Иди туда."], wordList([{ text: "иди", emoji: "🚶" }, { text: "стой", emoji: "🛑" }, { text: "сюда", emoji: "👈🙂" }, { text: "туда", emoji: "👉" }]), [line("Отлично! Иди. Стой.", "u5_l13_final.mp3")], null, true)
   ];
 
+  var lesson13ExtraSlides = [
+    slide("u5-l13-extra-1", "Маленький мир", ["Тут дом.", "Там парк."], focus(["🙂", "🏠", "🌳🌳🌳"]), [line("Тут дом. Там парк.", "u5_l13_extra_tut_dom_tam_park.mp3")], null, true),
+    slide("u5-l13-extra-2", "Иди", ["Иди в дом."], focus(["🙂", "🚶‍➡️", "🏠"]), [line("Иди в дом.", "idi_v_dom.mp3")], null, true),
+    slide("u5-l13-extra-3", "Иди", ["Иди в парк."], focus(["🙂", "🚶‍➡️", "🌳🌳🌳"]), [line("Иди в парк.", "idi_v_park.mp3")], null, true),
+    slide("u5-l13-extra-4", "Куда?", ["Куда?", "Иди в кафе."], focus(["❓", "🏢☕"]), [line("Куда? Иди в кафе.", "u5_l13_extra_kuda_idi_v_kafe.mp3")], [
+      question("u5-l13-extra-q1", "Куда?", [option("dom", "дом", "🏠"), option("park", "парк", "🌳🌳🌳"), option("kafe", "кафе", "🏢☕")], "kafe", "🏢☕")
+    ], true),
+    slide("u5-l13-extra-5", "Куда?", ["Куда?", "Иди в магазин."], focus(["❓", "🏪"]), [line("Куда? Иди в магазин.", "u5_l13_extra_kuda_idi_v_magazin.mp3")], [
+      question("u5-l13-extra-q2", "Куда?", [option("magazin", "магазин", "🏪"), option("dom", "дом", "🏠"), option("park", "парк", "🌳🌳🌳")], "magazin", "🏪")
+    ], true),
+    slide("u5-l13-extra-6", "Стой", ["Иди.", "Стой."], focus(["🙂", "🚶‍➡️", "🛑"]), [line("Иди. Стой.", "idi_stoy.mp3")], null, true),
+    slide("u5-l13-extra-7", "Читай", ["Я иду в дом.", "Ты идёшь в парк.", "Мама идёт в кафе."], focus(["🙂🚶‍➡️🏠", "🧑🚶‍➡️🌳🌳🌳", "👩🚶‍➡️🏢☕"]), [line("Я иду в дом. Ты идёшь в парк. Мама идёт в кафе.", "u5_l13_extra_ya_ty_mama_idut.mp3")], [
+      question("u5-l13-extra-q3", "Куда я иду?", [option("v-dom", "в дом", "🏠"), option("v-park", "в парк", "🌳🌳🌳"), option("v-kafe", "в кафе", "🏢☕")], "v-dom", "🙂"),
+      question("u5-l13-extra-q4", "Куда мама идёт?", [option("v-kafe", "в кафе", "🏢☕"), option("v-dom", "в дом", "🏠"), option("v-magazin", "в магазин", "🏪")], "v-kafe", "👩")
+    ], true),
+    slide("u5-l13-extra-8", "Маленький путь", ["Иди в дом.", "Стой."], focus(["🙂", "🚶‍➡️", "🏠", "🛑"]), [line("Иди в дом. Стой.", "u5_l13_extra_idi_v_dom_stoy.mp3")], null, true)
+  ];
+
   var lesson14Slides = [
     slide("u5-l14-1", "Вверх, вниз, налево, направо", ["⬆️ вверх", "⬇️ вниз", "⬅️ налево", "➡️ направо"], wordList([{ text: "вверх", emoji: "⬆️" }, { text: "вниз", emoji: "⬇️" }, { text: "налево", emoji: "⬅️" }, { text: "направо", emoji: "➡️" }]), [line("вверх. вниз. налево. направо.", "vverh_vniz_nalevo_napravo.mp3")], null, true),
     slide("u5-l14-2", "вверх", ["Иди вверх."], focus(["🙂", "⬆️"]), [line("Иди вверх.", "idi_vverh.mp3")], null, true),
@@ -314,6 +354,23 @@
     slide("u5-l14-11", "Найди", ["Иди налево."], focus(["⬅️", "🙂"]), [line("Иди налево.", "idi_nalevo.mp3")], [question("u5-l14-q3", "Куда?", arrowOptions, "left", "⬅️")], true),
     slide("u5-l14-12", "Найди", ["Иди направо."], focus(["🙂", "➡️"]), [line("Иди направо.", "idi_napravo.mp3")], [question("u5-l14-q4", "Куда?", arrowOptions, "right", "➡️")], true),
     slide("u5-l14-13", "Читай", ["Иди вверх.", "Иди направо.", "Иди вниз.", "Стой."], focus(["⬆️", "➡️", "⬇️", "🛑"]), [line("Иди вверх. Иди направо. Иди вниз. Стой.", "lesson_14_text.mp3")], [question("u5-l14-q5", "Стой?", arrowOptions, "stop", "🛑")], true)
+  ];
+
+  var lesson14ExtraSlides = [
+    slide("u5-l14-extra-1", "Карта", ["Это карта."], focus(["⬜⬜⬜", "⬜🙂⬜", "⬜⬜⭐"]), [line("Это карта.", "eto_karta.mp3")], null, true),
+    slide("u5-l14-extra-2", "Вверх", ["Иди вверх."], focus(["🙂", "⬆️", "⭐"]), [line("Иди вверх.", "idi_vverh.mp3")], null, true),
+    slide("u5-l14-extra-3", "Вниз", ["Иди вниз."], focus(["🙂", "⬇️", "⭐"]), [line("Иди вниз.", "idi_vniz.mp3")], null, true),
+    slide("u5-l14-extra-4", "Налево", ["Иди налево."], focus(["⭐", "⬅️", "🙂"]), [line("Иди налево.", "idi_nalevo.mp3")], null, true),
+    slide("u5-l14-extra-5", "Направо", ["Иди направо."], focus(["🙂", "➡️", "⭐"]), [line("Иди направо.", "idi_napravo.mp3")], null, true),
+    slide("u5-l14-extra-6", "Два шага", ["Иди два шага вверх."], focus(["🙂", "⬆️", "⬆️", "⭐"]), [line("Иди два шага вверх.", "idi_dva_shaga_vverh.mp3")], null, true),
+    slide("u5-l14-extra-7", "Три шага", ["Иди три шага направо."], focus(["🙂", "➡️", "➡️", "➡️", "⭐"]), [line("Иди три шага направо.", "idi_tri_shaga_napravo.mp3")], null, true),
+    slide("u5-l14-extra-8", "Смотри", ["Иди вверх.", "Иди направо.", "Стой."], focus(["🙂", "⬆️", "➡️", "🛑"]), [line("Иди вверх. Иди направо. Стой.", "u5_l14_extra_vverh_napravo_stoy.mp3")], [
+      question("u5-l14-extra-q1", "Что потом?", [option("right", "направо", "➡️"), option("down", "вниз", "⬇️"), option("left", "налево", "⬅️")], "right", "➡️")
+    ], true),
+    slide("u5-l14-extra-9", "Читай", ["Иди два шага вверх.", "Иди один шаг направо.", "Стой."], focus(["2️⃣⬆️", "1️⃣➡️", "🛑"]), [line("Иди два шага вверх. Иди один шаг направо. Стой.", "u5_l14_extra_dva_vverh_odin_napravo_stoy.mp3")], [
+      question("u5-l14-extra-q2", "Сколько шагов вверх?", [option("dva", "два", "2️⃣"), option("odin", "один", "1️⃣"), option("tri", "три", "3️⃣")], "dva", "2️⃣⬆️")
+    ], true),
+    slide("u5-l14-extra-10", "Отлично", ["Отлично!", "Вверх.", "Вниз.", "Налево.", "Направо.", "Стой."], focus(["✅", "⬆️", "⬇️", "⬅️", "➡️", "🛑"]), [line("Отлично! Вверх. Вниз. Налево. Направо. Стой.", "u5_l14_extra_final.mp3")], null, true)
   ];
 
   var lesson14MoveTasks = [
@@ -352,6 +409,25 @@
     ], true),
     slide("u5-l15-15", "Отлично!", ["Отлично! ✅", "Куда?", "Я иду.", "домой", "в парк"], wordList([{ text: "куда?", emoji: "🧭❓" }, { text: "я иду", emoji: "🙂🚶" }, { text: "домой", emoji: "🏠" }, { text: "в парк", emoji: "🌳🌳🌳" }]), [line("Отлично! Куда? Я иду домой.", "u5_l15_final.mp3")], null, true)
   ];
+
+  var unit5RouteStorySlides = [
+    slide("u5-route-story-1", "Я дома", ["Я дома."], focus(["🙂", "🏠"]), [line("Я дома.", "ya_doma.mp3")], null, true),
+    slide("u5-route-story-2", "Я иду", ["Я иду в магазин."], focus(["🙂", "🚶‍➡️", "🏪"]), [line("Я иду в магазин.", "ya_idu_v_magazin.mp3")], null, true),
+    slide("u5-route-story-3", "Я иду", ["Я иду в парк."], focus(["🙂", "🚶‍➡️", "🌳🌳🌳"]), [line("Я иду в парк.", "ya_idu_v_park.mp3")], null, true),
+    slide("u5-route-story-4", "Я иду", ["Я иду в кафе."], focus(["🙂", "🚶‍➡️", "🏢☕"]), [line("Я иду в кафе.", "ya_idu_v_kafe.mp3")], null, true),
+    slide("u5-route-story-5", "Стой", ["Стой.", "Я в кафе."], focus(["🛑", "🙂", "🏢☕"]), [line("Стой. Я в кафе.", "u5_route_story_stoy_ya_v_kafe.mp3")], null, true),
+    slide("u5-route-story-6", "Читай", ["Я дома.", "Я иду в магазин.", "Я иду в парк.", "Я иду в кафе."], focus(["🏠", "→", "🏪", "→", "🌳🌳🌳", "→", "🏢☕"]), [line("Я дома. Я иду в магазин. Я иду в парк. Я иду в кафе.", "u5_route_story_text.mp3")], [
+      question("u5-route-story-q1", "Куда я иду сначала?", [option("v-magazin", "в магазин", "🏪"), option("v-park", "в парк", "🌳🌳🌳"), option("v-kafe", "в кафе", "🏢☕")], "v-magazin", "1️⃣"),
+      question("u5-route-story-q2", "Где я потом?", [option("v-parke", "в парке", "🌳🌳🌳"), option("doma", "дома", "🏠"), option("v-magazine", "в магазине", "🏪")], "v-parke", "➡️"),
+      question("u5-route-story-q3", "Где я в конце?", [option("v-kafe", "в кафе", "🏢☕"), option("v-dome", "в доме", "🏠"), option("v-magazine", "в магазине", "🏪")], "v-kafe", "🏁")
+    ], true),
+    slide("u5-route-story-7", "Потом", ["Потом я в парке."], focus(["➡️", "🙂", "🌳🌳🌳"]), [line("Потом я в парке.", "u5_route_story_potom_ya_v_parke.mp3")], null, true),
+    slide("u5-route-story-8", "В конце", ["В конце я в кафе.", "Стой."], focus(["🏁", "🙂", "🏢☕", "🛑"]), [line("В конце я в кафе. Стой.", "u5_route_story_v_kontse_ya_v_kafe_stoy.mp3")], null, true)
+  ];
+
+  var lesson13WithExtraSlides = lesson13Slides.slice(0, -1).concat(lesson13ExtraSlides, lesson13Slides.slice(-1));
+  var lesson14WithExtraSlides = lesson14Slides.concat(lesson14ExtraSlides);
+  var lesson15WithRouteStorySlides = lesson15Slides.slice(0, -1).concat(unit5RouteStorySlides, lesson15Slides.slice(-1));
 
   var commandGame = {
     id: "unit-5-game-idi-pravilno",
@@ -611,7 +687,7 @@
       {
         type: "slides",
         title: "Урок 14: Вверх, вниз, налево, направо",
-        tasks: lesson14Slides
+        tasks: lesson14WithExtraSlides
       },
       {
         type: "map-command-game",
@@ -637,9 +713,9 @@
     dictionary: dictionary,
     scenes: [],
     units: [
-      unit("lesson-13-idi", "Урок 13: Иди", "🚶", "Урок 13: Иди", lesson13Slides),
+      unit("lesson-13-idi", "Урок 13: Иди", "🚶", "Урок 13: Иди", lesson13WithExtraSlides),
       lesson14Unit,
-      unit("lesson-15-kuda", "Урок 15: Куда?", "🗺️", "Урок 15: Куда?", lesson15Slides),
+      unit("lesson-15-kuda", "Урок 15: Куда?", "🗺️", "Урок 15: Куда?", lesson15WithRouteStorySlides),
       {
         id: "unit-5-game-idi-pravilno",
         title: "Игра: Иди правильно",

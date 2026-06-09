@@ -207,6 +207,7 @@
 
   var meanings = {
     "где": m("где", "❓"),
+    "это": m("это", "👉"),
     "тут": m("тут", "📍"),
     "там": m("там", "👉"),
     "в": m("в", "📦"),
@@ -231,6 +232,11 @@
     "книга": m("книга", "📘"),
     "мама": m("мама", "👩"),
     "папа": m("папа", "👨"),
+    "комната": m("комната", "🏠"),
+    "и": m("и", "➕"),
+    "не": m("не", "❌"),
+    "собакой": m("собакой", "🐶"),
+    "папой": m("папой", "👨"),
     "да": m("да", "✅"),
     "нет": m("нет", "❌")
   };
@@ -254,6 +260,7 @@
 
   var dictionary = [
     entry("u6-gde", "где?", "❓", "word", "gde.mp3"),
+    entry("u6-eto", "это", "👉", "word", "eto.mp3"),
     entry("u6-tut", "тут", "📍", "word", "tut.mp3"),
     entry("u6-tam", "там", "👉", "word", "tam.mp3"),
     entry("u6-v", "в", "📦", "word", "v.mp3"),
@@ -270,10 +277,16 @@
     entry("u6-kniga", "книга", "📘", "word", "kniga.mp3"),
     entry("u6-mama", "мама", "👩", "word", "mama.mp3"),
     entry("u6-papa", "папа", "👨", "word", "papa.mp3"),
+    entry("u6-komnata", "комната", "🏠", "word", "komnata.mp3"),
+    entry("u6-i", "и", "➕", "word", "i.mp3"),
+    entry("u6-ne", "не", "❌", "word", "ne.mp3"),
     entry("u6-v-korobke", "в коробке", "📦", "chunk", "v_korobke.mp3"),
     entry("u6-na-stole", "на столе", "⬆️🍽️", "chunk", "na_stole.mp3"),
     entry("u6-pod-stolom", "под столом", "⬇️🍽️", "chunk", "pod_stolom.mp3"),
-    entry("u6-ryadom-s-domom", "рядом с домом", "↔️🏠", "chunk", "ryadom_s_domom.mp3")
+    entry("u6-ryadom-s-domom", "рядом с домом", "↔️🏠", "chunk", "ryadom_s_domom.mp3"),
+    entry("u6-ryadom-s-sobakoy", "рядом с собакой", "↔️🐶", "chunk", "ryadom_s_sobakoy.mp3"),
+    entry("u6-ryadom-s-papoy", "рядом с папой", "↔️👨", "chunk", "ryadom_s_papoy.mp3"),
+    entry("u6-ne-ryadom", "не рядом", "❌↔️", "chunk", "ne_ryadom.mp3")
   ];
 
   var lesson16Slides = [
@@ -291,6 +304,23 @@
     slide("u6-l16-12", "Отлично!", ["Отлично! ✅", "где?", "тут", "там"], wordList([{ text: "где?", emoji: "❓" }, { text: "тут", emoji: "📍" }, { text: "там", emoji: "👉" }]), [line("Отлично! Где? Тут. Там.", "u6_l16_final.mp3")], null, true)
   ];
 
+  var lesson16RoomExtraSlides = [
+    slide("u6-room-extra-1", "Комната", ["Это комната."], focus(["🏠", "🐱", "⚽", "📘", "🍽️"]), [line("Это комната.", "eto_komnata.mp3")], null, true),
+    slide("u6-room-extra-2", "Тут", ["Кот тут."], focus(["📍", "🐱"]), [line("Кот тут.", "kot_tut.mp3")], null, true),
+    slide("u6-room-extra-3", "Там", ["Мяч там."], focus(["👉", "⚽"]), [line("Мяч там.", "myach_tam.mp3")], null, true),
+    slide("u6-room-extra-4", "Тут", ["Книга тут."], focus(["📍", "📘"]), [line("Книга тут.", "kniga_tut.mp3")], null, true),
+    slide("u6-room-extra-5", "Там", ["Стол там."], focus(["👉", "🍽️"]), [line("Стол там.", "stol_tam.mp3")], null, true),
+    slide("u6-room-extra-6", "Читай", ["Кот тут.", "Мяч там.", "Книга тут.", "Стол там."], focus(["📍🐱", "📍📘", "👉⚽", "👉🍽️"]), [line("Кот тут. Мяч там. Книга тут. Стол там.", "u6_room_extra_text.mp3")], [
+      question("u6-room-extra-q1", "Где кот?", [option("tut", "тут", "📍"), option("tam", "там", "👉")], "tut", "🐱"),
+      question("u6-room-extra-q2", "Где мяч?", [option("tam", "там", "👉"), option("tut", "тут", "📍")], "tam", "⚽"),
+      question("u6-room-extra-q3", "Что тут?", [option("kot-i-kniga", "кот и книга", "🐱📘"), option("myach-i-stol", "мяч и стол", "⚽🍽️")], "kot-i-kniga", "📍")
+    ], true),
+    slide("u6-room-extra-7", "Где?", ["Где книга?"], focus(["📍", "📘"]), [line("Где книга?", "gde_kniga.mp3")], [
+      question("u6-room-extra-q4", "Где книга?", [option("tut", "тут", "📍"), option("tam", "там", "👉")], "tut", "📘")
+    ], true),
+    slide("u6-room-extra-8", "Отлично", ["Отлично!", "Тут.", "Там.", "Где?"], focus(["✅", "📍", "👉", "❓"]), [line("Отлично! Тут. Там. Где?", "u6_room_extra_final.mp3")], null, true)
+  ];
+
   var lesson17Slides = [
     slide("u6-l17-1", "в", ["в", "Мяч в коробке."], loc("in", "⚽", "📦"), [line("в. Мяч в коробке.", "u6_l17_v_myach_v_korobke.mp3")], null, true),
     slide("u6-l17-2", "на", ["на", "Мяч на столе."], loc("on", "⚽", "🍽️"), [line("на. Мяч на столе.", "u6_l17_na_myach_na_stole.mp3")], null, true),
@@ -306,6 +336,26 @@
     slide("u6-l17-12", "Отлично!", ["Отлично! ✅", "в", "на", "под"], wordList([{ text: "в", emoji: "📦" }, { text: "на", emoji: "⬆️" }, { text: "под", emoji: "⬇️" }]), [line("Отлично! В. На. Под.", "u6_l17_final.mp3")], null, true)
   ];
 
+  var lesson17TableBoxSlides = [
+    slide("u6-table-box-1", "Коробка и стол", ["Это коробка.", "Это стол."], focus(["📦", "🍽️"]), [line("Это коробка. Это стол.", "eto_korobka_eto_stol.mp3")], null, true),
+    slide("u6-table-box-2", "В", ["Мяч в коробке."], loc("in", "⚽", "📦"), [line("Мяч в коробке.", "myach_v_korobke.mp3")], null, true),
+    slide("u6-table-box-3", "На", ["Книга на столе."], loc("on", "📘", "🍽️"), [line("Книга на столе.", "kniga_na_stole.mp3")], null, true),
+    slide("u6-table-box-4", "Под", ["Кот под столом."], loc("under", "🐱", "🍽️"), [line("Кот под столом.", "kot_pod_stolom.mp3")], null, true),
+    slide("u6-table-box-5", "Смотри", ["Мяч в коробке.", "Книга на столе.", "Кот под столом."], focus(["⚽📦", "📘⬆️🍽️", "🐱⬇️🍽️"]), [line("Мяч в коробке. Книга на столе. Кот под столом.", "u6_table_box_scene_1.mp3")], [
+      question("u6-table-box-q1", "Где мяч?", [option("in-box", "в коробке", "📦"), option("on-table", "на столе", "⬆️🍽️"), option("under-table", "под столом", "⬇️🍽️")], "in-box", "⚽"),
+      question("u6-table-box-q2", "Где книга?", [option("on-table", "на столе", "⬆️🍽️"), option("in-box", "в коробке", "📦"), option("under-table", "под столом", "⬇️🍽️")], "on-table", "📘"),
+      question("u6-table-box-q3", "Где кот?", [option("under-table", "под столом", "⬇️🍽️"), option("on-table", "на столе", "⬆️🍽️"), option("in-box", "в коробке", "📦")], "under-table", "🐱")
+    ], true),
+    slide("u6-table-box-6", "Новая сцена", ["Книга в коробке.", "Мяч на столе."], focus(["📘📦", "⚽⬆️🍽️"]), [line("Книга в коробке. Мяч на столе.", "u6_table_box_scene_2.mp3")], [
+      question("u6-table-box-q4", "Где книга?", [option("in-box", "в коробке", "📦"), option("on-table", "на столе", "⬆️🍽️"), option("under-table", "под столом", "⬇️🍽️")], "in-box", "📘"),
+      question("u6-table-box-q5", "Где мяч?", [option("on-table", "на столе", "⬆️🍽️"), option("in-box", "в коробке", "📦"), option("near", "рядом", "↔️")], "on-table", "⚽")
+    ], true),
+    slide("u6-table-box-7", "Отлично", ["Отлично!", "В коробке.", "На столе.", "Под столом."], focus(["✅", "📦", "🍽️", "⬇️"]), [line("Отлично! В коробке. На столе. Под столом.", "u6_table_box_final.mp3")], null, true),
+    slide("u6-table-box-8", "Где?", ["Где мяч?", "Мяч в коробке."], loc("in", "⚽", "📦"), [line("Где мяч? Мяч в коробке.", "u6_table_box_gde_myach_v_korobke.mp3")], null, true),
+    slide("u6-table-box-9", "Где?", ["Где книга?", "Книга на столе."], loc("on", "📘", "🍽️"), [line("Где книга? Книга на столе.", "u6_table_box_gde_kniga_na_stole.mp3")], null, true),
+    slide("u6-table-box-10", "Где?", ["Где кот?", "Кот под столом."], loc("under", "🐱", "🍽️"), [line("Где кот? Кот под столом.", "u6_table_box_gde_kot_pod_stolom.mp3")], null, true)
+  ];
+
   var lesson18Slides = [
     slide("u6-l18-1", "рядом", ["рядом", "Кот рядом."], loc("near", "🐱", "🐶"), [line("рядом. Кот рядом.", "u6_l18_ryadom_kot_ryadom.mp3")], null, true),
     slide("u6-l18-2", "рядом с домом", ["Кот рядом с домом."], loc("near", "🐱", "🏠"), [line("Кот рядом с домом.", "kot_ryadom_s_domom.mp3")], null, true),
@@ -319,6 +369,25 @@
     slide("u6-l18-10", "Читай", ["Кот рядом с собакой.", "Мяч под столом.", "Книга на столе.", "Где мяч?"], focus(["🐱↔️🐶", "⚽⬇️🍽️", "📘⬆️🍽️"]), [line("Кот рядом с собакой. Мяч под столом. Книга на столе. Где мяч?", "u6_l18_text_2.mp3")], [question("u6-l18-q4", "Где мяч?", locationOptions, "under-table", "⚽")], true),
     slide("u6-l18-11", "Отлично!", ["Отлично! ✅", "рядом", "в", "на", "под"], wordList([{ text: "рядом", emoji: "↔️" }, { text: "в", emoji: "📦" }, { text: "на", emoji: "⬆️" }, { text: "под", emoji: "⬇️" }]), [line("Отлично! Рядом. В. На. Под.", "u6_l18_final.mp3")], null, true)
   ];
+
+  var lesson18NearExtraSlides = [
+    slide("u6-near-extra-1", "Рядом", ["Кот рядом с собакой."], loc("near", "🐱", "🐶"), [line("Кот рядом с собакой.", "kot_ryadom_s_sobakoy.mp3")], null, true),
+    slide("u6-near-extra-2", "Рядом", ["Мяч рядом с домом."], loc("near", "⚽", "🏠"), [line("Мяч рядом с домом.", "myach_ryadom_s_domom.mp3")], null, true),
+    slide("u6-near-extra-3", "Рядом", ["Мама рядом с папой."], loc("near", "👩", "👨"), [line("Мама рядом с папой.", "mama_ryadom_s_papoy.mp3")], null, true),
+    slide("u6-near-extra-4", "Не рядом", ["Мяч не рядом."], focus(["⚽", "        ", "🏠"]), [line("Мяч не рядом.", "myach_ne_ryadom.mp3")], null, true),
+    slide("u6-near-extra-5", "Читай", ["Кот рядом с собакой.", "Мяч рядом с домом.", "Мама рядом с папой."], focus(["🐱↔️🐶", "⚽↔️🏠", "👩↔️👨"]), [line("Кот рядом с собакой. Мяч рядом с домом. Мама рядом с папой.", "u6_near_extra_text.mp3")], [
+      question("u6-near-extra-q1", "Кто рядом с собакой?", [option("kot", "кот", "🐱"), option("mama", "мама", "👩"), option("papa", "папа", "👨")], "kot", "🐶"),
+      question("u6-near-extra-q2", "Что рядом с домом?", [option("myach", "мяч", "⚽"), option("kniga", "книга", "📘"), option("kot", "кот", "🐱")], "myach", "🏠"),
+      question("u6-near-extra-q3", "Кто рядом с папой?", [option("mama", "мама", "👩"), option("kot", "кот", "🐱"), option("sobaka", "собака", "🐶")], "mama", "👨")
+    ], true),
+    slide("u6-near-extra-6", "Где?", ["Где кот?", "Кот рядом с собакой."], loc("near", "🐱", "🐶"), [line("Где кот? Кот рядом с собакой.", "u6_near_extra_gde_kot.mp3")], null, true),
+    slide("u6-near-extra-7", "Отлично", ["Отлично!", "Рядом.", "В.", "На.", "Под."], focus(["✅", "↔️", "📦", "⬆️", "⬇️"]), [line("Отлично! Рядом. В. На. Под.", "u6_l18_final.mp3")], null, true),
+    slide("u6-near-extra-8", "Смотри", ["Мяч рядом.", "Мяч не рядом."], focus(["⚽↔️🏠", "⚽     🏠"]), [line("Мяч рядом. Мяч не рядом.", "u6_near_extra_ryadom_ne_ryadom.mp3")], null, true)
+  ];
+
+  var lesson16WithRoomExtraSlides = lesson16Slides.slice(0, -1).concat(lesson16RoomExtraSlides, lesson16Slides.slice(-1));
+  var lesson17WithTableBoxSlides = lesson17Slides.slice(0, -1).concat(lesson17TableBoxSlides, lesson17Slides.slice(-1));
+  var lesson18WithNearExtraSlides = lesson18Slides.slice(0, -1).concat(lesson18NearExtraSlides, lesson18Slides.slice(-1));
 
   var catPhraseOptions = [
     gameOption("cat-on-table", "Кот на столе.", "⬆️🍽️"),
@@ -432,9 +501,9 @@
     dictionary: dictionary,
     scenes: [],
     units: [
-      unit("lesson-16-gde", "Урок 16: Где?", "❓", "Урок 16: Где?", lesson16Slides),
-      unit("lesson-17-v-na-pod", "Урок 17: В, на, под", "📦", "Урок 17: В, на, под", lesson17Slides),
-      unit("lesson-18-ryadom", "Урок 18: Рядом. Тут или там?", "↔️", "Урок 18: Рядом. Тут или там?", lesson18Slides),
+      unit("lesson-16-gde", "Урок 16: Где?", "❓", "Урок 16: Где?", lesson16WithRoomExtraSlides),
+      unit("lesson-17-v-na-pod", "Урок 17: В, на, под", "📦", "Урок 17: В, на, под", lesson17WithTableBoxSlides),
+      unit("lesson-18-ryadom", "Урок 18: Рядом. Тут или там?", "↔️", "Урок 18: Рядом. Тут или там?", lesson18WithNearExtraSlides),
       {
         id: "unit-6-game-gde-kot",
         title: "Игра: Где кот?",
