@@ -304,6 +304,24 @@
     slide("u7-l21-12", "Отлично!", ["Отлично! ✅", "Какой?", "цвет", "большой", "маленький"], wordList([{ text: "какой?", emoji: "❓" }, { text: "красный", emoji: "🔴" }, { text: "большой", emoji: "🐘" }, { text: "маленький", emoji: "🐭" }]), [line("Отлично! Какой? Цвет. Большой. Маленький.", "u7_l21_final.mp3")], null, true)
   ];
 
+  lesson19Slides.splice(lesson19Slides.length - 1, 0,
+    slide("u7-l19-extra-1", "Где большой мяч?", ["Где большой мяч?"], cards([obj("big-ball", "большой мяч", "⚽", "ball", "red", "big"), obj("small-ball", "маленький мяч", "⚽", "ball", "red", "small")]), [line("Где большой мяч?", "u7_l19_extra_gde_bolshoy_myach.mp3")], [question("u7-l19-extra-q1", "Где большой мяч?", [option("big", "большой мяч", "🐘⚽"), option("small", "маленький мяч", "🐭⚽")], "big", "⚽")], true),
+    slide("u7-l19-extra-2", "Где маленький дом?", ["Где маленький дом?"], cards([obj("big-house", "большой дом", "🏠", "house", "yellow", "big"), obj("small-house", "маленький дом", "🏠", "house", "yellow", "small")]), [line("Где маленький дом?", "u7_l19_extra_gde_malenkiy_dom.mp3")], [question("u7-l19-extra-q2", "Где маленький дом?", [option("small", "маленький дом", "🐭🏠"), option("big", "большой дом", "🐘🏠")], "small", "🏠")], true),
+    slide("u7-l19-extra-3", "Читай", ["Тут большой мяч.", "Там маленький мяч."], focus(["📍 🐘⚽", "👉 🐭⚽"]), [line("Тут большой мяч. Там маленький мяч.", "u7_l19_extra_text_myachi.mp3")], [question("u7-l19-extra-q3", "Где маленький мяч?", [option("there", "там", "👉"), option("here", "тут", "📍")], "there", "🐭⚽")], true)
+  );
+
+  lesson20Slides.splice(lesson20Slides.length - 1, 0,
+    slide("u7-l20-extra-1", "Найди", ["Найди синюю книгу."], cards([obj("red-book", "красная книга", "📘", "book", "red", "normal"), obj("blue-book", "синяя книга", "📘", "book", "blue", "normal"), obj("green-book", "зелёная книга", "📘", "book", "green", "normal")]), [line("Найди синюю книгу.", "u7_l20_extra_naydi_sinyuyu_knigu.mp3")], [question("u7-l20-extra-q1", "Найди синюю книгу.", [option("blue", "синяя книга", "🔵📘"), option("red", "красная книга", "🔴📘"), option("green", "зелёная книга", "🟢📘")], "blue", "📘")], true),
+    slide("u7-l20-extra-2", "Найди", ["Найди белого кота."], cards([obj("white-cat", "белый кот", "🐱", "cat", "white", "normal"), obj("black-cat", "чёрный кот", "🐱", "cat", "black", "normal"), obj("orange-cat", "кот", "🐱", "cat", "orange", "normal")]), [line("Найди белого кота.", "u7_l20_extra_naydi_belogo_kota.mp3")], [question("u7-l20-extra-q2", "Найди белого кота.", [option("white", "белый кот", "⚪🐱"), option("black", "чёрный кот", "⚫🐱"), option("orange", "кот", "🐱")], "white", "🐱")], true),
+    slide("u7-l20-extra-3", "Да или нет", ["Это красный мяч?"], cards([obj("blue-ball", "синий мяч", "⚽", "ball", "blue", "normal")]), [line("Это красный мяч?", "u7_l20_extra_eto_krasnyy_myach.mp3")], [question("u7-l20-extra-q3", "Это красный мяч?", yesNoOptions, "net", "🔵⚽")], true)
+  );
+
+  lesson21Slides.splice(lesson21Slides.length - 1, 0,
+    slide("u7-l21-extra-1", "Какой мяч?", ["Тут большой красный мяч.", "Там маленький синий мяч."], focus(["📍 🐘🔴⚽", "👉 🐭🔵⚽"]), [line("Тут большой красный мяч. Там маленький синий мяч.", "u7_l21_extra_red_blue_balls.mp3")], [question("u7-l21-extra-q1", "Какой мяч тут?", [option("big-red", "большой красный", "🐘🔴"), option("small-blue", "маленький синий", "🐭🔵")], "big-red", "⚽")], true),
+    slide("u7-l21-extra-2", "Какая книга?", ["Какая книга?"], cards([obj("green-book", "зелёная книга", "📘", "book", "green", "normal")]), [line("Какая книга?", "u7_l21_extra_kakaya_kniga.mp3")], [question("u7-l21-extra-q2", "Какая книга?", [option("green", "зелёная", "🟢"), option("blue", "синяя", "🔵"), option("red", "красная", "🔴")], "green", "📘")], true),
+    slide("u7-l21-extra-3", "Читай", ["Большой дом тут.", "Маленький кот там.", "Синяя книга на столе."], focus(["🐘🏠 📍", "🐭🐱 👉", "🔵📘 ⬆️🪑"]), [line("Большой дом тут. Маленький кот там. Синяя книга на столе.", "u7_l21_extra_text_descriptions.mp3")], [question("u7-l21-extra-q3", "Где синяя книга?", [option("on", "на столе", "⬆️🪑"), option("under", "под столом", "⬇️🪑"), option("there", "там", "👉")], "on", "🔵📘")], true)
+  );
+
   var sizeGame = {
     id: "unit-7-game-size",
     gameSlug: "unit-7-game-size",
@@ -498,6 +516,67 @@
       }
     ]
   };
+
+  sizeGame.rounds.push(
+    gameTask("u7-size-extra-1", "Какое яблоко?", obj("big-apple", "большое яблоко", "🍎", "apple", "red", "big"), "u7_extra_size_big_apple.mp3", [option("big", "большое", "🐘"), option("small", "маленькое", "🐭")], "big", "Да! Большое яблоко."),
+    gameTask("u7-size-extra-2", "Какое яблоко?", obj("small-apple", "маленькое яблоко", "🍎", "apple", "green", "small"), "u7_extra_size_small_apple.mp3", [option("big", "большое", "🐘"), option("small", "маленькое", "🐭")], "small", "Да! Маленькое яблоко."),
+    gameTask("u7-size-extra-3", "Какая собака?", obj("big-dog", "большая собака", "🐶", "dog", "orange", "big"), "u7_extra_size_big_dog.mp3", [option("big", "большая", "🐘"), option("small", "маленькая", "🐭")], "big", "Да! Большая собака."),
+    gameTask("u7-size-extra-4", "Какая собака?", obj("small-dog", "маленькая собака", "🐶", "dog", "orange", "small"), "u7_extra_size_small_dog.mp3", [option("big", "большая", "🐘"), option("small", "маленькая", "🐭")], "small", "Да! Маленькая собака.")
+  );
+
+  colorFindGame.rounds.push(
+    { id: "u7-color-extra-1", command: "Найди жёлтую книгу.", text: "Найди жёлтую книгу.", audio: audio("u7_extra_find_yellow_book.mp3"), correct: "yellow-book", items: [colorItem("yellow-book", "жёлтая книга", "📘", "book", "yellow"), colorItem("blue-book", "синяя книга", "📘", "book", "blue"), colorItem("red-book", "красная книга", "📘", "book", "red")] },
+    { id: "u7-color-extra-2", command: "Найди синее яблоко.", text: "Найди синее яблоко.", audio: audio("u7_extra_find_blue_apple.mp3"), correct: "blue-apple", items: [colorItem("blue-apple", "синее яблоко", "🍎", "apple", "blue"), colorItem("red-apple", "красное яблоко", "🍎", "apple", "red"), colorItem("green-apple", "зелёное яблоко", "🍎", "apple", "green")] },
+    { id: "u7-color-extra-3", command: "Найди белый дом.", text: "Найди белый дом.", audio: audio("u7_extra_find_white_house.mp3"), correct: "white-house", items: [colorItem("white-house", "белый дом", "🏠", "house", "white"), colorItem("yellow-house", "жёлтый дом", "🏠", "house", "yellow"), colorItem("green-house", "зелёный дом", "🏠", "house", "green")] },
+    { id: "u7-color-extra-4", command: "Найди чёрный мяч.", text: "Найди чёрный мяч.", audio: audio("u7_extra_find_black_ball.mp3"), correct: "black-ball", items: [colorItem("black-ball", "чёрный мяч", "⚽", "ball", "black"), colorItem("red-ball", "красный мяч", "⚽", "ball", "red"), colorItem("blue-ball", "синий мяч", "⚽", "ball", "blue")] }
+  );
+
+  phraseGame.rounds.push(
+    gameTask("u7-phrase-extra-1", "Собери фразу.", obj("yellow-house", "жёлтый дом", "🏠", "house", "yellow", "normal"), "u7_extra_phrase_yellow_house.mp3", [option("yellow-house", "жёлтый дом", "🟡🏠"), option("green-house", "зелёный дом", "🟢🏠"), option("yellow-ball", "жёлтый мяч", "🟡⚽"), option("small-house", "маленький дом", "🐭🏠")], "yellow-house", "Да! Жёлтый дом."),
+    gameTask("u7-phrase-extra-2", "Собери фразу.", obj("white-dog", "белая собака", "🐶", "dog", "white", "normal"), "u7_extra_phrase_white_dog.mp3", [option("white-dog", "белая собака", "⚪🐶"), option("black-dog", "чёрная собака", "⚫🐶"), option("white-cat", "белый кот", "⚪🐱"), option("big-dog", "большая собака", "🐘🐶")], "white-dog", "Да! Белая собака."),
+    gameTask("u7-phrase-extra-3", "Собери фразу.", obj("small-cat", "маленький кот", "🐱", "cat", "orange", "small"), "u7_extra_phrase_small_cat.mp3", [option("small-cat", "маленький кот", "🐭🐱"), option("big-cat", "большой кот", "🐘🐱"), option("small-house", "маленький дом", "🐭🏠"), option("white-cat", "белый кот", "⚪🐱")], "small-cat", "Да! Маленький кот.")
+  );
+
+  colorMapGame.objects.push(
+    mapObject("red-apple", "красное яблоко", "🍎", "apple", "red", "normal", 3, 1),
+    mapObject("white-cat", "белый кот", "🐱", "cat", "white", "normal", 0, 3)
+  );
+
+  colorMapGame.rounds.push(
+    { id: "u7-map-extra-1", command: "Иди к красному яблоку.", text: "Иди к красному яблоку.", audio: audio("u7_extra_map_go_red_apple.mp3"), target: "red-apple", hint: "Нужно красное яблоко." },
+    { id: "u7-map-extra-2", command: "Иди к белому коту.", text: "Иди к белому коту.", audio: audio("u7_extra_map_go_white_cat.mp3"), target: "white-cat", hint: "Нужен белый кот." }
+  );
+
+  changeGame.rounds.push(
+    {
+      id: "u7-change-extra-1",
+      command: "Что изменилось?",
+      text: "Что изменилось?",
+      audio: audio("u7_change_what_changed.mp3"),
+      beforeLabel: "было",
+      afterLabel: "стало",
+      before: [obj("red-apple", "красное яблоко", "🍎", "apple", "red", "normal")],
+      after: [obj("green-apple", "зелёное яблоко", "🍎", "apple", "green", "normal")],
+      correct: "apple-green",
+      options: [option("apple-green", "яблоко зелёное", "🟢🍎"), option("apple-red", "яблоко красное", "🔴🍎"), option("ball-green", "мяч зелёный", "🟢⚽")],
+      correctFeedback: "Да! Яблоко зелёное.",
+      wrongFeedback: "Нет. Смотри ещё."
+    },
+    {
+      id: "u7-change-extra-2",
+      command: "Что изменилось?",
+      text: "Что изменилось?",
+      audio: audio("u7_change_what_changed.mp3"),
+      beforeLabel: "было",
+      afterLabel: "стало",
+      before: [obj("small-book", "книга маленькая", "📘", "book", "blue", "small")],
+      after: [obj("big-book", "книга большая", "📘", "book", "blue", "big")],
+      correct: "book-big",
+      options: [option("book-big", "книга большая", "🐘📘"), option("book-small", "книга маленькая", "🐭📘"), option("book-blue", "книга синяя", "🔵📘")],
+      correctFeedback: "Да! Книга большая.",
+      wrongFeedback: "Нет. Смотри ещё."
+    }
+  );
 
   var UNIT7_GAMES = {
     sizeGame: sizeGame,

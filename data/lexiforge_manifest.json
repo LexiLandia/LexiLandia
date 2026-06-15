@@ -6,7 +6,7 @@
       "id": "lesson-0-reading",
       "order": 0,
       "title": "Урок 0. Учимся читать",
-      "unitCount": 8
+      "unitCount": 9
     },
     {
       "id": "lesson-1",
@@ -129,7 +129,7 @@
       "unitCount": 6
     }
   ],
-  "audioCount": 1810,
+  "audioCount": 1866,
   "missingAudioCount": 0,
   "audio": [
     {
@@ -510,6 +510,16 @@
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
       "source": "level-0-unit-3-actions",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/chitay_eshche.mp3",
+      "text": "Читай ещё",
+      "speechText": "Читай ещё",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
       "exists": true
     },
     {
@@ -3696,6 +3706,46 @@
       "audio": "assets/audio/ru/l0-u6_words_action-4.mp3",
       "text": "спит",
       "speechText": "спит",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7-extra_reading_1.mp3",
+      "text": "мама дом кот",
+      "speechText": "мама. дом. кот.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7-extra_reading_2.mp3",
+      "text": "тут дом. кот там.",
+      "speechText": "тут. дом. кот. там.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7-extra_reading_3.mp3",
+      "text": "мама дома. кот тут.",
+      "speechText": "мама. дома. кот. тут.",
+      "rate": "-40%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "lesson-0-reading",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/l0-u7-extra_reading_4.mp3",
+      "text": "он тут. она там.",
+      "speechText": "он. тут. она. там.",
       "rate": "-40%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -13273,6 +13323,16 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u1_little_world_dom_tut_kot_tam.mp3",
+      "text": "Дом тут.\nКот там.",
+      "speechText": "Где кот?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u1_little_world_full.mp3",
       "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
       "speechText": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
@@ -13306,6 +13366,16 @@
       "audio": "assets/audio/ru/u1_little_world_kto_tut.mp3",
       "text": "Тут дом.\nМама дома.\nКот тут.\nКот спит.",
       "speechText": "Кто тут?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "unit-1-reading-world-games",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u1_little_world_mama_doma_kot_tam.mp3",
+      "text": "Мама дома.\nКот там.",
+      "speechText": "Кто дома?",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -14623,6 +14693,136 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u7_extra_find_black_ball.mp3",
+      "text": "Найди чёрный мяч.",
+      "speechText": "Найди чёрный мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_find_blue_apple.mp3",
+      "text": "Найди синее яблоко.",
+      "speechText": "Найди синее яблоко.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_find_white_house.mp3",
+      "text": "Найди белый дом.",
+      "speechText": "Найди белый дом.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_find_yellow_book.mp3",
+      "text": "Найди жёлтую книгу.",
+      "speechText": "Найди жёлтую книгу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_map_go_red_apple.mp3",
+      "text": "Иди к красному яблоку.",
+      "speechText": "Иди к красному яблоку.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_map_go_white_cat.mp3",
+      "text": "Иди к белому коту.",
+      "speechText": "Иди к белому коту.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_phrase_small_cat.mp3",
+      "text": "Собери фразу.",
+      "speechText": "Собери фразу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_phrase_white_dog.mp3",
+      "text": "Собери фразу.",
+      "speechText": "Собери фразу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_phrase_yellow_house.mp3",
+      "text": "Собери фразу.",
+      "speechText": "Собери фразу.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_size_big_apple.mp3",
+      "text": "Какое яблоко?",
+      "speechText": "Какое яблоко?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_size_big_dog.mp3",
+      "text": "Какая собака?",
+      "speechText": "Какая собака?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_size_small_apple.mp3",
+      "text": "Какое яблоко?",
+      "speechText": "Какое яблоко?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_extra_size_small_dog.mp3",
+      "text": "Какая собака?",
+      "speechText": "Какая собака?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u7_find_black_dog.mp3",
       "text": "Найди чёрную собаку.",
       "speechText": "Найди чёрную собаку.",
@@ -14863,6 +15063,36 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u7_l19_extra_gde_bolshoy_myach.mp3",
+      "text": "Где большой мяч?",
+      "speechText": "Где большой мяч?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l19_extra_gde_malenkiy_dom.mp3",
+      "text": "Где маленький дом?",
+      "speechText": "Где маленький дом?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l19_extra_text_myachi.mp3",
+      "text": "Тут большой мяч. Там маленький мяч.",
+      "speechText": "Тут большой мяч. Там маленький мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u7_l19_final.mp3",
       "text": "Отлично! Большой. Маленький. Какой?",
       "speechText": "Отлично! Большой. Маленький. Какой?",
@@ -14966,6 +15196,36 @@
       "audio": "assets/audio/ru/u7_l20_eto_zelenaya_kniga.mp3",
       "text": "Это зелёная книга?",
       "speechText": "Это зелёная книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l20_extra_eto_krasnyy_myach.mp3",
+      "text": "Это красный мяч?",
+      "speechText": "Это красный мяч?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l20_extra_naydi_belogo_kota.mp3",
+      "text": "Найди белого кота.",
+      "speechText": "Найди белого кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l20_extra_naydi_sinyuyu_knigu.mp3",
+      "text": "Найди синюю книгу.",
+      "speechText": "Найди синюю книгу.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -15086,6 +15346,36 @@
       "audio": "assets/audio/ru/u7_l21_eto_sinyaya_kniga.mp3",
       "text": "Это синяя книга?",
       "speechText": "Это синяя книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l21_extra_kakaya_kniga.mp3",
+      "text": "Какая книга?",
+      "speechText": "Какая книга?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l21_extra_red_blue_balls.mp3",
+      "text": "Тут большой красный мяч. Там маленький синий мяч.",
+      "speechText": "Тут большой красный мяч. Там маленький синий мяч.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-7-descriptions-colors",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u7_l21_extra_text_descriptions.mp3",
+      "text": "Большой дом тут. Маленький кот там. Синяя книга на столе.",
+      "speechText": "Большой дом тут. Маленький кот там. Синяя книга на столе.",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",
@@ -15553,6 +15843,186 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u8_extra_basket_five_books.mp3",
+      "text": "Положи пять книг.",
+      "speechText": "Положи пять книг.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_basket_four_apples.mp3",
+      "text": "Положи четыре яблока.",
+      "speechText": "Положи четыре яблока.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_basket_four_balls.mp3",
+      "text": "Положи четыре мяча.",
+      "speechText": "Положи четыре мяча.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_count_five_books.mp3",
+      "text": "Сколько книг?",
+      "speechText": "Сколько книг?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_count_four_balls.mp3",
+      "text": "Сколько мячей?",
+      "speechText": "Сколько мячей?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_count_two_cats.mp3",
+      "text": "Сколько котов?",
+      "speechText": "Сколько котов?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_find_five_books.mp3",
+      "text": "Найди пять книг.",
+      "speechText": "Найди пять книг.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_find_four_balls.mp3",
+      "text": "Найди четыре мяча.",
+      "speechText": "Найди четыре мяча.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_find_two_cats.mp3",
+      "text": "Найди два кота.",
+      "speechText": "Найди два кота.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_many_few_dogs.mp3",
+      "text": "Много или мало?",
+      "speechText": "Много или мало?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_many_few_two_apples.mp3",
+      "text": "Много или мало?",
+      "speechText": "Много или мало?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_many_many_cats.mp3",
+      "text": "Много или мало?",
+      "speechText": "Много или мало?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_many_many_seven_books.mp3",
+      "text": "Много или мало?",
+      "speechText": "Много или мало?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_map_go_five_books.mp3",
+      "text": "Иди к пяти книгам.",
+      "speechText": "Иди к пяти книгам.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_map_go_four_balls.mp3",
+      "text": "Иди к четырём мячам.",
+      "speechText": "Иди к четырём мячам.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_shop_five_books.mp3",
+      "text": "Дай пять книг, пожалуйста.",
+      "speechText": "Дай пять книг, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_shop_four_apples.mp3",
+      "text": "Дай четыре яблока, пожалуйста.",
+      "speechText": "Дай четыре яблока, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_extra_shop_three_balls.mp3",
+      "text": "Дай три мяча, пожалуйста.",
+      "speechText": "Дай три мяча, пожалуйста.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u8_find_five_apples.mp3",
       "text": "Найди пять яблок.",
       "speechText": "Найди пять яблок.",
@@ -15683,6 +16153,36 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u8_l22_extra_books_count.mp3",
+      "text": "Одна книга. Две книги. Три книги.",
+      "speechText": "Одна книга. Две книги. Три книги.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l22_extra_dva_myacha.mp3",
+      "text": "Два мяча.",
+      "speechText": "Два мяча.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l22_extra_tut_tri_yabloka.mp3",
+      "text": "Тут три яблока?",
+      "speechText": "Тут три яблока?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u8_l22_final.mp3",
       "text": "Отлично! Один. Два. Три.",
       "speechText": "Отлично! Один. Два. Три.",
@@ -15783,6 +16283,36 @@
       "exists": true
     },
     {
+      "audio": "assets/audio/ru/u8_l23_extra_pyat_yablok.mp3",
+      "text": "Пять яблок.",
+      "speechText": "Пять яблок.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l23_extra_skolko_myachey.mp3",
+      "text": "Сколько мячей?",
+      "speechText": "Сколько мячей?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l23_extra_skolko_yablok.mp3",
+      "text": "Сколько яблок?",
+      "speechText": "Сколько яблок?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
       "audio": "assets/audio/ru/u8_l23_final.mp3",
       "text": "Отлично! Сколько? Четыре. Пять.",
       "speechText": "Отлично! Сколько? Четыре. Пять.",
@@ -15856,6 +16386,36 @@
       "audio": "assets/audio/ru/u8_l23_tut_tri_knigi.mp3",
       "text": "Тут три книги?",
       "speechText": "Тут три книги?",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l24_extra_malo_mnogo_myachey.mp3",
+      "text": "Мало мячей. Много мячей.",
+      "speechText": "Мало мячей. Много мячей.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l24_extra_tut_malo_tam_mnogo.mp3",
+      "text": "Тут мало. Там много.",
+      "speechText": "Тут мало. Там много.",
+      "rate": "-22%",
+      "pitch": "+0Hz",
+      "voice": "ru-RU-SvetlanaNeural",
+      "source": "level-0-unit-8-counting",
+      "exists": true
+    },
+    {
+      "audio": "assets/audio/ru/u8_l24_extra_tut_mnogo_myachey.mp3",
+      "text": "Тут много мячей?",
+      "speechText": "Тут много мячей?",
       "rate": "-22%",
       "pitch": "+0Hz",
       "voice": "ru-RU-SvetlanaNeural",

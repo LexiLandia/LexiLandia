@@ -341,6 +341,7 @@ button {
 }
 
 .debug-id-badge {
+  display: none;
   position: absolute;
   top: 5px;
   right: 7px;
@@ -358,7 +359,7 @@ button {
   letter-spacing: 0;
   opacity: 0.045;
   cursor: copy;
-  pointer-events: auto;
+  pointer-events: none;
   user-select: none;
   white-space: nowrap;
   overflow: hidden;
@@ -390,17 +391,19 @@ button {
   opacity: 0.045;
 }
 
-.course-card:hover .debug-id-badge,
-.unit-card:hover .debug-id-badge,
-.topbar:hover .debug-id-badge,
-.slide-question:hover .debug-id-badge,
-.stage-card:hover .debug-id-badge {
+body.debug-mode .course-card:hover .debug-id-badge,
+body.debug-mode .unit-card:hover .debug-id-badge,
+body.debug-mode .topbar:hover .debug-id-badge,
+body.debug-mode .slide-question:hover .debug-id-badge,
+body.debug-mode .stage-card:hover .debug-id-badge {
   opacity: 0.42;
 }
 
 body.debug-mode .debug-id-badge {
+  display: inline-block;
   background: rgba(255, 255, 255, 0.78);
   opacity: 0.62;
+  pointer-events: auto;
 }
 
 body.debug-mode .debug-id-badge.lesson-debug-badge,

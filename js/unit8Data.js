@@ -314,6 +314,24 @@
     slide("u8-l24-10", "Отлично!", ["Отлично! ✅", "много", "мало"], wordList([{ text: "много", emoji: "🔵🔵🔵" }, { text: "мало", emoji: "🔵" }]), [line("Отлично! Много. Мало.", "u8_l24_final.mp3")], null, true)
   ];
 
+  lesson22Slides.splice(lesson22Slides.length - 1, 0,
+    slide("u8-l22-extra-1", "Смотри и считай", ["Одна книга.", "Две книги.", "Три книги."], focus([repeat("📘", 1), repeat("📘", 2), repeat("📘", 3)]), [line("Одна книга. Две книги. Три книги.", "u8_l22_extra_books_count.mp3")], [question("u8-l22-extra-q1", "Сколько книг?", bookOptions, "three-books", "📘 📘 📘")], true),
+    slide("u8-l22-extra-2", "Да или нет", ["Тут три яблока?"], focus([repeat("🍎", 3)]), [line("Тут три яблока?", "u8_l22_extra_tut_tri_yabloka.mp3")], [question("u8-l22-extra-q2", "Тут три яблока?", yesNoOptions, "da", "🍎 🍎 🍎")], true),
+    slide("u8-l22-extra-3", "Выбери", ["Два мяча."], focus([repeat("⚽", 2)]), [line("Два мяча.", "u8_l22_extra_dva_myacha.mp3")], [question("u8-l22-extra-q3", "Сколько?", oneTwoThreeOptions, "two-balls", "⚽ ⚽")], true)
+  );
+
+  lesson23Slides.splice(lesson23Slides.length - 1, 0,
+    slide("u8-l23-extra-1", "Сколько яблок?", ["Сколько яблок?"], focus([repeat("🍎", 5)]), [line("Сколько яблок?", "u8_l23_extra_skolko_yablok.mp3")], [question("u8-l23-extra-q1", "Сколько яблок?", numberOptions, "five", "🍎 🍎 🍎 🍎 🍎")], true),
+    slide("u8-l23-extra-2", "Сколько мячей?", ["Сколько мячей?"], focus([repeat("⚽", 4)]), [line("Сколько мячей?", "u8_l23_extra_skolko_myachey.mp3")], [question("u8-l23-extra-q2", "Сколько мячей?", numberOptions, "four", "⚽ ⚽ ⚽ ⚽")], true),
+    slide("u8-l23-extra-3", "Выбери фразу", ["Пять яблок."], focus([repeat("🍎", 5)]), [line("Пять яблок.", "u8_l23_extra_pyat_yablok.mp3")], [question("u8-l23-extra-q3", "Выбери.", [option("five-apples", "пять яблок", "5️⃣🍎"), option("three-apples", "три яблока", "3️⃣🍎"), option("two-books", "две книги", "2️⃣📚")], "five-apples", "🍎 🍎 🍎 🍎 🍎")], true)
+  );
+
+  lesson24Slides.splice(lesson24Slides.length - 1, 0,
+    slide("u8-l24-extra-1", "Мало / много", ["Мало мячей.", "Много мячей."], focus([repeat("⚽", 2), repeat("⚽", 7)]), [line("Мало мячей. Много мячей.", "u8_l24_extra_malo_mnogo_myachey.mp3")], null, true),
+    slide("u8-l24-extra-2", "Да или нет", ["Тут много мячей?"], focus([repeat("⚽", 7)]), [line("Тут много мячей?", "u8_l24_extra_tut_mnogo_myachey.mp3")], [question("u8-l24-extra-q1", "Тут много мячей?", yesNoOptions, "da", "⚽ ⚽ ⚽ ⚽ ⚽ ⚽ ⚽")], true),
+    slide("u8-l24-extra-3", "Сцена", ["Тут мало.", "Там много."], focus(["📍 " + repeat("📘", 1), "👉 " + repeat("📘", 6)]), [line("Тут мало. Там много.", "u8_l24_extra_tut_malo_tam_mnogo.mp3")], [question("u8-l24-extra-q2", "Где много?", [option("there", "там", "👉"), option("here", "тут", "📍")], "there", "📘")], true)
+  );
+
   var countGame = {
     id: "unit-8-game-count",
     gameSlug: "unit-8-game-count",
@@ -461,6 +479,47 @@
       countTask("u8-many-8", "Много или мало?", group("many-dogs", "много собак", "🐶", 5, "dog"), "u8_many_many_dogs.mp3", manyFewOptions, "many", "Да! Много собак.", "Нет. Тут много собак.")
     ]
   };
+
+  countGame.rounds.push(
+    countTask("u8-count-extra-1", "Сколько мячей?", group("four-balls", "четыре мяча", "⚽", 4, "ball"), "u8_extra_count_four_balls.mp3", numberOptions, "four", "Да! Четыре мяча.", "Нет. Тут четыре мяча."),
+    countTask("u8-count-extra-2", "Сколько книг?", group("five-books", "пять книг", "📘", 5, "book"), "u8_extra_count_five_books.mp3", numberOptions, "five", "Да! Пять книг.", "Нет. Тут пять книг."),
+    countTask("u8-count-extra-3", "Сколько котов?", group("two-cats", "два кота", "🐱", 2, "cat"), "u8_extra_count_two_cats.mp3", numberOptions, "two", "Да! Два кота.", "Нет. Тут два кота.")
+  );
+
+  findCountGame.rounds.push(
+    commandTask("u8-find-extra-1", "Найди четыре мяча.", "u8_extra_find_four_balls.mp3", [group("two-balls", "два мяча", "⚽", 2, "ball"), group("four-balls", "четыре мяча", "⚽", 4, "ball"), group("three-balls", "три мяча", "⚽", 3, "ball")], "four-balls", "Да! Четыре мяча.", "Нет. Нужны четыре мяча."),
+    commandTask("u8-find-extra-2", "Найди пять книг.", "u8_extra_find_five_books.mp3", [group("three-books", "три книги", "📘", 3, "book"), group("five-books", "пять книг", "📘", 5, "book"), group("two-books", "две книги", "📘", 2, "book")], "five-books", "Да! Пять книг.", "Нет. Нужны пять книг."),
+    commandTask("u8-find-extra-3", "Найди два кота.", "u8_extra_find_two_cats.mp3", [group("one-cat", "один кот", "🐱", 1, "cat"), group("two-cats", "два кота", "🐱", 2, "cat"), group("five-cats", "пять котов", "🐱", 5, "cat")], "two-cats", "Да! Два кота.", "Нет. Нужны два кота.")
+  );
+
+  basketGame.rounds.push(
+    basketTask("u8-basket-extra-1", "Положи четыре яблока.", "u8_extra_basket_four_apples.mp3", "apple", 4, "Да! Четыре яблока.", "Нет. Нужны четыре яблока."),
+    basketTask("u8-basket-extra-2", "Положи четыре мяча.", "u8_extra_basket_four_balls.mp3", "ball", 4, "Да! Четыре мяча.", "Нет. Нужны четыре мяча."),
+    basketTask("u8-basket-extra-3", "Положи пять книг.", "u8_extra_basket_five_books.mp3", "book", 5, "Да! Пять книг.", "Нет. Нужны пять книг.")
+  );
+
+  shopCountGame.rounds.push(
+    commandTask("u8-shop-extra-1", "Дай четыре яблока, пожалуйста.", "u8_extra_shop_four_apples.mp3", [group("four-apples", "четыре яблока", "🍎", 4, "apple"), group("two-apples", "два яблока", "🍎", 2, "apple"), group("five-apples", "пять яблок", "🍎", 5, "apple")], "four-apples", "На. Спасибо. Да! Четыре яблока.", "Нет. Нужны четыре яблока."),
+    commandTask("u8-shop-extra-2", "Дай три мяча, пожалуйста.", "u8_extra_shop_three_balls.mp3", [group("one-ball", "один мяч", "⚽", 1, "ball"), group("three-balls", "три мяча", "⚽", 3, "ball"), group("five-balls", "пять мячей", "⚽", 5, "ball")], "three-balls", "На. Спасибо. Да! Три мяча.", "Нет. Нужны три мяча."),
+    commandTask("u8-shop-extra-3", "Дай пять книг, пожалуйста.", "u8_extra_shop_five_books.mp3", [group("two-books", "две книги", "📘", 2, "book"), group("five-books", "пять книг", "📘", 5, "book"), group("three-books", "три книги", "📘", 3, "book")], "five-books", "На. Спасибо. Да! Пять книг.", "Нет. Нужны пять книг.")
+  );
+
+  countMapGame.objects.push(
+    group("four-balls", "четыре мяча", "⚽", 4, "ball", 0, 0),
+    group("five-books", "пять книг", "📘", 5, "book", 3, 3)
+  );
+
+  countMapGame.rounds.push(
+    { id: "u8-map-extra-1", command: "Иди к четырём мячам.", text: "Иди к четырём мячам.", audio: audio("u8_extra_map_go_four_balls.mp3"), target: "four-balls", hint: "Нужны четыре мяча.", correctFeedback: "Да! Четыре мяча." },
+    { id: "u8-map-extra-2", command: "Иди к пяти книгам.", text: "Иди к пяти книгам.", audio: audio("u8_extra_map_go_five_books.mp3"), target: "five-books", hint: "Нужны пять книг.", correctFeedback: "Да! Пять книг." }
+  );
+
+  manyFewGame.rounds.push(
+    countTask("u8-many-extra-1", "Много или мало?", group("few-dogs", "мало собак", "🐶", 2, "dog"), "u8_extra_many_few_dogs.mp3", manyFewOptions, "few", "Да! Мало собак.", "Нет. Тут мало собак."),
+    countTask("u8-many-extra-2", "Много или мало?", group("many-cats", "много котов", "🐱", 6, "cat"), "u8_extra_many_many_cats.mp3", manyFewOptions, "many", "Да! Много котов.", "Нет. Тут много котов."),
+    countTask("u8-many-extra-3", "Много или мало?", group("few-apples-two", "мало яблок", "🍎", 2, "apple"), "u8_extra_many_few_two_apples.mp3", manyFewOptions, "few", "Да! Мало яблок.", "Нет. Тут мало яблок."),
+    countTask("u8-many-extra-4", "Много или мало?", group("many-books-seven", "много книг", "📘", 7, "book"), "u8_extra_many_many_seven_books.mp3", manyFewOptions, "many", "Да! Много книг.", "Нет. Тут много книг.")
+  );
 
   var UNIT8_GAMES = {
     countGame: countGame,

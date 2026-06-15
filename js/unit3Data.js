@@ -291,7 +291,10 @@
           { id: "u3g1-5", visual: "👦🍞", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: dailyActionOptions, correct: "est" },
           { id: "u3g1-6", visual: "👧💧", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: dailyActionOptions, correct: "pyot" },
           { id: "u3g1-7", visual: "👩📖", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: dailyActionOptions, correct: "chitaet" },
-          { id: "u3g1-8", visual: "🐱⚽", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: dailyActionOptions, correct: "igraet" }
+          { id: "u3g1-8", visual: "🐱⚽", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: dailyActionOptions, correct: "igraet" },
+          { id: "u3g1-extra-1", visual: "🐶😴", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: actionOptions, correct: "spit" },
+          { id: "u3g1-extra-2", visual: "👦🚶", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: actionOptions, correct: "idyot" },
+          { id: "u3g1-extra-3", visual: "👩🪑", text: "Что делает?", audio: audio("chto_delaet.mp3"), options: actionOptions, correct: "sidit" }
         ]
       }
     ]

@@ -424,7 +424,9 @@
     gameTask("u4g3-5", "📱 🍎 💧", "У меня есть телефон.", "u_menya_est_telefon.mp3", yesNoOptions, "da", "У меня есть телефон.", "✅ Да!", "❌ Смотри ещё."),
     gameTask("u4g3-6", "🍞 ⚽", "У меня есть вода.", "u_menya_est_voda.mp3", yesNoOptions, "net", "У меня есть вода.", "✅ Да!", "❌ Смотри ещё."),
     gameTask("u4g3-7", "💧 📚", "У меня нет книги.", "u_menya_net_knigi.mp3", yesNoOptions, "net", "У меня нет книги.", "✅ Да!", "❌ Смотри ещё."),
-    gameTask("u4g3-8", "🍞 📱", "У меня нет яблока.", "u_menya_net_yabloka.mp3", yesNoOptions, "da", "У меня нет яблока.", "✅ Да!", "❌ Смотри ещё.")
+    gameTask("u4g3-8", "🍞 📱", "У меня нет яблока.", "u_menya_net_yabloka.mp3", yesNoOptions, "da", "У меня нет яблока.", "✅ Да!", "❌ Смотри ещё."),
+    gameTask("u4g3-extra-1", "🙂 ⚽", "У меня есть мяч.", "u_menya_est_myach.mp3", yesNoOptions, "da", "У меня есть мяч.", "✅ Да!", "❌ Смотри ещё."),
+    gameTask("u4g3-extra-2", "🙂 📱", "У меня нет телефона.", "u_menya_net_telefona.mp3", yesNoOptions, "net", "У меня нет телефона.", "✅ Да!", "❌ Смотри ещё.")
   ];
 
   var game3 = {

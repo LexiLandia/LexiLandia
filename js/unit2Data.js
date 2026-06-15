@@ -595,7 +595,11 @@
           { id: "u2-sort-5", text: "мяч", visual: "⚽", question: "Кто или что?", audio: audio("myach.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
           { id: "u2-sort-6", text: "книга", visual: "📖", question: "Кто или что?", audio: audio("kniga.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
           { id: "u2-sort-7", text: "стол", visual: "🟫", question: "Кто или что?", audio: audio("stol.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
-          { id: "u2-sort-8", text: "стул", visual: "🪑", question: "Кто или что?", audio: audio("stul.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" }
+          { id: "u2-sort-8", text: "стул", visual: "🪑", question: "Кто или что?", audio: audio("stul.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-extra-1", text: "вода", visual: "💧", question: "Кто или что?", audio: audio("voda.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-extra-2", text: "хлеб", visual: "🍞", question: "Кто или что?", audio: audio("hleb.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-extra-3", text: "телефон", visual: "📱", question: "Кто или что?", audio: audio("telefon.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" },
+          { id: "u2-sort-extra-4", text: "яблоко", visual: "🍎", question: "Кто или что?", audio: audio("yabloko.mp3"), options: [option("kto", "кто?", "❓👤"), option("chto", "что?", "❓📦")], correct: "chto" }
         ]
       }
     ]

@@ -652,6 +652,62 @@
     };
   }
 
+  function makeExtraReadingUnit() {
+    var unitId = "l0-u7-extra";
+    var meanings = {
+      "мама": "👩",
+      "дом": "🏠",
+      "кот": "🐱",
+      "тут": "📍",
+      "там": "👉",
+      "дома": "🏠",
+      "он": "👦",
+      "она": "👧"
+    };
+    var tasks = [
+      slide(unitId + "-goal", "Читай ещё", ["Слово", "Картинка", "Звук"], { type: "emoji", emoji: "📖🔊" }, [line("Читай ещё", "chitay_eshche.mp3")]),
+      readingSlide(unitId, 1, "Читай", ["мама", "дом", "кот"], meanings, [
+        question("l0-extra-q-1", "Где кот?", [
+          option("dom", "дом", "🏠"),
+          option("kot", "кот", "🐱"),
+          option("mama", "мама", "👩")
+        ], "kot")
+      ]),
+      readingSlide(unitId, 2, "Тут / там", ["тут дом.", "кот там."], meanings, [
+        question("l0-extra-q-2", "Где дом?", [
+          option("tam", "там", "👉"),
+          option("tut", "тут", "📍")
+        ], "tut")
+      ]),
+      readingSlide(unitId, 3, "Маленький текст", ["мама дома.", "кот тут."], meanings, [
+        question("l0-extra-q-3", "Кто дома?", [
+          option("kot", "кот", "🐱"),
+          option("mama", "мама", "👩")
+        ], "mama")
+      ]),
+      readingSlide(unitId, 4, "Читай", ["он тут.", "она там."], meanings, [
+        question("l0-extra-q-4", "Кто там?", [
+          option("on", "он", "👦"),
+          option("ona", "она", "👧")
+        ], "ona")
+      ]),
+      successSlide(unitId)
+    ];
+
+    return {
+      id: "unit-l0-extra-reading",
+      title: "Читай ещё",
+      icon: "📖",
+      stages: [
+        {
+          type: "slides",
+          title: "Читай ещё",
+          tasks: tasks
+        }
+      ]
+    };
+  }
+
   function makeFinalUnit() {
     var unitId = "l0-u8";
     var letterA = letterEntry(["a", "А", "а", "🅰️"]);
@@ -736,6 +792,7 @@
     return makeBasicUnit(group, index + 1);
   });
   units.push(makeTextUnit());
+  units.push(makeExtraReadingUnit());
   units.push(makeFinalUnit());
 
   root.LexiLandLevel0 = {

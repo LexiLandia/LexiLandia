@@ -247,6 +247,26 @@
             audio: audio("u1_little_world_kto_spit.mp3"),
             options: [option("kot", "кот", "🐱"), option("mama", "мама", "👩‍👧")],
             correct: "kot"
+          },
+          {
+            id: "u1-little-world-extra-1",
+            text: "Мама дома.\nКот там.",
+            scene: { near: ["🏠", "👩‍👧"], far: ["🐱"] },
+            question: "Кто дома?",
+            speechText: "Кто дома?",
+            audio: audio("u1_little_world_mama_doma_kot_tam.mp3"),
+            options: [option("kot", "кот", "🐱"), option("mama", "мама", "👩‍👧"), option("dom", "дом", "🏠")],
+            correct: "mama"
+          },
+          {
+            id: "u1-little-world-extra-2",
+            text: "Дом тут.\nКот там.",
+            scene: { near: ["🏠"], far: ["🐱"] },
+            question: "Где кот?",
+            speechText: "Где кот?",
+            audio: audio("u1_little_world_dom_tut_kot_tam.mp3"),
+            options: [option("tut", "тут", "📍"), option("tam", "там", "👉")],
+            correct: "tam"
           }
         ]
       }

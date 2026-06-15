@@ -462,16 +462,8 @@
 
     try {
       var params = new URLSearchParams(window.location.search || "");
-      if (params.has("debug")) {
-        enabled = params.get("debug") === "1";
-        if (enabled) {
-          window.localStorage.setItem(DEBUG_STORAGE_KEY, "1");
-        } else {
-          window.localStorage.removeItem(DEBUG_STORAGE_KEY);
-        }
-      } else {
-        enabled = window.localStorage.getItem(DEBUG_STORAGE_KEY) === "1";
-      }
+      enabled = params.get("debug") === "1";
+      window.localStorage.removeItem(DEBUG_STORAGE_KEY);
     } catch (error) {
       enabled = false;
     }
